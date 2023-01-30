@@ -11,7 +11,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
-import Seo from '../components/seo'
+import Seo from '../components/Seo'
 import Layout from '../components/Layout';
 import Pagetop from '../components/Pagetop';
 
