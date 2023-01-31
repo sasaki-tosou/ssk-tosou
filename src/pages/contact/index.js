@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { graphql,Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Seo from "../../components/Seo"
 import Header from "../../components/Header"
 import Layout from "../../components/Layout"
-import Sideb from '../../components/sideb'
+
 import Pagetop from '../../components/Pagetop'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck,faAngleRight,faChevronUp } from "@fortawesome/free-solid-svg-icons"
+import { faCheck,faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const index = () => {
   return (

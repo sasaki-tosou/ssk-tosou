@@ -51,8 +51,8 @@ const yanefuki = () => {
 
         <div className="gaiheki_title_box">
                     <h1>
-                        <img src="/images/yanefuki_img_title.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="pc" />
-                        <img src="/images/yanefuki_img_title_smp.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="smp" />
+                        <StaticImage src="../images/yanefuki_img_title.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="pc" />
+                        <StaticImage src="../images/yanefuki_img_title_smp.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="smp" />
                     </h1>
                 </div>
 
@@ -156,10 +156,10 @@ const yanefuki = () => {
                   <p>東日本大震災の被災地では、その後の災害公営住宅に数多くの「防災瓦」が採用されています。それは「防災瓦」が現行の耐震基準での耐震性が認められたのはもちろん、耐久性・メンテナンス性に加え、性能面・デザイン面でも評価されたことを証明しています。</p>
                   </div>
                   <div>
-                  <img src="/images/fukkou_img01.jpg" alt="" />
+                  <StaticImage src="../images/fukkou_img01.jpg" alt="" />
                   </div>
                   <div>
-                  <img src="/images/fukkou_img02.jpg" alt="" />
+                  <StaticImage src="../images/fukkou_img02.jpg" alt="" />
                   </div>
 
                 </div>
@@ -363,11 +363,11 @@ const yanefuki = () => {
 
           <div className="flex-wrap">            
             <div className="yane_fuki_box">
-              <p><img src="/images/yane_fuki_pic05.jpg" alt="" /></p>
+              <p><StaticImage src="../images/yane_fuki_pic05.jpg" alt="" /></p>
               <p>1.既存屋根材撤去</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img src="/images/yane_fuki_pic06.jpg" alt="" /></p>
+              <p><StaticImage src="../images/yane_fuki_pic06.jpg" alt="" /></p>
               <p>2.新規コンパネ追い張り</p>
             </div>
             <div className="yane_fuki_box">

@@ -1205,6 +1205,7 @@ _::-webkit-full-page-media, _:future, :root .souba_l select { background-color: 
 	@media screen and (max-width: 600px) {
 		display: flex;
 		flex-wrap: wrap;
+		padding-bottom: 50px;
 	}
 }
 
@@ -1504,7 +1505,7 @@ _::-webkit-full-page-media, _:future, :root .souba_l select { background-color: 
 .link_bn_box a:hover { opacity: 0.8; border-bottom:solid 2px #ff7415;transition: all 0.3s ease; }
 
 .link_bn_box dl { width:100%; display:flex; flex-direction:column; }
-.link_bn_box dl dt img {  display:inline-block; width:24px; height:24px; z-index:1000; font-size:100%; position:absolute; top:15px; right:10px; }
+.link_bn_box dl dt:after { display:inline-block; content:""; background-image: url(../images/arrow_r.svg); background-size: cover; width:24px; height:24px; z-index:1000; font-size:100%; position:absolute; top:15px; right:10px; }
 
 .link_bn_box dt { background-color:#ff7415; padding:3%; font-family: 'Noto Sans JP', sans-serif; font-weight: 900; color:#fff; font-size:140%; position:relative; }
 .link_bn_box dd { padding:3%; background-color:#fff; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; color:#000; height:100%;  }

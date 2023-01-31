@@ -106,7 +106,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#silicon" offset="50">
                             <dl>
-                                <dt>シリコン塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>シリコン塗料</dt>
                                 <dd>コストパフォーマンスに優れた人気塗料
                                 10年毎の塗り替えに最適です。</dd>
                             </dl>
@@ -115,7 +115,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#radical" offset="50">
                             <dl>
-                                <dt>ラジカル制御型塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>ラジカル制御型塗料</dt>
                                 <dd>汚れに強い塗料
                                 シリコンよりワンランク上のおススメ塗料</dd>
                             </dl>
@@ -124,7 +124,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#low-pollution" offset="50">
                         <dl>
-                            <dt>低汚染塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                            <dt>低汚染塗料</dt>
                             <dd>セルフクリーニング効果と親水性で汚れ知らず</dd>
                         </dl>
                         </AnchorLink>
@@ -132,7 +132,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#heat-shielding" offset="50">
                             <dl>
-                                <dt>遮熱塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>遮熱塗料</dt>
                                 <dd>建物の表面で太陽熱を反射させ夏の暑さを
                                 軽減する省エネ効果がある塗料</dd>
                             </dl>
@@ -141,7 +141,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#insulation" offset="50">
                             <dl>
-                                <dt>断熱塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>断熱塗料</dt>
                                 <dd>熱伝導を抑える効果を持った省エネ塗料
                                 音を小さくする防音効果も期待できます</dd>
                             </dl>
@@ -150,7 +150,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#inorganic-hybrid" offset="50">
                             <dl>
-                                <dt>無機ハイブリッド塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>無機ハイブリッド塗料</dt>
                                 <dd>有機と無機を融合させた新しいタイプの塗料
                                 耐候性も優れています</dd>
                             </dl>
@@ -159,7 +159,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#fluorine" offset="50">
                             <dl>
-                                <dt>フッ素塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>フッ素塗料</dt>
                                 <dd>紫外線や酸性雨に強く耐撰性の高い塗料</dd>
                             </dl>
                         </AnchorLink>
@@ -167,7 +167,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#clear-coating" offset="50">
                             <dl>
-                                <dt>クリアー塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>クリアー塗料</dt>
                                 <dd>無色透明な塗料を使用して外壁の保護を
                                 する塗料</dd>
                             </dl>
@@ -176,7 +176,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#variegated-pattern" offset="50">
                             <dl>
-                                <dt>多彩模様塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>多彩模様塗料</dt>
                                 <dd>表面に吹き付けるカラーフレークにより
                                 単色塗装にはない深みが生まれます</dd>
                             </dl>
@@ -185,7 +185,7 @@ const gaiheki = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/gaiheki/#finishing-touches" offset="50">
                             <dl>
-                                <dt>多彩仕上工法<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>多彩仕上工法</dt>
                                 <dd>2色または3色の塗料を使用して意匠性の
                                 ある豪華な壁面を作り出します</dd>
                             </dl>

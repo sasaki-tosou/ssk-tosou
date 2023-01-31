@@ -6,7 +6,7 @@ const SoubaCheck = () => {
       <section id="souba_check">
   <div className="main-content">
     <h3 className="title04">最短10秒無料相場チェック</h3>
-    <div className="smp"><img src="/images/souba_oneesan_smp.webp" width="100%" alt="他社見積り中でもOK！" /></div>
+    <div className="smp"><img src="/images/souba_oneesan_smp.jpg" width="100%" alt="他社見積り中でもOK！" /></div>
     <div className="souba_inner">
       <div className="flex-wrap">
         <div className="souba_l">

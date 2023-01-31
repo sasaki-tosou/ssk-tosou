@@ -55,81 +55,81 @@ const karucera_works = () => {
             <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic01.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic01.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic02.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic02.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic03.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic03.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic04.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic04.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic05.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic05.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic06.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic06.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic07.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic07.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic08.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic08.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic09.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic09.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic10.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic10.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic11.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic11.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic12.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic12.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic13.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic13.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic14.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic14.jpg" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <img src="/images/karucera_pic15.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic15.jpg" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <img src="/images/karucera_pic16.jpg" alt="" />
+            <StaticImage src="../images/karucera_pic16.jpg" alt="" />
           </div>
         </div>
 

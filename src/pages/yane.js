@@ -51,14 +51,14 @@ const yane = () => {
                 
             <div className="gaiheki_title_box">
                     <h1>
-                        <img src="/images/yane_img01.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="pc" />
-                        <img src="/images/yane_img01_smp.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="smp" />
+                        <StaticImage src="../images/yane_img01.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="pc" />
+                        <StaticImage src="../images/yane_img01_smp.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="smp" />
                     </h1>
                 </div>
 
                 <div className="gaiheki_img_box">
                     <div className='gaiheki_box_img'>
-                        <img src="/images/yane_img02.jpg" alt="" />
+                        <StaticImage src="../images/yane_img02.jpg" alt="" />
                     </div>
                     <div className='gaiheki_box_txt'>
                         <p>外壁は傷み具合によって補修の有無、適正な塗料の選定も変わります。</p>
@@ -70,21 +70,21 @@ const yane = () => {
 
                 <div className="gaiheki_title_box p0 mt50">
                         <div className='gaiheki_title_img'>
-                            <h2><img src="/images/yane_img03.png" alt="屋根塗装プラン30坪（100㎡程度）" /></h2>
+                            <h2><StaticImage src="../images/yane_img03.png" alt="屋根塗装プラン30坪（100㎡程度）" /></h2>
                         </div>
                         <div className='gaiheki_title_txt'>
-                            <img src="/images/yane_img04.png" alt="高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
+                            <StaticImage src="../images/yane_img04.png" alt="高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
                         </div>
                 </div>
 
                 <ul className="gaiheki_price_list">
-                    <li><img src="/images/yane_price01.png" alt="シリコンプラン" /></li>
-                    <li><img src="/images/yane_price02.png" alt="遮熱シリコンプラン" /></li>
-                    <li><img src="/images/yane_price03.png" alt="フッ素プラン" /></li>
+                    <li><StaticImage src="../images/yane_price01.png" alt="シリコンプラン" /></li>
+                    <li><StaticImage src="../images/yane_price02.png" alt="遮熱シリコンプラン" /></li>
+                    <li><StaticImage src="../images/yane_price03.png" alt="フッ素プラン" /></li>
                 </ul>
 
                 <div className="comment_box">
-                <div className="comment_l"><img src="/images/boss_photo2.jpg" alt="佐々木塗装代表-写真" /></div>
+                <div className="comment_l"><StaticImage src="../images/boss_photo2.jpg" alt="佐々木塗装代表-写真" /></div>
                 <div className="comment_r">
                     <div>
                         塗料の種類は様々です。<br />
@@ -104,7 +104,7 @@ const yane = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/yane/#silicon" offset="100">
                             <dl>
-                                <dt>シリコン塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>シリコン塗料</dt>
                                 <dd>コストパフォーマンスに優れた人気塗料<br />
                                 10年毎の塗り替えに最適です。</dd>
                             </dl>
@@ -113,7 +113,7 @@ const yane = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/yane/#radical" offset="-100">
                             <dl>
-                                <dt>ラジカル制御型塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>ラジカル制御型塗料</dt>
                                 <dd>汚れに強い塗料<br />
                                 シリコンよりワンランク上のおススメ塗料</dd>
                             </dl>
@@ -122,7 +122,7 @@ const yane = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/yane/#fluorine" offset="50">
                             <dl>
-                                <dt>フッ素塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>フッ素塗料</dt>
                                 <dd>紫外線や酸性雨に強く耐撰性の高い塗料</dd>
                             </dl>
                         </AnchorLink>
@@ -130,7 +130,7 @@ const yane = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/yane/#heat-shielding">
                             <dl>
-                                <dt>遮熱塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>遮熱塗料</dt>
                                 <dd>建物の表面で太陽熱を反射させ夏の暑さを<br />
                                 軽減する省エネ効果がある塗料</dd>
                             </dl>
@@ -139,7 +139,7 @@ const yane = () => {
                     <div className="link_bn_box">
                         <AnchorLink to="/yane/#insulation" offset="50">
                             <dl>
-                                <dt>断熱塗料<img src="/images/arrow_r.svg" alt="" /></dt>
+                                <dt>断熱塗料</dt>
                                 <dd>熱伝導を抑える効果を持った省エネ塗料<br />
                                 音を小さくする防音効果も期待できます</dd>
                             </dl>
@@ -177,11 +177,11 @@ const yane = () => {
                                 オリエンタル塗料　ニューマイルド優雅</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><img src="/images/yane_pic01.jpg" width={428} height={332} alt="" /></p>
+                            <p><StaticImage src="../images/yane_pic01.jpg" width={428} height={332} alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 日本ペイントファインシリコンペスト</p>
-                                <p><img src="/images/yane_pic02.jpg" width={100} height={100} alt="" /></p>
+                                <p><StaticImage src="../images/yane_pic02.jpg" width={100} height={100} alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -210,12 +210,12 @@ const yane = () => {
                             日本ペイントファインパーフェクトベスト</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><img src="/images/yane_pic03.jpg" width={428} height={332} alt="" /></p>
+                            <p><StaticImage src="../images/yane_pic03.jpg" width={428} height={332} alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                     日本ペイントファイン<br className="pc" />
                                     パーフェクトペスト</p>
-                                <p><img src="/images/yane_pic04.jpg" width={100} height={100} alt="" /></p>
+                                <p><StaticImage src="../images/yane_pic04.jpg" width={100} height={100} alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -246,11 +246,11 @@ const yane = () => {
                                 日本ペイント　デュフロン4Fルーフ</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><img src="/images/yane_pic05.jpg" width={428} height={332} alt="" /></p>
+                            <p><StaticImage src="../images/yane_pic05.jpg" width={428} height={332} alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 日本ペイントデュフロン4Fルーフ</p>
-                                <p><img src="/images/yane_pic06.jpg" width={100} height={100} alt="" /></p>
+                                <p><StaticImage src="../images/yane_pic06.jpg" width={100} height={100} alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -277,11 +277,11 @@ const yane = () => {
                             日本ペイント　パーフェクトクーラーベスト</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><img src="/images/yane_pic07.jpg" width={428} height={332} alt="" /></p>
+                            <p><StaticImage src="../images/yane_pic07.jpg" width={428} height={332} alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                     日本ペイント　サーモアイSi</p>
-                                <p><img src="/images/yane_pic08.jpg" width={100} height={100} alt="" /></p>
+                                <p><StaticImage src="../images/yane_pic08.jpg" width={100} height={100} alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -311,11 +311,11 @@ const yane = () => {
                                 日進産業ガイナ</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><img src="/images/yane_pic09.jpg" width={428} height={332} alt="" /></p>
+                            <p><StaticImage src="../images/yane_pic09.jpg" width={428} height={332} alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 日進産業ガイナ</p>
-                                <p><img src="/images/yane_pic10.jpg" width={100} height={100} alt="" /></p>
+                                <p><StaticImage src="../images/yane_pic10.jpg" width={100} height={100} alt="" /></p>
                             </div>
                         </div>
                     </div>

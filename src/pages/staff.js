@@ -54,7 +54,7 @@ const staff = () => {
             <h2 className="page_title01 mt0">スタッフ紹介</h2>
             <h3 className="page_title02">代表取締役　佐々木　堅</h3>
             <div className="staff_box">
-              <div className="staff_l"><img src="/images/boss_photo.png" alt="" /></div>
+              <div className="staff_l"><StaticImage src="../images/boss_photo.png" alt="" /></div>
               <div className="staff_r">
                 <p>広島県出身　A型<br />
                 趣味：温泉、サウナ<br />
@@ -65,7 +65,7 @@ const staff = () => {
             </div>
             <h3 className="page_title02">塗装職人・現場管理　岡村 誠悦</h3>
             <div className="staff_box">
-              <div className="staff_l"><img src="/images/okamura.jpg" alt="" /></div>
+              <div className="staff_l"><StaticImage src="../images/okamura.jpg" alt="" /></div>
               <div className="staff_r">
                 <p>広島県出身　AB型<br />
                 趣味:ドライブ<br />
@@ -76,7 +76,7 @@ const staff = () => {
             </div>
             <h3 className="page_title02">塗装職人・現場管理　梶谷　凌平</h3>
             <div className="staff_box">
-              <div className="staff_l"><img src="/images/kaji.jpg" alt="" /></div>
+              <div className="staff_l"><StaticImage src="../images/kaji.jpg" alt="" /></div>
               <div className="staff_r">
                 <p>島根県出身　A型<br />
                 趣味：古着屋巡り<br />
@@ -87,7 +87,7 @@ const staff = () => {
             </div>
             <h3 className="page_title02">お客様サポート 大石　真弓</h3>
             <div className="staff_box">
-              <div className="staff_l"><img src="/images/ohishi.jpg" alt="" /></div>
+              <div className="staff_l"><StaticImage src="../images/ohishi.jpg" alt="" /></div>
               <div className="staff_r">
                 <p>島根県出身　A型<br />
                 趣味:雑貨屋巡り、映画鑑賞(ラブコメ) <br />
@@ -98,7 +98,7 @@ const staff = () => {
             </div>
             <h3 className="page_title02">塗り替えアドバイザー 佐々木　良子</h3>
             <div className="staff_box">
-              <div className="staff_l"><img src="/images/ryoko.jpg" alt="" /></div>
+              <div className="staff_l"><StaticImage src="../images/ryoko.jpg" alt="" /></div>
               <div className="staff_r">
                 <p>広島県出身　A型<br />
                 趣味:旅行<br />

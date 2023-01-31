@@ -45,26 +45,26 @@ const Home = ({ data }) => {
 
       <div className="catch_title">
         <h2>
-          <StaticImage src="/images/catch_txt.png" className="pc" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
-          <StaticImage src="/images/catch_txt.png" className="tub" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
-          <StaticImage src="/images/catch_txt_smp.png" className="smp" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
+          <StaticImage src="../images/catch_txt.png" className="pc" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
+          <StaticImage src="../images/catch_txt.png" className="tub" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
+          <StaticImage src="../images/catch_txt_smp.png" className="smp" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
         </h2>
       </div>
 
       <div className="main_slide">
-        <div className="image"><GatsbyImage image={data.main08.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main08smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main01.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main01smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main02.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main02smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main03.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main03smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main04.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main04smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main05.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main05smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main06.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main06smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
-        <div className="image"><GatsbyImage image={data.main07.childImageSharp.gatsbyImageData} className="pc" alt="" /><GatsbyImage image={data.main07smp.childImageSharp.gatsbyImageData} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage08.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage08_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage01.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage01_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage02.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage02_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage03.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage03_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage04.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage04_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage05.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage05_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage06.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage06_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage07.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage07_smp.jpg" className="smp" alt="" /></div>
       </div>
 
     </div>
     
-    <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+    <p id="page-top" data-aos="fade-left" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
     <Pagetop />
 
@@ -499,95 +499,6 @@ query {
     }
   }
 
-  main01: file(relativePath: {eq: "mainimage01.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main01smp: file(relativePath: {eq: "mainimage01_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main02: file(relativePath: {eq: "mainimage02.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main02smp: file(relativePath: {eq: "mainimage02_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main03: file(relativePath: {eq: "mainimage03.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main03smp: file(relativePath: {eq: "mainimage03_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main04: file(relativePath: {eq: "mainimage04.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main04smp: file(relativePath: {eq: "mainimage04_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main05: file(relativePath: {eq: "mainimage05.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main05smp: file(relativePath: {eq: "mainimage05_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main06: file(relativePath: {eq: "mainimage06.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main06smp: file(relativePath: {eq: "mainimage06_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main07: file(relativePath: {eq: "mainimage07.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main07smp: file(relativePath: {eq: "mainimage07_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
-  main08: file(relativePath: {eq: "mainimage08.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-  main08smp: file(relativePath: {eq: "mainimage08_smp.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-
   worksbg02: file(relativePath: {eq: "works_bg02.jpg"}) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH)
@@ -614,12 +525,6 @@ query {
     }
   }
 
-  catch01: file(relativePath: {eq: "catch_pic01.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 1200, layout: CONSTRAINED)
-    }
-  }
-  
   newsthumb: file(relativePath: {eq: "news_thumb.jpg"}) {
     childImageSharp {
       gatsbyImageData(width: 1200, layout: CONSTRAINED)
@@ -667,7 +572,6 @@ query {
       }
     }
   }
-
   
   works: allMicrocmsBlog(
     filter: {category: {slug: {eq: "now-working"}}}

@@ -52,8 +52,7 @@ module.exports = {
       options: {
           threshold: 1, // Percentage of an element's area that needs to be visible to launch animation アニメーションを起動するために必要な、要素の表示領域の割合。
           once: true, // Defines if animation needs to be launched once アニメーションを一回だけ起動する必要があるかどうかを定義する
-          disable: false, // Flag for disabling animations アニメーションを無効にするフラグ
-          
+          disable: false, // Flag for disabling animations アニメーションを無効にするフラグ          
           // Advanced Options
           selector: '[data-sal]', // Selector of the elements to be animated アニメーションする要素のセレクタ
           animateClassName: 'sal-animate', // Class name which triggers animation アニメーションのトリガーとなるクラス名。
