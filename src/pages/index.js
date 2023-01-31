@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link, graphql } from "gatsby"
-import { GatsbyImage,StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -90,7 +90,6 @@ const Home = ({ data }) => {
                 <dl>
                   {data.blog.edges.map(({ node }) => (
                     <>
-                    <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent"></a></p>
                     <dt>{node.date}</dt>
                     <dd>
                       <div className={node.category.slug}><a href={'/blog/' + node.category.slug}>{node.category.name}</a></div><br />

@@ -35,7 +35,7 @@ const Header = () => {
                         </div>
                         <div className="h_tel_box">
                             <p>お電話でのお問い合わせはこちら</p>
-                            <p className="tel_no"><Link to="tel:0120-116-795"><img src="/images/h_tel_icon.svg" alt="" width={40} height={26} />0120-116-795</Link></p>
+                            <p className="tel_no"><Link to="tel:0120-116-795" title="お電話でのお問い合わせ"><img src="/images/h_tel_icon.svg" alt="" width={40} height={26} />0120-116-795</Link></p>
                             <p>受付時間　9:00～20:00</p>
                         </div>
                     </div>

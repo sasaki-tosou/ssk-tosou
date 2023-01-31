@@ -97,6 +97,18 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: '@mako-tos/gatsby-transformer-for-microcms',
+      options: {
+        mediaType: 'MicrocmsBlog', // 必須 string 型
+        field: 'body', // 必須 string 型
+        useHljs: true, // 任意 boolean 型
+        image: {
+          sizes: '80vw', // 任意 string 型
+          loading: 'auto', // 任意 string 型
+        },
+      },
+    },
 
     {
       resolve: `gatsby-plugin-canonical-urls`,
