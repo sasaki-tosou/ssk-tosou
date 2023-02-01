@@ -52,7 +52,7 @@ const Company = () => {
                 <h2 className="page_title01 mt0">会社案内</h2>
                 <h3 className="page_title02">もっとお客様にできること</h3>
                 <div className="flex-wrap">
-                    <div className="w25p plr15p_smp"><StaticImage src="../images/boss_photo.png" width="100%" alt="" /></div>
+                    <div className="w25p plr15p_smp"><StaticImage src="../images/boss_photo.png" alt="" /></div>
                     <div className="w75p pl3p">
 
                         <p>はじめまして。株式会社佐々木塗装　代表の佐々木堅と申します。<br />

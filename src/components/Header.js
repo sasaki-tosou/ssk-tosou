@@ -58,7 +58,6 @@ const Header = () => {
                             <div>
                                 <ul className="gnav__menu">
                                     <li className="gnav__menu__item"><Link to="/">ホーム</Link></li>
-                                    <li className="gnav__menu__item"><Link to="/company/">代表挨拶</Link></li>
                                     <li className="gnav__menu__item"><Link to="/company/">会社案内</Link></li>
                                     <li className="gnav__menu__item"><Link to="/staff/">スタッフ紹介</Link></li>
                                     <li className="gnav__menu__item"><Link to="/blog/">ブログ</Link></li>
