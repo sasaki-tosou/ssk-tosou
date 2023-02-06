@@ -1531,8 +1531,6 @@ _::-webkit-full-page-media, _:future, :root .souba_l select { background-color: 
 	.point_r { order:2; width: 100%; }
 }
 
-
-
 @media screen and (max-width:1024px){
 	.cat_list { display:flex; flex-wrap:wrap; margin:10px 0; }
 	.cat_list li { margin-right:10px; }
@@ -2643,3 +2641,5 @@ form label {
 	padding: 5px 8px;
     border: solid 1px #ccc;
 }
+
+.aeon_img_r { text-align: right; }
