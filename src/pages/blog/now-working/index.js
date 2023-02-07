@@ -94,7 +94,7 @@ export const query = graphql`
   allMicrocmsBlog(
     filter: {category: {slug: {eq: "now-working"}}}
     sort: {date: DESC}
-    limit: 9
+    limit: 10
   ) {
     edges {
       node {
