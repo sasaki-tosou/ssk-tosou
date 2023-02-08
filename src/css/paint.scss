@@ -741,3 +741,8 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 .color_catch_box { display: flex; flex-wrap: wrap; margin-bottom: 3%; }
 .color_catch_img { width: 25%; }
 .color_catch_txt { width: 75%; padding-left: 3%; }
+
+@media screen and (max-width:666px){
+	.color_catch_img { width: 100%; }
+	.color_catch_txt { width: 100%; padding-left: 0; }
+}
