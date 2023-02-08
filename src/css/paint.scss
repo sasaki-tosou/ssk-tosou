@@ -486,27 +486,28 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 
 @media screen and (max-width:768px){
 	.roman_l { width: 100%;}
-.roman_r img { width: 100%;}
-.roman_r { width: 100%; padding-left: 0;}
-.roman_color_img { width: 100%; text-align: center; padding: 3%;}
+	.roman_r img { width: 100%;}
+	.roman_r { width: 100%; padding-left: 0;}
+	.roman_color_img { width: 100%; text-align: center; padding: 3%;}
 
-.roman_color_txt { width: 100%; padding-left: 0;}
-.cover_point { width : calc(100% / 1); }
-.cover_point_inner p { font-size: 200%;}
-.cover_point_l { width : calc(100% / 1); text-align: center; margin: 35px 0; }
-.cover_point_r { width : calc(100% / 1); }
-.cover_point_l.order2 { order:1; }
-.cover_point_r.order1 { order:2; }
+	.roman_color_txt { width: 100%; padding-left: 0;}
+	.cover_point { width : calc(100% / 1); }
+	.cover_point_inner p { font-size: 200%;}
+	.cover_point_l { width : calc(100% / 1); text-align: center; margin: 35px 0; }
+	.cover_point_r { width : calc(100% / 1); }
+	.cover_point_l.order2 { order:1; }
+	.cover_point_r.order1 { order:2; }
 }
 
 .leak_box { padding:3%; background-color:#cae5ff;}
 
 .color_img_list { display:flex; flex-wrap:wrap; justify-content: center;}
-.color_img_list div { width : calc(100% / 4); padding: 1%;  }
+.color_img_list li { width : calc(100% / 4); padding: 1%;  }
+.color_img_list li img { width: 100%; height: auto; }
 
 @media screen and (max-width:600px){	
 	.color_img_list { display:flex; flex-wrap:wrap; justify-content: center;}
-	.color_img_list div { width : calc(100% / 2); padding: 2%;  }
+	.color_img_list li { width : calc(100% / 2); padding: 2%;  }
 }
 
 .gaiheki_title_box {
@@ -533,6 +534,7 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 		width: 100%;
 	}
 }
+
 .gaiheki_title_txt {
 	width: 55%;
 	@media screen and (max-width:768px){
@@ -591,6 +593,7 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 	}
 	img { border-radius: 50%; }
 }
+
 .comment_r { 
 	width: 80%; padding-left:40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
 	@media screen and (max-width:1024px){
@@ -639,6 +642,7 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 		}
 	}
 }
+
 .gaiheki_link_box { display:flex; flex-wrap:wrap;  /*padding:0 5%; width:80%;*/ margin:0 auto; }
 
 @media screen and (max-width:1024px){
@@ -655,6 +659,7 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
   background-size: 20px 20px;
   font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 }
+
 .gaiheki_content .title h3 { font-size:250%; font-weight: 900; }
 
 @media screen and (max-width:1024px) {
@@ -732,3 +737,7 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 	backface-visibility: hidden;
   }
 }
+
+.color_catch_box { display: flex; flex-wrap: wrap; margin-bottom: 3%; }
+.color_catch_img { width: 25%; }
+.color_catch_txt { width: 75%; padding-left: 3%; }

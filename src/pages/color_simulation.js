@@ -58,21 +58,21 @@ const ColorSimulation = () => {
             <h4 className="txt250p noto_san bold mb3p"><span className="orange">「こんな色はどうかな？」「こっちの色もいいね！」</span>など、<br />
             塗装前に仕上がりイメージをご確認いただけます。</h4>
             
-            <div className="flex-wrap mb3p">
-                <div className="w25p"><StaticImage src="../images/color_pic01.jpg" width="100%" alt="" /></div>
-                <div className="w75p pl2p">
+            <div className="color_catch_box">
+                <div className="color_catch_img"><StaticImage src="../images/color_pic01.jpg" alt="" /></div>
+                <div className="color_catch_txt">
                     屋根や外壁の塗を行う際、「塗装する色をどうしよう？」と悩まれる方が少なくありません。塗装後にイメージと違うとなっても、なかなか塗り直しができないのが現状です。<br />
                     そんな不安を少しでも解消できるよう、株式会社佐々木塗装では「カラーシミュレーション（ご契約者様のみ無料）」をご提供しています。塗装リフォーム前に自分のお家に色を付けて見ることができたら、イメージが湧きやすいですよね。とても具体的にイメージできるので、塗装の色選びという重要な部分の失敗を防ぐことができます。
                 </div>
             </div>
             <p className="center noto_san bold txt140p">実際にあなたのお家の写真に合成するので、<br />
             塗装後のイメージがひと目で分かります！</p>
-            <div className="color_img_list">
-                <div><StaticImage src="../images/color_pic02.jpg" alt="" /></div>
-                <div><StaticImage src="../images/color_pic03.jpg" alt="" /></div>
-                <div><StaticImage src="../images/color_pic04.jpg" alt="" /></div>
-                <div><StaticImage src="../images/color_pic05.jpg" alt="" /></div>
-            </div>
+            <ul className="color_img_list">
+                <li><StaticImage src="../images/color_pic02.jpg" alt="" /></li>
+                <li><StaticImage src="../images/color_pic03.jpg" alt="" /></li>
+                <li><StaticImage src="../images/color_pic04.jpg" alt="" /></li>
+                <li><StaticImage src="../images/color_pic05.jpg" alt="" /></li>
+            </ul>
             <p className="center noto_san bold txt140p">様々なカラーやパターンをご用意いたします。<br />
             お気に入りの色の組み合わせを、担当者と２人３脚で決めてください。</p>
             <h3 className="drone_title01">もし色選びに悩んだら、プロに聞いてください</h3>
