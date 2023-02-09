@@ -43,11 +43,9 @@ const Home = ({ data }) => {
 
     <div id="mainimage">
 
-      <div className="catch_title">
+    <div className="catch_title">
         <h2>
-          <StaticImage src="../images/catch_txt.png" className="pc" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
-          <StaticImage src="../images/catch_txt.png" className="tub" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
-          <StaticImage src="../images/catch_txt_smp.png" className="smp" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
+          <StaticImage src="../images/catch_txt_smp.png" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
         </h2>
       </div>
 
@@ -77,11 +75,11 @@ const Home = ({ data }) => {
             <div className="news_box">
               <div id="news_l">
                 <div className="flex-wrap">
-                  <div className="w50p_smp">
+                  <div className="w50p_smp_s">
                     <h3>NEWS</h3>
                     <h4>お知らせ</h4>
                   </div>
-                  <div className="w50p_smp smp">
+                  <div className="w50p_smp_s smp_s">
                     <StaticImage src="../images/news_thumb.jpg" alt="" />
                   </div>
                 </div>

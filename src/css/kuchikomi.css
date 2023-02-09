@@ -74,11 +74,15 @@
 		transform: rotate(-23deg);
 		z-index: 1;
 	}
-	.kuchikomi_title_l { width: 100%; }
-	.kuchikomi_title_r { width: 100%; }
+	
 	.kuchikomi_title_r h3 { font-size: 120%; color: #fff;}
 	.kuchikomi_title { background-color: #ff7415; padding: 2%; display: flex; flex-wrap: wrap; margin: 3% 0 0 0; }
 	.kuchikomi_box { height: 300px; border:solid 1px #ccc; margin:0 0 3% 0;}
 	.kuchikomi_box iframe { height: 300px; }
 	.kuchikomi_box li { border-bottom: dashed 1px #ccc; margin-bottom: 15px; padding-bottom: 15px; font-size: 14px; }
+}
+
+@media screen and (max-width:767px){
+	.kuchikomi_title_l { width: 100%; }
+	.kuchikomi_title_r { width: 100%; }
 }

@@ -226,6 +226,14 @@ const index = () => {
                                 </tr>
                             </tbody>
                         </table>
+
+                        <p className="eigyo_check">
+                            <label>
+                            <input type="checkbox" required="required" name="送信確認" value="この問い合わせは、営業目的ではありません。" />
+                            この問い合わせは、営業目的ではありません。
+                            </label>
+                        </p>
+
                         <ul className="bt_list">
                             <li><button type="submit" className="form_bt">送信する</button></li>
                             <li><button type="reset" className="form_bt">リセット</button></li>

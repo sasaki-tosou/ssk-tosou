@@ -48,6 +48,9 @@
 	.works_list_box .workstitle a:hover::before { width: 100%; }
 }
 
+@media screen and (max-width:768px){
+	#works_list .main-content { padding: 3%; width:100%; }
+}
 
 .jirei_pic { display: flex; flex-wrap: wrap; justify-content: center; margin-top:5%; width:65%; }
 .jirei_pic li { padding:2%;}
@@ -105,7 +108,7 @@ width: 0;
 .workstitle a::before { left: 0; }
 .workstitle a:hover::before { width: 100%; }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:768px) {
     .works_list_wrap .swiper-slide { width : calc(100% / 3)!important; }
     .case_list_wrap .swiper-slide { width : calc(100% / 2)!important; }
 	.works_list_wrap .swiper-wrapper,.case_list_wrap .swiper-wrapper { flex-wrap: wrap; height: initial!important; }
@@ -120,7 +123,7 @@ width: 0;
     .swiper-pagination-bullet-active {
         background: #ff7415!important;
     }
-    .case_list_wrap:after,.works_list_wrap:after { content:"←横にスクロールして全体を表示できます→"; display:block; width: 100%; text-align:center; color:#ff7415; font-weight:900;}
+    
 	.swiper-button-next, .swiper-button-prev { width:initial!important;}    
     .swiper-button-prev:after,.swiper-button-next:after {
         height: 60px;
@@ -135,6 +138,10 @@ width: 0;
     .swiper-button-prev:after { background: url("/images/swiper_prev.png"); background-size: cover;}
     .swiper-button-next:after { background: url("/images/swiper_next.png"); background-size: cover;}
     
+}
+
+@media screen and (max-width:767px) {
+	.case_list_wrap:after,.works_list_wrap:after { content:"←横にスクロールして全体を表示できます→"; display:block; width: 100%; text-align:center; color:#ff7415; font-weight:900;}
 }
 
 
