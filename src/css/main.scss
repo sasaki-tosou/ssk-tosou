@@ -990,7 +990,7 @@ section { width:100%; margin:0 auto;}
 #news_r dd:nth-of-type(1):after,#news_r dd:nth-of-type(2):after,#news_r dd:nth-of-type(3):after { content:""; background-image: url("../images/new_icon.png"); width: 35px; height: 35px; background-size: cover; display: inline-block; margin-left: 15px; animation: flash 0.8s ease-in infinite alternate; position: absolute; top:5px; left:-30px; z-index:10;}
 
 @media screen and (max-width:768px){
-#news_r dd:nth-of-type(1):after,#news_r dd:nth-of-type(2):after,#news_r dd:nth-of-type(3):after { position: absolute; top: -5px; left:initial; right: -5px; }
+#news_r dd:nth-of-type(1):after,#news_r dd:nth-of-type(2):after,#news_r dd:nth-of-type(3):after { position: absolute; top: -5px; left:initial; right: -5px;}
 }
 
 #news_r dd a:hover { text-decoration: none;}
