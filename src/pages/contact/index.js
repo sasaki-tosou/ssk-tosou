@@ -49,6 +49,7 @@ const index = () => {
                 
                 <h2 className="page_title01 mt0">お問い合わせ</h2>
                 <p><span className="must">必須</span>は必ずご入力ください。</p>
+
                 
                 <form action="https://ssgform.com/s/WLQ2NgMqEU46" method="post">
                     <div style={{display: 'none'}}><input type="text" name="wana" /></div>
@@ -226,13 +227,8 @@ const index = () => {
                                 </tr>
                             </tbody>
                         </table>
-
-                        <p className="eigyo_check">
-                            <label>
-                            <input type="checkbox" required="required" name="送信確認" value="この問い合わせは、営業目的ではありません。" />
-                            この問い合わせは、営業目的ではありません。
-                            </label>
-                        </p>
+                        
+                        <div className="g-recaptcha" data-sitekey="6Ldwz30kAAAAABVYDLLozQq6JFPgVUEuRYKGuJEy"></div>
 
                         <ul className="bt_list">
                             <li><button type="submit" className="form_bt">送信する</button></li>
@@ -255,5 +251,12 @@ const index = () => {
     </>
   )
 }
+
+export const Head = () => (
+    <>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>      
+    </>
+  )
+
 
 export default index
