@@ -6,6 +6,7 @@ import Header from "../../../components/Header"
 import Layout from "../../../components/Layout"
 import Sideb from "../../../components/sideb"
 import Pagetop from '../../../components/Pagetop'
+import { Pagination } from "../../../components/pagination"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -73,6 +74,7 @@ const index = ({data}) => {
                   </div>
                   ))}
                 </div>
+                
             </div>
             
             <div className="side_b">
@@ -95,7 +97,7 @@ export const query = graphql`
   allMicrocmsBlog(
     filter: {category: {slug: {eq: "case-blog"}}}
     sort: {date: DESC}
-    limit: 50
+    limit: 30, skip: 0
   ) {
     edges {
       node {

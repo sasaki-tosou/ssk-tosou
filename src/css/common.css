@@ -135,8 +135,3 @@
 	.mb25_smp { margin-bottom:25px!important;}
 }
 
-.g-recaptcha {
-	display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}

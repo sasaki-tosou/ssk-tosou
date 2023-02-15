@@ -6,6 +6,7 @@ import Header from "../../components/Header"
 import Layout from "../../components/Layout"
 import Sideb from "../../components/sideb"
 import Pagetop from "../../components/Pagetop"
+import { Pagination } from "../../components/pagination"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -50,24 +51,25 @@ const BlogIndex = ({ data }) => (
 
             <div className="flex-wrap">
             <div className="main_b">
-                <h2 className="page_title01 mt0">ブログ</h2>                
-                <div className="kiji_list">
-                {data.allMicrocmsBlog.edges.map(({ node }) => (
-                  <div className="kiji_box">
-                    <div className="kiji_thumb">
-                    <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></a>
-                    </div>
-                    <div className="kiji_txt">					
-                      <p className="txt12">{node.date}</p>
-                      <p><a href={'/blog/' + node.category.slug + '/' + node.blogId}>{node.title}</a></p>
-                      <p className="txt12">{node.excerpt}・・・</p>
-                      <ul className="cat_list">
-                        <li className={node.category.slug}><a href={'/blog/' + node.category.slug + '/'} className="txt12">{node.category.name}</a></li>
-                      </ul>
-                    </div>
+              <h2 className="page_title01 mt0">ブログ</h2>                
+              <div className="kiji_list">
+              {data.allMicrocmsBlog.edges.map(({ node }) => (
+                <div className="kiji_box">
+                  <div className="kiji_thumb">
+                  <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></a>
                   </div>
-                  ))}
+                  <div className="kiji_txt">					
+                    <p className="txt12">{node.date}</p>
+                    <p><a href={'/blog/' + node.category.slug + '/' + node.blogId}>{node.title}</a></p>
+                    <p className="txt12">{node.excerpt}・・・</p>
+                    <ul className="cat_list">
+                      <li className={node.category.slug}><a href={'/blog/' + node.category.slug + '/'} className="txt12">{node.category.name}</a></li>
+                    </ul>
+                  </div>
                 </div>
+                ))}
+              </div>
+              
             </div>
             
             <div className="side_b">
@@ -91,8 +93,9 @@ export const query = graphql`
   allMicrocmsBlog(
     filter: {category: {slug: {nin: "now-working", ne: "tosou-arekore"}, id: {ne: "2gs6q7edc"}}}
     sort: {date: DESC}
-    limit: 50
+    limit: 30, skip: 0
   ) {
+    totalCount
     edges {
       node {
         title
