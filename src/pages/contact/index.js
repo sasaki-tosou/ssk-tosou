@@ -227,8 +227,8 @@ const index = () => {
                                 </tr>
                                 <tr>
                                     <th>送信チェック</th>
-                                    <td>
-                                        <label><input type="checkbox" name="送信チェック" value="この問い合わせは、営業目的ではありません。" required="required" />　この問い合わせは、営業目的ではありません。</label>
+                                    <td className="submit_check">
+                                        <label><input type="checkbox" name="送信チェック" value="この問い合わせは、営業目的ではありません。" required="required" /> この問い合わせは、営業目的ではありません。</label>
                                     </td>
                                 </tr>
                             </tbody>

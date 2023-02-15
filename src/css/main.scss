@@ -2683,3 +2683,14 @@ form label {
 	.aeon_img_r img { text-align: right; width: 100%!important; height: auto!important; }
 }
 
+.submit_check label { margin: 0!important; }
+
+.g-recaptcha {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px){
+	.submit_check label { font-size: 14px; margin: 0!important; padding: 8px; }
+}
