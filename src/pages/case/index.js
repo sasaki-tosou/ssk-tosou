@@ -52,7 +52,7 @@ export default function index({data}) {
                         {data.allMicrocmsCase.edges.map(({ node }) => (
                           <div className="kiji_box">
                             <div className="kiji_thumb">
-                                <img src={node.atoImg.url} alt={node.title + 'サムネイル画像'} />				
+                                <img src={node.eyecatch.url} alt={node.title + 'サムネイル画像'} />				
                             </div>
                             <div className="kiji_txt">
                                 <p>{node.date}</p>
@@ -87,6 +87,9 @@ export const query = graphql`
           slug
           name
           id
+        }
+        eyecatch {
+          url
         }
         atoImg {
           url
