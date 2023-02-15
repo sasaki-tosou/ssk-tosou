@@ -225,6 +225,12 @@ const index = () => {
                                         <input type="text" name="ご予算" placeholder="ご予算" size={20} />
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>送信チェック</th>
+                                    <td>
+                                        <label><input type="checkbox" name="送信チェック" value="この問い合わせは、営業目的ではありません。" required="required" />　この問い合わせは、営業目的ではありません。</label>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         
@@ -254,7 +260,7 @@ const index = () => {
 
 export const Head = () => (
     <>
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>      
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </>
   )
 
