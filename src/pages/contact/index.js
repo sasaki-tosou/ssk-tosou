@@ -51,7 +51,7 @@ const index = () => {
                 <p><span className="must">必須</span>は必ずご入力ください。</p>
 
                 
-                <form action="https://ssgform.com/s/WLQ2NgMqEU46" method="post">
+                <form action="https://ssgform.com/s/WLQ2NgMqEU46" method="post" id="contact-form">
                     <div style={{display: 'none'}}><input type="text" name="wana" /></div>
                         <table className="form">
                             <tbody>
@@ -227,11 +227,15 @@ const index = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        
-                        <div className="g-recaptcha" data-sitekey="6Ldwz30kAAAAABVYDLLozQq6JFPgVUEuRYKGuJEy"></div>
-
+                                                
                         <ul className="bt_list">
-                            <li><button type="submit" className="form_bt">送信する</button></li>
+                            <li><button
+                            className="form_bt g-recaptcha"
+                            data-sitekey="6Lf7HoEkAAAAAGlQ4113k4NsSMoSaWgt_jlCMgup"
+                            data-callback="onSubmit"
+                            data-action="submit">
+                                送信する
+                            </button></li>
                             <li><button type="reset" className="form_bt">リセット</button></li>
                         </ul>
                 </form>
@@ -254,7 +258,9 @@ const index = () => {
 
 export const Head = () => (
     <>
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>      
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <script src="/js/recapcha.js"></script>
+   
     </>
   )
 
