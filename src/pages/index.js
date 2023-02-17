@@ -50,14 +50,14 @@ const Home = ({ data }) => {
       </div>
 
       <div className="main_slide">
-        <div className="image"><StaticImage src="../images/mainimage08.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage08_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage01.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage01_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage02.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage02_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage03.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage03_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage04.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage04_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage05.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage05_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage06.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage06_smp.jpg" className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage07.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage07_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage08.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage08_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage01.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage01_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage02.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage02_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage03.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage03_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage04.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage04_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage05.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage05_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage06.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage06_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage07.jpg" loading="lazy" className="pc" alt="" /><StaticImage src="../images/mainimage07_smp.jpg" loading="lazy" className="smp" alt="" /></div>
       </div>
 
     </div>
@@ -80,7 +80,7 @@ const Home = ({ data }) => {
                     <h4>お知らせ</h4>
                   </div>
                   <div className="w50p_smp_s smp_s">
-                    <StaticImage src="../images/news_thumb.jpg" alt="" />
+                    <StaticImage src="../images/news_thumb.jpg" loading="lazy" alt="" />
                   </div>
                 </div>
               </div>
@@ -109,17 +109,17 @@ const Home = ({ data }) => {
             <h3 className="title04">安佐北区で安心して任せられる地元の塗装屋さんをお探しの方へ</h3>
 
             <div className="pc">
-              <StaticImage src="../images/works_bg02.jpg" alt="施工事例イメージ" />
+              <StaticImage src="../images/works_bg02.jpg" loading="lazy" alt="施工事例イメージ" />
             </div>
 
             <div className="smp">
-              <h4><StaticImage src="../images/works_bg02_smp.jpg" alt="広島市安佐北区で施工事例913件以上!" /></h4>
+              <h4><StaticImage src="../images/works_bg02_smp.jpg" alt="広島市安佐北区で施工事例913件以上!" loading="lazy" /></h4>
             </div>
 
             <div className="works_inner">
 
               <h4 className="center mtb3p pc">
-                <StaticImage src="../images/works_txt01.png" alt="広島市安佐北区で施工事例913件以上!" />
+                <StaticImage src="../images/works_txt01.png" alt="広島市安佐北区で施工事例913件以上!" loading="lazy" />
               </h4>
 
               <div>
@@ -127,8 +127,8 @@ const Home = ({ data }) => {
                 <p className="center"><Link to="/case/" className="bt02"><FontAwesomeIcon icon={faAngleRight} /> 施工事例はこちらから</Link></p>
                 
                 <ul className="jirei_pic">
-                  <li><StaticImage src="../images/kansyajyo_pic01.png" alt="感謝状イメージ1" /></li>
-                  <li><StaticImage src="../images/kansyajyo_pic02.png" alt="感謝状イメージ2" /></li>
+                  <li><StaticImage src="../images/kansyajyo_pic01.png" alt="感謝状イメージ1" loading="lazy" /></li>
+                  <li><StaticImage src="../images/kansyajyo_pic02.png" alt="感謝状イメージ2" loading="lazy" /></li>
                 </ul>
 
               </div>
@@ -138,7 +138,7 @@ const Home = ({ data }) => {
         </section>
 
         <div className="center mtb3p">
-          <StaticImage src="../images/catch_pic01.png" alt="「私たちが佐々木さんをお薦めします！！」" />
+          <StaticImage src="../images/catch_pic01.png" alt="「私たちが佐々木さんをお薦めします！！」" loading="lazy" />
         </div>
 
         <Kuchikomi />
@@ -168,7 +168,7 @@ const Home = ({ data }) => {
               {data.works.edges.map(({ node }) => (
                 <SwiperSlide>
                 <div className="works_list">
-                  <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent"><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></a></p>
+                  <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent"><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
                   <p className="workstitle"><a href={'/blog/' + node.category.slug + '/' + node.blogId} target="_parent">{node.title}</a></p>
                 </div>
                 </SwiperSlide>
@@ -189,12 +189,12 @@ const Home = ({ data }) => {
             <EmbedYoutube />
 
             <ul className="img_list3">
-              <li><Link to="/gaiheki/"><StaticImage src="../images/bn01.jpg" className="opa" alt="外壁塗装" /></Link></li>
-              <li><Link to="/yane/"><StaticImage src="../images/bn02.jpg" className="opa" alt="屋根塗装" /></Link></li>
-              <li><Link to="/yanefuki/"><StaticImage src="../images/bn03.jpg" className="opa" alt="屋根葺替" /></Link></li>
-              <li><Link to="/yanecover/"><StaticImage src="../images/bn04.jpg" className="opa" alt="屋根カバー工法" /></Link></li>
-              <li><Link to="/drainspout/"><StaticImage src="../images/bn05.jpg" className="opa" alt="雨樋の交換" /></Link></li>
-              <li><Link to="/exterior/"><StaticImage src="../images/bn06.jpg" className="opa" alt="エクステリア" /></Link></li>
+              <li><Link to="/gaiheki/"><StaticImage src="../images/bn01.jpg" className="opa" loading="lazy" alt="外壁塗装" /></Link></li>
+              <li><Link to="/yane/"><StaticImage src="../images/bn02.jpg" className="opa" loading="lazy" alt="屋根塗装" /></Link></li>
+              <li><Link to="/yanefuki/"><StaticImage src="../images/bn03.jpg" className="opa" loading="lazy" alt="屋根葺替" /></Link></li>
+              <li><Link to="/yanecover/"><StaticImage src="../images/bn04.jpg" className="opa" loading="lazy" alt="屋根カバー工法" /></Link></li>
+              <li><Link to="/drainspout/"><StaticImage src="../images/bn05.jpg" className="opa" loading="lazy" alt="雨樋の交換" /></Link></li>
+              <li><Link to="/exterior/"><StaticImage src="../images/bn06.jpg" className="opa" loading="lazy" alt="エクステリア" /></Link></li>
             </ul>
 
           </div>
@@ -211,7 +211,7 @@ const Home = ({ data }) => {
 
                 <p className="title05">住宅塗装について不安や<br className="smp" />疑問ありませんか？</p>
                 
-                <div><StaticImage src="../images/study_pic01.jpg" alt="悪い業者と良い業者の見分け方は？塗料によって何がどう変わるの？見積書の見方がわからない・・・工事後の保証ってどうなるの？" /></div>
+                <div><StaticImage src="../images/study_pic01.jpg" loading="lazy" alt="悪い業者と良い業者の見分け方は？塗料によって何がどう変わるの？見積書の見方がわからない・・・工事後の保証ってどうなるの？" /></div>
                 
                 <p className="title06">その疑問、塗り替え勉強会で<br className="smp" />お答えします！</p>
                 
@@ -235,7 +235,7 @@ const Home = ({ data }) => {
                 </div>
                 
                 <div className="arekore_bn">
-                <StaticImage src="../images/column_bn01.jpg" width={900} height={300} alt="外壁塗装コラム 外壁塗装をする前に知っておきたい塗装アレコレ" />
+                <StaticImage src="../images/column_bn01.jpg" width={900} height={300} alt="外壁塗装コラム 外壁塗装をする前に知っておきたい塗装アレコレ" loading="lazy" />
                   <div className="arekore_bt">
                     <Link to="/tosou-arekore/"><StaticImage src="../images/column_bt01.gif" alt="" /></Link>
                   </div>
@@ -261,8 +261,8 @@ const Home = ({ data }) => {
                     <SwiperSlide>
                     <div className="case_list">
                       <div className="kanryo_icon"></div>
-                      <div className="kanryo_icon2"><StaticImage src="../images/kanryo_icon.png" alt="完成！" /></div>
-                      <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} alt={node.title + 'サムネイル画像'} /></a></p>
+                      <div className="kanryo_icon2"><StaticImage src="../images/kanryo_icon.png" alt="完成！" loading="lazy" /></div>
+                      <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
                       <p className="workstitle"><a href={'/case/' + node.caseId} target="_parent">{node.title}</a></p>
                     </div>
                     </SwiperSlide>
@@ -291,22 +291,22 @@ const Home = ({ data }) => {
           <p className="mt3p"><StaticImage src="../images/print_img01.png" alt="取扱い塗料-イメージ" /></p>
 
           <ul>
-            <li><StaticImage src="../images/paint_logo01.jpg" alt="GAINA" /></li>
-            <li><StaticImage src="../images/paint_logo02.jpg" alt="AGC" /></li>
-            <li><StaticImage src="../images/paint_logo03.jpg" alt="Adgreencoat" /></li>
-            <li><StaticImage src="../images/paint_logo04.jpg" alt="日本ペイント" /></li>
-            <li><StaticImage src="../images/paint_logo05.jpg" alt="エスケー化研" /></li>
-            <li><StaticImage src="../images/paint_logo06.jpg" alt="水谷ペイント株式会社" /></li>
-            <li><StaticImage src="../images/paint_logo07.jpg" alt="菊水化学工場株式会社" /></li>
-            <li><StaticImage src="../images/paint_logo08.jpg" alt="AUTO" /></li>
-            <li><StaticImage src="../images/paint_logo09.jpg" alt="ASTEC" /></li>
-            <li><StaticImage src="../images/paint_logo10.jpg" alt="スズカファイン株式会社" /></li>
-            <li><StaticImage src="../images/paint_logo11.jpg" alt="WB多彩仕上工法" /></li>
-            <li><StaticImage src="../images/paint_logo12.jpg" alt="株式会社鶴弥" /></li>
-            <li><StaticImage src="../images/paint_logo13.jpg" alt="IG KOGYO" /></li>
-            <li><StaticImage src="../images/paint_logo14.jpg" alt="Dee Trading CO.,LTD." /></li>
-            <li><StaticImage src="../images/paint_logo15.jpg" alt="LIXIL" /></li>
-            <li><StaticImage src="../images/paint_logo16.jpg" alt="カルセラ" /></li>
+            <li><StaticImage src="../images/paint_logo01.jpg" loading="lazy" alt="GAINA" /></li>
+            <li><StaticImage src="../images/paint_logo02.jpg" loading="lazy" alt="AGC" /></li>
+            <li><StaticImage src="../images/paint_logo03.jpg" loading="lazy" alt="Adgreencoat" /></li>
+            <li><StaticImage src="../images/paint_logo04.jpg" loading="lazy" alt="日本ペイント" /></li>
+            <li><StaticImage src="../images/paint_logo05.jpg" loading="lazy" alt="エスケー化研" /></li>
+            <li><StaticImage src="../images/paint_logo06.jpg" loading="lazy" alt="水谷ペイント株式会社" /></li>
+            <li><StaticImage src="../images/paint_logo07.jpg" loading="lazy" alt="菊水化学工場株式会社" /></li>
+            <li><StaticImage src="../images/paint_logo08.jpg" loading="lazy" alt="AUTO" /></li>
+            <li><StaticImage src="../images/paint_logo09.jpg" loading="lazy" alt="ASTEC" /></li>
+            <li><StaticImage src="../images/paint_logo10.jpg" loading="lazy" alt="スズカファイン株式会社" /></li>
+            <li><StaticImage src="../images/paint_logo11.jpg" loading="lazy" alt="WB多彩仕上工法" /></li>
+            <li><StaticImage src="../images/paint_logo12.jpg" loading="lazy" alt="株式会社鶴弥" /></li>
+            <li><StaticImage src="../images/paint_logo13.jpg" loading="lazy" alt="IG KOGYO" /></li>
+            <li><StaticImage src="../images/paint_logo14.jpg" loading="lazy" alt="Dee Trading CO.,LTD." /></li>
+            <li><StaticImage src="../images/paint_logo15.jpg" loading="lazy" alt="LIXIL" /></li>
+            <li><StaticImage src="../images/paint_logo16.jpg" loading="lazy" alt="カルセラ" /></li>
           </ul>
 
           </div>
@@ -316,7 +316,7 @@ const Home = ({ data }) => {
           <div className="main-content">
             <h3>持続可能な開発目標（SDGs）達成への取組み</h3>
             <p className="center">
-            <StaticImage src="../images/sdg_poster_ja_2021.png" alt="SUSTAINABLE DEVELOPMENT GOALS" />
+            <StaticImage src="../images/sdg_poster_ja_2021.png" loading="lazy" alt="SUSTAINABLE DEVELOPMENT GOALS" />
             </p>
             <p className="center"><Link to="/sdgs/" className="bt01"><FontAwesomeIcon icon={faAngleRight} /> SDGSの取り組みはこちら</Link></p>
           </div>
@@ -325,7 +325,7 @@ const Home = ({ data }) => {
         <section id="soudan">
           <div className="main-content">
 
-            <h3 className="p1p"><StaticImage src="../images/corona_img.png" alt="屋根・外装塗装専門店 屋根・壁の痛みが気になるが新型コロナウィルスで後回しになっている方へ" /></h3>
+            <h3 className="p1p"><StaticImage src="../images/corona_img.png" loading="lazy" alt="屋根・外装塗装専門店 屋根・壁の痛みが気になるが新型コロナウィルスで後回しになっている方へ" /></h3>
 
           </div>
         </section>
