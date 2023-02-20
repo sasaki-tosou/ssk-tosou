@@ -2487,6 +2487,9 @@ ol li { list-style-type:decimal; margin:15px 0;}
 	margin:2rem 0;
 	position: relative;
 	padding: 1rem 0;
+	@media screen and (max-width:768px){
+		font-size:160%;
+	}
 }
 
 .arekore h1:after {
