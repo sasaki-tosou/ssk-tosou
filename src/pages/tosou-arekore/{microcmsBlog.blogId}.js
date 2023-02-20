@@ -44,7 +44,7 @@ const TosouArekorePage = ({ data }) => (
                 </li>
             </ul>
         </div>
-        <section id="sub-page">
+        <section id="sub-page" className='arekore_box'>
             <div className='main-content'>
 
                 <div className="flex-wrap">

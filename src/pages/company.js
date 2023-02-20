@@ -63,7 +63,7 @@ const Company = () => {
                         施工品質には特にこだわり、施主様に喜んでいただけるように一軒一軒、丁寧に工事をさせていただいています。<br />
                         塗装は家をきれいにするだけでなく、その家に暮らす人を笑顔にする仕事、また、地元 広島のみなさまとつながりを持てる仕事であり、私はこの仕事に誇りを持っております。<br />
                         まだまだ未熟な部分もありますが、初心を忘れることなく私たちは成長し続け、地元 広島に貢献していきたいと思います。</p>
-                        <p className="right"><StaticImage src="../images/boss_sign.png" alt="" /></p>
+                        <p className="right"><img src="../images/boss_sign.png" alt="" /></p>
                     </div>
                 </div>
                 <h3 className="page_title02">塗装を通じてもっとお客様に愛され続けたい。</h3>

@@ -44,13 +44,13 @@ const index = ({data}) => {
           </ul>
         </div>
 
-        <section id="sub-page">
+        <section id="sub-page" className='arekore_box'>
           <div className='main-content'>
 
             <div className="flex-wrap">
               <div className="main_b">
                 <h2 className="page_title01 mt0">外壁塗装コラム</h2>
-                <h3 className="page_title03 center">外壁塗装をする前に知っておきたい塗装アレコレ</h3>
+                <h3 className="page_title03 center">外壁塗装をする前に<br className="smp" />知っておきたい塗装アレコレ</h3>
                 
                 <div className='post_list'>
                   {data.allMicrocmsBlog.edges.map(({ node }) => (

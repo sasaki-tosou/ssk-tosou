@@ -58,11 +58,11 @@ const index = () => {
                                 <tr>
                                     <th>お名前<span className="must">必須</span></th>
                                     <td>
-                                        姓 <input type="text" name="姓" size={15} required="required" />　名 <input type="text" name="名" size={15} required="required" /></td>
+                                        姓 <input type="text" name="姓" size={15} required="required" className='name_input' />　名 <input type="text" name="名" size={15} required="required" className='name_input' /></td>
                                 </tr>
                                 <tr>
                                     <th>フリガナ</th>
-                                    <td>セイ <input type="text" name="セイ" size={15} />　メイ <input type="text" name="メイ" size={15} /></td>
+                                    <td>セイ <input type="text" name="セイ" size={15} className='name_input' />　メイ <input type="text" name="メイ" size={15} className='name_input' /></td>
                                 </tr>
                                 <tr>
                                     <th>メールアドレス<span className="must">必須</span></th>
@@ -186,7 +186,7 @@ const index = () => {
                                         <label><input type="radio" name="建物の種類" value="アパート" /> アパート</label>
                                         <label><input type="radio" name="建物の種類" value="マンション" /> マンション</label>
                                         <label><input type="radio" name="建物の種類" value="店舗" /> 店舗</label>
-                                        <label><input type="radio" name="建物の種類" value="その他" /> その他</label>
+                                        <label><input type="radio" name="建物の種類" value="その他" /> その他</label><br />
                                         <input type="text" name="建物の種類(その他)" placeholder="その他" size={20} />
                                     </td>
                                 </tr>

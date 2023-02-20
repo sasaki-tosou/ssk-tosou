@@ -204,8 +204,13 @@ width: 0;
 
 .case_box_l img,.case_box_r img { width:100%; height:auto; }
 
-.drone_title01 { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-style: normal; font-size: 250%; border-bottom:solid 5px #ff7415; padding: 1%; margin-bottom:3%; text-align: left; letter-spacing: 2px; position: relative; }
-.drone_title02 { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-style: normal; font-size: 200%; background-color:#ff7415; color: #fff; padding: 1% 2%; margin-bottom:3%; text-align: left; letter-spacing: 2px; position: relative; }
+.drone_title01 { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-style: normal; font-size: 250%; border-bottom:solid 5px #ff7415; padding: 1%; margin-bottom:3%; text-align: left; letter-spacing: 2px; position: relative; }
+.drone_title02 { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-style: normal; font-size: 200%; background-color:#ff7415; color: #fff; padding: 1% 2%; margin-bottom:3%; text-align: left; letter-spacing: 2px; position: relative; }
+
+.drone_txt_box { display: flex; flex-wrap: wrap; margin: 35px 0; }
+.drone_l { width: 70%; padding-right: 20px; }
+.drone_r { width: 30%; }
+
 
 .drone_box { display:flex; flex-wrap:wrap; justify-content: space-between; position:relative; z-index:0; }
 .drone_box_l { width : 48%; padding: 1%; position:relative; z-index:0; }
@@ -215,9 +220,45 @@ width: 0;
 .drone_list { display:flex; flex-wrap:wrap; justify-content:center; align-items:center;}
 .drone_list li { width : calc(100% / 3); padding: 2%; }
 
+.drone_merit_inner { background-color:#fff; padding: 2%; border-radius: 10px; }
+
+@media screen and (max-width:768px) {
+
+	.drone_title01 { font-size: 160%; border-bottom:solid 5px #ff7415; padding: 10px 0; margin-top: 40px; margin-bottom:20px; text-align: left; letter-spacing: 2px; position: relative; }
+	.drone_title02 { font-size: 120%; padding: 1% 2%; margin-top: 20px; margin-bottom:3%; text-align: left; letter-spacing: 2px; position: relative; }
+}
+
+@media screen and (max-width:767px) {
+	.drone_txt_box { display: flex; flex-wrap: wrap; margin: 0; }
+	.drone_l { width: 100%; padding-right: 0; }
+	.drone_r { width: 100%; }
+	.drone_list li { width : calc(100% / 2); padding: 2%; }
+	.drone_merit_inner { background-color:#fff; padding: 15px; margin: 20px 0; border-radius: 10px; }
+	
+	.drone_box_l,.drone_box_r { width : 100%; padding: 1%; position:relative; z-index:0; }
+	.drone_box_l:after {
+		content: "";
+		background-image: url(/images/works_arrow2.png);
+		background-size: contain;
+		display: block;
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.drone_box:after { display: none; }
+
+}
+
 @media screen and (max-width:600px){
 	.case_box_l { width : calc(100% / 1); padding: 1%; position:relative; z-index:0; }
 	.case_box_l:after { content:url("/images/works_arrow2.png"); position:static; top:50%; z-index:1; width:100%; text-align:center; display:block; }
 	.case_box:after { content:url("/images/works_arrow.png"); position:static; top:50%; left:45%; z-index:10; display:none;}
 	.case_box_r { width : calc(100% / 1); padding: 1%; position:relative; z-index:0; }
+}
+
+.color_simu_title { font-size: 250%; font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-style: normal; }
+
+@media screen and (max-width:768px) {
+	.color_simu_title { font-size: 160%; }
 }

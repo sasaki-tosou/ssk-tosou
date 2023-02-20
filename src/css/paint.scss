@@ -381,7 +381,7 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 	}
 }
 
-.drone_merit_inner { background-color:#fff; padding: 2%; border-radius: 10px; }
+
 
 
 
@@ -712,7 +712,12 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 		h2,h3 { font-size:180%; font-weight: 900; }
 	}
 	.catch_box { padding: 2% 2% 0 2%;}
-	.exterior_box { width : calc(100% / 3); padding: 2%; }
+	.exterior_box {
+		width : calc(100% / 3); padding: 2%;
+		@media screen and (max-width:768px){
+			width : calc(100% / 1); padding: 2%;
+		}
+	}
 	img {
 		@media screen and (max-width:768px){
 			width : 100%; height: auto;
