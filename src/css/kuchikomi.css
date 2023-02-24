@@ -26,7 +26,7 @@
 .kuchikomi_title { background-color: #ff7415; padding: 15px; display: flex; flex-wrap: wrap; margin: 0; }
 .kuchikomi_title_r h3 { font-size: 180%; color: #fff;}
 
-.kuchikomi_box { height: 400px; border:solid 1px #ccc; padding: 3%; overflow-y: scroll; margin: 0 0 3% 0; counter-reset: number 33; }
+.kuchikomi_box { height: 400px; border:solid 1px #ccc; padding: 3%; overflow-y: scroll; margin: 0 0 3% 0; counter-reset: number 34; }
 .kuchikomi_box li { border-bottom: dashed 1px #ccc; margin-bottom: 15px; padding-bottom: 15px; }
 .kuchikomi_box li::before{
 	counter-increment: number -1;

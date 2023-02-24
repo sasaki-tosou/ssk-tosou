@@ -1,14 +1,13 @@
 import React from 'react'
 
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight,faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import Seo from '../components/Seo'
 import Header from '../components/Header';
-
 import Kuchikomi from '../components/Kuchikomi';
 import EmbedYoutube from "../components/EmbedYoutube"
 import About from '../components/About';
@@ -39,19 +38,19 @@ const Home = ({ data }) => {
       </div>
 
       <div className="main_slide">
-        <div className="image"><img src="../images/mainimage/mainimage08.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage08_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage01.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage01_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage02.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage02_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage03.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage03_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage04.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage04_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage05.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage05_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage06.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage06_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage/mainimage07.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage07_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage08.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage08_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage01.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage01_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage02.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage02_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage03.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage03_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage04.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage04_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage05.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage05_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage06.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage06_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage07.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage07_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
       </div>
 
     </div>
     
-    <p id="page-top" data-aos="fade-left" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+    <p id="page-top" data-aos="fade-left" data-sal="slide-bottom" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
     <Pagetop />
 
@@ -157,7 +156,7 @@ const Home = ({ data }) => {
               {data.works.edges.map(({ node }) => (
                 <SwiperSlide>
                 <div className="works_list">
-                  <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent"><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
+                  <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent"><img src={node.mainimage.url} width={370} height={277} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
                   <p className="workstitle"><a href={'/blog/' + node.category.slug + '/' + node.blogId} target="_parent">{node.title}</a></p>
                 </div>
                 </SwiperSlide>
@@ -251,7 +250,7 @@ const Home = ({ data }) => {
                       <div className="case_list">
                         <div className="kanryo_icon"></div>
                         <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" alt="完成！" loading="lazy" /></div>
-                        <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
+                        <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} width={432} height={288} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
                         <p className="workstitle"><a href={'/case/' + node.caseId} target="_parent">{node.title}</a></p>
                       </div>
                     </SwiperSlide>
