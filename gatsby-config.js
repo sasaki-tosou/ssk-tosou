@@ -22,7 +22,7 @@ module.exports = {
     twitterUsername: "sasakipaint1116",
   },
   plugins: [
-    
+
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
@@ -99,6 +99,21 @@ module.exports = {
       },
     },
     
+    {
+      resolve: `@imgix/gatsby`,
+      options: {
+        domain: 'images.microcms-assets.io',
+        defaultImgixParams: { auto: 'format,compress' }, 
+        fields: [
+          {
+            nodeType: "allMicrocmsCaseEyecatch",
+            fieldName: "imgixImage",
+            getURL: node => node.url.replace("https://images.microcms-assets.io/", "")
+          },
+        ],       
+      },
+    },
+
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {

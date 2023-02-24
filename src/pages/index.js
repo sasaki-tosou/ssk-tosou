@@ -247,7 +247,11 @@ const Home = ({ data }) => {
                       <div className="case_list">
                         <div className="kanryo_icon"></div>
                         <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" alt="完成！" loading="lazy" /></div>
-                        <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} width={432} height={288} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
+                        <p>
+                          <a href={'/case/' + node.caseId} target="_parent">
+                            <img src={node.atoImg.url} width={432} height={288} alt={node.title + 'サムネイル画像'} loading="lazy" />
+                          </a>
+                        </p>
                         <p className="workstitle"><a href={'/case/' + node.caseId} target="_parent">{node.title}</a></p>
                       </div>
                     </SwiperSlide>
