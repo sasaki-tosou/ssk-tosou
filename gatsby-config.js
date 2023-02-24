@@ -103,14 +103,7 @@ module.exports = {
       resolve: `@imgix/gatsby`,
       options: {
         domain: 'images.microcms-assets.io',
-        defaultImgixParams: { auto: 'format,compress' }, 
-        fields: [
-          {
-            nodeType: "allMicrocmsCaseEyecatch",
-            fieldName: "imgixImage",
-            getURL: node => node.url.replace("https://images.microcms-assets.io/", "")
-          },
-        ],       
+        defaultImgixParams: { auto: 'format,compress' },
       },
     },
 
