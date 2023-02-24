@@ -13,11 +13,13 @@ const kuchikomi = () => {
                 </div>                
                 <div className="kuchikomi_title_r">
                     <h3>佐々木塗装の口コミ<br />
-                    総合評価:4.7<span className="g_kuchi_star">★★★★★</span> <br className="smp" />口コミ数:32</h3>
+                    総合評価:4.7<span className="g_kuchi_star">★★★★★</span> <br className="smp" />口コミ数:33</h3>
                 </div>
             </div>
         
             <ul className="kuchikomi_box">
+              <li><span className="star">★★★★☆</span> <span className="bold">2023/2/23 坂田昭和様</span><br />
+              工事期間は少し長くなったが工事は丁寧でした。</li>
               <li><span className="star">★★★★★</span> <span className="bold">2022/12/27 ゆうこ様</span><br />
               軒天の色の変更にも快く応じて頂きありがとうございました。職人さんも感じのいい方で、丁寧に対応して頂き感謝しています。</li>
               <li><span className="star">★★★★★</span> <span className="bold">2022/10/20 中田良枝様</span><br />

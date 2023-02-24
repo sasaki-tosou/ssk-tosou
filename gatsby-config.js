@@ -22,9 +22,10 @@ module.exports = {
     twitterUsername: "sasakipaint1116",
   },
   plugins: [
+    
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     
     {
       resolve: "gatsby-plugin-google-tagmanager",
@@ -113,10 +114,7 @@ module.exports = {
         sitemap: `https://sasaki-tosou.co.jp/sitemap-0.xml`,
         policy: [{ userAgent: `*`, allow: `/` }],
       },
-    },
-
-
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    },    
+    
   ],
 }

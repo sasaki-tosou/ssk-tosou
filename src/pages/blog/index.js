@@ -18,7 +18,7 @@ const BlogIndex = ({ data }) => (
     <Layout>
         <Seo title="ブログ" />    
         
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
         <Pagetop />
 
@@ -86,6 +86,7 @@ const BlogIndex = ({ data }) => (
 
 export const Head = () => (
   <>
+    <body id="pagetop" />
     <Seo title="ブログ" />
   </>
 )

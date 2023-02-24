@@ -17,7 +17,7 @@ export default function index({data}) {
 
         <Header />
         <Layout>
-            <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/cese/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+            <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/cese/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
             <Pagetop />
 
@@ -77,6 +77,7 @@ export default function index({data}) {
 
 export const Head = () => (
   <>
+    <body id="pagetop" />
     <Seo title="施工事例" />
   </>
 )

@@ -3,7 +3,6 @@ import React from 'react'
 import { Link, graphql } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fortawesome/fontawesome-svg-core/styles.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight,faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,26 +32,26 @@ const Home = ({ data }) => {
 
     <div id="mainimage">
 
-    <div className="catch_title">
+      <div className="catch_title">
         <h2>
           <img src="../images/catch_txt_smp.png" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
         </h2>
       </div>
 
       <div className="main_slide">
-        <div className="image"><img src="../images/mainimage08.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage08_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage01.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage01_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage02.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage02_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage03.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage03_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage04.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage04_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage05.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage05_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage06.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage06_smp.jpg" loading="lazy" className="smp" alt="" /></div>
-        <div className="image"><img src="../images/mainimage07.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage07_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage08.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage08_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage01.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage01_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage02.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage02_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage03.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage03_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage04.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage04_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage05.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage05_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage06.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage06_smp.jpg" loading="lazy" className="smp" alt="" /></div>
+        <div className="image"><img src="../images/mainimage/mainimage07.jpg" loading="lazy" className="pc" alt="" /><img src="../images/mainimage/mainimage07_smp.jpg" loading="lazy" className="smp" alt="" /></div>
       </div>
 
     </div>
     
-    <p id="page-top" data-aos="fade-left" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+    <p id="page-top" data-aos="fade-left" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
     <Pagetop />
 
@@ -249,12 +248,12 @@ const Home = ({ data }) => {
                 autoHeight>
                   {data.case.edges.map(({ node }) => (
                     <SwiperSlide>
-                    <div className="case_list">
-                      <div className="kanryo_icon"></div>
-                      <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" alt="完成！" loading="lazy" /></div>
-                      <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
-                      <p className="workstitle"><a href={'/case/' + node.caseId} target="_parent">{node.title}</a></p>
-                    </div>
+                      <div className="case_list">
+                        <div className="kanryo_icon"></div>
+                        <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" alt="完成！" loading="lazy" /></div>
+                        <p><a href={'/case/' + node.caseId} target="_parent"><img src={node.atoImg.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
+                        <p className="workstitle"><a href={'/case/' + node.caseId} target="_parent">{node.title}</a></p>
+                      </div>
                     </SwiperSlide>
                   ))}
                   </Swiper>
@@ -458,6 +457,7 @@ const jsonhowto = {
 
 export const Head = () => (
   <>
+    <body id="pagetop" />
     <Seo
       title="外壁塗装・屋根塗装なら広島の佐々木塗装｜安心施工、保証付きのアフターサービス。"
       description="外壁塗装・屋根塗装なら広島の佐々木塗装のページです。"

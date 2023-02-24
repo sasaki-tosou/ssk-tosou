@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 import Seo from "../../components/Seo"
 import Header from "../../components/Header"
 import Layout from "../../components/Layout"
-
 import Pagetop from '../../components/Pagetop'
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck,faChevronUp } from "@fortawesome/free-solid-svg-icons"
@@ -18,7 +18,7 @@ const index = () => {
     
         <Layout>
         
-            <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/contact/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+            <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/contact/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
             <Pagetop />
 
@@ -259,8 +259,9 @@ const index = () => {
 
 export const Head = () => (
     <>
-      <Seo title="お問い合わせ" />
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <body id="pagetop" />
+        <Seo title="お問い合わせ" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </>
 )
 

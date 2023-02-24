@@ -56,7 +56,7 @@ const Footer = () => {
                                     <li><Link to="/drone/">ドローン診断</Link></li>
                                     <li><Link to="/color_simulation/">カラーシミュレーション</Link></li>
                                     <li><Link to="/contact/">お問い合わせ</Link></li>
-                                    <li><Link to="https://lin.ee/HR9JB00">ライン見積もり</Link></li>
+                                    <li><a href="https://lin.ee/HR9JB00" target="_blank" rel="noopenner noreferrer">ライン見積もり</a></li>
                                 </ul>
                             </div>
                         </div>

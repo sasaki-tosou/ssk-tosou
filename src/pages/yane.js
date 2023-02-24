@@ -3,11 +3,7 @@ import { Link } from "gatsby"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
 import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -19,11 +15,8 @@ const yane = () => {
   return (
     <>
       <Layout>
-        <Seo
-            title="屋根塗装"
-            description="外壁塗装・屋根塗装なら広島の佐々木塗装の屋根塗装ページです。"
-        />
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/yane/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/yane/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
         <Pagetop />
         <div id="mainimage-sub" className='yane'>
@@ -51,8 +44,8 @@ const yane = () => {
                 
             <div className="gaiheki_title_box">
                     <h1>
-                        <img src="../images/yane_img01.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="pc" />
-                        <img src="../images/yane_img01_smp.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="smp" />
+                        <img src="../images/yane_img01.png" loading="lazy" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="pc" />
+                        <img src="../images/yane_img01_smp.png" loading="lazy" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 屋根塗装" className="smp" />
                     </h1>
                 </div>
 
@@ -70,21 +63,21 @@ const yane = () => {
 
                 <div className="gaiheki_title_box p0 mt50">
                         <div className='gaiheki_title_img'>
-                            <h2><img src="../images/yane_img03.png" alt="屋根塗装プラン30坪（100㎡程度）" /></h2>
+                            <h2><img src="../images/yane_img03.png" loading="lazy" alt="屋根塗装プラン30坪（100㎡程度）" /></h2>
                         </div>
                         <div className='gaiheki_title_txt'>
-                            <img src="../images/yane_img04.png" alt="高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
+                            <img src="../images/yane_img04.png" loading="lazy" alt="高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
                         </div>
                 </div>
 
                 <ul className="gaiheki_price_list">
-                    <li><img src="../images/yane_price01.png" alt="シリコンプラン" /></li>
-                    <li><img src="../images/yane_price02.png" alt="遮熱シリコンプラン" /></li>
-                    <li><img src="../images/yane_price03.png" alt="フッ素プラン" /></li>
+                    <li><img src="../images/yane_price01.png" loading="lazy" alt="シリコンプラン" /></li>
+                    <li><img src="../images/yane_price02.png" loading="lazy" alt="遮熱シリコンプラン" /></li>
+                    <li><img src="../images/yane_price03.png" loading="lazy" alt="フッ素プラン" /></li>
                 </ul>
 
                 <div className="comment_box">
-                <div className="comment_l"><img src="../images/boss_photo2.jpg" alt="佐々木塗装代表-写真" /></div>
+                <div className="comment_l"><img src="../images/boss_photo2.jpg" loading="lazy" alt="佐々木塗装代表-写真" /></div>
                 <div className="comment_r">
                     <div>
                         塗料の種類は様々です。<br />
@@ -327,5 +320,15 @@ const yane = () => {
     </>
   )
 }
+
+export const Head = () => (
+    <>
+        <body id="pagetop" />
+        <Seo
+            title="屋根塗装"
+            description="外壁塗装・屋根塗装なら広島の佐々木塗装の屋根塗装ページです。"
+        />
+    </>
+)
 
 export default yane

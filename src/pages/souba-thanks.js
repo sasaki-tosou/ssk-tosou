@@ -2,11 +2,6 @@ import React from 'react'
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -18,11 +13,8 @@ const SoubaThanks = () => {
   return (
     <>
       <Layout>
-        <Seo
-            title="相場チェックのご依頼ありがとうございました"
-            description="外壁塗装・屋根塗装なら広島の佐々木塗装の相場チェックのご依頼フォーム送信完了ページ"
-        />
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/souba-thanks/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/souba-thanks/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
         <div id="mainimage-sub" className='souba-thanks'>
             <div id="mainimage-inner">
@@ -64,5 +56,15 @@ const SoubaThanks = () => {
     </>
   )
 }
+
+export const Head = () => (
+    <>
+        <body id="pagetop" />
+        <Seo
+            title="相場チェックのご依頼ありがとうございました"
+            description="外壁塗装・屋根塗装なら広島の佐々木塗装の相場チェックのご依頼フォーム送信完了ページ"
+        />
+    </>
+)
 
 export default SoubaThanks

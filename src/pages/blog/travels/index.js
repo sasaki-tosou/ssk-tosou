@@ -18,7 +18,7 @@ const index = ({data}) => {
     
       <Layout>
         
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/travels/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/travels/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
         <Pagetop />
 
@@ -26,7 +26,7 @@ const index = ({data}) => {
             <div id="mainimage-inner">
             </div>
         </div>
-        
+
         <div id="breadcrumb">
           <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -90,6 +90,7 @@ const index = ({data}) => {
 
 export const Head = () => (
   <>
+    <body id="pagetop" />
     <Seo title="旅行記 - 記事一覧" />
   </>
 )

@@ -878,32 +878,32 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 	animation-delay: 56s;
 }
 
-#mainimage-sub { width:100%; height: 400px; margin-top:122px; background-image: url("/images/mainimage_sub.jpg"); top:0; z-index: 0;  position: relative; background-repeat: no-repeat; background-position:top center; background-size: cover!important; display: flex; justify-content: center; align-items: center; }
+#mainimage-sub { width:100%; height: 400px; margin-top:122px; background-image: url("/images/mainimage/mainimage_sub.jpg"); top:0; z-index: 0;  position: relative; background-repeat: no-repeat; background-position:top center; background-size: cover!important; display: flex; justify-content: center; align-items: center; }
 #mainimage-sub  h2 { font-size: 300%; font-family: 'Noto Sans JP', sans-serif; font-weight: 900; }
 #mainimage-inner { width:1200px; height: 100%; margin:0 auto; position: relative; display: flex; justify-content: center; align-items: center;}
 
 /*サブページヘッダー画像指定*/
-#mainimage-sub.contact,#mainimage-sub.thanks,#mainimage-sub.souba-thanks,#mainimage-sub.leak  { background-image: url("/images/mainimage_contact.jpg");}
-#mainimage-sub.omoide { background-image: url("/images/mainimage_omoide.jpg");}
-#mainimage-sub.company  { background-image: url("/images/mainimage_company.jpg");}
-#mainimage-sub.case { background-image: url("/images/mainimage_case.jpg");}
-#mainimage-sub.now_working { background-image: url("/images/mainimage_working.jpg");}
-#mainimage-sub.faq { background-image: url("/images/mainimage_faq.jpg");}
-#mainimage-sub.voice { background-image: url("/images/mainimage_voice.jpg");}
-#mainimage-sub.aeon-credit { background-image: url("/images/mainimage_credit.jpg");}
-#mainimage-sub.workflow  { background-image: url("/images/mainimage_flow.jpg");}
-#mainimage-sub.staff  { background-image: url("/images/mainimage_staff.jpg");}
-#mainimage-sub.blog { background-image: url("/images/mainimage_blog.jpg");}
-#mainimage-sub.drone { background-image: url("/images/mainimage_drone.jpg");}
-#mainimage-sub.links { background-image: url("/images/mainimage_link.jpg");}
-#mainimage-sub.sdgs { background-image: url("/images/mainimage_sdgs.jpg");}
-#mainimage-sub.color-simulation { background-image: url("/images/mainimage_color.jpg"); background-position:bottom;}
-#mainimage-sub.gaiheki { background-image: url("/images/mainimage_gaiheki.jpg");}
-#mainimage-sub.yane-fuki { background-image: url("/images/mainimage_yanefuki.jpg");}
-#mainimage-sub.karucera-works { background-image: url("/images/mainimage_karucera.jpg");}
-#mainimage-sub.yane-cover { background-image: url("/images/mainimage_yanecover.jpg");}
-#mainimage-sub.drainspout { background-image: url("/images/mainimage_drainspout.jpg");}
-#mainimage-sub.arekore { background-image: url("../images/mainimage_gaiheki.jpg")!important;}
+#mainimage-sub.contact,#mainimage-sub.thanks,#mainimage-sub.souba-thanks,#mainimage-sub.leak  { background-image: url("/images/mainimage/mainimage_contact.jpg");}
+#mainimage-sub.omoide { background-image: url("/images/mainimage/mainimage_omoide.jpg");}
+#mainimage-sub.company  { background-image: url("/images/mainimage/mainimage_company.jpg");}
+#mainimage-sub.case { background-image: url("/images/mainimage/mainimage_case.jpg");}
+#mainimage-sub.now_working { background-image: url("/images/mainimage/mainimage_working.jpg");}
+#mainimage-sub.faq { background-image: url("/images/mainimage/mainimage_faq.jpg");}
+#mainimage-sub.voice { background-image: url("/images/mainimage/mainimage_voice.jpg");}
+#mainimage-sub.aeon-credit { background-image: url("/images/mainimage/mainimage_credit.jpg");}
+#mainimage-sub.workflow  { background-image: url("/images/mainimage/mainimage_flow.jpg");}
+#mainimage-sub.staff  { background-image: url("/images/mainimage/mainimage_staff.jpg");}
+#mainimage-sub.blog { background-image: url("/images/mainimage/mainimage_blog.jpg");}
+#mainimage-sub.drone { background-image: url("/images/mainimage/mainimage_drone.jpg");}
+#mainimage-sub.links { background-image: url("/images/mainimage/mainimage_link.jpg");}
+#mainimage-sub.sdgs { background-image: url("/images/mainimage/mainimage_sdgs.jpg");}
+#mainimage-sub.color-simulation { background-image: url("/images/mainimage/mainimage_color.jpg"); background-position:bottom;}
+#mainimage-sub.gaiheki { background-image: url("/images/mainimage/mainimage_gaiheki.jpg");}
+#mainimage-sub.yane-fuki { background-image: url("/images/mainimage/mainimage_yanefuki.jpg");}
+#mainimage-sub.karucera-works { background-image: url("/images/mainimage/mainimage_karucera.jpg");}
+#mainimage-sub.yane-cover { background-image: url("/images/mainimage/mainimage_yanecover.jpg");}
+#mainimage-sub.drainspout { background-image: url("/images/mainimage/mainimage_drainspout.jpg");}
+#mainimage-sub.arekore { background-image: url("../images/mainimage/mainimage_gaiheki.jpg")!important;}
 
 @media screen and (max-width:600px){
 	#mainimage-sub { margin-top:85px!important; background-size: auto 100%!important; }
@@ -919,7 +919,7 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 
 @media screen and (max-width:1024px){	
 	#mainimage {  z-index: 0;  position: relative;  background-repeat: no-repeat; background-position: center !important;  display: flex; justify-content: center; align-items: flex-start; }
-	#mainimage-sub { width:100%; height: 170px; background-image: url("/images/mainimage_sub.png"); top:0; z-index: 0;  position: relative; background-repeat: no-repeat; background-position:center;  display: flex; justify-content: center; align-items: center; }
+	#mainimage-sub { width:100%; height: 170px; background-image: url("/images/mainimage/mainimage_sub.png"); top:0; z-index: 0;  position: relative; background-repeat: no-repeat; background-position:center;  display: flex; justify-content: center; align-items: center; }
 	#mainimage-sub h2 { text-align:center; font-size:200%!important;}
 	#mainimage-inner { width: 100%; height: 100%; margin: 0 auto; position: relative; padding:3%; }
 }

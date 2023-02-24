@@ -4,11 +4,6 @@ import { Link } from "gatsby"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -20,11 +15,8 @@ const Company = () => {
   return (
     <>
       <Layout>
-        <Seo
-        title="会社案内"
-        description="外壁塗装・屋根塗装なら広島の佐々木塗装の会社案内ページです。"
-         />
-         <div id="mainimage-sub" className='company'>        
+        
+        <div id="mainimage-sub" className='company'>
             <div id="mainimage-inner">
             </div>
         </div>
@@ -44,7 +36,7 @@ const Company = () => {
                 </li>
             </ul>
         </div>
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/company/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/company/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
 
         <section id="sub-page">
@@ -139,5 +131,15 @@ const Company = () => {
     </>
   )
 }
+
+export const Head = () => (
+    <>
+        <body id="pagetop" />
+        <Seo
+            title="会社案内"
+            description="外壁塗装・屋根塗装なら広島の佐々木塗装の会社案内ページです。"
+        />
+    </>
+)
 
 export default Company

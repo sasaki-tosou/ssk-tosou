@@ -16,7 +16,7 @@ const BlogPage = ({ data }) => (
 
     <Header />
     <Layout>
-    <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/' + data.microcmsCase.category.slug + '/' + data.microcmsCase.caseId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+    <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/' + data.microcmsCase.category.slug + '/' + data.microcmsCase.caseId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
       <Pagetop />
             <div id="mainimage-sub" className='case'>
                 <div id="mainimage-inner">
@@ -107,6 +107,7 @@ const BlogPage = ({ data }) => (
 
 export const Head = ({data}) => (
   <>
+    <body id="pagetop" />
     <Seo title={data.microcmsCase.title} />
   </>
 )

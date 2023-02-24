@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as styles from '../styles/embedyoutube.module.scss'
+import * as styles from '../css/embedyoutube.module.scss'
 
 const EmbedYoutube = ({id}) =>{ //※１　動画IDをもらう
 
@@ -19,8 +19,7 @@ const EmbedYoutube = ({id}) =>{ //※１　動画IDをもらう
             ) : ( //※３　三項演算子。isThumbnailがfalseなら（=サムネがクリックされたら）iframeでYoutubeを読み込む
             <iframe className={styles.youtube}
                 src={`https://www.youtube.com/embed/temP7huz9HA?autoplay=1`} //※６　受け取った動画IDを元にYoutubeを指定
-                title="YouTube"
-                frameBorder="0"
+                title="YouTube"                
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
             ></iframe>

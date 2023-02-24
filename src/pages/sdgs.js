@@ -3,11 +3,6 @@ import { Link } from "gatsby"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -19,11 +14,8 @@ const sdgs = () => {
   return (
     <>
       <Layout>
-        <Seo
-            title="SDGsの取り組み"
-            description="外壁塗装・屋根塗装なら広島の佐々木塗装のSDGsの取り組みページです。"
-        />
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/sdgs/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/sdgs/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
         
         <div id="mainimage-sub" className='sdgs'>
@@ -145,5 +137,15 @@ const sdgs = () => {
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <body id="pagetop" />
+    <Seo
+      title="SDGsの取り組み"
+      description="外壁塗装・屋根塗装なら広島の佐々木塗装のSDGsの取り組みページです。"
+    />
+  </>
+)
 
 export default sdgs

@@ -2,11 +2,6 @@ import React from 'react'
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -18,11 +13,6 @@ const faq = () => {
   return (
     <>
       <Layout>
-      
-        <Seo
-        title="お客様Q&A"
-        description="外壁塗装・屋根塗装なら広島の佐々木塗装のお客様Q&Aページです。"
-        />
         
         <div id="mainimage-sub" className='faq'>
           <div id="mainimage-inner">
@@ -46,7 +36,7 @@ const faq = () => {
             </ul>
         </div>
 
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/faq/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/faq/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         
         <Pagetop />
         
@@ -185,8 +175,6 @@ const faq = () => {
     </>
   )
 }
-
-export default faq
 
 /*Google構造化データよくある質問*/
 const jsonLd = {
@@ -374,6 +362,13 @@ const jsonLd = {
 
 export const Head = () => (
   <>
+    <body id="pagetop" />
+    <Seo
+      title="お客様Q&A"
+      description="外壁塗装・屋根塗装なら広島の佐々木塗装のお客様Q&Aページです。"
+    />
     <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
   </>
 )
+
+export default faq

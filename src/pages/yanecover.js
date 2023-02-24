@@ -3,11 +3,6 @@ import { Link } from "gatsby"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -25,11 +20,8 @@ const yanecover = () => {
   return (
     <>
         <Layout>
-            <Seo
-                title="屋根カバー工法"
-                description="外壁塗装・屋根塗装なら広島の佐々木塗装の屋根カバー工法ページです。"
-            />
-            <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/yanecover/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+            
+            <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/yanecover/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
             <Pagetop />
 
@@ -60,8 +52,8 @@ const yanecover = () => {
 
                     <div className="gaiheki_title_box">
                         <h1>
-                            <img src="../images/yanecover/yane-cover_img01.png" alt="屋根の上にルーフィングと新しい屋根材をかぶせる工法 屋根カバー工法" className="pc" />
-                            <img src="../images/yanecover/yane-cover_img01_smp.png" alt="屋根の上にルーフィングと新しい屋根材をかぶせる工法 屋根カバー工法" className="smp" />
+                            <img src="../images/yanecover/yane-cover_img01.png" loading="lazy" alt="屋根の上にルーフィングと新しい屋根材をかぶせる工法 屋根カバー工法" className="pc" />
+                            <img src="../images/yanecover/yane-cover_img01_smp.png" loading="lazy" alt="屋根の上にルーフィングと新しい屋根材をかぶせる工法 屋根カバー工法" className="smp" />
                         </h1>
                     </div>
 
@@ -80,10 +72,10 @@ const yanecover = () => {
                     <div className="gaiheki_title_box p0 mt50 mb0">
                         <div className="flex-wrap">
                             <div>
-                                <h2><img src="../images/yanecover/yane-cover_img02.png" alt="屋根塗装プラン30坪（100㎡程度）" /></h2>
+                                <h2><img src="../images/yanecover/yane-cover_img02.png" loading="lazy" alt="屋根塗装プラン30坪（100㎡程度）" /></h2>
                             </div>
                             <div>
-                                <img src="../images/yanecover/yane-cover_img03.png" alt="高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
+                                <img src="../images/yanecover/yane-cover_img03.png" loading="lazy" alt="高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
                             </div>
                         </div>
                     </div>
@@ -335,7 +327,7 @@ const yanecover = () => {
                         <h3>商品の特長 シルキーG2とは</h3>
 
                         <div className='G2_box'>
-                            <div className='G2_box_l'><img src="../images/yanecover/G2_new01.png" alt='' /></div>
+                            <div className='G2_box_l'><img src="../images/yanecover/G2_new01.png" loading="lazy" alt='' /></div>
                             <div className='G2_box_r'>
                                 <h4>断熱性がさらにアップ</h4>
                                 <p>シルキーG2の裏面はウレタンフォーム+アルミライナー紙で、さらに断熱性能がアップしました。</p>
@@ -343,7 +335,7 @@ const yanecover = () => {
                         </div>
 
                         <div className='G2_box'>
-                            <div className='G2_box_l'><img src="../images/yanecover/G2_new02.png" alt='' /></div>
+                            <div className='G2_box_l'><img src="../images/yanecover/G2_new02.png" loading="lazy" alt='' /></div>
                             <div className='G2_box_r'>
                                 <h4>豪雨・強風にも心強い</h4>
                                 <p>シルキーG2は、ハゼ掛け嵌合方式を採用しているので、ビス打ち部・切断部・接合部が露出せず直接雨水に触れません。左記の試験では漏水はもとより” バタつき ” すらないという結果です。</p>
@@ -355,7 +347,7 @@ const yanecover = () => {
                                 <h4>遮熱顔料入り塗装による高耐久性能</h4>
                                 <p>シルキーG2の表面は、ポリエステル樹脂塗装を焼付塗装することで優れた耐久性能を実現しました。ちぢみ保護膜の形成により耐磨耗性に優れ、屋根を美しく保ちます。</p>
                             </div>
-                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new03.png" alt='' /></div>
+                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new03.png" loading="lazy" alt='' /></div>
                         </div>
 
                         <div className='G2_box'>
@@ -363,7 +355,7 @@ const yanecover = () => {
                                 <h4>遮熱＋断熱＋防音で快適に</h4>
                                 <p>表面は、遮熱顔料をふんだんに含んだ遮熱塗膜で、赤外線を反射して小屋裏の温度上昇を抑制します。また、裏面にはノンフロンウレタンフォームを9mmの厚さとアルミライナー紙で、断熱効果＋防音効果も抜群です。</p>
                             </div>
-                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new04.png" alt='' /></div>
+                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new04.png" loading="lazy" alt='' /></div>
                         </div>
 
                         <div className='G2_box'>
@@ -371,7 +363,7 @@ const yanecover = () => {
                                 <h4>何度も塗装を繰返すよりも葺替え！</h4>
                                 <p>シルキーG2は、ガルバリウム鋼板製ということもあって、サビにも圧倒的な強さで塗替えや葺替の心配も少なくお手入れや補修の費用もシッカリ抑えて長い目で見ても、とっても経済的です。</p>
                             </div>
-                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new05.png" alt='' /></div>
+                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new05.png" loading="lazy" alt='' /></div>
                         </div>
 
                         <div className='G2_box'>
@@ -379,7 +371,7 @@ const yanecover = () => {
                                 <h4>軽量で地震に心強い</h4>
                                 <p>シルキーG2は日本瓦の約1/10の軽さで、建物への負担を極力おさえ、もしもの地震の際にも心強い屋根材です。この軽さでカバー工法によるリフォームにも最適な屋根材です。</p>
                             </div>
-                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new06.png" alt='' /></div>
+                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new06.png" loading="lazy" alt='' /></div>
                         </div>
 
                         <div className='G2_box'>
@@ -387,7 +379,7 @@ const yanecover = () => {
                                 <h4>接合部まで美しく強い！</h4>
                                 <p>シルキーG2は、水平方向の”重なり段差”が出ない接合方式を採用することで、直線が際立ち、屋根を美しく演出します。この接合方法により、ロスが抑えた施工が可能になり短工期をも実現しました。</p>
                             </div>
-                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new07.png" alt='' /></div>
+                            <div className='G2_box_l2'><img src="../images/yanecover/G2_new07.png" loading="lazy" alt='' /></div>
                         </div>
 
                     </div>
@@ -419,7 +411,7 @@ const yanecover = () => {
 
                         <p>アイジールーフ「スーパーガルテクト」は、屋根材と断熱材をひとつにした独自の材料構成により、軽量で抜群に優れた遮熱性・断熱性を発揮する金属屋根材です。表面材に「超高耐久ガルバ」を採用し、穴あき25年保証と沿岸地域への保証範囲も充実。耐久性にも優れ、沿岸地域でも安心してお使いいただけます。</p>
 
-                        <p className='center'><img src="../images/yanecover/yane-cover_img04.png" alt='' /></p>
+                        <p className='center'><img src="../images/yanecover/yane-cover_img04.png" loading="lazy" alt='' /></p>
 
                         <p><img src="../images/yanecover/yane-cover_pic14.jpg" loading="lazy" alt="" /></p>
 
@@ -485,7 +477,7 @@ const yanecover = () => {
                                 基材に30年保証を付けておりますので、安心してお選びいただける屋根材です。</p>
                             </div>
                             <div className='roman_r'>
-                            <img src="../images/yanecover/roman_01.jpg" alt='' />
+                            <img src="../images/yanecover/roman_01.jpg" loading="lazy" alt='' />
                             </div>
                         </div>
 
@@ -493,12 +485,12 @@ const yanecover = () => {
 
                         <div className='roman_color'>
                             <div className='roman_color_txt order2'>
-                                <p><img src="../images/yanecover/roman_02.jpg" alt='タスカニー' /></p>
+                                <p><img src="../images/yanecover/roman_02.jpg" loading="lazy" alt='タスカニー' /></p>
                                 <div className='roman_bg_gr'>
                                 タスカニーは、パッと眼を引くヨーロピアン調のあざやかなオレンジにクリーム色のフラッシュで、見る人を飽きさせることのない色合いです。
                                 </div>
                             </div>
-                            <div className='roman_color_img order1'><img src="../images/yanecover/roman_03.png" alt='' /></div>
+                            <div className='roman_color_img order1'><img src="../images/yanecover/roman_03.png" loading="lazy" alt='' /></div>
                         </div>
 
                         <div className='roman_color'>
@@ -508,7 +500,7 @@ const yanecover = () => {
                                 数種類の色をブレンドする事によって生まれたモスブラウン。これによって単色では表現できない立体的なコントラストが生まれます。
                                 </div>
                             </div>
-                            <div className='roman_color_img'><img src="../images/yanecover/roman_05.png" alt='' /></div>
+                            <div className='roman_color_img'><img src="../images/yanecover/roman_05.png" loading="lazy" alt='' /></div>
                         </div>
                         
                         <div className='roman_color'>
@@ -518,13 +510,13 @@ const yanecover = () => {
                                 ネロの漆黒の美しさには安定感があり、年代問わず人気のカラーです。
                                 </div>
                             </div>
-                            <div className='roman_color_img order1'><img src="../images/yanecover/roman_07.png" alt='' /></div>
+                            <div className='roman_color_img order1'><img src="../images/yanecover/roman_07.png" loading="lazy" alt='' /></div>
                         </div>
 
                         <h3>ローマン 本体仕様</h3>
 
                         <div className='flex-wrap'>
-                            <div className='w30p flex-center'><img src="../images/yanecover/roman_08.jpg" alt='' /></div>
+                            <div className='w30p flex-center'><img src="../images/yanecover/roman_08.jpg" loading="lazy" alt='' /></div>
                             <div className='w70p'>
                                 <table className='study_table'>
                                     <tr>
@@ -559,9 +551,9 @@ const yanecover = () => {
                                     </tr>
                                 </table>
                                 <ul className='img_list3'>
-                                    <li><img src="../images/yanecover/roman_09.jpg" alt='' /></li>
-                                    <li><img src="../images/yanecover/roman_10.jpg" alt='' /></li>
-                                    <li><img src="../images/yanecover/roman_11.jpg" alt='' /></li>
+                                    <li><img src="../images/yanecover/roman_09.jpg" loading="lazy" alt='' /></li>
+                                    <li><img src="../images/yanecover/roman_10.jpg" loading="lazy" alt='' /></li>
+                                    <li><img src="../images/yanecover/roman_11.jpg" loading="lazy" alt='' /></li>
                                 </ul>
                             </div>
                         </div>
@@ -574,10 +566,10 @@ const yanecover = () => {
                         onSwiper={(swiper) => console.log(swiper)}
                         loop={true}
                         autoHeight>
-                            <SwiperSlide><img src="../images/yanecover/roman01_b.jpg" layout="fullWidth" alt='' /></SwiperSlide>
-                            <SwiperSlide><img src="../images/yanecover/roman02_b.jpg" layout="fullWidth" alt='' /></SwiperSlide>
-                            <SwiperSlide><img src="../images/yanecover/roman03_b.jpg" layout="fullWidth" alt='' /></SwiperSlide>
-                            <SwiperSlide><img src="../images/yanecover/roman04_b.jpg" layout="fullWidth" alt='' /></SwiperSlide>
+                            <SwiperSlide><img src="../images/yanecover/roman01_b.jpg" layout="fullWidth" loading="lazy" alt='' /></SwiperSlide>
+                            <SwiperSlide><img src="../images/yanecover/roman02_b.jpg" layout="fullWidth" loading="lazy" alt='' /></SwiperSlide>
+                            <SwiperSlide><img src="../images/yanecover/roman03_b.jpg" layout="fullWidth" loading="lazy" alt='' /></SwiperSlide>
+                            <SwiperSlide><img src="../images/yanecover/roman04_b.jpg" layout="fullWidth" loading="lazy" alt='' /></SwiperSlide>
                         </Swiper>
 
                         
@@ -590,5 +582,15 @@ const yanecover = () => {
     </>
   )
 }
+
+export const Head = () => (
+    <>
+        <body id="pagetop" />
+        <Seo
+            title="屋根カバー工法"
+            description="外壁塗装・屋根塗装なら広島の佐々木塗装の屋根カバー工法ページです。"
+        />
+    </>
+)
 
 export default yanecover

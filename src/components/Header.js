@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 const Header = () => {
     return (
       <>
@@ -35,7 +33,7 @@ const Header = () => {
                         </div>
                         <div className="h_tel_box">
                             <p>お電話でのお問い合わせはこちら</p>
-                            <p className="tel_no"><Link to="tel:0120-116-795" title="お電話でのお問い合わせ"><img src="/images/h_tel_icon.svg" alt="" width={40} height={26} loading="lazy" />0120-116-795</Link></p>
+                            <p className="tel_no"><a href="tel:0120-116-795" title="お電話でのお問い合わせ"><img src="/images/h_tel_icon.svg" alt="" width={40} height={26} loading="lazy" />0120-116-795</a></p>
                             <p>受付時間　9:00～20:00</p>
                         </div>
                     </div>
@@ -45,7 +43,7 @@ const Header = () => {
                             <Link to="/"><img src="/images/logo.svg" width={250} height={58} alt="株式会社佐々木塗装" loading="lazy" /></Link>
                         </h1>
                         <ul className="h_tools dis_flex flex_jus_end">
-                            <li><Link to="tel:0120-116-795"><img src="/images/h_tel.png" width={44} height={44} alt="" loading="lazy" /></Link></li>
+                            <li><a href="tel:0120-116-795"><img src="/images/h_tel.png" width={44} height={44} alt="" loading="lazy" /></a></li>
                             <li className="btn_gnav" id="h_menu"><img src="/images/h_menu.png" width={44} height={44} alt="" loading="lazy" /></li>
                         </ul>
 
@@ -66,9 +64,9 @@ const Header = () => {
                                     <li className="gnav__menu__item"><Link to="/voice/">お客様の声</Link></li>
                                 </ul>
                                 <ul className="sns_bt">
-                                    <li><Link to="https://twitter.com/sasakipaint1116" target="_blank" className="tw_bt"><img src="/images/tw_icon.png" width={25} height={25} loading="lazy" className="opa" alt="" /></Link></li>
-                                    <li><Link to="https://www.facebook.com/profile.php?id=100063604571277" target="_blank" className="fb_bt"><img src="/images/fb_icon.png" width={25} height={25} loading="lazy" className="opa" alt="" /></Link></li>
-                                    <li><Link to="https://www.instagram.com/sasaki.ryoko/" target="_blank" className="insta_bt"><span className="insta"><img src="/images/insta_icon.svg" width={25} height={25} loading="lazy" className="opa" alt="" /></span></Link></li>
+                                    <li><a href="https://twitter.com/sasakipaint1116" target="_blank" rel="noopenner noreferrer" className="tw_bt"><img src="/images/tw_icon.png" width={25} height={25} loading="lazy" className="opa" alt="" /></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100063604571277" target="_blank" rel="noopenner noreferrer" className="fb_bt"><img src="/images/fb_icon.png" width={25} height={25} loading="lazy" className="opa" alt="" /></a></li>
+                                    <li><a href="https://www.instagram.com/sasaki.ryoko/" target="_blank" rel="noopenner noreferrer" className="insta_bt"><span className="insta"><img src="/images/insta_icon.svg" width={25} height={25} loading="lazy" className="opa" alt="" /></span></a></li>
                                 </ul>
 
                             </div>

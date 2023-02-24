@@ -18,7 +18,7 @@ const index = ({data}) => {
     
       <Layout>        
         
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/kaisya/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/kaisya/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
 
         <div id="mainimage-sub" className='blog'>
@@ -88,6 +88,7 @@ const index = ({data}) => {
 
 export const Head = () => (
   <>
+    <body id="pagetop" />
     <Seo title="会社の事 - 記事一覧" />
   </>
 )

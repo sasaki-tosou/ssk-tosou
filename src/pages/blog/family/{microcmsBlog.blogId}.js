@@ -15,9 +15,9 @@ const FamilyPage = ({ data }) => (
     <>
     
     <Header />
-    
+
     <Layout>
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
         <div id="mainimage-sub" className='blog'>
             <div id="mainimage-inner">
@@ -87,6 +87,7 @@ const FamilyPage = ({ data }) => (
 
 export const Head = ({data}) => (
     <>
+        <body id="pagetop" />
         <Seo title={data.microcmsBlog.title} />
     </>
 )

@@ -3,11 +3,6 @@ import { Link } from "gatsby"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -19,11 +14,8 @@ const karucera_works = () => {
   return (
     <>
       <Layout>
-        <Seo
-            title="カルセラリフォーム施工例"
-            description="外壁塗装・屋根塗装なら広島の佐々木塗装のカルセラリフォーム施工例ページです。"
-        />
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/karucera_works/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/karucera_works/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
         <Pagetop />
         
@@ -139,5 +131,15 @@ const karucera_works = () => {
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <body id="pagetop" />
+    <Seo
+      title="カルセラリフォーム施工例"
+      description="外壁塗装・屋根塗装なら広島の佐々木塗装のカルセラリフォーム施工例ページです。"
+    />
+  </>
+)
 
 export default karucera_works

@@ -3,11 +3,6 @@ import { Link } from "gatsby"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import "@fontsource/noto-sans-jp"
-import '@fontsource/noto-sans-jp/700.css'
-import '@fontsource/noto-sans-jp/900.css'
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -19,11 +14,8 @@ const drone = () => {
   return (
     <>
       <Layout>
-        <Seo
-          title="ドローン診断"
-          description="外壁塗装・屋根塗装なら広島の佐々木塗装のドローン診断ページです。"
-        />
-        <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/drone/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/drone/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
 
         <div id="mainimage-sub" className='drone'>
@@ -51,7 +43,7 @@ const drone = () => {
         <section id="sub-page">
           <div className="main-content">
 
-            <h3 className="mb3p"><img src="../images/drone_main.jpg" alt="ドローン診断" /></h3>
+            <h3 className="mb3p"><img src="../images/drone/drone_main.jpg" alt="ドローン診断" /></h3>
 
             <div className="drone_txt_box mt0_smp">
               
@@ -60,12 +52,12 @@ const drone = () => {
                   普段見る事のできないお住まいの劣化状況がわかります。<br />
                   ドローンは誰でも飛ばせるわけではなく、国土交通省の発行する無人航空機の飛行許可が必要です。</p>
                 <ul className="drone_list">
-                  <li><img src="../images/drone_pic02.jpg" width={150} loading="lazy" alt="" /></li>
-                  <li><img src="../images/drone_pic03.jpg" loading="lazy" alt="" /></li>
+                  <li><img src="../images/drone/drone_pic02.jpg" width={150} loading="lazy" alt="" /></li>
+                  <li><img src="../images/drone/drone_pic03.jpg" loading="lazy" alt="" /></li>
                 </ul>
               </div>
               <div className="drone_r">
-                <p><img src="../images/drone_pic01.jpg" loading="lazy" alt="" /></p>
+                <p><img src="../images/drone/drone_pic01.jpg" loading="lazy" alt="" /></p>
               </div>
             </div>
 
@@ -79,7 +71,7 @@ const drone = () => {
                   勾配が急で上がれない屋根も撮影する事ができます。
                 </div>
               </div>
-              <div className="drone_r"><img src="../images/drone_pic04.jpg" loading="lazy" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone/drone_pic04.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -90,7 +82,7 @@ const drone = () => {
                   足場や高所作業車等の必要がないので管理者さま、オーナー様に余計なご負担がかかりません。
                 </div>
               </div>
-              <div className="drone_r"><img src="../images/drone_pic05.jpg" loading="lazy" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone/drone_pic05.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -100,7 +92,7 @@ const drone = () => {
                   屋根に上がらずに診断できるので瓦を割るような事はありません。
                 </div>
               </div>
-              <div className="drone_r"><img src="../images/drone_pic06.jpg" loading="lazy" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone/drone_pic06.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -110,7 +102,7 @@ const drone = () => {
                   タブレットで劣化箇所を確認する事ができます。
                 </div>
               </div>
-              <div className="drone_r"><img src="../images/drone_pic07.jpg" loading="lazy" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone/drone_pic07.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -125,11 +117,11 @@ const drone = () => {
             <div className="drone_box">
               <div className="drone_box_l">
                 <p className="case_title2">before</p>
-                <img src="../images/drone_pic08.jpg" loading="lazy" alt="" />
+                <img src="../images/drone/drone_pic08.jpg" loading="lazy" alt="" />
               </div>
               <div className="drone_box_r">
                 <p className="case_title2">after</p>
-                <img src="../images/drone_pic09.jpg" loading="lazy" alt="" />
+                <img src="../images/drone/drone_pic09.jpg" loading="lazy" alt="" />
               </div>
             </div>
 
@@ -139,5 +131,15 @@ const drone = () => {
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <body id="pagetop" />
+    <Seo
+      title="ドローン診断"
+      description="外壁塗装・屋根塗装なら広島の佐々木塗装のドローン診断ページです。"
+    />
+  </>
+)
 
 export default drone
