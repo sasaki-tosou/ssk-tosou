@@ -52,7 +52,7 @@ const drone = () => {
                   普段見る事のできないお住まいの劣化状況がわかります。<br />
                   ドローンは誰でも飛ばせるわけではなく、国土交通省の発行する無人航空機の飛行許可が必要です。</p>
                 <ul className="drone_list">
-                  <li><img src="../images/drone/drone_pic02.jpg" width={150} loading="lazy" alt="" /></li>
+                  <li><img src="../images/drone/drone_pic02.jpg" loading="lazy" alt="" /></li>
                   <li><img src="../images/drone/drone_pic03.jpg" loading="lazy" alt="" /></li>
                 </ul>
               </div>
