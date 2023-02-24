@@ -16,9 +16,8 @@ const index = ({data}) => {
     <>
       <Header />
     
-    <Layout>
-        <Seo title="施工事例（ブログ） - 記事一覧" />    
-        
+      <Layout>
+                
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/case-blog/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
         <Pagetop />
@@ -87,6 +86,12 @@ const index = ({data}) => {
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo title="施工事例（ブログ） - 記事一覧" />
+  </>
+)
 
 export default index
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -51,8 +51,8 @@ const yanefuki = () => {
 
         <div className="gaiheki_title_box">
                     <h1>
-                        <StaticImage src="../images/yanefuki_img_title.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="pc" />
-                        <StaticImage src="../images/yanefuki_img_title_smp.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="smp" />
+                        <img src="../images/yanefuki_img_title.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="pc" />
+                        <img src="../images/yanefuki_img_title_smp.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="smp" />
                     </h1>
                 </div>
 
@@ -62,8 +62,8 @@ const yanefuki = () => {
             <h2>「瓦屋根は地震に弱い・・・」<br />
             その報道は<span>間違っています。</span></h2>
             <div className='yanefuki_img_box'>
-            <div><img src='/images/yanefuki_img_batsu.png' alt="" /></div>
-            <div><img src='/images/yanefuki_img01.png' alt="" /></div>
+            <div><img src='/images/yanefuki_img_batsu.png' loading="lazy" alt="" /></div>
+            <div><img src='/images/yanefuki_img01.png' loading="lazy" alt="" /></div>
             </div>
             <div className='yanefuki_txt01'>
             <p>倒れた家屋。散乱した瓦。阪神・淡路大震災や東日本大震災、<br />
@@ -82,14 +82,14 @@ const yanefuki = () => {
             <p>1981年に建築基準法の耐震基準が大幅に見直され、以前よりも約1.4倍の壁量が必要となりました。今回の熊本地震で倒壊した住宅を見ても、1981年以前の「旧耐震基準」の家がほとんど。倒壊の原因は耐震性の低さにあるのに、これらの古い住宅には日本古来の瓦屋根が多く使われていたことから、「重い瓦は地震に弱い」という誤ったイメージが定着してしまったのです。</p>
             <p>[ 耐震基準の変遷(必要壁量) ]（単位：cm/m&sup2;）</p>
             <p>木造住宅は地震や台風などの力に、耐力壁で抵抗します。建築基準法施行令で最低限必要な壁量が定められており、これを「必要壁量」といいます。</p>
-            <div><img src='/images/yanefuki_img04.png' alt="" /></div>
+            <div><img src='/images/yanefuki_img04.png' loading="lazy" alt="" /></div>
             </div>
             <div className='yanefuki_in_box'>
             <h3>瓦のズレや落下は..</h3>
             <h4>「施工方法が古い」から</h4>
             <p>瓦屋根の施工方法は、長年「土葺き工法」や「釘打ち無しの工法」が一般的で、土の上に載っているだけ、桟木にひっかけてあるだけの不安定な状態でした。近年のガイドライン工法確立後も古い施工仕様がまだまだ残っており、今回の熊本地震でも瓦のズレや落下が多数発生しました。こうした被害状況も、瓦の耐震性の低さが指摘される一因となっています。</p>
 
-            <div><img src='/images/yanefuki_img02.png' alt="" /></div>
+            <div><img src='/images/yanefuki_img02.png' loading="lazy" alt="" /></div>
 
             <div className='yanefuki_hikaku'>
 
@@ -99,7 +99,7 @@ const yanefuki = () => {
             
             <p>写真左は2000年以降に建てられた家で、瓦屋根に被害なし。右は旧耐震基準で建てられた家で、屋根の施工方法も古く、瓦のズレや落下が多数見られます。</p>
 
-            <p><img src='/images/yanefuki_img03.jpg' alt="" /></p>
+            <p><img src='/images/yanefuki_img03.jpg' loading="lazy" alt="" /></p>
 
             </div>
 
@@ -125,7 +125,7 @@ const yanefuki = () => {
 
             </div>
 
-            <div className='yanefuki_box2_r'><img src='/images/yanefuki_img05.png' alt="" /></div>
+            <div className='yanefuki_box2_r'><img src='/images/yanefuki_img05.png' loading="lazy" alt="" /></div>
 
             <div>
 
@@ -133,15 +133,15 @@ const yanefuki = () => {
 
               <div className='himitsu_box'>
                 <div>
-                  <p className='center'><img src='/images/yanefuki_img06.png' alt="" /></p>
+                  <p className='center'><img src='/images/yanefuki_img06.png' loading="lazy" alt="" /></p>
                   <p>以前の土葺き工法のように重い土を使わず、屋根重量を約半分程度に軽量化しました。</p>
                 </div>
                 <div>
-                  <p className='center'><img src='/images/yanefuki_img07.png' alt="" /></p>
+                  <p className='center'><img src='/images/yanefuki_img07.png' loading="lazy" alt="" /></p>
                   <p>すべての瓦を釘やネジでしっかり固定。瓦同士も固定し、ズレや脱落を防止します。</p>
                 </div>
                 <div>
-                  <p className='center'><img src='/images/yanefuki_img08.png' alt="" /></p>
+                  <p className='center'><img src='/images/yanefuki_img08.png' loading="lazy" alt="" /></p>
                   <p>屋根の棟部分を金具などでしっかり固定するガイドライン工法で崩壊を防ぎます。</p>
                 </div>
               </div>
@@ -156,10 +156,10 @@ const yanefuki = () => {
                   <p>東日本大震災の被災地では、その後の災害公営住宅に数多くの「防災瓦」が採用されています。それは「防災瓦」が現行の耐震基準での耐震性が認められたのはもちろん、耐久性・メンテナンス性に加え、性能面・デザイン面でも評価されたことを証明しています。</p>
                   </div>
                   <div>
-                  <StaticImage src="../images/fukkou_img01.jpg" alt="" />
+                  <img src="../images/fukkou_img01.jpg" loading="lazy" alt="" />
                   </div>
                   <div>
-                  <StaticImage src="../images/fukkou_img02.jpg" alt="" />
+                  <img src="../images/fukkou_img02.jpg" loading="lazy" alt="" />
                   </div>
 
                 </div>
@@ -177,8 +177,8 @@ const yanefuki = () => {
               ココが違います。</h3>
 
               <div className='yanefuki_img_box'>
-                <div><img src='/images/yanefuki_img_maru.png' alt="" /></div>
-                <div><img src='/images/yanefuki_img18.png' alt="" /></div>
+                <div><img src='/images/yanefuki_img_maru.png' loading="lazy" alt="" /></div>
+                <div><img src='/images/yanefuki_img18.png' loading="lazy" alt="" /></div>
               </div>
 
               <h4 className='noto_san dark-green bold700 txt140p'><span className='under_wavy'>瓦の重さは、50年、100年と屋根を守り抜く「責任」の重さです。</span><br />
@@ -186,7 +186,7 @@ const yanefuki = () => {
 
               <div className="yanefuki_box3">
                 <div className="yanefuki_box3_inner">
-                  <h3><span className='skyblue txt120p'> 耐震性</span>が違う！<img src='/images/yanefuki_img19.png' alt="" /></h3>
+                  <h3><span className='skyblue txt120p'> 耐震性</span>が違う！<img src='/images/yanefuki_img19.png' loading="lazy" alt="" /></h3>
 
                   <div className='taisin_box'>
                     <div className='taisin_l'>
@@ -197,7 +197,7 @@ const yanefuki = () => {
                         <p>非常に重い土葺き屋根。<br />
                         たくさんの土を使っていたため、建物に大きな負荷がかかり、瓦がずれ落ちることも…。</p>
                         </div>
-                        <div className='w40p center'><img src='/images/yanefuki_img20.jpg' alt="" /></div>
+                        <div className='w40p center'><img src='/images/yanefuki_img20.jpg' loading="lazy" alt="" /></div>
                       </div>
                     </div>
                     <div className='taisin_r'>
@@ -208,7 +208,7 @@ const yanefuki = () => {
                         <div className='w50p pr3p'>                  
                         <p>鶴弥の防災瓦にすれば、屋根の重量も土葺き工法の約半分程度に。建物への負荷を大幅に軽減します。</p>
                         </div>
-                        <div className='w50p center'><img src='/images/yanefuki_img21.jpg' alt="" /></div>
+                        <div className='w50p center'><img src='/images/yanefuki_img21.jpg' loading="lazy" alt="" /></div>
                       </div>
                     </div>
                   </div>
@@ -221,7 +221,7 @@ const yanefuki = () => {
                         <div className='w60p pr3p'>
                           <p>以前は釘止め基準が4枚に1枚程度で、大きな台風が来ると瓦が飛び、隣家に被害をもたらすことも…。</p>
                         </div>
-                        <div className='w40p center'><img src='/images/yanefuki_img22.jpg' alt="" /></div>
+                        <div className='w40p center'><img src='/images/yanefuki_img22.jpg' loading="lazy" alt="" /></div>
                       </div>
                     </div>
                     <div className='taisin_r'>
@@ -232,7 +232,7 @@ const yanefuki = () => {
                         <div className='w50p pr3p'>                  
                           <p>上下の瓦同士をがっちりロック。さらに瓦を釘で固定し、大地震の揺れや台風でも安心です。</p>
                         </div>
-                        <div className='w50p center'><img src='/images/yanefuki_img23.png' alt="" /></div>
+                        <div className='w50p center'><img src='/images/yanefuki_img23.png' loading="lazy" alt="" /></div>
                       </div>
                     </div>
                   </div>
@@ -245,7 +245,7 @@ const yanefuki = () => {
                         <div className='w60p pr3p'>
                           <p>棟を銅線で固定している場合の多くが棟芯材なし。地震時に崩壊する可能性が…。</p>
                         </div>
-                        <div className='w40p center'><img src='/images/yanefuki_img24.jpg' alt="" /></div>
+                        <div className='w40p center'><img src='/images/yanefuki_img24.jpg' loading="lazy" alt="" /></div>
                       </div>
                     </div>
                     <div className='taisin_r'>
@@ -257,7 +257,7 @@ const yanefuki = () => {
                           <p>パッキン付ステンレスねじで棟部をしっかり固定。科学的実験により実証された、耐震性の高い工法です。<br />
                           ※棟金具仕様は、地域によって仕様が異なります</p>
                         </div>
-                        <div className='w50p center'><img src='/images/yanefuki_img25.png' alt="" /></div>
+                        <div className='w50p center'><img src='/images/yanefuki_img25.png' loading="lazy" alt="" /></div>
                       </div>
                     </div>
                   </div>
@@ -267,7 +267,7 @@ const yanefuki = () => {
 
               <div className="yanefuki_box3">
                 <div className="yanefuki_box3_inner">
-                <h3><span className='skyblue txt120p'>耐久性</span>が違う！<img src='/images/yanefuki_img09.png' alt="" /></h3>
+                <h3><span className='skyblue txt120p'>耐久性</span>が違う！<img src='/images/yanefuki_img09.png' loading="lazy" alt="" /></h3>
                 
                 
                 <div className='yanefuki_box3_inbox'>
@@ -279,15 +279,15 @@ const yanefuki = () => {
                   </div>
                   <div>
                     <h5>サビた金属屋根</h5>
-                    <img src='/images/yanefuki_img10.jpg' alt="" />
+                    <img src='/images/yanefuki_img10.jpg' loading="lazy" alt="" />
                   </div>
                   <div>
                     <h5>色落ちした化粧スレート屋根</h5>
-                    <img src='/images/yanefuki_img11.jpg' alt="" />
+                    <img src='/images/yanefuki_img11.jpg' loading="lazy" alt="" />
                   </div>
                   <div>
                     <h5>30年後の瓦屋根</h5>
-                    <img src='/images/yanefuki_img12.jpg' alt="" />
+                    <img src='/images/yanefuki_img12.jpg' loading="lazy" alt="" />
                   </div>
                 </div>
 
@@ -297,7 +297,7 @@ const yanefuki = () => {
               <div className="yanefuki_box4">
                 <div className="yanefuki_box4_inner">
 
-                  <h3><span className='skyblue txt120p'>経済性</span>が違う！<img src='/images/yanefuki_img13.png' alt="" /></h3>
+                  <h3><span className='skyblue txt120p'>経済性</span>が違う！<img src='/images/yanefuki_img13.png' loading="lazy" alt="" /></h3>
 
                   <div className='flex-wrap'>
 
@@ -306,7 +306,7 @@ const yanefuki = () => {
                       <p>［コストとメンテナンスのイメージ］<br />
                       屋根面積100m&sup2;で、メンテナンスコスト・シミュレーションを行いました。</p>
 
-                      <p><img src='/images/yanefuki_img14.png' alt="" /></p>
+                      <p><img src='/images/yanefuki_img14.png' loading="lazy" alt="" /></p>
 
                       <p>※1 専門業者による定期点検を10年に1回程度を目安として実施するようにお願いします。</p>
 
@@ -332,7 +332,7 @@ const yanefuki = () => {
               <div className="yanefuki_box4">
                 <div className="yanefuki_box4_inner">
 
-                  <h3><span className='skyblue txt120p'>快適性</span>が違う！<img src='/images/yanefuki_img15.png' alt="" /></h3>
+                  <h3><span className='skyblue txt120p'>快適性</span>が違う！<img src='/images/yanefuki_img15.png' loading="lazy" alt="" /></h3>
 
                   <div className='flex-wrap'>
 
@@ -345,9 +345,9 @@ const yanefuki = () => {
 
                   </div>
 
-                  <div className='kaiteki_box'><img src='/images/yanefuki_img16.png' alt="" /></div>
+                  <div className='kaiteki_box'><img src='/images/yanefuki_img16.png' loading="lazy" alt="" /></div>
 
-                  <div className='kaiteki_box'><img src='/images/yanefuki_img17.png' alt="" /></div>
+                  <div className='kaiteki_box'><img src='/images/yanefuki_img17.png' loading="lazy" alt="" /></div>
 
                   </div>
 
@@ -363,39 +363,39 @@ const yanefuki = () => {
 
           <div className="flex-wrap">            
             <div className="yane_fuki_box">
-              <p><StaticImage src="../images/yane_fuki_pic05.jpg" alt="" /></p>
+              <p><img src="../images/yane_fuki_pic05.jpg" loading="lazy" alt="" /></p>
               <p>1.既存屋根材撤去</p>
             </div>
             <div className="yane_fuki_box">
-              <p><StaticImage src="../images/yane_fuki_pic06.jpg" alt="" /></p>
+              <p><img src="../images/yane_fuki_pic06.jpg" loading="lazy" alt="" /></p>
               <p>2.新規コンパネ追い張り</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic07.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic07.jpg" loading="lazy" alt="" /></p>
               <p>3.新規ルーフィング(防水シート)張り</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic08.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic08.jpg" loading="lazy" alt="" /></p>
               <p>4.桟木取付け</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic09.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic09.jpg" loading="lazy" alt="" /></p>
               <p>5.新規瓦葺き</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic10.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic10.jpg" loading="lazy" alt="" /></p>
               <p>6.棟換気取付け</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic11.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic11.jpg" loading="lazy" alt="" /></p>
               <p>7.新規棟積み</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic12.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic12.jpg" loading="lazy" alt="" /></p>
               <p>8.新規壁際板金取付け</p>
             </div>
             <div className="yane_fuki_box">
-              <p><img decoding="async" src="/images/yane_fuki_pic13.jpg" alt="" /></p>
+              <p><img decoding="async" src="/images/yane_fuki_pic13.jpg" loading="lazy" alt="" /></p>
               <p>屋根葺き替え完</p>
             </div>
           </div>
@@ -419,7 +419,7 @@ const yanefuki = () => {
                   色　アンティックブラウン</p>
               </div>
               <div className="w40p order1 penki_cont">
-                <p><img decoding="async" src="/images/yane_fuki_pic16.jpg" alt="" /></p>
+                <p><img decoding="async" src="/images/yane_fuki_pic16.jpg" loading="lazy" alt="" /></p>
               </div>
             </div>
           </div>

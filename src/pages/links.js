@@ -59,28 +59,28 @@ const links = () => {
                 <div className="links_box">
                     <p>
                         <a href="http://ameblo.jp/akane--zora/" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/anneau_class-320x41.gif" alt="" />
+                            <img src="/images/anneau_class-320x41.gif" loading="lazy" alt="" />
                         </a>
                     </p>
                 </div>
                 <div className="links_box">
                     <p>
                         <a href="http://www.aeonproduct-finance.jp/index_j.htm" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/link_bn_aeon.jpg" alt="" />
+                            <img src="/images/link_bn_aeon.jpg" loading="lazy" alt="" />
                         </a>
                     </p>
                 </div>
                 <div className="links_box">
                     <p>
                         <a href="https://www.j-anshin.co.jp/" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/link_bn_ansin.jpg" alt="" />
+                            <img src="/images/link_bn_ansin.jpg" loading="lazy" alt="" />
                         </a>
                     </p>
                 </div>
                 <div className="links_box">
                     <p>
                         <a href="http://astec-japan.co.jp/" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/astec-320x96.png" alt="" />
+                            <img src="/images/astec-320x96.png" loading="lazy" alt="" />
                         </a>
                     </p>
                 </div>
@@ -94,7 +94,7 @@ const links = () => {
                 <div className="links_box">
                     <p>
                         <a href="http://nissin-sangyo.jp/" target="_blank" rel="noopener noreferrer">
-                            <img className src="/images/gaina.jpg" alt="" />
+                            <img className src="/images/gaina.jpg" loading="lazy" alt="" />
                         </a>
                     </p>
                 </div>

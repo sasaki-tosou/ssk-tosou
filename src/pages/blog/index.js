@@ -84,6 +84,12 @@ const BlogIndex = ({ data }) => (
   </>
 )
 
+export const Head = () => (
+  <>
+    <Seo title="ブログ" />
+  </>
+)
+
 export default BlogIndex
 
 export const query = graphql`

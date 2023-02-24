@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -59,7 +59,7 @@ const workflow = () => {
               無料で調査"お見積りいたします。問い合わせフォームまたはお電話でお問い合わせください。<br />
               ご希望の時期に工事を行いたい方はできるだけ早めにご準備ください。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic01.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic01.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -68,7 +68,7 @@ const workflow = () => {
             <p>当社の外装劣化診断士が建物全体の調査を行います。ひび割れや膨れ、剥がれ等傷み具合を細かくチェック。<br />
             ドローンを使用して普段見る事のできない屋根や雨樋等の劣化具合を診断します。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic02.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic02.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -78,7 +78,7 @@ const workflow = () => {
             調査内容を元にご予算に応じたプランを提案し見積書を作成いたします。<br />
             当社では正確な塗り面積を算出する為にCADで図面を起こし、リフォーム図面を作成します。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic03.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic03.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box_last">
           <div className="flow_l">
@@ -89,7 +89,7 @@ const workflow = () => {
             ご納得いただけましたら契約は文書で行います。トラブル防止の為に約款、クーリングオフにっいての説明も記載しております。<br />
             リフォームローンのご利用もいただけます。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic04.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic04.jpg" loading="lazy" alt="" /></div>
         </div>
         <h4 className="flow_title01">ご契約から着工前までの流れ</h4>
         <div className="flow_box">
@@ -100,7 +100,7 @@ const workflow = () => {
               打ち合わせの際にはパソコンやテレビ画面を使用してカラーシュミレーションを行います。<br />
               塗り替え後のイメージがつかめない方にはこれまで工事をされたOB客様のお宅にご案内します。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic05.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic05.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -108,7 +108,7 @@ const workflow = () => {
             <h4 className="flow_title">施工前準備</h4>
             <p>工事に入る前に足場の部材が干渉するカーポートやテラスの屋根材を撤去したりおうちの周りにある物を動かしたりします。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic06.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic06.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box_last">
           <div className="flow_l">
@@ -117,7 +117,7 @@ const workflow = () => {
             <p>挨拶状、粗品を持ってご近所の挨拶回りをさせていただきます。<br />
               高圧洗浄の前、足場解体の前、完工後にもご近所に案内を配布いたします。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic07.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic07.jpg" loading="lazy" alt="" /></div>
         </div>
         <h4 className="flow_title01">着工から完了までの流れ</h4>
         <div className="flow_box">
@@ -128,7 +128,7 @@ const workflow = () => {
               足場の組み立ては専門業者が行います。<br />
               組み立てが終わりましたら防犯対策の為に防犯センサーライトの取付けを行います。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic08.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic08.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -139,7 +139,7 @@ const workflow = () => {
               ベランダ内部やめったに洗浄できない外構部も洗浄します。<br />
               外壁のクラック(ひび割れ)が多くみられる場合は水の大量侵入を防ぐ為、洗浄の前にクラックの補修を行います。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic09.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic09.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -149,7 +149,7 @@ const workflow = () => {
               外壁の素材によって使用するローラーや下塗り材が変わります。<br />
               また季節によって乾燥時問が変わります。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic10.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic10.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -158,7 +158,7 @@ const workflow = () => {
             <p>下塗り、上塗り(2回)の順で塗装します。 (傷み具合で塗り回数は変わります)<br />
               季節によって乾燥時問が変わります。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic11.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic11.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -166,7 +166,7 @@ const workflow = () => {
             <h4 className="flow_title">付帯塗装<br className='smp' />(鉄部、木部、ベランダ床面等)</h4>
             <p>下地を整えた後下塗り(または錆止め)をします。その後仕上げ塗装を行います。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic12.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic12.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -177,7 +177,7 @@ const workflow = () => {
               問題がなければ足場の解体を行います。<br />
               解体前には窓ガラスの拭き掃除も行います。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic13.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic13.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -186,7 +186,7 @@ const workflow = () => {
             <p>カーポートやテラスの屋根材等の復旧、周囲の清掃を終えてお引渡しになります。<br />
               記念撮影やアンケートのご協力をお願いしています。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic14.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic14.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box">
           <div className="flow_l">
@@ -194,7 +194,7 @@ const workflow = () => {
             <h4 className="flow_title">工事報告書の提出</h4>
             <p>工事中の工程写真、完工後のお写真、保証書等をひとまとめにした報告書をお渡しします。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic15.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic15.jpg" loading="lazy" alt="" /></div>
         </div>
         <div className="flow_box_last">
           <div className="flow_l">
@@ -203,7 +203,7 @@ const workflow = () => {
             <p>アフターサービスの一環として定期点検を行いお客様の大切なお住まいをフォローしていきます。<br />
               工事が終わった後も何でもご相談いただける関係を築きたいと思っています。</p>
           </div>
-          <div className="flow_r"><StaticImage src="../images/flow_pic16.jpg" alt="" /></div>
+          <div className="flow_r"><img src="../images/flow_pic16.jpg" loading="lazy" alt="" /></div>
         </div>
         <p className="center mt35"><a href="/contact/" className="bt02">お見積もり・お問い合わせはこちらから</a></p>
 

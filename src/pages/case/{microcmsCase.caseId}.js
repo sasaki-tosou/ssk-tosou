@@ -13,7 +13,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const BlogPage = ({ data }) => (
     <>
-    <Seo title={data.microcmsCase.title} />
+
     <Header />
     <Layout>
     <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/' + data.microcmsCase.category.slug + '/' + data.microcmsCase.caseId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
@@ -103,6 +103,12 @@ const BlogPage = ({ data }) => (
         </section>
         </Layout>
 </>
+)
+
+export const Head = ({data}) => (
+  <>
+    <Seo title={data.microcmsCase.title} />
+  </>
 )
 
 export default BlogPage

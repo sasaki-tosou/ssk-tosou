@@ -13,7 +13,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const KaisyaPage = ({ data }) => (
     <>
-    <Seo title={data.microcmsBlog.title} />
+
     <Header />
 
     <Layout>
@@ -83,6 +83,12 @@ const KaisyaPage = ({ data }) => (
             </section>
 </Layout>
 </>
+)
+
+export const Head = ({data}) => (
+  <>
+      <Seo title={data.microcmsBlog.title} />
+  </>
 )
 
 export default KaisyaPage

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -49,10 +49,10 @@ const leak = () => {
         <section id="sub-page">
             <div className="main-content">
             <h2 className="page_title01 mt0">雨漏り診断</h2>
-                <div><StaticImage src="../images/leak_01.jpg" alt="" /></div>
-                <div><StaticImage src="../images/leak_02.jpg" alt="" /></div>
-                <div><StaticImage src="../images/leak_03.jpg" alt="" /></div>
-                <div><StaticImage src="../images/leak_04.jpg" alt="" /></div>
+                <div><img src="../images/leak_01.jpg" loading="lazy" alt="" /></div>
+                <div><img src="../images/leak_02.jpg" loading="lazy" alt="" /></div>
+                <div><img src="../images/leak_03.jpg" loading="lazy" alt="" /></div>
+                <div><img src="../images/leak_04.jpg" loading="lazy" alt="" /></div>
                 <div className="leak_box">
                     <p className="center"><a href="/contact/" className="bt02">お問い合わせフォームはこちら</a></p>
                 </div>

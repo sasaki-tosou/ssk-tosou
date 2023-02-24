@@ -13,8 +13,9 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const DiaryPage = ({ data }) => (
     <>
-    <Seo title={data.microcmsBlog.title} />
+
     <Header />
+
     <Layout>
     
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
@@ -39,16 +40,16 @@ const DiaryPage = ({ data }) => (
                     <meta itemprop="position" content="2" />
                 </li>             
             <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <Link to={'/blog/' + data.microcmsBlog.category.slug + '/'} itemprop="item">
-                <span itemprop="name">{data.microcmsBlog.category.name}</span>
-            </Link>
-            <meta itemprop="position" content="3" />
+                <Link to={'/blog/' + data.microcmsBlog.category.slug + '/'} itemprop="item">
+                    <span itemprop="name">{data.microcmsBlog.category.name}</span>
+                </Link>
+                <meta itemprop="position" content="3" />
             </li>
             <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <Link to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/'} itemprop="item">
-                <span itemprop="name">{data.microcmsBlog.title}</span>
-            </Link>
-            <meta itemprop="position" content="4" />
+                <Link to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/'} itemprop="item">
+                    <span itemprop="name">{data.microcmsBlog.title}</span>
+                </Link>
+                <meta itemprop="position" content="4" />
             </li>
         </ul>
         </div>
@@ -83,6 +84,12 @@ const DiaryPage = ({ data }) => (
             </div>
         </section>
     </Layout>
+    </>
+)
+
+export const Head = ({data}) => (
+    <>
+        <Seo title={data.microcmsBlog.title} />
     </>
 )
 

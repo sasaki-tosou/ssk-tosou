@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -55,81 +55,81 @@ const karucera_works = () => {
             <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic01.jpg" alt="" />
+            <img src="../images/karucera_pic01.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic02.jpg" alt="" />
+            <img src="../images/karucera_pic02.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic03.jpg" alt="" />
+            <img src="../images/karucera_pic03.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic04.jpg" alt="" />
+            <img src="../images/karucera_pic04.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic05.jpg" alt="" />
+            <img src="../images/karucera_pic05.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic06.jpg" alt="" />
+            <img src="../images/karucera_pic06.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic07.jpg" alt="" />
+            <img src="../images/karucera_pic07.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic08.jpg" alt="" />
+            <img src="../images/karucera_pic08.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic09.jpg" alt="" />
+            <img src="../images/karucera_pic09.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic10.jpg" alt="" />
+            <img src="../images/karucera_pic10.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic11.jpg" alt="" />
+            <img src="../images/karucera_pic11.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic12.jpg" alt="" />
+            <img src="../images/karucera_pic12.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic13.jpg" alt="" />
+            <img src="../images/karucera_pic13.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic14.jpg" alt="" />
+            <img src="../images/karucera_pic14.jpg" loading="lazy" alt="" />
           </div>
         </div>
         <div className="case_box">
           <div className="case_box_l">
             <p className="case_title2">before</p>
-            <StaticImage src="../images/karucera_pic15.jpg" alt="" />
+            <img src="../images/karucera_pic15.jpg" loading="lazy" alt="" />
           </div>
           <div className="case_box_r">
             <p className="case_title2">after</p>
-            <StaticImage src="../images/karucera_pic16.jpg" alt="" />
+            <img src="../images/karucera_pic16.jpg" loading="lazy" alt="" />
           </div>
         </div>
 

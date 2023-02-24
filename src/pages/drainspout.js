@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -51,8 +51,8 @@ const drainspout = () => {
                 
             <div className="gaiheki_title_box">
                 <h1>
-                    <StaticImage src="../images/drainspout_img01.png" alt="雨樋の破損や詰まりは放っておかずに早目のお手入れを！ 雨樋の交換" className="pc" />
-                    <StaticImage src="../images/drainspout_img01_smp.png" alt="雨樋の破損や詰まりは放っておかずに早目のお手入れを！ 雨樋の交換" className="smp" />
+                    <img src="../images/drainspout_img01.png" alt="雨樋の破損や詰まりは放っておかずに早目のお手入れを！ 雨樋の交換" className="pc" />
+                    <img src="../images/drainspout_img01_smp.png" alt="雨樋の破損や詰まりは放っておかずに早目のお手入れを！ 雨樋の交換" className="smp" />
                 </h1>
             </div>
 
@@ -67,25 +67,25 @@ const drainspout = () => {
 
             <ul className='drainspout_img_list'>
                 <li>留め金具の錆び<br />
-                <StaticImage src="../images/drainspout_pic01.jpg" alt="" /></li>
+                <img src="../images/drainspout_pic01.jpg" loading="lazy" alt="" /></li>
                 <li>雨樋の外れ<br />
-                <StaticImage src="../images/drainspout_pic02.jpg" alt="" /></li>
+                <img src="../images/drainspout_pic02.jpg" loading="lazy" alt="" /></li>
                 <li>軒樋の湾曲<br />
-                <StaticImage src="../images/drainspout_pic03.jpg" alt="" /></li>
+                <img src="../images/drainspout_pic03.jpg" loading="lazy" alt="" /></li>
                 <li>雨水の滞留<br />
-                <StaticImage src="../images/drainspout_pic04.jpg" alt="" /></li>
+                <img src="../images/drainspout_pic04.jpg" loading="lazy" alt="" /></li>
                 <li>ヘドロの堆積<br />
-                <StaticImage src="../images/drainspout_pic05.jpg" alt="" /></li>
+                <img src="../images/drainspout_pic05.jpg" loading="lazy" alt="" /></li>
                 <li>苔の繁殖<br />
-                <StaticImage src="../images/drainspout_pic06.jpg" alt="" /></li>
+                <img src="../images/drainspout_pic06.jpg" loading="lazy" alt="" /></li>
             </ul>
 
             <h3 className='page_title01'>おススメの雨樋</h3>
             <p className='center'>おうちのデザインによって合う雨樋は変わります</p>
 
             <ul className='drainspout_img_list2'>
-                <li><StaticImage src="../images/drainspout_pic07.jpg" alt="" /></li>
-                <li><StaticImage src="../images/drainspout_pic08.jpg" alt="" /></li>
+                <li><img src="../images/drainspout_pic07.jpg" loading="lazy" alt="" /></li>
+                <li><img src="../images/drainspout_pic08.jpg" loading="lazy" alt="" /></li>
             </ul>
 
             <div className="drainspout_content mt10p">
@@ -95,14 +95,14 @@ const drainspout = () => {
                 <div className='flex-wrap'>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">半丸105</h3>
-                        <p><StaticImage src="../images/drainspout_pic09.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic09.jpg" loading="lazy" alt="" /></p>
                         
                         <p>和風住宅でよく使用される雨樋です。<br />
                         交換する際は金具もステンレス製に変わります。</p>
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">角樋（Σ90）</h3>
-                        <p><StaticImage src="../images/drainspout_pic10.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic10.jpg" loading="lazy" alt="" /></p>
                         
                         <p>洋風住宅でよく使用される雨樋です。<br />
                         優美なフォルムで独特の陰影をもつ樋です。<br />
@@ -110,7 +110,7 @@ const drainspout = () => {
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">角樋(Ｈ120)</h3>
-                        <p><StaticImage src="../images/drainspout_pic11.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic11.jpg" loading="lazy" alt="" /></p>
                         
                         <p>洋風住宅で良く使用される雨樋です。<br />
                         端正で美しいシルエットが特徴です。<br />
@@ -130,13 +130,13 @@ const drainspout = () => {
                 <div className='flex-wrap'>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">半丸105</h3>
-                        <p><StaticImage src="../images/drainspout_pic12.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic12.jpg" loading="lazy" alt="" /></p>
                         <p className='txt_r'>2,000円／ｍ～</p>
                         <p>和風住宅によく使用されます</p>
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">角樋（Σ90）</h3>
-                        <p><StaticImage src="../images/drainspout_pic13.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic13.jpg" loading="lazy" alt="" /></p>
                         <p className='txt_r'>2,400円／ｍ～</p>
                         <p>洋風住宅によく使用されます<br />
                         半丸から角樋に交換する事もできます<br />
@@ -144,7 +144,7 @@ const drainspout = () => {
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">角樋（Ｈ120）</h3>
-                        <p><StaticImage src="../images/drainspout_pic14.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic14.jpg" loading="lazy" alt="" /></p>
                         <p className='txt_r'>2,700円／ｍ～</p>
                         <p>洋風住宅によく使用されます<br />
                         軒先を包むように際立たせるボリュームのある樋です</p>
@@ -159,13 +159,13 @@ const drainspout = () => {
                 <div className='flex-wrap'>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">丸樋</h3>
-                        <p><StaticImage src="../images/drainspout_pic15.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic15.jpg" loading="lazy" alt="" /></p>
                         <p className='txt_r'>2,000円／ｍ～</p>
                         <p>和風住宅から洋風住宅まで幅広く使用されます</p>
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">角樋</h3>
-                        <p><StaticImage src="../images/drainspout_pic16.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic16.jpg" loading="lazy" alt="" /></p>
                         <p className='txt_r'>2,000円／ｍ～</p>
                         <p>洋風住宅によく使用されます</p>
                     </div>                    
@@ -179,9 +179,9 @@ const drainspout = () => {
             風に乗って飛んで来た葉が軒樋の内部に入り込んでしまいます。</p>
 
             <ul className='drainspout_img_list'>
-                <li><StaticImage src="../images/drainspout_pic17.jpg" alt="" /></li>
-                <li><StaticImage src="../images/drainspout_pic18.jpg" alt="" /></li>
-                <li><StaticImage src="../images/drainspout_pic19.jpg" alt="" /></li>
+                <li><img src="../images/drainspout_pic17.jpg" loading="lazy" alt="" /></li>
+                <li><img src="../images/drainspout_pic18.jpg" loading="lazy" alt="" /></li>
+                <li><img src="../images/drainspout_pic19.jpg" loading="lazy" alt="" /></li>
             </ul>
 
             <p>軒樋の雨水の流れを堰き止めてしまいます。また集水器周辺に落ち葉が溜まると竪樋に雨水が流れなくなります。</p>
@@ -189,7 +189,7 @@ const drainspout = () => {
             <p className='mb0'>このように落ち葉は軒樋の中で腐食し腐葉土となって堆積します。</p>
 
             <ul className='drainspout_img_list'>
-                <li><StaticImage src="../images/drainspout_pic20.jpg" alt="" /></li>
+                <li><img src="../images/drainspout_pic20.jpg" loading="lazy" alt="" /></li>
             </ul>
 
             <div className="drainspout_content">
@@ -198,7 +198,7 @@ const drainspout = () => {
                 </div>
                 <div className='p2p'>
                         <h3 className="noto_san bold orange txt160p mb3p">軒先に丸めて挿入し、針金などで固定します。</h3>
-                        <p><StaticImage src="../images/drainspout_pic21.jpg" width={380} alt="" /></p>
+                        <p><img src="../images/drainspout_pic21.jpg" width={380} loading="lazy" alt="" /></p>
                         <p>4,000円／ｍ～<br />
                         外壁塗装や樋の架け替え工事など足場を仮設するタイミングで取付けるのがベストです。</p>
                     </div> 
@@ -212,8 +212,8 @@ const drainspout = () => {
             落雪を防止する屋根用雪止融雪装置があります。</p>
 
             <ul className='drainspout_img_list2'>
-                <li><StaticImage src="../images/drainspout_pic22.jpg" alt="" /></li>
-                <li><StaticImage src="../images/drainspout_pic23.jpg" alt="" /></li>
+                <li><img src="../images/drainspout_pic22.jpg" loading="lazy" alt="" /></li>
+                <li><img src="../images/drainspout_pic23.jpg" loading="lazy" alt="" /></li>
             </ul>
 
             <div className="drainspout_content">
@@ -221,7 +221,7 @@ const drainspout = () => {
                     <h3>スノーキング（屋根用雪止融雪装置）</h3>
                 </div>
                 <div className="drainspout_osusume">                        
-                    <p><StaticImage src="../images/drainspout_pic24.jpg" alt="" /></p>
+                    <p><img src="../images/drainspout_pic24.jpg" loading="lazy" alt="" /></p>
                 </div>                    
                 
             </div>
@@ -233,19 +233,19 @@ const drainspout = () => {
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">ケース①</h3>
                         <p>屋根からの雪がカーポートに落下する（陶器瓦　雪止め瓦有り）</p>
-                        <p><StaticImage src="../images/drainspout_pic25.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic25.jpg" loading="lazy" alt="" /></p>
                         <p>上屋根の軒先7.7ｍにスノーキング(小型)を取付けました。</p>
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">ケース②</h3>
                         <p>屋根からの落雪で隣りの敷地に雪が落ちる（鋼板屋根　雪止めなし）</p>
-                        <p><StaticImage src="../images/drainspout_pic26.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic26.jpg" loading="lazy" alt="" /></p>
                         <p>上屋根の軒先5.5ｍにスノーキング(小型　ステンレス)を取付けました。</p>
                     </div>
                     <div className="drainspout_osusume">
                         <h3 className="noto_san bold orange txt160p mb3p">ケース③</h3>
                         <p>屋根からの落雪で１階のテラスの屋根材が破損してしまった（陶器平板瓦　雪止め金具有り）</p>
-                        <p><StaticImage src="../images/drainspout_pic27.jpg" alt="" /></p>
+                        <p><img src="../images/drainspout_pic27.jpg" loading="lazy" alt="" /></p>
                         <p>上屋根の軒先にスノーキング(小型　ステンレス)を取り付けました。</p>
                     </div>
                 </div>

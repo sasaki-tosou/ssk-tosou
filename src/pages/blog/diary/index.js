@@ -16,14 +16,11 @@ const index = ({data}) => {
     <>
       <Header />
     
-    <Layout>
-        <Seo title="日記 - 記事一覧" />    
+      <Layout>        
         
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/diary/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
-        <Pagetop />
-
-        
+        <Pagetop />        
 
         <div id="mainimage-sub" className='blog'>
             <div id="mainimage-inner">
@@ -85,10 +82,16 @@ const index = ({data}) => {
 
             </div>
         </section>
-    </Layout>
+      </Layout>
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo title="日記 - 記事一覧" />
+  </>
+)
 
 export default index
 

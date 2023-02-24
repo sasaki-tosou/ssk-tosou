@@ -16,8 +16,7 @@ const index = ({data}) => {
     <>
       <Header />
     
-    <Layout>
-        <Seo title="地域のイベント - 記事一覧" />    
+      <Layout>        
         
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/local-events/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
@@ -28,26 +27,26 @@ const index = ({data}) => {
             </div>
         </div>
         <div id="breadcrumb">
-            <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/" itemprop="item">
-                        <span itemprop="name">ホーム</span>
-                    </Link>
-                    <meta itemprop="position" content="1" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/blog/" itemprop="item">
-                        <span itemprop="name">ブログ一覧</span>
-                    </Link>
-                    <meta itemprop="position" content="2" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/blog/local-events/" itemprop="item">
-                        <span itemprop="name">地域のイベント</span>
-                    </Link>
-                    <meta itemprop="position" content="3" />
-                </li>
-            </ul>
+          <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/" itemprop="item">
+                <span itemprop="name">ホーム</span>
+              </Link>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/blog/" itemprop="item">
+                <span itemprop="name">ブログ一覧</span>
+              </Link>
+              <meta itemprop="position" content="2" />
+            </li>
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/blog/local-events/" itemprop="item">
+                <span itemprop="name">地域のイベント</span>
+              </Link>
+              <meta itemprop="position" content="3" />
+            </li>
+          </ul>
         </div>
 
         <section id="sub-page">
@@ -87,6 +86,12 @@ const index = ({data}) => {
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo title="地域のイベント - 記事一覧" />
+  </>
+)
 
 export default index
 

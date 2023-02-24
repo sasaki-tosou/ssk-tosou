@@ -13,7 +13,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const TosouArekorePage = ({ data }) => (
     <>
-    <Seo title={data.microcmsBlog.title} />
+    
     <Header />
     <Layout>
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
@@ -57,7 +57,7 @@ const TosouArekorePage = ({ data }) => (
                             <li className="blog-sekou-blog"><Link to="/tosou-arekore/" className="txt12">{data.microcmsBlog.category.name}</Link></li>
                         </ul>
 
-                        <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt={data.microcmsBlog.title + 'サムネイル'} /></div>
+                        <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt={data.microcmsBlog.title} loading="lazy" /></div>
                         
                         <div className="arekore">
                         <div
@@ -77,6 +77,12 @@ const TosouArekorePage = ({ data }) => (
             </div>
         </section>
     </Layout>
+    </>
+)
+
+export const Head = ({data}) => (
+    <>
+        <Seo title={data.microcmsBlog.title} />
     </>
 )
 

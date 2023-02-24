@@ -14,10 +14,9 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 const index = ({data}) => {
   return (
     <>
-    <Header />
+      <Header />
     
-    <Layout>
-        <Seo />    
+      <Layout>
         
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/omoide/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
@@ -44,42 +43,42 @@ const index = ({data}) => {
           </ul>
         </div>
 
-        <section id="sub-page">
-            <div className='main-content'>
-
-            
-
-            <div className="flex-wrap">
+      <section id="sub-page">
+        <div className='main-content'>
+          <div className="flex-wrap">
             <div className="main_b">
-                <h2 className="page_title01 mt0">思い出のかべ</h2>                
-                <div className="kiji_list">
-                {data.allMicrocmsBlog.edges.map(({ node }) => (
-                    <>
-                    <div className="kiji_box">
-                        <div className='kiji_thumb'><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></div>
-                        <div className="kiji_txt">
-                            <p>{node.date}</p>
-                            <p><a href={'/' + node.category.slug + '/' + node.blogId + '/'} className="kiji_title">{node.title}</a></p>
-                        </div>
-                    </div>
-                    </>
-                ))}
-                </div>
+              <h2 className="page_title01 mt0">思い出のかべ</h2>                
+              <div className="kiji_list">
+              {data.allMicrocmsBlog.edges.map(({ node }) => (
+                  <>
+                  <div className="kiji_box">
+                      <div className='kiji_thumb'><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></div>
+                      <div className="kiji_txt">
+                          <p>{node.date}</p>
+                          <p><a href={'/' + node.category.slug + '/' + node.blogId + '/'} className="kiji_title">{node.title}</a></p>
+                      </div>
+                  </div>
+                  </>
+              ))}
+              </div>
 
             </div>
             <div className="side_b">
               <Sideb />
             </div>
-            </div>
-            
-            
-
+          </div>
         </div>
-        </section>
+      </section>
     </Layout>
   </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo />
+  </>
+)
 
 export default index
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -51,14 +51,14 @@ const gaiheki = () => {
                 
                 <div className="gaiheki_title_box">
                     <h1>
-                    <StaticImage src="../images/gaiheki_img01.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 外壁塗装" className="pc" />
-                    <StaticImage src="../images/gaiheki_img01_smp.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 外壁塗装" className="smp" />
+                    <img src="../images/gaiheki_img01.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 外壁塗装" className="pc" />
+                    <img src="../images/gaiheki_img01_smp.png" alt="塗りたてがキレイなのは当たり前。どこまで持たせるかは工事の品質によって変わります。 外壁塗装" className="smp" />
                     </h1>
                 </div>
 
                 <div className="gaiheki_img_box">
                     <div className='gaiheki_box_img'>
-                        <StaticImage src="../images/gaiheki_img02.jpg" alt="" />
+                        <img src="../images/gaiheki_img02.jpg" loading="lazy" alt="" />
                     </div>
                     <div className='gaiheki_box_txt'>
                         <p>外壁は傷み具合によって補修の有無、適正な塗料の選定も変わります。</p>
@@ -70,23 +70,23 @@ const gaiheki = () => {
 
                 <div className="gaiheki_title_box p0 mt50">
                         <div className='gaiheki_title_img'>
-                            <h2><StaticImage src="../images/gaiheki_img03.png" alt="外壁塗装プラン30坪（100㎡程度）" /></h2>
+                            <h2><img src="../images/gaiheki_img03.png" alt="外壁塗装プラン30坪（100㎡程度）" /></h2>
                         </div>
                         <div className='gaiheki_title_txt'>
-                            <StaticImage src="../images/gaiheki_img04.png" alt="足場養生→高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
+                            <img src="../images/gaiheki_img04.png" alt="足場養生→高圧洗浄→下地処理→塗装(3回)→アフター 全て含め ※ケレン作業・シーリング作業別途" />
                         </div>
                 </div>
 
                 <ul className="gaiheki_price_list">
-                    <li><StaticImage src="../images/gaiheki_price01.png" alt="シリコンプラン" /></li>
-                    <li><StaticImage src="../images/gaiheki_price02.png" alt="ラジカル制御形プラン" /></li>
-                    <li><StaticImage src="../images/gaiheki_price03.png" alt="低汚染プラン" /></li>
-                    <li><StaticImage src="../images/gaiheki_price04.png" alt="無機プラン" /></li>
-                    <li><StaticImage src="../images/gaiheki_price05.png" alt="最高級フッ素プラン" /></li>
+                    <li><img src="../images/gaiheki_price01.png" alt="シリコンプラン" /></li>
+                    <li><img src="../images/gaiheki_price02.png" alt="ラジカル制御形プラン" /></li>
+                    <li><img src="../images/gaiheki_price03.png" alt="低汚染プラン" /></li>
+                    <li><img src="../images/gaiheki_price04.png" alt="無機プラン" /></li>
+                    <li><img src="../images/gaiheki_price05.png" alt="最高級フッ素プラン" /></li>
                 </ul>
 
                 <div className="comment_box">
-                    <div className="comment_l"><StaticImage src="../images/boss_photo2.jpg" alt="佐々木塗装代表-写真" /></div>
+                    <div className="comment_l"><img src="../images/boss_photo2.jpg" alt="佐々木塗装代表-写真" /></div>
                     <div className="comment_r">
                         <div>
                             塗料の種類は様々です。<br />
@@ -218,11 +218,11 @@ const gaiheki = () => {
                         </div>
                         
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic01.jpg" width={438} height={332} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic01.jpg" width={438} height={332} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 アステックペイントシリコンフレックス</p>
-                                <p><StaticImage src="../images/gaiheki_pic02.jpg" width={101} height={119} alt="" /></p>
+                                <p><img src="../images/gaiheki_pic02.jpg" width={101} height={119} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -255,11 +255,11 @@ const gaiheki = () => {
                             エスケー化研プレミアムシリコン</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic03.jpg" width={444} height={332} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic03.jpg" width={444} height={332} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                             <p className="noto_san bold txt12">《使用塗料》<br />
                                 日本ペイントパ―フェクトトップ</p>
-                            <p><StaticImage src="../images/gaiheki_pic04.jpg" width={111} height={148} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic04.jpg" width={111} height={148} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -291,12 +291,12 @@ const gaiheki = () => {
                             アステックペイント超低汚染リファイン1000MF-IR</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic05.jpg" width={428} height={321} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic05.jpg" width={428} height={321} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 アステックペイント<br />
                                 超低汚染リファイン1000Si-IR</p>
-                                <p><StaticImage src="../images/gaiheki_pic06.jpg" width={105} height={103} alt="" /></p>
+                                <p><img src="../images/gaiheki_pic06.jpg" width={105} height={103} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -323,12 +323,12 @@ const gaiheki = () => {
                             NCK アドグリーンコート</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic07.jpg" width={428} height={321} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic07.jpg" width={428} height={321} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                             <p className="noto_san bold txt12">《使用塗料》<br />
                                 アステックペイント<br />
                                 超低汚染リファイン1000Si-IR</p>
-                            <p><StaticImage src="../images/gaiheki_pic08.jpg" width={105} height={103} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic08.jpg" width={105} height={103} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -356,11 +356,11 @@ const gaiheki = () => {
                             日進産業ガイナ</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic09.jpg" width={428} height={321} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic09.jpg" width={428} height={321} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 日進産業ガイナ</p>
-                                <p><StaticImage src="../images/gaiheki_pic10.jpg" width={103} height={143} alt="" /></p>
+                                <p><img src="../images/gaiheki_pic10.jpg" width={103} height={143} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -395,12 +395,12 @@ const gaiheki = () => {
                             KFケミカルKFワールドセラシリーズ</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic11.jpg" width={428} height={319} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic11.jpg" width={428} height={319} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                     タイフレックス<br />
                                     ダイヤスーパーセランマイルド</p>
-                                <p><StaticImage src="../images/gaiheki_pic12.jpg" width={160} height={117} alt="" /></p>
+                                <p><img src="../images/gaiheki_pic12.jpg" width={160} height={117} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -431,11 +431,11 @@ const gaiheki = () => {
                                 AGCコーテック　ルミステージ</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic13.jpg" width={436} height={332} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic13.jpg" width={436} height={332} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 日本ペイントファイン4Fセラミック</p>
-                                <p><StaticImage src="../images/gaiheki_pic14.jpg" width={130} height={139} alt="" /></p>
+                                <p><img src="../images/gaiheki_pic14.jpg" width={130} height={139} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -461,12 +461,12 @@ const gaiheki = () => {
                             日本ペイントピュアライドUVプロテクト4Fクリヤー</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic15.jpg" width={446} height={353} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic15.jpg" width={446} height={353} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                             <p className="noto_san bold txt12">《使用塗料》<br />
                                 日本ペイント<br />
                                 ピュアライドUVプロテクト4Fクリヤー</p>
-                            <p><StaticImage src="../images/gaiheki_pic16.jpg" width={130} height={137} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic16.jpg" width={130} height={137} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>
@@ -492,7 +492,7 @@ const gaiheki = () => {
                                 日本ペイント水性ペリアートUV</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic17.jpg" width={425} height={158} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic17.jpg" width={425} height={158} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 ダイフレックスダイヤアーバントーン</p>
@@ -520,11 +520,11 @@ const gaiheki = () => {
                                 スズカファインWBアートF</p>
                         </div>
                         <div className="w40p order1 penki_cont">
-                            <p><StaticImage src="../images/gaiheki_pic18.jpg" width={464} height={343} alt="" /></p>
+                            <p><img src="../images/gaiheki_pic18.jpg" width={464} height={343} loading="lazy" alt="" /></p>
                             <div className="penki_box">
                                 <p className="noto_san bold txt12">《使用塗料》<br />
                                 スズカファインWBアートSi</p>
-                                <p><StaticImage src="../images/gaiheki_pic19.jpg" width={135} height={147} alt="" /></p>
+                                <p><img src="../images/gaiheki_pic19.jpg" width={135} height={147} loading="lazy" alt="" /></p>
                             </div>
                         </div>
                     </div>

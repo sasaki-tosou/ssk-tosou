@@ -14,7 +14,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 export default function index({data}) {
   return (
     <>
-        <Seo title="施工事例" />
+
         <Header />
         <Layout>
             <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/cese/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
@@ -74,6 +74,12 @@ export default function index({data}) {
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo title="施工事例" />
+  </>
+)
 
 export const query = graphql`
 {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -54,8 +54,8 @@ const voice = () => {
             <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・K様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice13_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice13_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice13_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice13_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -70,8 +70,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・T様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice14_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice14_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice14_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice14_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -82,8 +82,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｍ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice15_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice15_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice15_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice15_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -96,8 +96,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｍ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice16_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice16_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice16_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice16_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -108,8 +108,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice17_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice17_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice17_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice17_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -125,8 +125,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ａ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice18_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice18_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice18_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice18_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -136,8 +136,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｕ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice19_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice19_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice19_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice19_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -148,8 +148,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice20_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice20_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice20_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice20_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -160,8 +160,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｍ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice21_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice21_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice21_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice21_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -177,8 +177,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice22_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice22_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice22_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice22_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -190,8 +190,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｆ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice23_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice23_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice23_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice23_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -207,8 +207,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｗ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice24_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice24_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice24_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice24_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -221,8 +221,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｙ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice25_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice25_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice25_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice25_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -236,8 +236,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐南区・Ｓ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice26_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice26_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice26_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice26_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -252,8 +252,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市西区・Ｎ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice27_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice27_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice27_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice27_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -268,8 +268,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Y様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice28_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice28_1.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice28_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice28_1.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -281,8 +281,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市東区・Ｓ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice29_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice29_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice29_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice29_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -298,8 +298,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｆ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice30_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice30_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice30_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice30_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -315,8 +315,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ａ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice31_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice31_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice31_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice31_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -329,8 +329,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｍ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice32_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice32_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice32_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice32_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -342,8 +342,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｈ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice33_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice33_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice33_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice33_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -354,8 +354,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｆ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice34_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice34_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice34_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice34_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -368,8 +368,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｓ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice35_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice35_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice35_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice35_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -382,8 +382,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｔ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice36_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice36_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice36_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice36_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -396,8 +396,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｈ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice37_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice37_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice37_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice37_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -409,8 +409,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｍ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice38_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice38_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice38_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice38_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -424,8 +424,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">廿日市市・Ｏ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice39_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice39_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice39_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice39_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -448,8 +448,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｕ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice40_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice40_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice40_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice40_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -463,8 +463,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｈ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice41_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice41_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice41_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice41_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -479,8 +479,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｈ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice42_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice42_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice42_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice42_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -494,8 +494,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｎ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice43_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice43_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice43_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice43_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -508,8 +508,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice44_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice44_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice44_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice44_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -522,8 +522,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice45_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice45_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice45_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice45_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -535,8 +535,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice46_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice46_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice46_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice46_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -547,8 +547,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">東広島市　Ｔ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice01_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice01_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice01_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice01_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -561,8 +561,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｔ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice02_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice02_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice02_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice02_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -575,8 +575,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｈ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice03_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice03_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice03_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice03_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -588,8 +588,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｍ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice04_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice04_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice04_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice04_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -601,8 +601,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">東広島市　Ｔ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice05_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice05_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice05_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice05_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -617,8 +617,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">廿日市市　Ｈ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice06_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice06_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice06_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice06_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -630,8 +630,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｋ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice07_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice07_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice07_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice07_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -647,8 +647,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｏ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice08_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice08_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice08_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice08_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -666,8 +666,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｓ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice09_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice09_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice09_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice09_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -685,8 +685,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区　Ｓ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice10_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice10_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice10_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice10_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -702,8 +702,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">廿日市市　Ｙ様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice11_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice11_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice11_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice11_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>
@@ -717,8 +717,8 @@ const voice = () => {
         <div className="user_voice_box">
           <h3 className="voice_title">広島市安佐北区・T様</h3>
           <div className="flex-wrap">
-            <div className="kansya_img"><StaticImage src="../images/voice/voice12_1.jpg" alt="" /></div>
-            <div className="kansya_img"><StaticImage src="../images/voice/voice12_2.jpg" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice12_1.jpg" loading="lazy" alt="" /></div>
+            <div className="kansya_img"><img src="../images/voice/voice12_2.jpg" loading="lazy" alt="" /></div>
           </div>
           <h4 className="voice_subtitle">お客様からのコメント</h4>
           <div>

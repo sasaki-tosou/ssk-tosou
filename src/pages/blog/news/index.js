@@ -16,8 +16,7 @@ const index = ({data}) => {
     <>
       <Header />
     
-    <Layout>
-        <Seo title="お知らせ - 記事一覧" />    
+      <Layout>        
         
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/news/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
@@ -28,65 +27,67 @@ const index = ({data}) => {
             </div>
         </div>
         <div id="breadcrumb">
-            <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/" itemprop="item">
-                        <span itemprop="name">ホーム</span>
-                    </Link>
-                    <meta itemprop="position" content="1" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/blog/" itemprop="item">
-                        <span itemprop="name">ブログ一覧</span>
-                    </Link>
-                    <meta itemprop="position" content="2" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/blog/news/" itemprop="item">
-                        <span itemprop="name">お知らせ</span>
-                    </Link>
-                    <meta itemprop="position" content="3" />
-                </li>
-            </ul>
+          <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/" itemprop="item">
+                <span itemprop="name">ホーム</span>
+              </Link>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/blog/" itemprop="item">
+                <span itemprop="name">ブログ一覧</span>
+              </Link>
+              <meta itemprop="position" content="2" />
+            </li>
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/blog/news/" itemprop="item">
+                <span itemprop="name">お知らせ</span>
+              </Link>
+              <meta itemprop="position" content="3" />
+            </li>
+          </ul>
         </div>
 
         <section id="sub-page">
-            <div className='main-content'>
-
+          <div className='main-content'>
             <div className="flex-wrap">
-            <div className="main_b">
+              <div className="main_b">
                 <h2 className="page_title01 mt0">ブログ</h2>
                 <p className='center bold orange'>お知らせ</p>
                 <div className="kiji_list">
-                {data.allMicrocmsBlog.edges.map(({ node }) => (
-                  <div className="kiji_box">
-                    <div className="kiji_thumb">
-                    <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></a>
+                  {data.allMicrocmsBlog.edges.map(({ node }) => (
+                    <div className="kiji_box">
+                      <div className="kiji_thumb">
+                        <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></a>
+                      </div>
+                      <div className="kiji_txt">					
+                        <p className="txt12">{node.date}</p>
+                        <p className="txt12"><a href={'/blog/' + node.category.slug + '/' + node.blogId}>{node.title}</a></p>
+                        <ul className="cat_list">
+                          <li className="blog-sekou-blog"><a href={'/blog/' + node.category.slug + '/'} className="txt12">{node.category.name}</a></li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="kiji_txt">					
-                      <p className="txt12">{node.date}</p>
-                      <p className="txt12"><a href={'/blog/' + node.category.slug + '/' + node.blogId}>{node.title}</a></p>
-                      <ul className="cat_list">
-                        <li className="blog-sekou-blog"><a href={'/blog/' + node.category.slug + '/'} className="txt12">{node.category.name}</a></li>
-                      </ul>
-                    </div>
-                  </div>
                   ))}
                 </div>
+              </div>
+              <div className="side_b">
+                <Sideb />
+              </div>
             </div>
-            
-            <div className="side_b">
-              <Sideb />
-            </div>
-            
-            </div>
-
-            </div>
+          </div>
         </section>
-    </Layout>
+      </Layout>
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo title="お知らせ - 記事一覧" />
+  </>
+)
 
 export default index
 

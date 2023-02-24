@@ -18,10 +18,6 @@ const ContactThanks = () => {
   return (
     <>
       <Layout>
-        <Seo
-            title="相場チェックのご依頼ありがとうございました"
-            description="外壁塗装・屋根塗装なら広島の佐々木塗装の相場チェックのご依頼フォーム送信完了ページ"
-        />
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/contact/thanks/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
         <div id="mainimage-sub" className='souba-thanks'>
@@ -69,5 +65,14 @@ const ContactThanks = () => {
     </>
   )
 }
+
+export const Head = () => (
+    <>
+      <Seo
+            title="お問い合わせありがとうございました"
+            description="外壁塗装・屋根塗装なら広島の佐々木塗装のお問い合わせフォーム送信完了ページ"
+        />
+    </>
+)
 
 export default ContactThanks

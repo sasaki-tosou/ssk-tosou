@@ -16,37 +16,36 @@ const index = ({data}) => {
     <>
       <Header />
     
-    <Layout>
-        <Seo title="会社の事 - 記事一覧" />    
+      <Layout>        
         
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/kaisya/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
 
         <div id="mainimage-sub" className='blog'>
-            <div id="mainimage-inner">
-            </div>
+          <div id="mainimage-inner">
+          </div>
         </div>
         <div id="breadcrumb">
-            <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/" itemprop="item">
-                        <span itemprop="name">ホーム</span>
-                    </Link>
-                    <meta itemprop="position" content="1" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/blog/" itemprop="item">
-                        <span itemprop="name">ブログ一覧</span>
-                    </Link>
-                    <meta itemprop="position" content="2" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/blog/kaisya/" itemprop="item">
-                        <span itemprop="name">会社の事</span>
-                    </Link>
-                    <meta itemprop="position" content="3" />
-                </li>
-            </ul>
+          <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/" itemprop="item">
+                <span itemprop="name">ホーム</span>
+              </Link>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/blog/" itemprop="item">
+                <span itemprop="name">ブログ一覧</span>
+              </Link>
+              <meta itemprop="position" content="2" />
+            </li>
+            <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <Link to="/blog/kaisya/" itemprop="item">
+                <span itemprop="name">会社の事</span>
+              </Link>
+              <meta itemprop="position" content="3" />
+            </li>
+          </ul>
         </div>
 
         <section id="sub-page">
@@ -82,10 +81,16 @@ const index = ({data}) => {
 
             </div>
         </section>
-    </Layout>
+      </Layout>
     </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo title="会社の事 - 記事一覧" />
+  </>
+)
 
 export default index
 

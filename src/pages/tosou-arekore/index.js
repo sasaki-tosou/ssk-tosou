@@ -17,7 +17,6 @@ const index = ({data}) => {
     <Header />
     
     <Layout>
-        <Seo />    
         
         <p id="page-top" data-sal="slide-bottom" viewOffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/tosou-arekore/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
@@ -57,7 +56,7 @@ const index = ({data}) => {
                       <>
                       <div className="post_box">
                           <div className="post_thumb">
-                          <a href={'/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} /></a>
+                          <a href={'/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a>
                           </div>
                           <div className="post_txt">
                               <p className="txt12">{node.date}</p>
@@ -79,6 +78,12 @@ const index = ({data}) => {
   </>
   )
 }
+
+export const Head = () => (
+  <>
+    <Seo />
+  </>
+)
 
 export default index
 

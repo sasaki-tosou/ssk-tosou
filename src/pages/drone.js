@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "@fontsource/noto-sans-jp"
@@ -60,12 +60,12 @@ const drone = () => {
                   普段見る事のできないお住まいの劣化状況がわかります。<br />
                   ドローンは誰でも飛ばせるわけではなく、国土交通省の発行する無人航空機の飛行許可が必要です。</p>
                 <ul className="drone_list">
-                  <li><img src="../images/drone_pic02.jpg" width={150} alt="" /></li>
-                  <li><img src="../images/drone_pic03.jpg" alt="" /></li>
+                  <li><img src="../images/drone_pic02.jpg" width={150} loading="lazy" alt="" /></li>
+                  <li><img src="../images/drone_pic03.jpg" loading="lazy" alt="" /></li>
                 </ul>
               </div>
               <div className="drone_r">
-                <p><img src="../images/drone_pic01.jpg" alt="" /></p>
+                <p><img src="../images/drone_pic01.jpg" loading="lazy" alt="" /></p>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ const drone = () => {
                   勾配が急で上がれない屋根も撮影する事ができます。
                 </div>
               </div>
-              <div className="drone_r"><img src="../images/drone_pic04.jpg" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone_pic04.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -90,7 +90,7 @@ const drone = () => {
                   足場や高所作業車等の必要がないので管理者さま、オーナー様に余計なご負担がかかりません。
                 </div>
               </div>
-              <div className="drone_r"><StaticImage src="../images/drone_pic05.jpg" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone_pic05.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -100,7 +100,7 @@ const drone = () => {
                   屋根に上がらずに診断できるので瓦を割るような事はありません。
                 </div>
               </div>
-              <div className="drone_r"><StaticImage src="../images/drone_pic06.jpg" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone_pic06.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -110,7 +110,7 @@ const drone = () => {
                   タブレットで劣化箇所を確認する事ができます。
                 </div>
               </div>
-              <div className="drone_r"><StaticImage src="../images/drone_pic07.jpg" alt="" /></div>
+              <div className="drone_r"><img src="../images/drone_pic07.jpg" loading="lazy" alt="" /></div>
             </div>
 
             <div className="drone_txt_box">
@@ -125,11 +125,11 @@ const drone = () => {
             <div className="drone_box">
               <div className="drone_box_l">
                 <p className="case_title2">before</p>
-                <StaticImage src="../images/drone_pic08.jpg" alt="" />
+                <img src="../images/drone_pic08.jpg" loading="lazy" alt="" />
               </div>
               <div className="drone_box_r">
                 <p className="case_title2">after</p>
-                <StaticImage src="../images/drone_pic09.jpg" alt="" />
+                <img src="../images/drone_pic09.jpg" loading="lazy" alt="" />
               </div>
             </div>
 

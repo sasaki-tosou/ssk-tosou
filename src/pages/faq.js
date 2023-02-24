@@ -168,7 +168,7 @@ const faq = () => {
               <p>できます。 銀行のリフォームローン他各種クレジットでお支払いができます。 カード決済もできます。</p>
               <div className="aeon_img_r">
                 <a href="/aeon_credit/">
-                  <img src="../images/pay-e1525397319415.jpg" alt="" />
+                  <img src="../images/pay-e1525397319415.jpg" loading="lazy" alt="" />
                 </a>
               </div>
             </div>
