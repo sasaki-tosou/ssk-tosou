@@ -155,7 +155,11 @@ const Home = ({ data }) => {
               {data.works.edges.map(({ node }) => (
                 <SwiperSlide>
                 <div className="works_list">
-                  <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent"><img src={node.mainimage.url} width={370} height={277} alt={node.title + 'サムネイル画像'} loading="lazy" /></a></p>
+                  <p>
+                    <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent">
+                      <img src={node.mainimage.url} width={370} height={277} alt={node.title + 'サムネイル画像'} loading="lazy" />                      
+                    </a>
+                  </p>
                   <p className="workstitle"><a href={'/blog/' + node.category.slug + '/' + node.blogId} target="_parent">{node.title}</a></p>
                 </div>
                 </SwiperSlide>
@@ -516,6 +520,8 @@ query {
         excerpt
         mainimage {
           url
+          height
+          width
         }
       }
     }
