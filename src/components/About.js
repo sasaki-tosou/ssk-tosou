@@ -1,9 +1,7 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+
 import { Link } from "gatsby"
 
-import "@fontsource/noto-sans-jp"
-import "@fortawesome/fontawesome-svg-core/styles.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -25,7 +23,7 @@ const about = () => {
                         <p><Link to="/company/" className="bt01"><FontAwesomeIcon icon={faAngleRight} /> 会社概要はこちら</Link></p>
                     </div>
                     <div className="about_r">
-                    <StaticImage src="../images/about_pic01.jpg" width={761} height={508} alt="" />
+                    <img src="/images/about_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
                     </div>
                 </div>
             </div>
@@ -46,7 +44,7 @@ const about = () => {
                     </div>
                     
                     <div className="point_r">
-                    <StaticImage src="../images/point_pic01.jpg" width={761} height={508} alt="" />
+                    <img src="/images/point_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
                     </div>
                 </div>
             </div>

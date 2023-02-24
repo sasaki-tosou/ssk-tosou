@@ -6,7 +6,7 @@ const SoubaCheck = () => {
       <section id="souba_check">
   <div className="main-content">
     <h3 className="title04">最短10秒無料相場チェック</h3>
-    <div className="smp"><img src="/images/souba_oneesan_smp.jpg" width="100%" alt="他社見積り中でもOK！" /></div>
+    <div className="smp"><img src="/images/souba_oneesan_smp.jpg" width={375} height={210} loading="lazy" alt="他社見積り中でもOK！" /></div>
     <div className="souba_inner">
       <div className="flex-wrap">
         <div className="souba_l">
@@ -45,21 +45,21 @@ const SoubaCheck = () => {
               外壁塗装の相場をご案内いたします！</p>
           </div>
             <div className="flex-wrap">
-              <div className="step_l"><img src="/images/souba_txt01.png" alt="STEP1" /></div>
+              <div className="step_l"><img src="/images/souba_txt01.png" width={243} height={125} loading="lazy" alt="STEP1" /></div>
               <div className="step_r">
                 <p>相場チェックフォームにご入力。<br />
                   お住まいの情報をフォームにご入力下さい。</p>
               </div>
             </div>
             <div className="flex-wrap">
-              <div className="step_l"><img src="/images/souba_txt02.png" alt="STEP2 資格所有の塗装専門担当者が外壁塗装についてお答え。" /></div>
+              <div className="step_l"><img src="/images/souba_txt02.png" width={243} height={125} loading="lazy" alt="STEP2 資格所有の塗装専門担当者が外壁塗装についてお答え。" /></div>
               <div className="step_r">
                 <p>資格所有の塗装専門担当者が外壁塗装の相場についてお答え。<br />
                   ご不明点も解消いただけます。</p>
               </div>
             </div>
             <div className="flex-wrap">
-              <div className="step_l"><img src="/images/souba_txt03.png" alt="STEP3 あなたにピッタリの塗装プランをご案内いたします。" /></div>
+              <div className="step_l"><img src="/images/souba_txt03.png" width={243} height={125} loading="lazy" alt="STEP3 あなたにピッタリの塗装プランをご案内いたします。" /></div>
               <div className="step_r">
                 <p>あなたにピッタリの塗装プランをご案内いたします。<br />
                   無料の外壁診断もご利用いただけます。</p>
