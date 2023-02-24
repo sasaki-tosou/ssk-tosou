@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -23,7 +23,7 @@ const about = () => {
                         <p><Link to="/company/" className="bt01"><FontAwesomeIcon icon={faAngleRight} /> 会社概要はこちら</Link></p>
                     </div>
                     <div className="about_r">
-                    <img src="/images/about_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
+                    <StaticImage src="/images/about_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ const about = () => {
                     </div>
                     
                     <div className="point_r">
-                    <img src="/images/point_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
+                    <StaticImage src="/images/point_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
                     </div>
                 </div>
             </div>
