@@ -201,7 +201,7 @@ const Home = ({ data }) => {
                 <p className="title06">その疑問、塗り替え勉強会で<br className="smp" />お答えします！</p>
                 
                 <div className="center">
-                  <img src="../images/arrow01.png" alt="塗り替え勉強会開催日はこちら" />
+                  <img src="../images/arrow01.png" width={280} height={52} loading="lazy" alt="塗り替え勉強会開催日はこちら" />
                 </div>
                 
                 <div className="study_box">
@@ -246,7 +246,7 @@ const Home = ({ data }) => {
                     <SwiperSlide>
                       <div className="case_list">
                         <div className="kanryo_icon"></div>
-                        <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" alt="完成！" loading="lazy" /></div>
+                        <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" width={178} height={50} alt="完成！" loading="lazy" /></div>
                         <p>
                           <a href={'/case/' + node.caseId} target="_parent">
                             <img src={node.atoImg.url} width={432} height={288} alt={node.title + 'サムネイル画像'} loading="lazy" />

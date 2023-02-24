@@ -14,7 +14,7 @@ const sideb = () => {
         <li><a href="https://www.j-anshin.co.jp/" target="_blank" rel="noopener noreferrer"><img src="/images/side_ansin.svg" width={231} height={63} loading="lazy" alt="株式会社住宅あんしん保証" /></a></li>
         <li><img src="/images/side06.jpg" width={264} height={88} loading="lazy" alt="外装リフォームの教科書" /></li>
         <li><a href="https://www.mokutokyo.jp/" target="_blank" rel="noopener noreferrer"><img src="/images/side07.jpg" width={264} height={106} loading="lazy" alt="（一社）木造住宅塗装リフォーム協会" /></a></li>
-        <li><Link to="/aeon_credit/"><img src="/images/side05.jpg" width={250} height={131} alt="便利な分割ローン" /></Link></li>
+        <li><Link to="/aeon_credit/"><img src="/images/side05.jpg" width={250} height={131} loading="lazy" alt="便利な分割ローン" /></Link></li>
         <li><img src="/images/side09.jpg" width={264} height={336} loading="lazy" alt="選べる支払方法" /></li>
       </ul>
     </>
