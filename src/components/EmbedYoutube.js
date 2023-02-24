@@ -16,7 +16,6 @@ const EmbedYoutube = ({id}) =>{ //※１　動画IDをもらう
                     alt="サムネイル"
                 />
                 
-                
             ) : ( //※３　三項演算子。isThumbnailがfalseなら（=サムネがクリックされたら）iframeでYoutubeを読み込む
             <iframe className={styles.youtube}
                 src={`https://www.youtube.com/embed/temP7huz9HA?autoplay=1`} //※６　受け取った動画IDを元にYoutubeを指定

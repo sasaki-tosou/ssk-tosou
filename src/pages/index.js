@@ -126,7 +126,7 @@ const Home = ({ data }) => {
         </section>
 
         <div className="center mtb3p">
-          <img src="../images/catch_pic01.png" alt="「私たちが佐々木さんをお薦めします！！」" loading="lazy" />
+          <img src="../images/catch_pic01.jpg" alt="「私たちが佐々木さんをお薦めします！！」" loading="lazy" />
         </div>
 
         <Kuchikomi />
@@ -276,7 +276,7 @@ const Home = ({ data }) => {
 
           <h3>取扱い塗料</h3>
 
-          <p className="mt3p"><img src="../images/print_img01.png" alt="取扱い塗料-イメージ" /></p>
+          <p className="mt3p"><img src="../images/print_img01.jpg" alt="取扱い塗料-イメージ" /></p>
 
           <ul>
             <li><img src="../images/paint_logo01.jpg" loading="lazy" alt="GAINA" /></li>
