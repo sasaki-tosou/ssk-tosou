@@ -10,6 +10,7 @@ const EmbedYoutube = ({id}) =>{ //※１　動画IDをもらう
             {isThumbnail ? ( //※３　三項演算子。isThumbnailがtrueなら、サムネを取得して表示
                 
                 <img className={styles.youtube}
+                    loading="lazy"
                     src={`/images/maxresdefault.webp`} //※４　↓で解説
                     onClick={() => setIsThumbnail(false)} //※５　クリックされたらsetIsThumbnailでisThumbnailをfalseに変更
                     alt="サムネイル"
