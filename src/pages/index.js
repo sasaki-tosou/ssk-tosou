@@ -68,7 +68,7 @@ const Home = ({ data }) => {
                     <h4>お知らせ</h4>
                   </div>
                   <div className="w50p_smp_s smp_s">
-                    <img src="../images/news_thumb.jpg" loading="lazy" alt="" />
+                    <img src="../images/news_thumb.jpg" width={159} height={110} loading="lazy" alt="" />
                   </div>
                 </div>
               </div>

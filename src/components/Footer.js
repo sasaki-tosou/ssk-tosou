@@ -8,7 +8,7 @@ const Footer = () => {
             <div id="footer">
                 <div id="footer-inner">
                     <div className="w30p mb3p_smp">
-                        <p className="center_smp mb20"><Link to="/"><img src="/images/logo.svg" width={400} alt="株式会社佐々木塗装" /></Link></p>
+                        <p className="center_smp mb20"><Link to="/"><img src="/images/logo.svg" width={360} height={84} alt="株式会社佐々木塗装" /></Link></p>
                         <p className="center_smp">〒731-0212<br />
                         広島市安佐北区三入東2丁目69-3<br />
                         TEL 082-810-5310 FAX 082-810-5311</p>
