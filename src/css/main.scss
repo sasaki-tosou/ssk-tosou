@@ -1012,7 +1012,7 @@ section { width:100%; margin:0 auto;}
 #news_r dt { width: 15%; border-bottom: dashed 1px #ccc; padding: 15px 0; position:relative; }
 
 #news_r dd { width: 85%; border-bottom: dashed 1px #ccc; padding: 10px 0 20px 40px; position: relative;}
-#news_r dd a { position: relative; color: #000; font-size: 14px; display: inline-block; padding:15px 10px 15px 10px;}
+#news_r dd a { position: relative; color: #000; font-size: 15px; display: inline-block; padding:15px 10px 15px 10px;}
 
 #news_r dd:nth-of-type(1):after,#news_r dd:nth-of-type(2):after,#news_r dd:nth-of-type(3):after { content:""; background-image: url("../images/new_icon.png"); width: 35px; height: 35px; background-size: cover; display: inline-block; margin-left: 15px; animation: flash 0.8s ease-in infinite alternate; position: absolute; top:5px; left:-20px; z-index:10;}
 
@@ -1025,7 +1025,7 @@ section { width:100%; margin:0 auto;}
 #news_r dd .fa-angle-right { color: #fd7416; position: absolute; right:0; top:50%; margin-top: -.5em; font-size: 140%; }
 
 #news_r dd div { position:relative; display:inline-block; }
-#news_r dd div a { min-width: 100px; text-align: center; padding:8px 15px; border-radius:10px; font-size:13px; background-color:#ff7415; color:#fff; margin-right:10px; transition: all 0.3s ease;}
+#news_r dd div a { min-width: 100px; text-align: center; padding:8px 15px; border-radius:10px; font-size:12px; background-color:#ff7415; color:#fff; margin-right:10px; transition: all 0.3s ease;}
 #news_r dd div a:hover { text-decoration: none; opacity: 0.5;}
 
 #news_r dd div.blog a,.cat_list li.blog a { background-color:#5ec618; }
@@ -1051,10 +1051,11 @@ section { width:100%; margin:0 auto;}
 @media screen and (max-width:768px){
 	#news_l,#news_r { width:100%; padding: 3%;}
 	#news_r dd .fa-angle-right { margin-top: initial; }
-	#news dt {  width: 100%; border-bottom: dashed 0px #ccc; }
+	#news dt {  width: 100%; border-bottom: dashed 0px #ccc; font-size: 16px; padding-bottom: 0; }
 	#news dd { width: 100%; border-bottom: dashed 1px #ccc; padding: 10px 35px 15px 0; }
-	#news_r dd a { position: relative; color: #000; font-size: 120%; display: inline-block; padding:15px 10px 15px 0;}
-	#news_r dd div a { min-width: 100px; text-align: center; padding:8px 15px; border-radius:10px; font-size:14px;}
+	#news_r dd a { position: relative; color: #000; font-size: 16px; display: inline-block; padding:15px;}
+	#news_r dd div { margin-bottom: 15px;}
+	#news_r dd div a { min-width: 100px; text-align: center; padding:8px 15px; border-radius:10px; font-size:15px;}
 }
 
 
