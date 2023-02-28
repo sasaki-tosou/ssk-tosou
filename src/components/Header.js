@@ -43,7 +43,7 @@ const Header = () => {
                             <Link to="/"><img src="/images/logo.svg" width={250} height={58} alt="株式会社佐々木塗装" loading="lazy" /></Link>
                         </h1>
                         <ul className="h_tools dis_flex flex_jus_end">
-                            <li><a href="tel:0120-116-795"><img src="/images/h_tel.png" width={44} height={44} alt="" loading="lazy" /></a></li>
+                            <li><a href="tel:0120-116-795" aria-label="電話で相談する"><img src="/images/h_tel.png" width={44} height={44} alt="" loading="lazy" /></a></li>
                             <li className="btn_gnav" id="h_menu"><img src="/images/h_menu.png" width={44} height={44} alt="" loading="lazy" /></li>
                         </ul>
 

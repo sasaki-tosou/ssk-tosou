@@ -739,6 +739,7 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 
 @media screen and (max-width:1024px){
 	footer { margin-top:0px !important; }
+	#footer ul a { display: block; padding: 10px; font-size: 16px;}
 	#footer { width:100%; margin-top: 0; background-size: cover;}
 	#footer-inner { width: 100%; margin: 0 auto; box-sizing: border-box; display: flex; flex-wrap: wrap; padding: 3%; }
 	
