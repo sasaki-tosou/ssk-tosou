@@ -20,6 +20,7 @@ const Company = () => {
             <div id="mainimage-inner">
             </div>
         </div>
+
         <div id="breadcrumb">
             <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -36,6 +37,7 @@ const Company = () => {
                 </li>
             </ul>
         </div>
+        
         <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/company/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
 
