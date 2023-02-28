@@ -99,9 +99,9 @@ const Home = ({ data }) => {
             
             <img src="../images/works_bg02.jpg" width={1920} height={1100} loading="lazy" alt="施工事例イメージ" className="pc" />
             
-            <h4>
+            
               <StaticImage src="../images/works_bg02_smp.jpg" width={375} height={215} alt="広島市安佐北区で施工事例913件以上!" className="smp" loading="lazy" />
-            </h4>
+            
             
             <div className="works_inner">
 
