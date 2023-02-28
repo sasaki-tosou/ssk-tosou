@@ -120,7 +120,7 @@ module.exports = {
       options: {
         host: `https://sasaki-tosou.co.jp`,
         sitemap: `https://sasaki-tosou.co.jp/sitemap-0.xml`,
-        policy: [{ userAgent: `*`, allow: `/` }],
+        policy: [{userAgent: '*', allow: '/'}]
       },
     },    
     
