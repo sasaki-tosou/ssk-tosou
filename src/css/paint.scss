@@ -116,6 +116,25 @@
 	}
 }
 
+.yanefuki_content { 
+	background-color: #fff;
+	
+	img {
+		@media screen and (max-width:768px){
+			width : 100%; height: auto;
+		}
+	}
+	.title {
+		position: relative;
+		padding: 1rem 2rem;
+		color: #fff;
+		background: linear-gradient(-45deg,#ff7415 25%,#ff8a3a 0,#ff8a3a 50%,#ff7415 0,#ff7415 75%,#ff8a3a 0);
+		background-size: 20px 20px;
+		h3 { font-family: 'Noto Sans JP', sans-serif; font-size:160%; font-weight: 900; }
+	}
+	.yanefuki_inner { display: flex; flex-wrap: wrap; padding: 2%; }
+}
+
 .himitsu_box { width: 100%; display: flex; flex-wrap: wrap; margin-top: 30px; }
 .himitsu_box div { 
 	width : calc(100% / 3) ; padding: 2%; background-color: #fff;
@@ -380,10 +399,6 @@ font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
 		width : calc(100% / 2); padding: 2%;
 	}
 }
-
-
-
-
 
 .gaiheki_content.cover{ padding-top: 40px; }
 

@@ -392,9 +392,15 @@ const yanefuki = () => {
             </div>
           </div>
 
+          
+
           <div className="gaiheki_content">
-            <div className="title">
-              <h3>屋根葺き替え工事</h3>
+            <div className="gaiheki_title_box p0 mb0">
+              <div className="flex-wrap">
+                  <div>
+                      <h2><img src="/images/yanefuki_img26.png" loading="lazy" alt="屋根葺き替えプラン" /></h2>
+                  </div>
+              </div>
             </div>
             <div className="gaiheki_inner">
               <div className="w60p order2 pl2p">
@@ -415,6 +421,23 @@ const yanefuki = () => {
               </div>
             </div>
           </div>
+
+          <div className="yanefuki_content">
+            <div className="title">
+                <h3>(株)神清 和型BASIC(J型)</h3>
+            </div>
+            <div className="yanefuki_inner">
+              <div className="w30p">
+                <p><img src="../images/yanefuki_img27.jpg" loading="lazy" alt="" /></p>
+              </div>
+              <div className="w70p pl2p">
+                <h4 className="noto_san bold orange txt160p mb3p">和風住宅に合う落ち着きのある屋根材</h4>
+                <p className="noto_san bold txt140p">三州瓦</p>
+                <p>製品保証在り</p>
+                <p className='noto_san bold txt160p'>㎡=¥8,500～</p>
+              </div>
+            </div>
+          </div>
           
         </div>
       </section>
@@ -430,6 +453,7 @@ export const Head = () => (
       title="屋根葺替え"
       description="外壁塗装・屋根塗装なら広島の佐々木塗装の屋根葺替えページです。"
     />
+    
   </>
 )
 
