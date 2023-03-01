@@ -56,9 +56,7 @@ const SEO = ({ title, description, image, article }) => {
         */}
         <meta name="thumbnail" content="https://sasaki-tosou.co.jp/images/mobile_img.jpg" />
       {/*スマホ検索画像*/}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet" />
+      
     </>
   )
 }
