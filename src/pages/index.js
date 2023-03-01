@@ -33,7 +33,7 @@ const Home = ({ data }) => {
 
       <div className="catch_title">
         <h2>
-          <StaticImage src="../images/catch_txt.png" width={1200} height={249} alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
+          <img src="../images/catch_txt.png" width={1200} height={249} alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
         </h2>
       </div>
 
@@ -114,8 +114,8 @@ const Home = ({ data }) => {
                 <p className="center"><Link to="/case/" className="bt02"><FontAwesomeIcon icon={faAngleRight} /> 施工事例はこちらから</Link></p>
                 
                 <ul className="jirei_pic">
-                  <li><StaticImage src="../images/kansyajyo_pic01.png" layout="fixed" width={200} height={267} alt="感謝状イメージ1" loading="lazy" /></li>
-                  <li><StaticImage src="../images/kansyajyo_pic02.png" layout="fixed" width={200} height={267} alt="感謝状イメージ2" loading="lazy" /></li>
+                  <li><img src="../images/kansyajyo_pic01.png" width={200} height={267} alt="感謝状イメージ1" loading="lazy" /></li>
+                  <li><img src="../images/kansyajyo_pic02.png" width={200} height={267} alt="感謝状イメージ2" loading="lazy" /></li>
                 </ul>
 
               </div>
@@ -182,9 +182,9 @@ const Home = ({ data }) => {
             <ul className="img_list3">
               <li><Link to="/gaiheki/"><img src="../images/bn01.jpg" width={376} height={139} className="opa" loading="lazy" alt="外壁塗装" /></Link></li>
               <li><Link to="/yane/"><img src="../images/bn02.jpg" width={376} height={139} className="opa" loading="lazy" alt="屋根塗装" /></Link></li>
-              <li><Link to="/yanefuki/"><StaticImage src="../images/bn03.jpg" layout="fixed" width={376} height={139} className="opa" loading="lazy" alt="屋根葺替" /></Link></li>
+              <li><Link to="/yanefuki/"><img src="../images/bn03.jpg" width={376} height={139} className="opa" loading="lazy" alt="屋根葺替" /></Link></li>
               <li><Link to="/yanecover/"><img src="../images/bn04.jpg" width={376} height={139} className="opa" loading="lazy" alt="屋根カバー工法" /></Link></li>
-              <li><Link to="/drainspout/"><StaticImage src="../images/bn05.jpg" layout="fixed" width={376} height={139} className="opa" loading="lazy" alt="雨樋の交換" /></Link></li>
+              <li><Link to="/drainspout/"><img src="../images/bn05.jpg" width={376} height={139} className="opa" loading="lazy" alt="雨樋の交換" /></Link></li>
               <li><Link to="/exterior/"><img src="../images/bn06.jpg" width={376} height={139} className="opa" loading="lazy" alt="エクステリア" /></Link></li>
             </ul>
 
