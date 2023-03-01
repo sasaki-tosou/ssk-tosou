@@ -64,9 +64,9 @@ const Header = () => {
                                     <li className="gnav__menu__item"><Link to="/voice/">お客様の声</Link></li>
                                 </ul>
                                 <ul className="sns_bt">
-                                    <li><a href="https://twitter.com/sasakipaint1116" target="_blank" rel="noopenner noreferrer" className="tw_bt"><img src="/images/tw_icon.png" width={25} height={25} loading="lazy" className="opa" alt="" /></a></li>
-                                    <li><a href="https://www.facebook.com/profile.php?id=100063604571277" target="_blank" rel="noopenner noreferrer" className="fb_bt"><img src="/images/fb_icon.png" width={25} height={25} loading="lazy" className="opa" alt="" /></a></li>
-                                    <li><a href="https://www.instagram.com/sasaki.ryoko/" target="_blank" rel="noopenner noreferrer" className="insta_bt"><span className="insta"><img src="/images/insta_icon.svg" width={25} height={25} loading="lazy" className="opa" alt="" /></span></a></li>
+                                    <li><a href="https://twitter.com/sasakipaint1116" target="_blank" rel="noopenner noreferrer" className="tw_bt"><img src="/images/tw_icon.png" width={25} height={25} loading="lazy" className="opa" alt="Twitter" /></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100063604571277" target="_blank" rel="noopenner noreferrer" className="fb_bt" aria-label="Facebook"><img src="/images/fb_icon.png" width={25} height={25} loading="lazy" className="opa" alt="Facebook" /></a></li>
+                                    <li><a href="https://www.instagram.com/sasaki.ryoko/" target="_blank" rel="noopenner noreferrer" className="insta_bt" aria-label="instagram"><span className="insta"><img src="/images/insta_icon.svg" width={25} height={25} loading="lazy" className="opa" alt="instagram" /></span></a></li>
                                 </ul>
 
                             </div>
