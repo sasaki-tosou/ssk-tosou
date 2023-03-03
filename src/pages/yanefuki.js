@@ -39,59 +39,81 @@ const yanefuki = () => {
           </ul>
         </div>
         <section id="sub-page">
-        <div className="main-content">
+          <div className="main-content">
 
-        <div className="gaiheki_title_box">
-          <h1>
-              <img src="../images/yanefuki/yanefuki_img_title.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="pc" />
-              <img src="../images/yanefuki/yanefuki_img_title_smp.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="smp" />
-          </h1>
-        </div>
-
-          
-          
-        <div className='yanefuki_box'>
-          <h2>「瓦屋根は地震に弱い・・・」<br />
-          その報道は<span>間違っています。</span></h2>
-          <div className='yanefuki_img_box'>
-          <div><img src='/images/yanefuki/yanefuki_img_batsu.png' loading="lazy" alt="" /></div>
-          <div><img src='/images/yanefuki/yanefuki_img01.png' loading="lazy" alt="" /></div>
-          </div>
-          <div className='yanefuki_txt01'>
-          <p>倒れた家屋。散乱した瓦。阪神・淡路大震災や東日本大震災、<br />
-          そして2016年4月の熊本地震においても、<br />
-          様々なメディアを通じて「瓦屋根の家は地震に弱い」といった報道やイメージが一斉に広がりました。<br />
-          はたして瓦は本当に地震に弱いのでしょうか？<br />
-          いいえ。それは<span className='noto_san bold skyblue'>大きな誤解です。</span></p>
+          <div className="gaiheki_title_box">
+            <h1>
+                <img src="../images/yanefuki/yanefuki_img_title.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="pc" />
+                <img src="../images/yanefuki/yanefuki_img_title_smp.png" alt="古くなった屋根材を新しい屋根材に交換 外壁塗装 屋根葺替え" className="smp" />
+            </h1>
           </div>
 
-          <div className='yanefuki_inner'>
-
-            <div className='yanefuki_in_box'>
-              <h3>家屋倒壊の理由は...</h3>
-              <h4>「旧耐震基準」にアリ</h4>
-              <p>1981年に建築基準法の耐震基準が大幅に見直され、以前よりも約1.4倍の壁量が必要となりました。今回の熊本地震で倒壊した住宅を見ても、1981年以前の「旧耐震基準」の家がほとんど。倒壊の原因は耐震性の低さにあるのに、これらの古い住宅には日本古来の瓦屋根が多く使われていたことから、「重い瓦は地震に弱い」という誤ったイメージが定着してしまったのです。</p>
-              <p>[ 耐震基準の変遷(必要壁量) ]（単位：cm/m&sup2;）</p>
-              <p>木造住宅は地震や台風などの力に、耐力壁で抵抗します。建築基準法施行令で最低限必要な壁量が定められており、これを「必要壁量」といいます。</p>
-              <div><img src='/images/yanefuki/yanefuki_img04.png' loading="lazy" alt="" /></div>
-            </div>
-
-            <div className='yanefuki_in_box'>
-              <h3>瓦のズレや落下は..</h3>
-              <h4>「施工方法が古い」から</h4>
-              <p>瓦屋根の施工方法は、長年「土葺き工法」や「釘打ち無しの工法」が一般的で、土の上に載っているだけ、桟木にひっかけてあるだけの不安定な状態でした。近年のガイドライン工法確立後も古い施工仕様がまだまだ残っており、今回の熊本地震でも瓦のズレや落下が多数発生しました。こうした被害状況も、瓦の耐震性の低さが指摘される一因となっています。</p>
-              <img src='/images/yanefuki/yanefuki_img02.png' loading="lazy" alt="" />
-              <div className='yanefuki_hikaku'>
-                <h3>同じ震度でも...</h3>
-                <h4>屋根の被害に大きな差が</h4>
-                <p>写真左は2000年以降に建てられた家で、瓦屋根に被害なし。右は旧耐震基準で建てられた家で、屋根の施工方法も古く、瓦のズレや落下が多数見られます。</p>
-                <p><img src='/images/yanefuki/yanefuki_img03.jpg' loading="lazy" alt="" /></p>
+          <div className="gaiheki_content">
+              <div className="gaiheki_title_box mb0">
+              <h2><img src="/images/yanefuki/yanefuki_img26.png" loading="lazy" alt="屋根葺替え工事プラン" /></h2>
+              </div>
+              <div className="gaiheki_inner">
+                <div className="w60p order2 pl2p">
+                  <h4 className="noto_san bold orange txt160p mb3p">古くなった屋根材を新しい屋根材に交換</h4>
+                  <p className="noto_san">古くなった屋根材を全面的に交換する工事です。<br />
+                    既存の屋根材(瓦、乾式コンクリート瓦、スレート屋根)を撤去して新しい屋根材に交換します。<br />
+                    無機の素材である陶器瓦にする事で塗装等のメンテナンスが不要になります。<br />
+                    最近は低勾配用の瓦もあるので2寸からの葺き替えが可能です。</p>
+                  <p>乾式コンクリート、セメント瓦、スレート屋根から陶器瓦に交換する場合　㎡＝8,000円～</p>
+                  <p>※スレート屋根の場合、コンパネの追い張りが必要です<br />
+                    ※アスベストを含有している屋根材の場合、処分費が割高になります</p>
+                  <p>《使用瓦》<br />
+                    (株)鶴弥　スーパートライ110　ＴＹＰＥⅠ<br />
+                    色　アンティックブラウン</p>
+                </div>
+                <div className="w40p order1 penki_cont">
+                  <p><img decoding="async" src="/images/yanefuki/yane_fuki_pic16.jpg" loading="lazy" alt="" /></p>
+                </div>
               </div>
             </div>
+          
+            <div className='yanefuki_box'>
+              <h2>「瓦屋根は地震に弱い・・・」<br />
+              その報道は<span>間違っています。</span></h2>
+              <div className='yanefuki_img_box'>
+              <div><img src='/images/yanefuki/yanefuki_img_batsu.png' loading="lazy" alt="" /></div>
+              <div><img src='/images/yanefuki/yanefuki_img01.png' loading="lazy" alt="" /></div>
+              </div>
+              <div className='yanefuki_txt01'>
+              <p>倒れた家屋。散乱した瓦。阪神・淡路大震災や東日本大震災、<br />
+              そして2016年4月の熊本地震においても、<br />
+              様々なメディアを通じて「瓦屋根の家は地震に弱い」といった報道やイメージが一斉に広がりました。<br />
+              はたして瓦は本当に地震に弱いのでしょうか？<br />
+              いいえ。それは<span className='noto_san bold skyblue'>大きな誤解です。</span></p>
+            </div>
+
+            <div className='yanefuki_inner'>
+
+              <div className='yanefuki_in_box'>
+                <h3>家屋倒壊の理由は...</h3>
+                <h4>「旧耐震基準」にアリ</h4>
+                <p>1981年に建築基準法の耐震基準が大幅に見直され、以前よりも約1.4倍の壁量が必要となりました。今回の熊本地震で倒壊した住宅を見ても、1981年以前の「旧耐震基準」の家がほとんど。倒壊の原因は耐震性の低さにあるのに、これらの古い住宅には日本古来の瓦屋根が多く使われていたことから、「重い瓦は地震に弱い」という誤ったイメージが定着してしまったのです。</p>
+                <p>[ 耐震基準の変遷(必要壁量) ]（単位：cm/m&sup2;）</p>
+                <p>木造住宅は地震や台風などの力に、耐力壁で抵抗します。建築基準法施行令で最低限必要な壁量が定められており、これを「必要壁量」といいます。</p>
+                <div><img src='/images/yanefuki/yanefuki_img04.png' loading="lazy" alt="" /></div>
+              </div>
+
+              <div className='yanefuki_in_box'>
+                <h3>瓦のズレや落下は..</h3>
+                <h4>「施工方法が古い」から</h4>
+                <p>瓦屋根の施工方法は、長年「土葺き工法」や「釘打ち無しの工法」が一般的で、土の上に載っているだけ、桟木にひっかけてあるだけの不安定な状態でした。近年のガイドライン工法確立後も古い施工仕様がまだまだ残っており、今回の熊本地震でも瓦のズレや落下が多数発生しました。こうした被害状況も、瓦の耐震性の低さが指摘される一因となっています。</p>
+                <img src='/images/yanefuki/yanefuki_img02.png' loading="lazy" alt="" />
+                <div className='yanefuki_hikaku'>
+                  <h3>同じ震度でも...</h3>
+                  <h4>屋根の被害に大きな差が</h4>
+                  <p>写真左は2000年以降に建てられた家で、瓦屋根に被害なし。右は旧耐震基準で建てられた家で、屋根の施工方法も古く、瓦のズレや落下が多数見られます。</p>
+                  <p><img src='/images/yanefuki/yanefuki_img03.jpg' loading="lazy" alt="" /></p>
+                </div>
+              </div>
+
+            </div>
 
           </div>
-
-        </div>
 
         <div className='yanefuki_box2'>
           <div className='yanefuki_box2_l'>
@@ -377,29 +399,7 @@ const yanefuki = () => {
 
           
 
-          <div className="gaiheki_content">
-            <div className="gaiheki_title_box mb0">
-             <h2><img src="/images/yanefuki/yanefuki_img26.png" loading="lazy" alt="屋根葺替え工事プラン" /></h2>
-            </div>
-            <div className="gaiheki_inner">
-              <div className="w60p order2 pl2p">
-                <h4 className="noto_san bold orange txt160p mb3p">古くなった屋根材を新しい屋根材に交換</h4>
-                <p className="noto_san">古くなった屋根材を全面的に交換する工事です。<br />
-                  既存の屋根材(瓦、乾式コンクリート瓦、スレート屋根)を撤去して新しい屋根材に交換します。<br />
-                  無機の素材である陶器瓦にする事で塗装等のメンテナンスが不要になります。<br />
-                  最近は低勾配用の瓦もあるので2寸からの葺き替えが可能です。</p>
-                <p>乾式コンクリート、セメント瓦、スレート屋根から陶器瓦に交換する場合　㎡＝8,000円～</p>
-                <p>※スレート屋根の場合、コンパネの追い張りが必要です<br />
-                  ※アスベストを含有している屋根材の場合、処分費が割高になります</p>
-                <p>《使用瓦》<br />
-                  (株)鶴弥　スーパートライ110　ＴＹＰＥⅠ<br />
-                  色　アンティックブラウン</p>
-              </div>
-              <div className="w40p order1 penki_cont">
-                <p><img decoding="async" src="/images/yanefuki/yane_fuki_pic16.jpg" loading="lazy" alt="" /></p>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="yanefuki_content mt50">
             <h3 className="title">(株)神清 和型BASIC(J型)</h3>
