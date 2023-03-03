@@ -11,10 +11,11 @@ import Header from '../components/Header';
 import Kuchikomi from '../components/Kuchikomi';
 import EmbedYoutube from "../components/EmbedYoutube"
 import About from '../components/About';
-import SoubaCheck from '../components/SoubaCheck';
+
 import Footer from '../components/Footer';
 import Sideb from '../components/Sideb';
 import Pagetop from '../components/Pagetop';
+import SoubaCheck from '../components/SoubaCheck';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
