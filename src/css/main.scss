@@ -2777,3 +2777,13 @@ form label {
 @media screen and (max-width:768px){
 	.submit_check label { font-size: 14px; margin: 0!important; padding: 8px; white-space: break-spaces; }
 }
+
+.page-nav { display: flex; flex-wrap: wrap; }
+.page-nav li { padding: 0 10px 10px 0; }
+.page-nav li a { width: 40px; height: 40px; border: solid 2px #fdb278; background-color: #fdb278; color: #fff; border-radius: 10px; text-decoration: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; transition : all 0.3s ease 0s; }
+.page-nav li a[aria-current="page"] { background-color: #fd7416; border: solid 2px #fd7416; color: #fff; font-weight: 900; }
+.page-nav li a[aria-current="page"]:hover { background-color: #fff; color: #fd7416; }
+.page-nav li a:hover { background-color: #fff; color: #fd7416; border: solid 2px #fd7416; }
+
+.blog-top .page-nav li:first-child a { background-color: #fd7416; border: solid 2px #fd7416; color: #fff; font-weight: 900; }
+.blog-top .page-nav li:first-child a:hover { background-color: #fff; color: #fd7416; border: solid 2px #fd7416; }

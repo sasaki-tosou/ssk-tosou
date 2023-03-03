@@ -3,8 +3,7 @@ import { Link,graphql } from "gatsby"
 
 import Layout from "../../../components/Layout"
 import Seo from "../../../components/Seo"
-import Header from "../../../components/Header"
-import Sideb from "../../../components/sideb"
+import Sideb from "../../../components/Sideb"
 import Pagetop from '../../../components/Pagetop'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -13,8 +12,6 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const KaisyaPage = ({ data }) => (
     <>
-
-    <Header />
 
     <Layout>
       <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
@@ -52,37 +49,36 @@ const KaisyaPage = ({ data }) => (
         </ul>
       </div>
       <section id="sub-page">
-              <div className='main-content'>
+        <div className='main-content'>
 
-                <div className="flex-wrap">
-                  <div className="main_b">
-                  <h2 className="page_title01 mt0">ブログ</h2>
-                  <p className='center bold orange'>{data.microcmsBlog.category.name}</p>
-                    <h3 className="page_title03 center">{data.microcmsBlog.title}</h3>
-                    <p><span className="date">{data.microcmsBlog.date}</span></p>
-                    <ul className="cat_list">
-                      <li className="blog-sekou-blog"><a href={'/blog/' + data.microcmsBlog.category.slug + '/'} className="txt12">{data.microcmsBlog.category.name}</a></li>
-                    </ul>
-                    <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt="" /></div>
+          <div className="flex-wrap">
+            <div className="main_b">
+            <h2 className="page_title01 mt0">ブログ</h2>
+            <p className='center bold orange'>{data.microcmsBlog.category.name}</p>
+              <h3 className="page_title03 center">{data.microcmsBlog.title}</h3>
+              <p><span className="date">{data.microcmsBlog.date}</span></p>
+              <ul className="cat_list">
+                <li className="blog-sekou-blog"><a href={'/blog/' + data.microcmsBlog.category.slug + '/'} className="txt12">{data.microcmsBlog.category.name}</a></li>
+              </ul>
+              <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt="" /></div>
+              
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${data.microcmsBlog.body}`,
+                }}
+              />
 
-                    
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `${data.microcmsBlog.body}`,
-                      }}
-                    />
+              <p className="center"><Link to="/blog/" className="bt01">一覧へ戻る</Link></p>
+            </div>
+            <div className="side_b">
+              <Sideb />
+            </div>
+          </div>
 
-                    <p className="center"><Link to="/blog/" className="bt01">一覧へ戻る</Link></p>
-                  </div>
-                  <div className="side_b">
-                    <Sideb />
-                  </div>
-                </div>
-
-              </div>
-            </section>
-</Layout>
-</>
+        </div>
+      </section>
+    </Layout>
+  </>
 )
 
 export const Head = ({data}) => (

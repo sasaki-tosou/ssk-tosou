@@ -2,10 +2,11 @@ import React from "react"
 import { graphql,Link } from "gatsby"
 
 import Seo from "../../components/Seo"
-import Header from "../../components/Header"
 import Layout from "../../components/Layout"
-import Sideb from "../../components/sideb"
+import Sideb from "../../components/Sideb"
 import Pagetop from "../../components/Pagetop"
+
+import { Pagination } from "../../components/Pagination"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -13,10 +14,8 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const BlogIndex = ({ data }) => (
     <>
-    <Header />
     
-    <Layout>
-        <Seo title="ブログ" />    
+      <Layout>
         
         <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
@@ -68,6 +67,9 @@ const BlogIndex = ({ data }) => (
                   </div>
                   ))}
                 </div>
+
+                <Pagination totalCount={data.allMicrocmsBlog.totalCount} />
+
             </div>
             
             <div className="side_b">
@@ -86,7 +88,7 @@ const BlogIndex = ({ data }) => (
 
 export const Head = () => (
   <>
-    <body id="pagetop" />
+    <body id="pagetop" className="blog-top" />
     <Seo title="ブログ" />
   </>
 )
@@ -98,8 +100,9 @@ export const query = graphql`
   allMicrocmsBlog(
     filter: {category: {slug: {nin: "now-working", ne: "tosou-arekore"}, id: {ne: "2gs6q7edc"}}}
     sort: {date: DESC}
-    limit: 50
+    limit: 30, skip: 0
   ) {
+    totalCount
     edges {
       node {
         title

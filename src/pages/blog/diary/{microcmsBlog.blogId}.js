@@ -3,8 +3,7 @@ import { Link,graphql } from "gatsby"
 
 import Layout from "../../../components/Layout"
 import Seo from "../../../components/Seo"
-import Header from "../../../components/Header"
-import Sideb from "../../../components/sideb"
+import Sideb from "../../../components/Sideb"
 import Pagetop from '../../../components/Pagetop'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -13,9 +12,6 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const DiaryPage = ({ data }) => (
     <>
-
-    <Header />
-
     <Layout>
     
         <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>

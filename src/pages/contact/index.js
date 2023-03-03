@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from "gatsby"
 
 import Seo from "../../components/Seo"
-import Header from "../../components/Header"
 import Layout from "../../components/Layout"
 import Pagetop from '../../components/Pagetop'
 
@@ -14,8 +13,7 @@ import { faCheck,faChevronUp } from "@fortawesome/free-solid-svg-icons"
 const index = () => {
   return (
     <>
-        <Header />
-    
+   
         <Layout>
         
             <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/contact/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>

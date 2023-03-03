@@ -20,16 +20,16 @@ const Layout = ({ children }) => {
         `)
     return (
         <>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div id="content">
-            <div className="maincontent">
+            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <div id="content">
+                <div className="maincontent">
 
-                {children}
+                    {children}
 
+                </div>
             </div>
-        </div>
-        <FootContact />
-        <Footer />
+            <FootContact />
+            <Footer />
         </>
     )
 }

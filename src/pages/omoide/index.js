@@ -2,9 +2,8 @@ import React from 'react'
 import { graphql,Link } from "gatsby"
 
 import Seo from "../../components/Seo"
-import Header from "../../components/Header"
 import Layout from "../../components/Layout"
-import Sideb from '../../components/sideb'
+import Sideb from '../../components/Sideb'
 import Pagetop from '../../components/Pagetop'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -14,7 +13,6 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 const index = ({data}) => {
   return (
     <>
-      <Header />
     
       <Layout>
         

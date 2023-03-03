@@ -2,15 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 export const Pagination = ({ totalCount }) => {
-  const PER_PAGE = 2
+  const PER_PAGE = 30
 
   const range = (start, end) => [...Array(end - start + 1)].map((_, i) => start + i)
 
   return (
-    <ul>
+    <ul className="page-nav">
       {range(1, Math.ceil(totalCount / PER_PAGE)).map((number, index) => (
         <li key={index}>
-          <Link to={`/page/${number}`}>{number}</Link>
+          <Link to={`/blog/page/${number}`}>{number}</Link>
         </li>
       ))}
     </ul>
