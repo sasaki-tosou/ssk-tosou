@@ -644,8 +644,10 @@
 
 .cover_img { padding: 30px; text-align: center; }
 
-.cover_point_l { width : calc(100% / 2); }
-.cover_point_r { width : calc(100% / 2); }
+.cover_point_l {
+	width : 60%; padding-left: 3%;
+}
+.cover_point_r { width : 40%; }
 
 @media screen and (min-width:1025px){
 .yane_cover_content .swiper {
@@ -671,7 +673,7 @@
 	.roman_color_txt { width: 100%; padding-left: 0;}
 	.cover_point { width : calc(100% / 1); }
 	.cover_point_inner p { font-size: 200%;}
-	.cover_point_l { width : calc(100% / 1); text-align: center; margin: 35px 0; }
+	.cover_point_l { width : calc(100% / 1); text-align: center; margin: 0; }
 	.cover_point_r { width : calc(100% / 1); }
 	.cover_point_l.order2 { order:1; }
 	.cover_point_r.order1 { order:2; }
@@ -887,7 +889,26 @@
 		background: linear-gradient(-45deg,#ff7415 25%,#ff8a3a 0,#ff8a3a 50%,#ff7415 0,#ff7415 75%,#ff8a3a 0);
 		background-size: 20px 20px;
 		font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
-		h2,h3 { font-size:180%; font-weight: 900; }
+		font-size:180%;
+	}
+	.inner {
+		padding: 2%;
+		@media screen and (max-width:768px){
+			padding: 3%;
+		}
+		.exterior_l {
+			width: 30%;
+			@media screen and (max-width:768px){
+				width: 100%;
+			}
+		}
+		.exterior_r {
+			width: 70%; padding-left: 2%;
+			@media screen and (max-width:768px){
+				width: 100%;
+				padding-left: 0;
+			}
+		}
 	}
 	.catch_box { padding: 2% 2% 0 2%;}
 	.exterior_box {
@@ -899,6 +920,17 @@
 	img {
 		@media screen and (max-width:768px){
 			width : 100%; height: auto;
+		}
+	}
+	.w15p {
+		@media screen and (max-width:768px){
+			width: 100%;
+			text-align: center;
+		}
+		img {
+			@media screen and (max-width:768px){
+				width: 150px;
+			}
 		}
 	}
 

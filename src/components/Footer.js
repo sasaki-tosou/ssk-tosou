@@ -32,7 +32,7 @@ const Footer = () => {
                                 <ul>
                                     <li><Link to="/gaiheki/">外壁塗装</Link></li>
                                     <li><Link to="/yane/">屋根塗装</Link></li>
-                                    <li><Link to="/yanefuki/">屋根葺替</Link></li>
+                                    <li><Link to="/yanefuki/">屋根葺替え</Link></li>
                                     <li><Link to="/yanecover/">屋根カバー工法</Link></li>
                                     <li><Link to="/drainspout/">雨樋の交換</Link></li>
                                     <li><Link to="/exterior/">エクステリア</Link></li>

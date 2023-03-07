@@ -905,6 +905,7 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 #mainimage-sub.yane-cover { background-image: url("/images/mainimage/mainimage_yanecover.jpg");}
 #mainimage-sub.drainspout { background-image: url("/images/mainimage/mainimage_drainspout.jpg");}
 #mainimage-sub.arekore { background-image: url("../images/mainimage/mainimage_gaiheki.jpg")!important;}
+#mainimage-sub.exterior { background-image: url("../images/mainimage/mainimage_exterior.jpg");}
 
 @media screen and (max-width:600px){
 	#mainimage-sub { margin-top:85px!important; background-size: auto 100%!important; }
@@ -1935,6 +1936,29 @@ ol li { list-style-type:decimal; margin:15px 0;}
 
 .sub_title01 { font-size:200%;}
 .sub_title02 { font-family: 'Noto Sans JP', sans-serif;	font-weight: 900; font-size: 140%; border-bottom:solid 5px #ff7415; padding:10px; margin-bottom:15px; }
+.sub_title03 {
+	position: relative;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 180%;
+	font-weight: 900;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	@media screen and (max-width:768px){
+		font-size: 140%;
+	}
+	&:after {			
+		backface-visibility: hidden;
+		background-image: repeating-linear-gradient(-45deg,#00652c,#00652c 1px,transparent 2px,transparent 5px);
+		background-size: 7px 7px;
+		bottom: 0;
+		content: "";
+		height: 10px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+}
+
 
 .page_title01 {
 	margin:40px 0;
@@ -1975,8 +1999,7 @@ ol li { list-style-type:decimal; margin:15px 0;}
   left: 0;
   width: 100%;
   height: 10px;
-  content: '';
-  background-image: -webkit-repeating-linear-gradient(135deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
+  content: '';  
   background-image: repeating-linear-gradient(-45deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
   background-size: 7px 7px;
   -webkit-backface-visibility: hidden;
