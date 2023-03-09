@@ -78,7 +78,7 @@ export default function CasePage({data}) {
 
 export const Head = () => (
     <>
-        <body id="pagetop" className="case-page" />
+        <body id="pagetop" />
         <Seo title="施工事例" />
     </>
 )

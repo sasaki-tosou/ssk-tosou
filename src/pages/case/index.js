@@ -77,7 +77,7 @@ export default function index({data}) {
 
 export const Head = () => (
   <>
-    <body id="pagetop" />
+    <body id="pagetop" className="blog-top" />
     <Seo title="施工事例" />
   </>
 )

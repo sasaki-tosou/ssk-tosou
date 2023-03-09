@@ -83,7 +83,7 @@ export default function BlogPage({data}) {
 
 export const Head = () => (
     <>
-      <body id="pagetop" className="blog-page" />
+      <body id="pagetop" />
       <Seo title="ブログ一覧" />
     </>
 )
