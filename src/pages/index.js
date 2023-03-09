@@ -24,7 +24,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const Home = ({ data }) => {
+export default function index({ data }) {
   return (
     <>    
 
@@ -554,5 +554,3 @@ query {
 
 }
 `
-
-export default Home

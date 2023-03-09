@@ -5,6 +5,7 @@ import Seo from "../../components/Seo"
 import Layout from "../../components/Layout"
 import Sideb from '../../components/Sideb'
 import Pagetop from '../../components/Pagetop'
+import { Pagination } from '../../components/PaginationCase'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -59,6 +60,7 @@ export default function index({data}) {
                           </div>
                         ))}
                       </div>
+                      <Pagination totalCount={data.allMicrocmsCase.totalCount} />
                     </div>
                     <div className="side_b">
                       <Sideb />
@@ -83,6 +85,7 @@ export const Head = () => (
 export const query = graphql`
 {
   allMicrocmsCase(limit: 30, sort: {date: DESC}) {
+    totalCount
     edges {
       node {
         title
