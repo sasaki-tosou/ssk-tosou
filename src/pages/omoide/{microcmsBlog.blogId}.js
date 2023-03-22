@@ -56,7 +56,7 @@ const BlogPage = ({ data }) => (
                             <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt="" /></div>
                             <div
                             dangerouslySetInnerHTML={{
-                                __html: `${data.microcmsBlog.excerpt}`,
+                                __html: `${data.microcmsBlog.arekore_txt}`,
                             }}
                             />
                                     
@@ -82,20 +82,20 @@ export const Head = ({data}) => (
 export default BlogPage
 
 export const query = graphql`
-  query($id: String) {
+query($id: String) {
     microcmsBlog(id: { eq: $id }) {
         blogId
-      title
-      excerpt
-      date(formatString: "YYYY年MM月DD日")
-      category {
-        slug
-        id
-        name
-      }
-      mainimage {
-        url
-      }
-      }
-  }
+        title
+        arekore_txt
+        date(formatString: "YYYY年MM月DD日")
+        category {
+            slug
+            id
+            name
+        }
+        mainimage {
+            url
+        }
+    }
+}
 `
