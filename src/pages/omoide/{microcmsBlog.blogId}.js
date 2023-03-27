@@ -56,7 +56,7 @@ const BlogPage = ({ data }) => (
                             <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt="" /></div>
                             <div
                             dangerouslySetInnerHTML={{
-                                __html: `${data.microcmsBlog.arekore_txt}`,
+                                __html: `${data.microcmsBlog.body}`,
                             }}
                             />
                                     
@@ -86,7 +86,7 @@ query($id: String) {
     microcmsBlog(id: { eq: $id }) {
         blogId
         title
-        arekore_txt
+        body
         date(formatString: "YYYY年MM月DD日")
         category {
             slug

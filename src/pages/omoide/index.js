@@ -83,7 +83,7 @@ export default index
 
 export const query = graphql`
 {
-  allMicrocmsBlog(filter: {category: {slug: {eq: "omoide"}}}) {
+  allMicrocmsBlog(filter: {category: {slug: {eq: "omoide"}}}, sort: {date: DESC}) {
     edges {
       node {
         title
