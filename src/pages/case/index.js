@@ -55,7 +55,7 @@ export default function index({data}) {
                             </div>
                             <div className="kiji_txt">
                                 <p>{node.date}</p>
-                                <p><a href={'/case/' + node.caseId}>{node.title}</a></p>					
+                                <p><a href={'/case/' + node.caseId + '/'}>{node.title}</a></p>					
                             </div>
                           </div>
                         ))}

@@ -58,7 +58,7 @@ const BlogIndex = ({ data }) => (
                     </div>
                     <div className="kiji_txt">					
                       <p className="txt12">{node.date}</p>
-                      <p><a href={'/blog/' + node.category.slug + '/' + node.blogId}>{node.title}</a></p>
+                      <p><a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'}>{node.title}</a></p>
                       <p className="txt12">{node.excerpt}・・・</p>
                       <ul className="cat_list">
                         <li className={node.category.slug}><a href={'/blog/' + node.category.slug + '/'} className="txt12">{node.category.name}</a></li>
