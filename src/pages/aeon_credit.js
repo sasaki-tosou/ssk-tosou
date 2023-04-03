@@ -61,7 +61,7 @@ const aeon_credit = () => {
             <p className="aeon_title02">ボーナス1回払い（スキップ払い）がご利用いただけます。</p>
             <p>約6か月後までのスキップ払いが可能です。</p>
             <h3 className="sub_title02 txt250p">分割払いシミュレーション</h3>
-            <p>実質年率2.50％のシミュレーション</p>
+            <p>実質年率2.75%のシミュレーション</p>
             <div className="slide_contaier">
                 <div className="slide_table">
                 <table className="credit_table">
