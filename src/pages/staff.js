@@ -66,17 +66,7 @@ const staff = () => {
                 誰からも好かれる人柄で社員はもとよりお客様からも信頼 をいただいています。</p>
               </div>
             </div>
-            <h3 className="page_title02">塗装職人・現場管理　梶谷　凌平</h3>
-            <div className="staff_box">
-              <div className="staff_l"><img src="../images/kaji.jpg" loading="lazy" alt="" /></div>
-              <div className="staff_r">
-                <p>島根県出身　A型<br />
-                趣味：古着屋巡り<br />
-                資格：建築積算士櫛<br />
-                工業高校→工業大学→建設会社と長く建築との関わりを持ってきました。<br />
-                現在塗装職人として技術を身につける為、現場での修行に励んでいます。</p>
-              </div>
-            </div>
+            
             <h3 className="page_title02">お客様サポート 大石　真弓</h3>
             <div className="staff_box">
               <div className="staff_l"><img src="../images/ohishi.jpg" loading="lazy" alt="" /></div>
