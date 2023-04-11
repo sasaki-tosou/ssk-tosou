@@ -893,7 +893,7 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 #mainimage-sub.voice { background-image: url("/images/mainimage/mainimage_voice.jpg");}
 #mainimage-sub.aeon-credit { background-image: url("/images/mainimage/mainimage_credit.jpg");}
 #mainimage-sub.workflow  { background-image: url("/images/mainimage/mainimage_flow.jpg");}
-#mainimage-sub.staff  { background-image: url("/images/mainimage/mainimage_staff.jpg");}
+#mainimage-sub.staff  { background-image: url("/images/mainimage/mainimage_staff.jpg"),url("/images/mainimage/mainimage_staff_bg.jpg"); background-size: contain,contain!important; background-repeat: no-repeat,repeat-x; }
 #mainimage-sub.blog { background-image: url("/images/mainimage/mainimage_blog.jpg");}
 #mainimage-sub.drone { background-image: url("/images/mainimage/mainimage_drone.jpg");}
 #mainimage-sub.links { background-image: url("/images/mainimage/mainimage_link.jpg");}
@@ -909,6 +909,7 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 
 @media screen and (max-width:600px){
 	#mainimage-sub { margin-top:85px!important; background-size: auto 100%!important; }
+	#mainimage-sub.staff  { background-image: url("/images/mainimage/mainimage_staff_smp.jpg"); background-size: contain!important; background-repeat: no-repeat; }
 }
 
 @media screen and (min-width:1026px) and (max-width:1280px){
@@ -1597,7 +1598,7 @@ _::-webkit-full-page-media, _:future, :root .souba_l select { background-color: 
 	#point .main-content { padding: 3%;}
 	.point_box { display: flex; flex-wrap: wrap; justify-content: flex-end; }
 	.point_l { order:1; width: 100%; padding: 0; }
-	.point_r { order:2; width: 100%; }
+	.point_r { order:2; width: 100%; margin: 20px 0; text-align: center; }
 }
 
 @media screen and (max-width:1024px){
@@ -1697,6 +1698,7 @@ _::-webkit-full-page-media, _:future, :root .souba_l select { background-color: 
 	
 	.about_img_list li { width: 25%; padding: 2%; text-align: center; font-size: 14px; }
 	.about_r img { width:100%; height:400px; object-fit: cover; }
+	.point_r img { width:100%; height:400px; object-fit: cover; }
 }
 
 @media screen and (max-width:599px){	
