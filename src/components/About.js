@@ -44,7 +44,7 @@ const about = () => {
                     </div>
                     
                     <div className="point_r">
-                        <StaticImage src="../images/point_pic01.jpg" width={761} height={508} loading="lazy" alt="" />
+                        <StaticImage src="../images/point_pic01.jpg" width={761} height={428} loading="lazy" alt="" />
                     </div>
                 </div>
             </div>
