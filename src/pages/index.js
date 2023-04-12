@@ -529,7 +529,7 @@ query {
   }
   
   blog: allMicrocmsBlog(
-    filter: {category: {slug: {nin: "tosou-arekore", ne: "omoide"}}}
+    filter: {category: {slug: {ne: "syachoblog"}}}
     limit: 10
     sort: {date: DESC}
   ) {
