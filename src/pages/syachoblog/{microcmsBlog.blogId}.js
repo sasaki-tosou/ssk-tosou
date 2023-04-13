@@ -48,7 +48,8 @@ export default function SyachoBlogPage({ data }) {
 
                 <div className="flex-wrap">
                     <div className="main_b">
-                        <h2 className="page_title01 mt0">外壁塗装をする前に<br className="smp_ss" />知っておきたい塗装アレコレ</h2>
+                        
+                        <h2 className="page_title01 mt0">社長ブログ</h2>
 
                         <h3 className="page_title03 center">{data.microcmsBlog.title}</h3>
                         <p><span className="date">{data.microcmsBlog.date}</span></p>

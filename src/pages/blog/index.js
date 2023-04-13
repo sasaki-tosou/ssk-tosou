@@ -98,9 +98,10 @@ export default BlogIndex
 export const query = graphql`
 {
   allMicrocmsBlog(
-    filter: {category: {slug: {nin: "now-working", ne: "tosou-arekore"}, id: {ne: "2gs6q7edc"}}}
+    filter: {category: {slug: {nin: ["now-working", "syachoblog","omoide"]}}}
     sort: {date: DESC}
-    limit: 30, skip: 0
+    limit: 30
+    skip: 0
   ) {
     totalCount
     edges {
