@@ -41,7 +41,7 @@ export default function index({data}) {
           </ul>
         </div>
 
-        <section id="sub-page" className='arekore_box'>
+        <section id="sub-page" className='syachou'>
             <div className='main-content'>
 
                 <div className="flex-wrap">
@@ -49,12 +49,12 @@ export default function index({data}) {
 
                         <h2 className="page_title01 mt0">社長ブログ</h2>
                         
-                        <div className='post_list'>
+                        <div className='syachou_list'>
                         {data.allMicrocmsBlog.edges.map(({ node }) => (
                             <>
-                            <div className="post_box">
-                                <div className="post_thumb">
-                                <a href={'/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a>
+                            <div className="syachou_box">
+                                <div className="syachou_thumb">
+                                  <a href={'/' + node.category.slug + '/' + node.blogId + '/'}><img src={node.mainimage.url} alt={node.title + 'サムネイル画像'} loading="lazy" /></a>
                                 </div>
                                 <div className="post_txt">
                                     <p className="txt12">{node.date}</p>
