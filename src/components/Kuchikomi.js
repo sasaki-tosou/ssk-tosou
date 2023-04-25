@@ -7,6 +7,7 @@ const kuchikomi = () => {
     <>
       <section id="kuchikomi">
         <div className="main-content">
+
           <div className="kuchikomi_title">
             <div className="kuchikomi_title_l flex-center">
               <span className="g_logo"><StaticImage src="../images/g_logo.svg" width={100} height={32} alt="Google" /></span>
@@ -93,6 +94,7 @@ const kuchikomi = () => {
             この度は有り難う御座いました。 職人さんも対応が良く、思った以上の仕上がりに満足しております。 近所のからの評判も良いです。今後とも宜しくお願いします。</li>
             <li><span className="star">★★★★★</span> <span className="bold">満井宏昭様</span></li>
           </ul>
+          
         </div>
       </section>
     </>
