@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <div id="header">
                 <div id="header_inner">
-                    <h1 className="pc">広島の外壁塗装なら佐々木塗装 安心施工、保証付きのアフターサービス。</h1>
+                    <h1 className="pc">広島外壁塗装なら広島市安佐北区の佐々木塗装 安心施工、保証付きのアフターサービス。</h1>
                     <div className="h_box">
                         <div className="h_logo_box"><Link to="/"><img src="/images/logo.svg" width={300} height={70} loading="lazy" alt="株式会社佐々木塗装" /></Link></div>
                         <div className="g_nav">

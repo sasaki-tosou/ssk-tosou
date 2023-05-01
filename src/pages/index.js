@@ -466,8 +466,7 @@ export const Head = () => (
   <>
     <body id="pagetop" />
     <Seo
-      title="外壁塗装・屋根塗装なら広島の佐々木塗装｜安心施工、保証付きのアフターサービス。"
-      description="外壁塗装・屋根塗装なら広島の佐々木塗装のページです。"
+           description="外壁塗装・屋根塗装なら広島市安佐北区の佐々木塗装へ！"
     />
     <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> 
     <script type="application/ld+json">{JSON.stringify(jsonhowto)}</script>
