@@ -465,12 +465,8 @@ const jsonhowto = {
 export const Head = () => (
   <>
     <body id="pagetop" />
-    <Seo
-<<<<<<< HEAD
-      description="外壁塗装・屋根塗装なら広島市安佐北区の佐々木塗装へ！"
-=======
-           description="広島で外壁塗装・屋根塗装なら安佐北区の施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 "
->>>>>>> 58ff61af2a0bd399116e43dd4f1f1b8243b327c0
+    <Seo 
+      description="広島で外壁塗装・屋根塗装なら安佐北区の施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 "
     />
     <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> 
     <script type="application/ld+json">{JSON.stringify(jsonhowto)}</script>
