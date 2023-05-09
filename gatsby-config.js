@@ -123,17 +123,5 @@ module.exports = {
         policy: [{userAgent: '*', allow: '/'}]
       },
     },
-    {
-      resolve: 'gatsby-plugin-zopfli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg']
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-brotli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg']
-      }
-    },
   ],
 }
