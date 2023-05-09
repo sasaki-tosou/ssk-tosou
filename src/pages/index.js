@@ -158,7 +158,7 @@ export default function index({ data }) {
                 <div className="works_list">
                   <p>
                     <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent">
-                      <img src={node.mainimage.url} width={370} height={277} alt={node.title + 'サムネイル画像'} loading="lazy" />                      
+                      <img src={node.mainimage.url + '?fm=webp'} width={370} height={277} alt={node.title + 'サムネイル画像'} loading="lazy" />                      
                     </a>
                   </p>
                   <p className="workstitle"><a href={'/blog/' + node.category.slug + '/' + node.blogId} target="_parent">{node.title}</a></p>
@@ -256,7 +256,7 @@ export default function index({ data }) {
                         <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" width={178} height={50} alt="完成！" loading="lazy" /></div>
                         <p>
                           <a href={'/case/' + node.caseId} target="_parent">
-                            <img src={node.atoImg.url} width={432} height={288} alt={node.title + 'サムネイル画像'} loading="lazy" />
+                            <img src={node.atoImg.url + '?fm=webp'} width={432} height={288} alt={node.title + 'サムネイル画像'} loading="lazy" />
                           </a>
                         </p>
                         <p className="workstitle"><a href={'/case/' + node.caseId} target="_parent">{node.title}</a></p>

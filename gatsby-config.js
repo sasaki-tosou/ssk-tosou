@@ -122,7 +122,20 @@ module.exports = {
         sitemap: `https://sasaki-tosou.co.jp/sitemap-0.xml`,
         policy: [{userAgent: '*', allow: '/'}]
       },
-    },    
-    
+    },
+    {    
+    resolve: 'gatsby-plugin-zopfli',
+      options: {
+        path: 'zopfli',
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-brotli',
+      options: {
+        path: 'brotli',
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    },
   ],
 }
