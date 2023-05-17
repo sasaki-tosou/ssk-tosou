@@ -49,12 +49,12 @@ export default function SyachoBlogPage({ data }) {
                 <div className="flex-wrap">
                     <div className="main_b">
                         
-                        <h2 className="page_title01 mt0">社長ブログ</h2>
+                        <h2 className="page_title01 mt0">アレコレブログ</h2>
 
                         <h3 className="page_title03 center">{data.microcmsBlog.title}</h3>
                         <p><span className="date">{data.microcmsBlog.date}</span></p>
                         <ul className="cat_list">
-                            <li className="blog-sekou-blog"><Link to="/syachoblog/" className="txt12">{data.microcmsBlog.category.name}</Link></li>
+                            <li className="blog-sekou-blog"><Link to="/arekoreblog/" className="txt12">{data.microcmsBlog.category.name}</Link></li>
                         </ul>
 
                         <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt={data.microcmsBlog.title} loading="lazy" /></div>
@@ -67,7 +67,7 @@ export default function SyachoBlogPage({ data }) {
                         />
                         </div>
 
-                        <p className="center"><Link to="/syachoblog/" className="bt01">一覧へ戻る</Link></p>
+                        <p className="center"><Link to="/arekoreblog/" className="bt01">一覧へ戻る</Link></p>
                     </div>
                     <div className="side_b">
                         <Sideb />

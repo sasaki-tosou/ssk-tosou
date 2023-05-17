@@ -16,7 +16,7 @@ export default function index({data}) {
     
     <Layout>
         
-        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/syachoblog/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/arekoreblog/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
         <Pagetop />
 
@@ -33,8 +33,8 @@ export default function index({data}) {
               <meta itemprop="position" content="1" />
             </li>
             <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <Link to="/syachoblog/" itemprop="item">
-                <span itemprop="name">社長ブログ</span>
+              <Link to="/arekoreblog/" itemprop="item">
+                <span itemprop="name">アレコレブログ</span>
               </Link>
               <meta itemprop="position" content="2" />
             </li>
@@ -47,7 +47,7 @@ export default function index({data}) {
                 <div className="flex-wrap">
                     <div className="main_b">
 
-                        <h2 className="page_title01 mt0">社長ブログ</h2>
+                        <h2 className="page_title01 mt0">アレコレブログ</h2>
                         
                         <div className='syachou_list'>
                         {data.allMicrocmsBlog.edges.map(({ node }) => (
@@ -87,7 +87,7 @@ export const Head = () => (
 export const query = graphql`
 {
   allMicrocmsBlog(
-    filter: {category: {slug: {eq: "syachoblog"}}}
+    filter: {category: {slug: {eq: "arekoreblog"}}}
     limit: 50
     sort: {date: ASC}
   ) {

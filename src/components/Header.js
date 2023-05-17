@@ -29,7 +29,7 @@ const Header = () => {
                                 <li><Link to="/case/">施工事例</Link></li>
                                 <li><Link to="/omoide/">思い出のかべ</Link></li>
                                 <li><Link to="/blog/">ブログ</Link></li>
-                                <li><Link to="/syachoblog/"><img src="/images/sasaki_icon.png" width={80} alt="社長ブログ" /></Link></li>
+                                <li><Link to="/arekoreblog/" className="are_img"><img src="/images/sasaki_icon.png" width={80} alt="アレコレブログ" /></Link></li>
                             </ul>
                         </div>
                         <div className="h_tel_box">
@@ -63,7 +63,7 @@ const Header = () => {
                                     <li className="gnav__menu__item"><Link to="/case/">施工事例</Link></li>
                                     <li className="gnav__menu__item"><Link to="/omoide/">思い出のかべ</Link></li>
                                     <li className="gnav__menu__item"><Link to="/voice/">お客様の声</Link></li>
-                                    <li className="gnav__menu__item"><Link to="/syachoblog/">社長ブログ</Link></li>
+                                    <li className="gnav__menu__item"><Link to="/arekoreblog/">アレコレブログ</Link></li>
                                 </ul>
                                 <ul className="sns_bt">
                                     <li><a href="https://twitter.com/sasakipaint1116" target="_blank" rel="noopenner noreferrer" className="tw_bt"><img src="/images/tw_icon.png" width={25} height={25} loading="lazy" className="opa" alt="Twitter" /></a></li>
