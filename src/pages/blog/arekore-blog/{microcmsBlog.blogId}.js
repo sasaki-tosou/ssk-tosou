@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link,graphql } from "gatsby"
 
-import Layout from "../../components/Layout"
-import Seo from "../../components/Seo"
-import Sideb from "../../components/Sideb"
-import Pagetop from "../../components/Pagetop"
+import Layout from "../../../components/Layout"
+import Seo from "../../../components/Seo"
+import Sideb from "../../../components/Sideb"
+import Pagetop from "../../../components/Pagetop"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -15,7 +15,7 @@ export default function SyachoBlogPage({ data }) {
     <>
     
     <Layout>
-        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
+        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
         <Pagetop />
         <div id="mainimage-sub" className='arekore'>
             <div id="mainimage-inner">
@@ -24,22 +24,28 @@ export default function SyachoBlogPage({ data }) {
         <div id="breadcrumb">
             <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <Link to="/" itemprop="item">
-                    <span itemprop="name">ホーム</span>
-                </Link>
+                    <Link to="/" itemprop="item">
+                        <span itemprop="name">ホーム</span>
+                    </Link>
                 <meta itemprop="position" content="1" />
-                </li>   
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <Link to={'/' + data.microcmsBlog.category.slug + '/'} itemprop="item">
-                    <span itemprop="name">{data.microcmsBlog.category.name}</span>
-                </Link>
-                <meta itemprop="position" content="2" />
                 </li>
                 <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <Link to={'/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/'} itemprop="item">
-                    <span itemprop="name">{data.microcmsBlog.title}</span>
-                </Link>
-                <meta itemprop="position" content="3" />
+                    <Link to="/blog/" itemprop="item">
+                        <span itemprop="name">ブログ一覧</span>
+                    </Link>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <Link to={'/blog/' + data.microcmsBlog.category.slug + '/'} itemprop="item">
+                        <span itemprop="name">{data.microcmsBlog.category.name}</span>
+                    </Link>
+                    <meta itemprop="position" content="3" />
+                </li>
+                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <Link to={'/blog/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/'} itemprop="item">
+                        <span itemprop="name">{data.microcmsBlog.title}</span>
+                    </Link>
+                    <meta itemprop="position" content="4" />
                 </li>
             </ul>
         </div>
@@ -54,7 +60,7 @@ export default function SyachoBlogPage({ data }) {
                         <h3 className="page_title03 center">{data.microcmsBlog.title}</h3>
                         <p><span className="date">{data.microcmsBlog.date}</span></p>
                         <ul className="cat_list">
-                            <li className="blog-sekou-blog"><Link to="/arekoreblog/" className="txt12">{data.microcmsBlog.category.name}</Link></li>
+                            <li className="blog-sekou-blog"><Link to="/blog/arekore-blog/" className="txt12">{data.microcmsBlog.category.name}</Link></li>
                         </ul>
 
                         <div className="post_img"><img src={data.microcmsBlog.mainimage.url} alt={data.microcmsBlog.title} loading="lazy" /></div>
@@ -67,7 +73,7 @@ export default function SyachoBlogPage({ data }) {
                         />
                         </div>
 
-                        <p className="center"><Link to="/arekoreblog/" className="bt01">一覧へ戻る</Link></p>
+                        <p className="center"><Link to="/blog/arekore-blog/" className="bt01">一覧へ戻る</Link></p>
                     </div>
                     <div className="side_b">
                         <Sideb />

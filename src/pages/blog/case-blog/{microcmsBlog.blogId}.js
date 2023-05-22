@@ -23,17 +23,17 @@ const CaseBlogPage = ({ data }) => (
             <div id="breadcrumb">
             <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <Link to="/" itemprop="item">
-                    <span itemprop="name">ホーム</span>
-                </Link>
+                    <Link to="/" itemprop="item">
+                        <span itemprop="name">ホーム</span>
+                    </Link>
                 <meta itemprop="position" content="1" />
                 </li>   
                 <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <Link to="/blog/" itemprop="item">
-                            <span itemprop="name">ブログ一覧</span>
-                        </Link>
-                        <meta itemprop="position" content="2" />
-                    </li>             
+                    <Link to="/blog/" itemprop="item">
+                        <span itemprop="name">ブログ一覧</span>
+                    </Link>
+                    <meta itemprop="position" content="2" />
+                </li>
                 <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <Link to={'/blog/' + data.microcmsBlog.category.slug + '/'} itemprop="item">
                     <span itemprop="name">{data.microcmsBlog.category.name}</span>

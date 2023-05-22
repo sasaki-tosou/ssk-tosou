@@ -19,6 +19,8 @@ const kuchikomi = () => {
           </div>
         
           <ul className="kuchikomi_box">
+            <li><span className="star">★★★★☆</span> <span className="bold">2023/5/20 大上時美様</span><br />
+            しかっり、いい仕事をしてもらいました。感謝してます。</li>
             <li><span className="star">★★★★★</span> <span className="bold">2023/5/5 柴犬リキ様</span><br />
             とてもキレイに外壁塗装してもらいました。家の回りも高圧洗浄でキレイになって満足してます。スタッフさんや職人さんも感じがよくとても丁寧で質の高い仕事をしてくれて本当に良かったです。</li>
             <li><span className="star">★★★★★</span> <span className="bold">2023/4/21 sakuramai touya様</span><br />
