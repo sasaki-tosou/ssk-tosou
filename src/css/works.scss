@@ -2,26 +2,30 @@
 /* CSS Document */
 
 #works .main-content { width: 100%; margin: 0 auto; padding: 0!important; position: relative;}
+
 .works_inner div { width:100%;}
 #works_list { background-color: #feefd9; }
 
 .workstitle a:hover { text-decoration: none;}
 
 @media screen and (min-width:1281px){
-	.works_inner { width: 100%; height: 100%; position: absolute; top: 0; z-index: 10; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
+	.works_inner { width: 100%; position: absolute; top: 0; z-index: 10; padding-top: 200px; }
 	.jirei_pic li { padding:2%; margin:0 30px; }
 	.jirei_pic li img { max-width: 100%; width:100%; height:auto; display: block;}
 }
 
-@media only screen  and (max-device-width : 667px) {
-	.works_inner { padding: 3%; margin-top: 0px; }
-}
 
-@media screen and (max-width:1024px){
+@media not screen and (min-width: 1025px) {
 	#works .main-content { width: 100%; margin: 0 auto; padding: 0; }
 	#works .main-content h3 { font-size: 120%; }
 	
-	.works_inner { padding: 3%; margin-top: 0px; background-color:#feefd9; }
+	.works_bg {
+		width: auto!important;
+		height: 950px;
+		object-fit: cover;
+	}
+
+	.works_inner { width: 100%; height: 100%; position: absolute; top: 0; padding-top: 100px; z-index: 10; }
 	
 	#works .main-content .bt02 { min-width: initial; }
 	
@@ -41,7 +45,6 @@
 		display: block;
 		position: absolute;
 		transition: all .3s ease;
-		-webkit-transition: all .3s ease;
 		width: 0;
 	}
 	.works_list_box .workstitle a::before { left: 0; }
@@ -50,6 +53,13 @@
 
 @media screen and (max-width:768px){
 	#works_list .main-content { padding: 3%; width:100%; }
+
+}
+
+@media not screen and (min-width: 667px) {
+
+	.works_inner { padding: 3%; margin-top: 0px; background-color:#feefd9; position: static; }
+	.works_bg { display: none;}
 }
 
 .jirei_pic { display: flex; flex-wrap: wrap; justify-content: center; margin-top:5%; width:65%; }

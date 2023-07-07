@@ -98,15 +98,13 @@ export default function index({ data }) {
             <h3 className="title04">安佐北区で安心して任せられる地元の塗装屋さんをお探しの方へ</h3>
 
             
-            <img src="../images/works_bg02.jpg" width={1920} height={1100} loading="lazy" alt="施工事例イメージ" className="pc" />
+            <img src="../images/works_bg02.jpg" width={1920} height={1100} className='works_bg' loading="lazy" alt="施工事例イメージ" />
             
-            
-              <StaticImage src="../images/works_bg02_smp.jpg" width={375} height={215} alt="広島市安佐北区で施工事例913件以上!" className="smp" loading="lazy" />
-            
+            <StaticImage src="../images/works_bg02_smp.jpg" width={375} height={215} alt="広島市安佐北区で施工事例913件以上!" className="smp" loading="lazy" />
             
             <div className="works_inner">
 
-              <h4 className="center mtb3p pc">
+              <h4 className="center pc mtb3p">
                 <img src="../images/works_txt01.png" width={680} height={180} alt="広島市安佐北区で施工事例913件以上!" loading="lazy" />
               </h4>
 
