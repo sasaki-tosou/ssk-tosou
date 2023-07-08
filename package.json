@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@imgix/gatsby": "^2.1.3",
     "dotenv": "^16.0.3",
     "gatsby": "^5.11.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
