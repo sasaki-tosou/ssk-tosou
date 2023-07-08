@@ -1,21 +1,13 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 import Seo from '../components/Seo'
 import Layout from '../components/Layout';
-import Pagetop from '../components/Pagetop';
 
 const links = () => {
   return (
     <>
       <Layout>
-        
-        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/links/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
-        <Pagetop />
         
         <div id="mainimage-sub" className='links'>
             <div id="mainimage-inner">

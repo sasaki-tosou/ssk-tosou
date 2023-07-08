@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-
-import Pagetop from '../components/Pagetop';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp,faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 import Seo from '../components/Seo'
 import Layout from '../components/Layout';
@@ -14,9 +11,6 @@ const NotFound = () => {
   return (
     <>
       <Layout>
-      
-        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/drainspout/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
-        <Pagetop />
 
         <div id="mainimage-sub" className='notfound'>
             <div id="mainimage-inner">

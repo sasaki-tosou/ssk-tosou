@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleRight,faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import Seo from '../components/Seo'
 import Header from '../components/Header';
@@ -15,6 +15,7 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Sideb from '../components/Sideb';
 import Pagetop from '../components/Pagetop';
+import SlideIn from '../components/SlideIn';
 import SoubaCheck from '../components/SoubaCheck';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -50,10 +51,9 @@ export default function index({ data }) {
       </div>
 
     </div>
-    
-    <p id="page-top" data-aos="fade-left" data-sal="slide-bottom" data-sal-delay="200" data-sal-easing="ease"><AnchorLink offset="0" to="#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
 
     <Pagetop />
+    <SlideIn />
 
     <div id="content">
       <div className="maincontent">
@@ -100,11 +100,11 @@ export default function index({ data }) {
             
             <img src="../images/works_bg02.jpg" width={1920} height={1100} className='works_bg' loading="lazy" alt="施工事例イメージ" />
             
-            <StaticImage src="../images/works_bg02_smp.jpg" width={375} height={215} alt="広島市安佐北区で施工事例913件以上!" className="smp" loading="lazy" />
+            <StaticImage src="../images/works_bg02_smp.jpg" width={375} height={215} alt="広島市安佐北区で施工事例913件以上!" className="smp2" loading="lazy" />
             
             <div className="works_inner">
 
-              <h4 className="center pc mtb3p">
+              <h4 className="center tub2 mtb3p">
                 <img src="../images/works_txt01.png" width={680} height={180} alt="広島市安佐北区で施工事例913件以上!" loading="lazy" />
               </h4>
 

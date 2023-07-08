@@ -5,6 +5,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from './Header'
 import FootContact from './FootContact'
 import Footer from './Footer'
+import PageTop from './Pagetop'
+import SlideIn from './SlideIn';
+
 import '../css/paint.scss'
 
 const Layout = ({ children }) => {
@@ -20,6 +23,8 @@ const Layout = ({ children }) => {
         `)
     return (
         <>
+            <SlideIn />
+            <PageTop />
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
             <div id="content">
                 <div className="maincontent">

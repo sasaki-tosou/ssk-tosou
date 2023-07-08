@@ -4,21 +4,15 @@ import { Link } from "gatsby"
 
 import Seo from "../../components/Seo"
 import Layout from "../../components/Layout"
-import Pagetop from '../../components/Pagetop'
 
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck,faChevronUp } from "@fortawesome/free-solid-svg-icons"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 
 const index = () => {
   return (
     <>
    
         <Layout>
-        
-            <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/contact/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
-
-            <Pagetop />
 
             <div id="mainimage-sub" className='contact'>
                 <div id="mainimage-inner">

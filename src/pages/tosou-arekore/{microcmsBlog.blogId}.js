@@ -4,18 +4,12 @@ import { Link,graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import Sideb from "../../components/Sideb"
-import Pagetop from "../../components/Pagetop"
-
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const TosouArekorePage = ({ data }) => (
     <>
     
     <Layout>
-        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to={'/' + data.microcmsBlog.category.slug + '/' + data.microcmsBlog.blogId + '/#pagetop'} title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
-        <Pagetop />
+
         <div id="mainimage-sub" className='arekore'>
             <div id="mainimage-inner">
             </div>

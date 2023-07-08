@@ -4,21 +4,12 @@ import { graphql,Link } from "gatsby"
 import Seo from "../../../components/Seo"
 import Layout from "../../../components/Layout"
 import Sideb from "../../../components/Sideb"
-import Pagetop from '../../../components/Pagetop'
-
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 export default function index({data}) {
   return (
     <>
-      <Layout>            
+      <Layout>
         
-        <p id="page-top" data-sal="slide-bottom" viewoffset="0.2" data-sal-delay="200" data-sal-easing="ease"><AnchorLink to="/blog/home-cooking-sweets/#pagetop" title="Pagetop"><FontAwesomeIcon icon={faChevronUp} /></AnchorLink></p>
-
-        <Pagetop />
-
         <div id="mainimage-sub" className='blog'>
             <div id="mainimage-inner">
             </div>
