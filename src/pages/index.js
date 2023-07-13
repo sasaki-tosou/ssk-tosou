@@ -176,7 +176,7 @@ export default function index({ data }) {
 
             <h3>佐々木塗装紹介動画</h3>
 
-            <EmbedYoutube />
+            <EmbedYoutube id="temP7huz9HA" />
 
             <ul className="img_list3">
               <li><Link to="/gaiheki/"><img src="../images/bn01.jpg" width={376} height={139} className="opa" loading="lazy" alt="外壁塗装" /></Link></li>

@@ -1,31 +1,47 @@
-import React, { useState } from 'react'
-import * as styles from '../css/embedyoutube.module.scss'
+import React, { useState } from 'react';
+import * as styles from '../css/embedyoutube.module.scss';
 
-const EmbedYoutube = ({id}) =>{ //※１　動画IDをもらう
+const EmbedYoutube = ({ id }) => {
+  const [isThumbnail, setIsThumbnail] = useState(true);
 
-    const [isThumbnail, setIsThumbnail] = useState(true); //※２　useStateでisThumbnailを管理
+  const handleClick = () => {
+    setIsThumbnail(false);
+  };
 
-    return (
-        <div className={styles.youtubewrapper}>
-            {isThumbnail ? ( //※３　三項演算子。isThumbnailがtrueなら、サムネを取得して表示
-                
-                <img className={styles.youtube}
-                    loading="lazy"
-                    src={`/images/maxresdefault.webp`} //※４　↓で解説
-                    onClick={() => setIsThumbnail(false)} //※５　クリックされたらsetIsThumbnailでisThumbnailをfalseに変更
-                    alt="サムネイル"
-                />
-                
-            ) : ( //※３　三項演算子。isThumbnailがfalseなら（=サムネがクリックされたら）iframeでYoutubeを読み込む
-            <iframe className={styles.youtube}
-                src={`https://www.youtube.com/embed/temP7huz9HA?autoplay=1`} //※６　受け取った動画IDを元にYoutubeを指定
-                title="YouTube"                
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            ></iframe>
-            )}
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === 'Space') {
+      setIsThumbnail(false);
+    }
+  };
+
+  return (
+    <div className={styles.youtubewrapper}>
+      {isThumbnail ? (
+        <div
+          className={styles.youtube}
+          onClick={handleClick}
+          onKeyDown={handleKeyDown}
+          role="button"
+          tabIndex={0}
+          aria-label="サムネイル"
+        >
+          <img
+            loading="lazy"
+            src="/images/maxresdefault.webp"
+            alt="サムネイル"
+          />
         </div>
-    );
-}
+      ) : (
+        <iframe
+          className={styles.youtube}
+          src={`https://www.youtube.com/embed/${id}?autoplay=1`}
+          title="YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      )}
+    </div>
+  );
+};
 
-export default EmbedYoutube
+export default EmbedYoutube;
