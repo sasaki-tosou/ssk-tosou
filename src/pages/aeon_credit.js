@@ -36,7 +36,7 @@ const aeon_credit = () => {
             <p className="center">「塗り替えたいのはやまやまだけど、まとまったお金が・・・」
             「一度に工事代を支払うのは大変。」という方へ</p>
             <h3 className="sub_title02 txt250p">金利手数料</h3>
-            <p className="aeon_title02">実質年率：2.75%<br />
+            <p className="aeon_title02">実質年率：2.65%<br />
             お取扱い金額：20万円～2,000万円まで</p>
             <p>※手数料は長期プライムレートと連動しており、変動時期は3ヶ月毎といたします。 ※ただし、契約成立後は支払い途中での金利変更はありません。</p>
             <h3 className="sub_title02 txt250p">分割払い回数</h3>
@@ -52,7 +52,7 @@ const aeon_credit = () => {
             <p className="aeon_title02">ボーナス1回払い（スキップ払い）がご利用いただけます。</p>
             <p>約6か月後までのスキップ払いが可能です。</p>
             <h3 className="sub_title02 txt250p">分割払いシミュレーション</h3>
-            <p>実質年率2.75%のシミュレーション</p>
+            <p>実質年率2.65%のシミュレーション</p>
             <div className="slide_contaier">
                 <div className="slide_table">
                 <table className="credit_table">
