@@ -16,8 +16,9 @@ const SoubaCheck = () => {
 
                   <div style={{display: 'none'}}><input type="text" name="wana" /></div> 
                   <p>
-                    <select name="希望内容" required="required" id="op_color">
-                      <option value="" selected="selected">希望内容</option>
+                  <label htmlFor="op_color">希望内容:</label>
+                    <select name="希望内容" required id="op_color">
+                      <option value="" disabled selected>希望内容</option>
                       <option value="外壁屋根診断">外壁屋根診断</option>
                       <option value="雨漏り診断">雨漏り診断</option>
                       <option value="見積り依頼">見積り依頼</option>

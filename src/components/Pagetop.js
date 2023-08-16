@@ -28,6 +28,7 @@ const ScrollToTopButton = () => {
     <button
       className={`scroll-to-top ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
+      aria-label="PageTop"
     >
       <FontAwesomeIcon icon={faChevronUp} />
     </button>
