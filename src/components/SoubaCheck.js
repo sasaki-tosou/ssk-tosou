@@ -16,7 +16,7 @@ const SoubaCheck = () => {
 
                   <div style={{display: 'none'}}><input type="text" name="wana" /></div> 
                   <p>
-                  <label htmlFor="op_color">希望内容:</label>
+                  <label htmlFor="op_color" className="kibou_label">希望内容:</label>
                     <select name="希望内容" required id="op_color">
                       <option value="" disabled selected>希望内容</option>
                       <option value="外壁屋根診断">外壁屋根診断</option>
@@ -46,21 +46,21 @@ const SoubaCheck = () => {
                     外壁塗装の相場をご案内いたします！</p>
                 </div>
                   <div className="flex-wrap">
-                    <div className="step_l"><img src="/images/souba_txt01.png" width={243} height={125} loading="lazy" alt="STEP1" /></div>
+                    <div className="step_l"><img src="/images/souba_txt01.png" loading="lazy" alt="STEP1" /></div>
                     <div className="step_r">
                       <p>相場チェックフォームにご入力。<br />
                         お住まいの情報をフォームにご入力下さい。</p>
                     </div>
                   </div>
                   <div className="flex-wrap">
-                    <div className="step_l"><img src="/images/souba_txt02.png" width={243} height={125} loading="lazy" alt="STEP2 資格所有の塗装専門担当者が外壁塗装についてお答え。" /></div>
+                    <div className="step_l"><img src="/images/souba_txt02.png" loading="lazy" alt="STEP2 資格所有の塗装専門担当者が外壁塗装についてお答え。" /></div>
                     <div className="step_r">
                       <p>資格所有の塗装専門担当者が外壁塗装の相場についてお答え。<br />
                         ご不明点も解消いただけます。</p>
                     </div>
                   </div>
                   <div className="flex-wrap">
-                    <div className="step_l"><img src="/images/souba_txt03.png" width={243} height={125} loading="lazy" alt="STEP3 あなたにピッタリの塗装プランをご案内いたします。" /></div>
+                    <div className="step_l"><img src="/images/souba_txt03.png" loading="lazy" alt="STEP3 あなたにピッタリの塗装プランをご案内いたします。" /></div>
                     <div className="step_r">
                       <p>あなたにピッタリの塗装プランをご案内いたします。<br />
                         無料の外壁診断もご利用いただけます。</p>
