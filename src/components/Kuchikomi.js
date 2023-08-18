@@ -14,7 +14,7 @@ const kuchikomi = () => {
             </div>                
             <div className="kuchikomi_title_r">
               <h3>佐々木塗装の口コミ<br />
-              総合評価:4.7<span className="g_kuchi_star">★★★★★</span> <br className="smp" />口コミ数:39</h3>
+              総合評価:4.7<span className="g_kuchi_star">★★★★★</span> <br className="smp" />口コミ数:41</h3>
             </div>
           </div>
         
