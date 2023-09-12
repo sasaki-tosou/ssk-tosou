@@ -150,9 +150,7 @@ export default function index({ data }) {
             <Swiper
               modules={[Navigation, Pagination]}
               pagination={{ clickable: true }}
-              navigation
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
+              navigation              
               breakpoints={{
                 768: {
                   slidesPerView: 9,
@@ -249,9 +247,7 @@ export default function index({ data }) {
                 modules={[Navigation, Pagination]}
                 spaceBetween={0}
                 navigation
-                pagination={{ clickable: true }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                pagination={{ clickable: true }}                
                 breakpoints={{
                   768: {
                     slidesPerView: 4,
