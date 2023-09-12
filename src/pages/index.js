@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +9,7 @@ import { faAngleRight,faCircleChevronRight } from '@fortawesome/free-solid-svg-i
 import Seo from '../components/Seo'
 import Header from '../components/Header';
 import Kuchikomi from '../components/Kuchikomi';
-import EmbedYoutube from "../components/EmbedYoutube"
+import EmbedYoutube from "../components/EmbedYoutube";
 import About from '../components/About';
 
 import Footer from '../components/Footer';
@@ -25,6 +25,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+export const Head = () => (
+  <>
+    <body id="pagetop" />
+    <Seo 
+      description="広島で外壁塗装・屋根塗装なら安佐北区の施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 "
+    />
+    <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> 
+    <script type="application/ld+json">{JSON.stringify(jsonhowto)}</script>
+  </>
+)
+
 export default function index({ data }) {
   return (
     <>    
@@ -35,19 +46,19 @@ export default function index({ data }) {
 
       <div className="catch_title">
         <h2>
-          <StaticImage src="../images/catch_txt.png" width={1200} height={249} alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" />
+          <StaticImage src="../images/catch_txt.png" alt="ご近所だからできるスピーディーな対応。地元安佐北区での施工実績豊富な佐々木塗装に相談して見ませんか？" loading="lazy" />
         </h2>
       </div>
 
       <div className="main_slide">
-        <div className="image"><StaticImage src="../images/mainimage/mainimage08.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage08_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage01.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage01_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage02.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage02_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage03.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage03_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage04.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage04_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage05.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage05_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage06.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage06_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
-        <div className="image"><StaticImage src="../images/mainimage/mainimage07.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage07_smp.jpg" width={375} height={400} className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage08.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage08_smp.jpg"  className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage01.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage01_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage02.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage02_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage03.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage03_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage04.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage04_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage05.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage05_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage06.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage06_smp.jpg" className="smp" alt="" /></div>
+        <div className="image"><StaticImage src="../images/mainimage/mainimage07.jpg" className="pc" alt="" /><StaticImage src="../images/mainimage/mainimage07_smp.jpg" className="smp" alt="" /></div>
       </div>
 
     </div>
@@ -69,21 +80,21 @@ export default function index({ data }) {
                     <h4>お知らせ</h4>
                   </div>
                   <div className="w50p_smp_s smp_s">
-                    <StaticImage src="../images/news_thumb.jpg" width={159} height={110} loading="lazy" alt="" />
+                    <StaticImage src="../images/news_thumb.jpg" loading="lazy" alt="" />
                   </div>
                 </div>
               </div>
               <div id="news_r">
                 <dl>
                   {data.blog.edges.map(({ node }) => (
-                    <>
+                    <React.Fragment key={node.blogId}>
                     <dt>{node.date}</dt>
                     <dd>
                       <div className={node.category.slug}><a href={'/blog/' + node.category.slug}>{node.category.name}</a></div><br />
                       <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'}>{node.title}</a>
                       <FontAwesomeIcon icon={faAngleRight} />
                     </dd>
-                    </>
+                    </React.Fragment>
                   ))}
                 </dl>
               </div>
@@ -100,7 +111,7 @@ export default function index({ data }) {
             
             <img src="../images/works_bg02.jpg" width={1920} height={1100} className='works_bg' loading="lazy" alt="施工事例イメージ" />
             
-            <StaticImage src="../images/works_bg02_smp.jpg" width={375} height={215} alt="広島市安佐北区で施工事例998棟以上!" className="smp2" loading="lazy" />
+            <StaticImage src="../images/works_bg02_smp.jpg" alt="広島市安佐北区で施工事例998棟以上!" className="smp2" loading="lazy" />
             
             <div className="works_inner">
 
@@ -113,8 +124,8 @@ export default function index({ data }) {
                 <p className="center"><Link to="/case/" className="bt02"><FontAwesomeIcon icon={faAngleRight} /> 施工事例はこちらから</Link></p>
                 
                 <ul className="jirei_pic">
-                  <li><StaticImage src="../images/kansyajyo_pic01.png" width="200" height="267" alt="感謝状イメージ1" loading="lazy" /></li>
-                  <li><StaticImage src="../images/kansyajyo_pic02.png" width="200" height="267" alt="感謝状イメージ2" loading="lazy" /></li>
+                  <li><StaticImage src="../images/kansyajyo_pic01.png" alt="感謝状イメージ1" loading="lazy" /></li>
+                  <li><StaticImage src="../images/kansyajyo_pic02.png" alt="感謝状イメージ2" loading="lazy" /></li>
                 </ul>
 
               </div>
@@ -124,7 +135,7 @@ export default function index({ data }) {
         </section>
 
         <div className="center mtb3p">
-          <StaticImage src="../images/catch_pic01.jpg" width={1200} height={282} alt="「私たちが佐々木さんをお薦めします！！」" loading="lazy" />
+          <StaticImage src="../images/catch_pic01.jpg" alt="「私たちが佐々木さんをお薦めします！！」" loading="lazy" />
         </div>
 
         <Kuchikomi />
@@ -152,7 +163,7 @@ export default function index({ data }) {
 
             <div className="works_list_wrap">
               {data.works.edges.map(({ node }) => (
-                <SwiperSlide>
+                <SwiperSlide key={node.blogId}>
                 <div className="works_list">
                   <p>
                     <a href={'/blog/' + node.category.slug + '/' + node.blogId + '/'} target="_parent">
@@ -181,9 +192,9 @@ export default function index({ data }) {
             <ul className="img_list3">
               <li><Link to="/gaiheki/"><img src="../images/bn01.jpg" width={376} height={139} className="opa" loading="lazy" alt="外壁塗装" /></Link></li>
               <li><Link to="/yane/"><img src="../images/bn02.jpg" width={376} height={139} className="opa" loading="lazy" alt="屋根塗装" /></Link></li>
-              <li><Link to="/yanefuki/"><StaticImage src="../images/bn03.jpg" width="376" height="139" className="opa" loading="lazy" alt="屋根葺替" /></Link></li>
+              <li><Link to="/yanefuki/"><StaticImage src="../images/bn03.jpg" className="opa" loading="lazy" alt="屋根葺替" /></Link></li>
               <li><Link to="/yanecover/"><img src="../images/bn04.jpg" width={376} height={139} className="opa" loading="lazy" alt="屋根カバー工法" /></Link></li>
-              <li><Link to="/drainspout/"><StaticImage src="../images/bn05.jpg" width="376" height="139" className="opa" loading="lazy" alt="雨樋の交換" /></Link></li>
+              <li><Link to="/drainspout/"><StaticImage src="../images/bn05.jpg" className="opa" loading="lazy" alt="雨樋の交換" /></Link></li>
               <li><Link to="/exterior/"><img src="../images/bn06.jpg" width={376} height={139} className="opa" loading="lazy" alt="エクステリア" /></Link></li>
             </ul>
 
@@ -248,7 +259,7 @@ export default function index({ data }) {
                 }}
                 autoHeight>
                   {data.case.edges.map(({ node }) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={node.caseId}>
                       <div className="case_list">
                         <div className="kanryo_icon"></div>
                         <div className="kanryo_icon2"><img src="../images/kanryo_icon.png" width={178} height={50} alt="完成！" loading="lazy" /></div>
@@ -460,16 +471,7 @@ const jsonhowto = {
   "totalTime": "PT10S",
 }
 
-export const Head = () => (
-  <>
-    <body id="pagetop" />
-    <Seo 
-      description="広島で外壁塗装・屋根塗装なら安佐北区の施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 "
-    />
-    <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> 
-    <script type="application/ld+json">{JSON.stringify(jsonhowto)}</script>
-  </>
-)
+
 
 export const query = graphql`
 

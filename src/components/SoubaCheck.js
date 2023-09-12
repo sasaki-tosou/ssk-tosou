@@ -17,8 +17,8 @@ const SoubaCheck = () => {
                   <div style={{display: 'none'}}><input type="text" name="wana" /></div> 
                   <p>
                   <label htmlFor="op_color" className="kibou_label">希望内容:</label>
-                    <select name="希望内容" required id="op_color">
-                      <option value="" disabled selected>希望内容</option>
+                    <select name="希望内容" required id="op_color" defaultValue="">
+                      <option value="" disabled>希望内容</option>
                       <option value="外壁屋根診断">外壁屋根診断</option>
                       <option value="雨漏り診断">雨漏り診断</option>
                       <option value="見積り依頼">見積り依頼</option>
@@ -26,7 +26,7 @@ const SoubaCheck = () => {
                     </select>
                   </p>
                   <p><input type="text" name="お名前" placeholder="お名前" /></p>
-                  <p><input type="text" name="tel" placeholder="電話番号" /></p>
+                  <p><input type="tel" name="tel" placeholder="電話番号" autoComplete="tel" /></p>
                   <p className="txt12">ご入力いただいたからと言って必ずご契約いただくという<br />
                     ことは ございません。しつこい訪問や営業の お電話は一切いたしません。</p>
                   <p className="center"><button type="submit">チェックを送信する</button></p>

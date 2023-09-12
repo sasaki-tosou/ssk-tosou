@@ -1246,15 +1246,17 @@ section { width:100%; margin:0 auto;}
 .souba_l h4 { margin-bottom: 10px; }
 .souba_l p:nth-of-type(2) { margin: 20px 0; }
 .souba_l p:nth-of-type(4) { margin: 20px 0; }
-.souba_l input[type="text"] { background-color: #feefd9; padding: 20px; border-radius:  10px; width: 100%; box-sizing: border-box;  border:solid 2px #feefd9; }
-.souba_l input[type="text"]:focus { border: solid 2px #ff7415; outline: none; }
+.souba_l input[type="text"],
+.souba_l input[type="email"],
+.souba_l input[type="tel"] { background-color: #feefd9; padding: 20px; border-radius:  10px; width: 100%; box-sizing: border-box;  border:solid 2px #feefd9; }
+.souba_l input[type="text"]:focus,
+.souba_l input[type="email"]:focus,
+.souba_l input[type="tel"]:focus,
+.souba_l select:focus { border: solid 2px #ff7415; outline: none; }
 .souba_l select { background-color: #feefd9; padding: 20px; width: 100%; border-radius:  10px; box-sizing: border-box; border:solid 2px #feefd9; }
 
 _::-webkit-full-page-media, _:future, :root .souba_l select { background-color: #feefd9; padding: 20px; width: 100%; border-radius:  10px; box-sizing: border-box; border:solid 2px #feefd9;  color:#000;}
 
-.souba_l select:focus { border: solid 2px #ff7415; outline: none; }
-.souba_l input[type="email"] { background-color: #feefd9; padding: 20px; border-radius:  10px; width: 100%; box-sizing: border-box;  border:solid 2px #feefd9; }
-.souba_l input[type="email"]:focus { border: solid 2px #ff7415; outline: none; }
 .souba_l button { background-color: #ff6900; padding:10px 30px; border:solid 2px #ff6900; border-radius: 10px; margin: 20px 0; font-size: 160%; color: #fff; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-style: normal; cursor : pointer; transition: all 0.3s ease; }
 .souba_l button:hover { background-color: #fff; color:#ff6900; border:solid 2px #ff6900; }
 
