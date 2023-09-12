@@ -912,7 +912,7 @@ address { font-style:normal; color: #fff; text-align: center; font-size: 12px!im
 #mainimage-sub.aeon-credit { background-image: url("/images/mainimage/mainimage_credit.jpg");}
 #mainimage-sub.workflow  { background-image: url("/images/mainimage/mainimage_flow.jpg");}
 #mainimage-sub.staff  { background-image: url("/images/mainimage/mainimage_staff.jpg"),url("/images/mainimage/mainimage_staff_bg.jpg"); background-size: contain,contain!important; background-repeat: no-repeat,repeat-x; }
-#mainimage-sub.blog { background-image: url("/images/mainimage/mainimage_blog.jpg");}
+.blog #mainimage-sub { background-image: url("/images/mainimage/mainimage_blog.jpg");}
 #mainimage-sub.drone { background-image: url("/images/mainimage/mainimage_drone.jpg");}
 #mainimage-sub.links { background-image: url("/images/mainimage/mainimage_link.jpg");}
 #mainimage-sub.sdgs { background-image: url("/images/mainimage/mainimage_sdgs.jpg");}

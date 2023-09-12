@@ -1,18 +1,33 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-export const Pagination = ({ totalCount }) => {
-  const PER_PAGE = 30
-
-  const range = (start, end) => [...Array(end - start + 1)].map((_, i) => start + i)
-
+const Pagination = ({ currentPage, numPages, basePath }) => {
   return (
-    <ul className="page-nav">
-      {range(1, Math.ceil(totalCount / PER_PAGE)).map((number, index) => (
-        <li key={index}>
-          <Link to={`/blog/page/${number}`}>{number}</Link>
-        </li>
+    <div className="pagination">
+      {currentPage > 1 && (
+        <Link to={currentPage === 2 ? basePath : `${basePath}/${currentPage - 1}`}>
+          &lt;&lt; 前へ
+        </Link>
+      )}
+      
+      {/* ページ番号を表示 */}
+      {Array.from({ length: numPages }, (_, i) => (
+        <Link
+          key={`pagination-link${i + 1}`}
+          to={i === 0 ? basePath : `${basePath}/${i + 1}`}
+          className={i + 1 === currentPage ? "current" : ""}
+        >
+          {i + 1}
+        </Link>
       ))}
-    </ul>
-  )
-}
+
+      {currentPage < numPages && (
+        <Link to={`${basePath}/${currentPage + 1}`}>
+          次へ &gt;&gt;
+        </Link>
+      )}
+    </div>
+  );
+};
+
+export default Pagination;
