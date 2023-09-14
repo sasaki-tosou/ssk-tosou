@@ -2898,6 +2898,10 @@ form label {
 	transition: opacity 0.3s ease-in-out;
 	z-index: 100;
 	cursor:pointer;
+	@media screen and (max-width:768px){
+		bottom: 45px;
+		right: 0;
+	}
 }
   
   

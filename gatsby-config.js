@@ -36,6 +36,19 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: ["G-0W8X9J1F50"],
+        pluginConfig: {
+          head: true,
+        },
+        gtagConfig: {
+          send_page_view: true,
+        },
+      },
+    },
+
+    {
       resolve: `gatsby-transformer-remark`,
       options: {        
         plugins: [`gatsby-remark-responsive-iframe`],
@@ -93,18 +106,7 @@ module.exports = {
       },
     },
 
-    {
-      resolve: "gatsby-plugin-google-gtag",
-      options: {
-        trackingIds: ["G-0W8X9J1F50"],
-        pluginConfig: {
-          head: true,
-        },
-        gtagConfig: {
-          send_page_view: true,
-        },
-      },
-    },
+    
 
     `gatsby-plugin-sitemap`,
     {
