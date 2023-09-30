@@ -68,13 +68,13 @@ const Header = () => {
                     <Link to="/case/">施工事例</Link>
                   </li>
                   <li>
-                    <Link to="/omoide/">思い出のかべ</Link>
+                    <Link to="/category/omoide/">思い出のかべ</Link>
                   </li>
                   <li>
                     <Link to="/blog/">ブログ</Link>
                   </li>
                   <li>
-                    <Link to="/blog/arekore-blog/" className="are_img">
+                    <Link to="/category/arekore-blog/" className="are_img">
                       <img
                         src="/images/sasaki_icon.png"
                         width={80}
@@ -161,13 +161,13 @@ const Header = () => {
                       <Link to="/case/">施工事例</Link>
                     </li>
                     <li className="gnav__menu__item">
-                      <Link to="/omoide/">思い出のかべ</Link>
+                      <Link to="/category/omoide/">思い出のかべ</Link>
                     </li>
                     <li className="gnav__menu__item">
                       <Link to="/voice/">お客様の声</Link>
                     </li>
                     <li className="gnav__menu__item">
-                      <Link to="/blog/arekore-blog/">アレコレブログ</Link>
+                      <Link to="/category/arekore-blog/">アレコレブログ</Link>
                     </li>
                   </ul>
                   <ul className="sns_bt">
