@@ -42,6 +42,17 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allMicrocmsCase {
+        edges {
+          node {
+            id
+            caseId
+            category {
+              id
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -122,7 +133,19 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/posts/${node.blogId}/`, // 記事ページのパスを設定
       component: postTemplate, // ページコンポーネントのパスを指定
       context: {
-        blogId: node.blogId,
+        id: node.id,
+      },
+    });
+  });
+
+  // 記事ページのテンプレートを指定
+  const casePostTemplate = path.resolve("./src/templates/case.js");
+  queryResult.data.allMicrocmsCase.edges.forEach(({ node }) => {
+    createPage({
+      path: `/case/${node.caseId}/`, // 記事ページのパスを設定
+      component: casePostTemplate, // ページコンポーネントのパスを指定
+      context: {
+        id: node.id,
       },
     });
   });
