@@ -17,9 +17,9 @@ const PAGE_PADDING = 1; // 前後に追加で表示するページ数
 
 const CategoryPage = ({ data, pageContext }) => {
   dayjs.locale("ja");
-  const { allMicrocmsBlog } = data;
+  const { allMicrocmsCase } = data;
   const { category, numPages, currentPage, startPage, endPage } = pageContext;
-  const posts = allMicrocmsBlog.edges;
+  const posts = allMicrocmsCase.edges;
 
   return (
     <>
@@ -31,12 +31,12 @@ const CategoryPage = ({ data, pageContext }) => {
         <section id="sub-page">
           <div className="main-content">
             {posts.map(({ node }) => (
-              <div className="column_box" key={node.blogId}>
-                {node.mainimage ? (
+              <div className="column_box" key={node.postsId}>
+                {node.eyecatch ? (
                   <div className="column_img">
-                    <a href={"/posts/" + node.blogId + "/"}>
+                    <a href={"/posts/" + node.postsId + "/"}>
                       <img
-                        src={node.mainimage.url + "?fm=webp"}
+                        src={node.eyecatch.url + "?fm=webp"}
                         width={370}
                         height={277}
                         alt={node.title + "サムネイル画像"}
@@ -46,7 +46,7 @@ const CategoryPage = ({ data, pageContext }) => {
                   </div>
                 ) : (
                   <div className="column_img">
-                    <a href={"/posts/" + node.blogId + "/"}>
+                    <a href={"/posts/" + node.postsId + "/"}>
                       <img
                         src="/img/alternative-image.png"
                         width={370}
@@ -66,7 +66,7 @@ const CategoryPage = ({ data, pageContext }) => {
                   >
                     {dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
                   </time>
-                  <a href={"/posts/" + node.blogId + "/"}>{node.title}</a>
+                  <a href={"/posts/" + node.postsId + "/"}>{node.title}</a>
                   {stripHTML(node.content).length > MAX_CONTENT_LENGTH
                     ? stripHTML(node.content).substring(0, MAX_CONTENT_LENGTH) +
                       "..."
@@ -135,26 +135,23 @@ function stripHTML(html) {
 }
 
 export const query = graphql`
-  query ($categoryId: String, $limit: Int, $skip: Int) {
-    allMicrocmsBlog(
-      filter: { category: { id: { eq: $categoryId } } }
+  query ($id: String, $limit: Int, $skip: Int) {
+    allMicrocmsCase(
+      filter: { category: { id: { eq: $id } } }
       limit: $limit
       skip: $skip
       sort: { date: DESC }
     ) {
       edges {
         node {
-          id
-          blogId
-          title
-          mainimage {
+          caseId
+          casetxt
+          eyecatch {
             url
           }
-          body
-          date
+          title
           category {
             id
-            name
           }
         }
       }
@@ -163,7 +160,7 @@ export const query = graphql`
 `;
 
 export const Head = ({ data }) => {
-  const pageTitle = data.allMicrocmsBlog.edges[0].node.category.name; // ページのタイトルを取得
+  const pageTitle = data.allMicrocmsCase.edges[0].node.category.name; // ページのタイトルを取得
 
   return (
     <>

@@ -71,7 +71,7 @@ const Header = () => {
                     <Link to="/category/omoide/">思い出のかべ</Link>
                   </li>
                   <li>
-                    <Link to="/blog/">ブログ</Link>
+                    <Link to="/blog/1/">ブログ</Link>
                   </li>
                   <li>
                     <Link to="/category/arekore-blog/" className="are_img">

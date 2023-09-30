@@ -1,18 +1,20 @@
 const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === "microcmsBlog") {
-    const slug = createFilePath({ node, getNode, basePath: "blog" });
+    const slug = createFilePath({ node, getNode, basePath: "posts" });
     createNodeField({
       node,
       name: "slug",
-      value: `/blog${slug}`,
+      value: `/posts${slug}`, // スラッグを"/posts/記事ID"として設定
     });
   }
 };
+
+const postsPerPage = 10;
+const PAGES_PER_GROUP = 5; // 1グループに表示するページ数
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -20,30 +22,20 @@ exports.createPages = async ({ graphql, actions }) => {
   // GraphQLのクエリを定義
   const queryResult = await graphql(`
     {
-      allMicrocmsBlog {
-        totalCount
-        edges {
-          node {
-            blogId
-            category {
-              id
-            }
-          }
-        }
-      }
       allMicrocmsCategory {
         edges {
           node {
+            id
             categoryId
             name
           }
         }
       }
-      allMicrocmsCase {
-        totalCount
+      allMicrocmsBlog {
         edges {
           node {
-            caseId
+            id
+            blogId
             category {
               id
             }
@@ -55,89 +47,109 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // カテゴリーページのテンプレートを指定
   const categoryTemplate = path.resolve("./src/templates/category.js");
-  const caseCategoryTemplate = path.resolve("./src/templates/case-category.js");
 
-  // 特定のカテゴリ名
-  const specificCategoryName1 = "omoide";
-  const specificCategoryName2 = "tosou-arekore";
+  // カテゴリーページを生成
+  queryResult.data.allMicrocmsCategory.edges.forEach(({ node }) => {
+    // カテゴリーに対応する記事を取得してpostsフィールドにセットする
+    const posts = queryResult.data.allMicrocmsBlog.edges.filter(
+      (edge) => edge.node.category && edge.node.category.id === node.categoryId // カテゴリーが存在する場合にのみ追加
+    );
 
-  // ブログ記事ページを生成
+    const numPages = Math.ceil(posts.length / postsPerPage);
+
+    // ページンググループを考慮してカテゴリーページを生成
+    Array.from({ length: numPages }).forEach((_, i) => {
+      const currentPage = i + 1;
+      const groupIndex = Math.floor(i / PAGES_PER_GROUP);
+      const startPage = groupIndex * PAGES_PER_GROUP + 1;
+      const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numPages);
+
+      const links = [];
+      if (currentPage > 1) {
+        links.push({
+          page: "<< Prev",
+          url:
+            currentPage === 1
+              ? `/category/${node.categoryId}`
+              : `/category/${node.categoryId}/${currentPage - 1}`,
+        });
+      }
+      for (let j = startPage; j <= endPage; j++) {
+        links.push({
+          page: j,
+          url:
+            j === 1
+              ? `/category/${node.categoryId}`
+              : `/category/${node.categoryId}/${j}`,
+        });
+      }
+      if (currentPage < numPages) {
+        links.push({
+          page: "Next >>",
+          url: `/category/${node.categoryId}/${currentPage + 1}`,
+        });
+      }
+
+      createPage({
+        path:
+          i === 0
+            ? `/category/${node.categoryId}`
+            : `/category/${node.categoryId}/${currentPage}`,
+        component: categoryTemplate,
+        context: {
+          categoryId: node.categoryId,
+          category: node,
+          posts: posts.slice(
+            (currentPage - 1) * postsPerPage,
+            currentPage * postsPerPage
+          ),
+          limit: postsPerPage,
+          skip: (currentPage - 1) * postsPerPage,
+          numPages: numPages,
+          currentPage: currentPage, // カレントページを渡す
+          links: links, // ページャーに表示するリンクの情報を渡す
+          startPage: startPage, // グループ内の開始ページを渡す
+          endPage: endPage, // グループ内の終了ページを渡す
+        },
+      });
+    });
+  });
+
+  // 記事ページのテンプレートを指定
+  const postTemplate = path.resolve("./src/templates/posts.js");
   queryResult.data.allMicrocmsBlog.edges.forEach(({ node }) => {
-    const isSpecificCategory =
-      node.category &&
-      (node.category.id === specificCategoryName1 ||
-        node.category.id === specificCategoryName2);
-
-    const templatePath = isSpecificCategory
-      ? categoryTemplate
-      : path.resolve("./src/templates/blog.js");
-    const pathPrefix = isSpecificCategory ? "" : "blog";
-
     createPage({
-      path: `/${pathPrefix}/${node.category.id}/${node.blogId}/`,
-      component: templatePath,
+      path: `/posts/${node.blogId}/`, // 記事ページのパスを設定
+      component: postTemplate, // ページコンポーネントのパスを指定
       context: {
-        categoryId: node.category.id,
         blogId: node.blogId,
       },
     });
   });
 
-  // ケースページを生成
-  queryResult.data.allMicrocmsCase.edges.forEach(({ node }) => {
-    const templatePath = caseCategoryTemplate;
+  const numBlogPages = Math.ceil(
+    queryResult.data.allMicrocmsBlog.edges.length / postsPerPage
+  );
+
+  // ブログ記事のページングを生成
+  Array.from({ length: numBlogPages }).forEach((_, i) => {
+    const currentPage = i + 1;
+    const groupIndex = Math.floor(i / PAGES_PER_GROUP);
+    const startPage = groupIndex * PAGES_PER_GROUP + 1;
+    const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numBlogPages);
 
     createPage({
-      path: `/case/${node.category.id}/${node.caseId}/`,
-      component: templatePath,
+      path: `/blog/${currentPage}`, // ページのパスを設定
+      component: path.resolve("./src/templates/all-posts.js"), // ページコンポーネントのパスを指定
       context: {
-        categoryId: node.category.id,
-        caseId: node.caseId,
+        limit: postsPerPage, // 1ページあたりの記事数を渡す
+        skip: i * postsPerPage, // スキップする記事数を計算して渡す
+        numPages: numBlogPages, // 総ページ数を渡す
+        currentPage: currentPage, // 現在のページ番号を渡す
+        postsPerPage: postsPerPage, // ページごとの記事数を渡す
+        startPage: startPage, // 開始ページ番号を渡す
+        endPage: endPage, // 終了ページ番号を渡す
       },
     });
-  });
-
-  // カテゴリーページを生成
-  queryResult.data.allMicrocmsBlog.edges.forEach(({ node }) => {
-    if (node.category) {
-      createPage({
-        path: `/blog/${node.category.id}/`,
-        component: categoryTemplate,
-        context: {
-          categoryId: node.category.id,
-        },
-      });
-    }
-  });
-
-  if (queryResult.errors) {
-    throw queryResult.errors; // GraphQL クエリでエラーが発生した場合はエラーをスロー
-  }
-
-  // ページネーション用のページを生成
-  queryResult.data.allMicrocmsBlog.edges.forEach(({ node }) => {
-    if (node.category) {
-      const totalBlogCount = queryResult.data.allMicrocmsBlog.totalCount;
-      const postsPerPage = 10; // 1ページあたりの記事数を指定
-      const numPages = Math.ceil(totalBlogCount / postsPerPage);
-
-      // ページネーションの生成
-      Array.from({ length: numPages }).forEach((_, i) => {
-        createPage({
-          path:
-            i === 0
-              ? `/blog/${node.category.id}/`
-              : `/blog/${node.category.id}/${i + 1}/`, // カテゴリ名を含む形式に修正
-          component: categoryTemplate,
-          context: {
-            categoryId: node.category.id,
-            limit: postsPerPage,
-            skip: i * postsPerPage,
-            numPages: numPages,
-            currentPage: i + 1,
-          },
-        });
-      });
-    }
   });
 };

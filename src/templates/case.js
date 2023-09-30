@@ -18,53 +18,62 @@ const PostPage = ({ data }) => {
   return (
     <>
       <Layout>
-        <div className="main pb">
-          <article className="main">
-            {data.microcmsCase.eyecatch ? (
-              <div className="eyecatch_img">
-                <img
-                  src={data.microcmsCase.eyecatch.url + "?fm=webp"}
-                  width={370}
-                  height={277}
-                  alt={data.microcmsCase.title + "サムネイル画像"}
-                  loading="lazy"
-                />
-              </div>
-            ) : null}
-
-            <h3 className="line">
-              {data.microcmsCase.title}
-              <br />
-              <span className="date">
-                更新日：
-                <time
-                  dateTime={dayjs
-                    .utc(data.microcmsCase.date)
-                    .tz("Asia/Tokyo")
-                    .format("YYYY-MM-DDTHH:mm:ss")}
-                >
-                  {dayjs
-                    .utc(data.microcmsCase.date)
-                    .tz("Asia/Tokyo")
-                    .format("YYYY/MM/DD")}
-                </time>
-              </span>
-            </h3>
-
-            <div
-              className="post_main_box"
-              dangerouslySetInnerHTML={{
-                __html: `${data.microcmsCase.casetxt}`,
-              }}
-            />
-
-            <p class="cen">
-              <a href={`/${microcmsCase.category.id}/`} className="bt01">
-                一覧に戻る
-              </a>
-            </p>
-          </article>
+        <div id="mainimage-sub" className="yane-cover">
+          <div id="mainimage-inner"></div>
         </div>
+
+        <section id="sub-page">
+          <div className="main-content">
+            <article className="main">
+              {data.microcmsCase.eyecatch ? (
+                <div className="eyecatch_img">
+                  <img
+                    src={data.microcmsCase.eyecatch.url + "?fm=webp"}
+                    width={370}
+                    height={277}
+                    alt={data.microcmsCase.title + "サムネイル画像"}
+                    loading="lazy"
+                  />
+                </div>
+              ) : null}
+
+              <h3 className="line">
+                {data.microcmsCase.title}
+                <br />
+                <span className="date">
+                  更新日：
+                  <time
+                    dateTime={dayjs
+                      .utc(data.microcmsCase.date)
+                      .tz("Asia/Tokyo")
+                      .format("YYYY-MM-DDTHH:mm:ss")}
+                  >
+                    {dayjs
+                      .utc(data.microcmsCase.date)
+                      .tz("Asia/Tokyo")
+                      .format("YYYY/MM/DD")}
+                  </time>
+                </span>
+              </h3>
+
+              <div
+                className="post_main_box"
+                dangerouslySetInnerHTML={{
+                  __html: `${data.microcmsCase.casetxt}`,
+                }}
+              />
+
+              <p class="cen">
+                <a
+                  href={`/category/${microcmsCase.category.id}/`}
+                  className="bt01"
+                >
+                  一覧に戻る
+                </a>
+              </p>
+            </article>
+          </div>
+        </section>
       </Layout>
     </>
   );
@@ -72,27 +81,25 @@ const PostPage = ({ data }) => {
 
 export const Head = ({ data }) => (
   <>
-    <Seo title2={data.microcmsCase.title} />
+    <Seo />
   </>
 );
 
 export const query = graphql`
-  query ($id: String) {
-    microcmsCase(id: { eq: $id }) {
+  query ($caseId: String) {
+    microcmsCase(id: { eq: $caseId }) {
       title
+      category {
+        id
+        name
+      }
       caseId
       date
-      category {
-        name
-        id
-      }
+      id
+      casetxt
       eyecatch {
         url
       }
-
-      casePeriod
-      casetxt
-      caseDescription
     }
   }
 `;
