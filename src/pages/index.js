@@ -295,13 +295,7 @@ export default function index({ data }) {
                         <div className="works_list">
                           <p>
                             <a
-                              href={
-                                "/blog/" +
-                                node.category.slug +
-                                "/" +
-                                node.blogId +
-                                "/"
-                              }
+                              href={"/posts/" + node.blogId + "/"}
                               target="_parent"
                             >
                               <img
@@ -314,15 +308,7 @@ export default function index({ data }) {
                             </a>
                           </p>
                           <p className="workstitle">
-                            <a
-                              href={
-                                "/blog/" +
-                                node.category.slug +
-                                "/" +
-                                node.blogId
-                              }
-                              target="_parent"
-                            >
+                            <a href={"/posts/" + node.blogId} target="_parent">
                               {node.title}
                             </a>
                           </p>
@@ -576,7 +562,7 @@ export default function index({ data }) {
 
                   <div className="p3p">
                     <p className="center">
-                      <Link to="/case/" className="bt01">
+                      <Link to="/cases/1/" className="bt01">
                         <FontAwesomeIcon icon={faAngleRight} />{" "}
                         施工事例はこちらから
                       </Link>
@@ -964,7 +950,7 @@ export const query = graphql`
     }
 
     works: allMicrocmsBlog(
-      filter: { category: { slug: { eq: "now-working" } } }
+      filter: { category: { id: { eq: "now-working" } } }
       limit: 9
       sort: { date: DESC }
     ) {

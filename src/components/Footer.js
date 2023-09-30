@@ -82,7 +82,7 @@ const Footer = () => {
                   <h3>施工事例</h3>
                   <ul>
                     <li>
-                      <Link to="/case/">施工事例一覧</Link>
+                      <Link to="/cases/1/">施工事例一覧</Link>
                     </li>
                     <li>
                       <Link to="/workflow/">施工の流れ</Link>

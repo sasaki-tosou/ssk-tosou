@@ -86,8 +86,8 @@ export const Head = ({ data }) => (
 );
 
 export const query = graphql`
-  query ($caseId: String) {
-    microcmsCase(id: { eq: $caseId }) {
+  query ($id: String) {
+    microcmsCase(id: { eq: $id }) {
       title
       category {
         id

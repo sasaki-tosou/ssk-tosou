@@ -175,4 +175,30 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+
+  const numCasePages = Math.ceil(
+    queryResult.data.allMicrocmsCase.edges.length / postsPerPage
+  );
+
+  // ブログ記事のページングを生成
+  Array.from({ length: numCasePages }).forEach((_, i) => {
+    const currentPage = i + 1;
+    const groupIndex = Math.floor(i / PAGES_PER_GROUP);
+    const startPage = groupIndex * PAGES_PER_GROUP + 1;
+    const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numCasePages);
+
+    createPage({
+      path: `/cases/${currentPage}`, // ページのパスを設定
+      component: path.resolve("./src/templates/all-case.js"), // ページコンポーネントのパスを指定
+      context: {
+        limit: postsPerPage, // 1ページあたりの記事数を渡す
+        skip: i * postsPerPage, // スキップする記事数を計算して渡す
+        numPages: numCasePages, // 総ページ数を渡す
+        currentPage: currentPage, // 現在のページ番号を渡す
+        postsPerPage: postsPerPage, // ページごとの記事数を渡す
+        startPage: startPage, // 開始ページ番号を渡す
+        endPage: endPage, // 終了ページ番号を渡す
+      },
+    });
+  });
 };

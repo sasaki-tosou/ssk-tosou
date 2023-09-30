@@ -65,7 +65,7 @@ const Header = () => {
                     </ul>
                   </li>
                   <li>
-                    <Link to="/case/">施工事例</Link>
+                    <Link to="/cases/1/">施工事例</Link>
                   </li>
                   <li>
                     <Link to="/category/omoide/">思い出のかべ</Link>
@@ -158,7 +158,7 @@ const Header = () => {
                       <Link to="/blog/">ブログ</Link>
                     </li>
                     <li className="gnav__menu__item">
-                      <Link to="/case/">施工事例</Link>
+                      <Link to="/cases/1/">施工事例</Link>
                     </li>
                     <li className="gnav__menu__item">
                       <Link to="/category/omoide/">思い出のかべ</Link>
