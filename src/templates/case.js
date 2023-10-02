@@ -44,7 +44,7 @@ const PostPage = ({ data }) => {
               </p>
 
               <div className="case_box">
-                {data.microcmsCase.maeImg ? (
+                {data.microcmsCase.maeImg && (
                   <div className="case_box_l">
                     <p className="case_title2">before</p>
                     <img
@@ -55,8 +55,8 @@ const PostPage = ({ data }) => {
                       loading="lazy"
                     />
                   </div>
-                ) : null}
-                {data.microcmsCase.atoImg ? (
+                )}
+                {data.microcmsCase.atoImg && (
                   <div className="case_box_r">
                     <p className="case_title2">after</p>
                     <img
@@ -67,7 +67,7 @@ const PostPage = ({ data }) => {
                       loading="lazy"
                     />
                   </div>
-                ) : null}
+                )}
               </div>
 
               <table className="case_table">
