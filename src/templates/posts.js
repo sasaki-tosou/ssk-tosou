@@ -138,7 +138,7 @@ const PostPage = ({ data }) => {
                 </li>
               </ul>
 
-              {data.microcmsBlog.mainimage ? (
+              {data.microcmsBlog.mainimage && (
                 <div className="post_img">
                   <img
                     src={data.microcmsBlog.mainimage.url + "?fm=webp"}
@@ -146,25 +146,25 @@ const PostPage = ({ data }) => {
                     loading="lazy"
                   />
                 </div>
-              ) : null}
+              )}
 
-              {data.microcmsBlog.body ? (
+              {data.microcmsBlog.body && (
                 <div
                   className="post_main_box"
                   dangerouslySetInnerHTML={{
                     __html: `${data.microcmsBlog.body}`,
                   }}
                 />
-              ) : null}
+              )}
 
-              {data.microcmsBlog.arekore_txt ? (
+              {data.microcmsBlog.arekore_txt && (
                 <div
                   className="post_main_box"
                   dangerouslySetInnerHTML={{
                     __html: `${data.microcmsBlog.arekore_txt}`,
                   }}
                 />
-              ) : null}
+              )}
 
               <p class="center">
                 <a
