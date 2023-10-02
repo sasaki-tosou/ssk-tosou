@@ -65,13 +65,13 @@ const Header = () => {
                     </ul>
                   </li>
                   <li>
-                    <Link to="/cases/1/">施工事例</Link>
+                    <Link to="/case/">施工事例</Link>
                   </li>
                   <li>
                     <Link to="/category/omoide/">思い出のかべ</Link>
                   </li>
                   <li>
-                    <Link to="/blog/1/">ブログ</Link>
+                    <Link to="/blog/">ブログ</Link>
                   </li>
                   <li>
                     <Link to="/category/arekore-blog/" className="are_img">
@@ -158,7 +158,7 @@ const Header = () => {
                       <Link to="/blog/">ブログ</Link>
                     </li>
                     <li className="gnav__menu__item">
-                      <Link to="/cases/1/">施工事例</Link>
+                      <Link to="/case/">施工事例</Link>
                     </li>
                     <li className="gnav__menu__item">
                       <Link to="/category/omoide/">思い出のかべ</Link>
