@@ -22,9 +22,12 @@ const CategoryPage = ({ data, pageContext }) => {
   const { category, numPages, currentPage, startPage, endPage } = pageContext;
   const posts = allMicrocmsBlog.edges;
   const stripHTML = (html) => {
-    const tmp = document.createElement("div");
-    tmp.innerHTML = html;
-    return tmp.textContent || tmp.innerText || "";
+    if (typeof document !== "undefined") {
+      const tmp = document.createElement("div");
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || "";
+    }
+    return html; // SSR中にはhtmlをそのまま返す
   };
 
   let pageTitle = "";
@@ -50,19 +53,19 @@ const CategoryPage = ({ data, pageContext }) => {
         <>
           <h2 className="page_title01 mt0">ただいま施工中</h2>
         </>
-      ); // カテゴリが "tosou-arekore" の場合の見出し
+      ); // カテゴリが "now-working" の場合の見出し
     } else if (categoryId === "omoide") {
       pageTitle = (
         <>
           <h2 className="page_title01 mt0">思い出のかべ</h2>
         </>
-      ); // カテゴリが "tosou-arekore" の場合の見出し
+      ); // カテゴリが "omoide" の場合の見出し
     } else if (categoryId === "arekore-blog") {
       pageTitle = (
         <>
           <h2 className="page_title01 mt0">アレコレブログ</h2>
         </>
-      ); // カテゴリが "tosou-arekore" の場合の見出し
+      ); // カテゴリが "arekore-blog" の場合の見出し
     } else {
       pageTitle = (
         <>
@@ -156,7 +159,8 @@ const CategoryPage = ({ data, pageContext }) => {
                           .format("YYYY/MM/DD")}
                       </time>
                       <a href={"/posts/" + node.blogId + "/"}>{node.title}</a>
-                      {stripHTML(node.body).length > MAX_CONTENT_LENGTH
+                      {typeof window !== "undefined" &&
+                      stripHTML(node.body).length > MAX_CONTENT_LENGTH
                         ? stripHTML(node.body).substring(
                             0,
                             MAX_CONTENT_LENGTH

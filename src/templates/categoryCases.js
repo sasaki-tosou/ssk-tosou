@@ -71,7 +71,9 @@ const CategoryPage = ({ data, pageContext }) => {
                         .format("YYYY/MM/DD")}
                     </time>
                     <a href={"/posts/" + node.postsId + "/"}>{node.title}</a>
-                    {stripHTML(node.content).length > MAX_CONTENT_LENGTH
+
+                    {typeof window !== "undefined" &&
+                    stripHTML(node.content).length > MAX_CONTENT_LENGTH
                       ? stripHTML(node.content).substring(
                           0,
                           MAX_CONTENT_LENGTH

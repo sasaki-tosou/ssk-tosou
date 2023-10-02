@@ -104,12 +104,13 @@ const AllCase = ({ data, pageContext }) => {
                         .format("YYYY/MM/DD")}
                     </time>
                     <a href={"/case/" + node.caseId + "/"}>{node.title}</a>
-                    {stripHTML(node.casetxt).length > MAX_CONTENT_LENGTH
-                      ? stripHTML(node.casetxt).substring(
+                    {typeof window !== "undefined" &&
+                    stripHTML(node.content).length > MAX_CONTENT_LENGTH
+                      ? stripHTML(node.content).substring(
                           0,
                           MAX_CONTENT_LENGTH
                         ) + "..."
-                      : stripHTML(node.casetxt)}
+                      : stripHTML(node.content)}
                   </div>
                 </div>
               ))}

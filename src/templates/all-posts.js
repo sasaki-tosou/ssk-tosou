@@ -24,9 +24,12 @@ const AllPosts = ({ data, pageContext }) => {
   const posts = allMicrocmsBlog.edges;
   const postsPerPage = pageContext.postsPerPage || 30;
   const stripHTML = (html) => {
-    const tmp = document.createElement("div");
-    tmp.innerHTML = html;
-    return tmp.textContent || tmp.innerText || "";
+    if (typeof document !== "undefined") {
+      const tmp = document.createElement("div");
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || "";
+    }
+    return html; // SSR中にはhtmlをそのまま返す
   };
   return (
     <Layout>
@@ -110,7 +113,8 @@ const AllPosts = ({ data, pageContext }) => {
                     </time>
                     <a href={"/posts/" + node.blogId + "/"}>{node.title}</a>
 
-                    {stripHTML(node.body).length > MAX_CONTENT_LENGTH
+                    {typeof window !== "undefined" &&
+                    stripHTML(node.body).length > MAX_CONTENT_LENGTH
                       ? stripHTML(node.body).substring(0, MAX_CONTENT_LENGTH) +
                         "..."
                       : stripHTML(node.body)}
