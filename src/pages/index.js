@@ -498,7 +498,7 @@ export default function index({ data }) {
                       loading="lazy"
                     />
                     <div className="arekore_bt">
-                      <Link to="/tosou-arekore/">
+                      <Link to="/category/tosou-arekore/">
                         <img
                           src="../images/column_bt01.gif"
                           width={195}
