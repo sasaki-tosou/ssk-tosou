@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-const postsPerPage = 10;
+const postsPerPage = 30;
 const PAGES_PER_GROUP = 5; // 1グループに表示するページ数
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -154,7 +154,6 @@ exports.createPages = async ({ graphql, actions }) => {
     queryResult.data.allMicrocmsBlog.edges.length / postsPerPage
   );
 
-  // ブログ記事のページングを生成
   Array.from({ length: numBlogPages }).forEach((_, i) => {
     const currentPage = i + 1;
     const groupIndex = Math.floor(i / PAGES_PER_GROUP);
@@ -162,16 +161,17 @@ exports.createPages = async ({ graphql, actions }) => {
     const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numBlogPages);
 
     createPage({
-      path: `/blog/${currentPage}`, // ページのパスを設定
-      component: path.resolve("./src/templates/all-posts.js"), // ページコンポーネントのパスを指定
+      path: currentPage === 1 ? `/blog/` : `/blog/${currentPage}/`,
+      component: path.resolve("./src/templates/all-posts.js"),
       context: {
-        limit: postsPerPage, // 1ページあたりの記事数を渡す
-        skip: i * postsPerPage, // スキップする記事数を計算して渡す
-        numPages: numBlogPages, // 総ページ数を渡す
-        currentPage: currentPage, // 現在のページ番号を渡す
-        postsPerPage: postsPerPage, // ページごとの記事数を渡す
-        startPage: startPage, // 開始ページ番号を渡す
-        endPage: endPage, // 終了ページ番号を渡す
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages: numBlogPages,
+        currentPage: currentPage,
+        postsPerPage: postsPerPage,
+        startPage: startPage,
+        endPage: endPage,
+        basePath: "/blog/", // 1ページ目に戻るための basePath を追加
       },
     });
   });
@@ -188,16 +188,17 @@ exports.createPages = async ({ graphql, actions }) => {
     const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numCasePages);
 
     createPage({
-      path: `/cases/${currentPage}`, // ページのパスを設定
-      component: path.resolve("./src/templates/all-case.js"), // ページコンポーネントのパスを指定
+      path: currentPage === 1 ? `/case/` : `/case/${currentPage}/`,
+      component: path.resolve("./src/templates/all-case.js"),
       context: {
-        limit: postsPerPage, // 1ページあたりの記事数を渡す
-        skip: i * postsPerPage, // スキップする記事数を計算して渡す
-        numPages: numCasePages, // 総ページ数を渡す
-        currentPage: currentPage, // 現在のページ番号を渡す
-        postsPerPage: postsPerPage, // ページごとの記事数を渡す
-        startPage: startPage, // 開始ページ番号を渡す
-        endPage: endPage, // 終了ページ番号を渡す
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages: numCasePages,
+        currentPage: currentPage,
+        postsPerPage: postsPerPage,
+        startPage: startPage,
+        endPage: endPage,
+        basePath: "/case/", // 1ページ目に戻るための casePath を追加
       },
     });
   });
