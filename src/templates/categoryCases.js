@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import Seo from "../components/Seo";
-import Layout from "../components/Layout";
+import Sideb from "../components/Sideb";
 import dayjs from "dayjs";
 import "dayjs/locale/ja";
 import utc from "dayjs/plugin/utc";
@@ -24,101 +24,113 @@ const CategoryPage = ({ data, pageContext }) => {
   return (
     <>
       <Layout>
-        <div id="mainimage-sub" className="yane-cover">
+        <div id="mainimage-sub" className="case">
           <div id="mainimage-inner"></div>
         </div>
 
         <section id="sub-page">
           <div className="main-content">
-            {posts.map(({ node }) => (
-              <div className="column_box" key={node.postsId}>
-                {node.eyecatch ? (
-                  <div className="column_img">
-                    <a href={"/posts/" + node.postsId + "/"}>
-                      <img
-                        src={node.eyecatch.url + "?fm=webp"}
-                        width={370}
-                        height={277}
-                        alt={node.title + "サムネイル画像"}
-                        loading="lazy"
-                      />
-                    </a>
+            <div className="main_b">
+              {posts.map(({ node }) => (
+                <div className="column_box" key={node.postsId}>
+                  {node.eyecatch ? (
+                    <div className="column_img">
+                      <a href={"/posts/" + node.postsId + "/"}>
+                        <img
+                          src={node.eyecatch.url + "?fm=webp"}
+                          width={370}
+                          height={277}
+                          alt={node.title + "サムネイル画像"}
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="column_img">
+                      <a href={"/posts/" + node.postsId + "/"}>
+                        <img
+                          src="/img/alternative-image.png"
+                          width={370}
+                          height={277}
+                          alt={node.title + "の代替画像"}
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  )}
+                  <div className="column_txt">
+                    <time
+                      dateTime={dayjs
+                        .utc(node.date)
+                        .tz("Asia/Tokyo")
+                        .format("YYYY-MM-DDTHH:mm:ss")}
+                    >
+                      {dayjs
+                        .utc(node.date)
+                        .tz("Asia/Tokyo")
+                        .format("YYYY/MM/DD")}
+                    </time>
+                    <a href={"/posts/" + node.postsId + "/"}>{node.title}</a>
+                    {stripHTML(node.content).length > MAX_CONTENT_LENGTH
+                      ? stripHTML(node.content).substring(
+                          0,
+                          MAX_CONTENT_LENGTH
+                        ) + "..."
+                      : stripHTML(node.content)}
                   </div>
-                ) : (
-                  <div className="column_img">
-                    <a href={"/posts/" + node.postsId + "/"}>
-                      <img
-                        src="/img/alternative-image.png"
-                        width={370}
-                        height={277}
-                        alt={node.title + "の代替画像"}
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                )}
-                <div className="column_txt">
-                  <time
-                    dateTime={dayjs
-                      .utc(node.date)
-                      .tz("Asia/Tokyo")
-                      .format("YYYY-MM-DDTHH:mm:ss")}
-                  >
-                    {dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
-                  </time>
-                  <a href={"/posts/" + node.postsId + "/"}>{node.title}</a>
-                  {stripHTML(node.content).length > MAX_CONTENT_LENGTH
-                    ? stripHTML(node.content).substring(0, MAX_CONTENT_LENGTH) +
-                      "..."
-                    : stripHTML(node.content)}
                 </div>
-              </div>
-            ))}
-
-            {numPages > 1 && (
-              <div className="pager">
-                {currentPage > 1 && (
-                  <Link
-                    to={
-                      currentPage === 2
-                        ? `/category/${category.categoryId}`
-                        : `/category/${category.categoryId}/${currentPage - 1}`
+              ))}
+              {numPages > 1 && (
+                <div className="pager">
+                  {currentPage > 1 && (
+                    <Link
+                      to={
+                        currentPage === 2
+                          ? `/category/${category.categoryId}`
+                          : `/category/${category.categoryId}/${
+                              currentPage - 1
+                            }`
+                      }
+                    >
+                      &lt;&lt; 前へ
+                    </Link>
+                  )}
+                  {/* ページャーの数字を表示 */}
+                  {Array.from({ length: 5 }, (_, i) => {
+                    const pageNumber = startPage + i; // ページャーの数字を計算
+                    if (pageNumber <= endPage) {
+                      return (
+                        <Link
+                          key={`pagination-link${pageNumber}`}
+                          to={
+                            pageNumber === 1
+                              ? `/category/${category.categoryId}`
+                              : `/category/${category.categoryId}/${pageNumber}`
+                          }
+                          className={
+                            pageNumber === currentPage ? "current" : ""
+                          }
+                        >
+                          {pageNumber}
+                        </Link>
+                      );
                     }
-                  >
-                    &lt;&lt; 前へ
-                  </Link>
-                )}
+                    return null;
+                  })}
+                  {currentPage < numPages && (
+                    <Link
+                      to={`/category/${category.categoryId}/${currentPage + 1}`}
+                    >
+                      次へ &gt;&gt;
+                    </Link>
+                  )}
+                </div>
+              )}
+            </div>
 
-                {/* ページャーの数字を表示 */}
-                {Array.from({ length: 5 }, (_, i) => {
-                  const pageNumber = startPage + i; // ページャーの数字を計算
-                  if (pageNumber <= endPage) {
-                    return (
-                      <Link
-                        key={`pagination-link${pageNumber}`}
-                        to={
-                          pageNumber === 1
-                            ? `/category/${category.categoryId}`
-                            : `/category/${category.categoryId}/${pageNumber}`
-                        }
-                        className={pageNumber === currentPage ? "current" : ""}
-                      >
-                        {pageNumber}
-                      </Link>
-                    );
-                  }
-                  return null;
-                })}
-
-                {currentPage < numPages && (
-                  <Link
-                    to={`/category/${category.categoryId}/${currentPage + 1}`}
-                  >
-                    次へ &gt;&gt;
-                  </Link>
-                )}
-              </div>
-            )}
+            <aside className="side_b">
+              <Sideb />
+            </aside>
           </div>
         </section>
       </Layout>
