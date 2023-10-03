@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import * as styles from '../css/embedyoutube.module.scss';
+import React, { useState } from "react";
+import * as styles from "../css/embedyoutube.module.scss";
 
 const EmbedYoutube = ({ id }) => {
   const [isThumbnail, setIsThumbnail] = useState(true);
@@ -9,7 +9,7 @@ const EmbedYoutube = ({ id }) => {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter' || e.key === 'Space') {
+    if (e.key === "Enter" || e.key === "Space") {
       setIsThumbnail(false);
     }
   };
