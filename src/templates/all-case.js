@@ -170,7 +170,10 @@ export const Head = ({ data }) => {
   return (
     <>
       <body id="pagetop" className="blogpage" />
-      <Seo title="ブログ記事一覧" />
+      <Seo
+        title2={`施工事例一覧｜外壁塗装なら広島の佐々木塗装`}
+        description={`外壁塗装なら広島の佐々木塗装｜施工事例一覧`}
+      />
     </>
   );
 };
