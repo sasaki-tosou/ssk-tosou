@@ -187,11 +187,23 @@ const PostPage = ({ data }) => {
 
 export const Head = ({ data }) => {
   const catName = data.microcmsBlog.category.id; // ページのタイトルを取得
+  const pageName = data.microcmsBlog.title;
+  const maxTextLength = 80;
+
+  const body = data.microcmsBlog.body;
+  const truncatedBody = body.replace(/<[^>]+>/g, "");
+  const limitedBody =
+    truncatedBody.length > maxTextLength
+      ? truncatedBody.slice(0, maxTextLength) + "..."
+      : truncatedBody;
 
   return (
     <>
       <body id="pagetop" className={`blogpage ${catName}`} />
-      <Seo />
+      <Seo
+        title2={`${pageName}｜外壁塗装なら広島の佐々木塗装`}
+        description={limitedBody}
+      />
     </>
   );
 };

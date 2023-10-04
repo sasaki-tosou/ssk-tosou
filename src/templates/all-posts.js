@@ -14,7 +14,7 @@ dayjs.extend(timezone);
 dayjs.tz.setDefault("Asia/Tokyo");
 
 const MAX_CONTENT_LENGTH = 50; // 最大文字数を設定してください
-const postsPerPage = 30; // 1ページあたりの記事数
+const postsPerPage = 20; // 1ページあたりの記事数
 const pagePadding = 1; // 前後に追加で表示するページ数
 
 const AllPosts = ({ data, pageContext }) => {
@@ -180,7 +180,10 @@ export const Head = () => {
   return (
     <>
       <body id="pagetop" className="blogpage" />
-      <Seo title="ブログ記事一覧" />
+      <Seo
+        title2={`ブログ記事一覧｜外壁塗装なら広島の佐々木塗装`}
+        description={`外壁塗装なら広島の佐々木塗装｜ブログの記事一覧`}
+      />
     </>
   );
 };

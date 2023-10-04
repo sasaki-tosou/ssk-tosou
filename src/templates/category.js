@@ -265,10 +265,14 @@ export const query = graphql`
 
 export const Head = ({ data }) => {
   const catName = data.allMicrocmsBlog.edges[0].node.category.id; // ページのタイトルを取得
+  const catTitle = data.allMicrocmsBlog.edges[0].node.category.name;
   return (
     <>
       <body id="pagetop" className={`blogpage ${catName}`} />
-      <Seo />
+      <Seo
+        title2={`${catTitle}の記事一覧｜外壁塗装なら広島の佐々木塗装`}
+        description={`外壁塗装なら広島の佐々木塗装｜${catTitle}の記事一覧`}
+      />
     </>
   );
 };
