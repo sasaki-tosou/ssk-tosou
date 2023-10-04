@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-const postsPerPage = 30;
+const postsPerPage = 20;
 const PAGES_PER_GROUP = 5; // 1グループに表示するページ数
 
 exports.createPages = async ({ graphql, actions }) => {
