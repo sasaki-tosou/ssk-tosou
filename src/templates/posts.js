@@ -148,23 +148,25 @@ const PostPage = ({ data }) => {
                 </div>
               )}
 
-              {data.microcmsBlog.body && (
-                <div
-                  className="post_main_box"
-                  dangerouslySetInnerHTML={{
-                    __html: `${data.microcmsBlog.body}`,
-                  }}
-                />
-              )}
+              <div className="post_main_box">
+                {data.microcmsBlog.body !== null &&
+                  data.microcmsBlog.body !== undefined && (
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: data.microcmsBlog.body,
+                      }}
+                    />
+                  )}
 
-              {data.microcmsBlog.arekore_txt && (
-                <div
-                  className="post_main_box"
-                  dangerouslySetInnerHTML={{
-                    __html: `${data.microcmsBlog.arekore_txt}`,
-                  }}
-                />
-              )}
+                {data.microcmsBlog.arekore_txt !== null &&
+                  data.microcmsBlog.arekore_txt !== undefined && (
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: data.microcmsBlog.arekore_txt,
+                      }}
+                    />
+                  )}
+              </div>
 
               <p class="center">
                 <a
@@ -186,23 +188,31 @@ const PostPage = ({ data }) => {
 };
 
 export const Head = ({ data }) => {
-  const catName = data.microcmsBlog.category.id; // ページのタイトルを取得
+  const catName = data.microcmsBlog.category.id; // ページのカテゴリーを取得
   const pageName = data.microcmsBlog.title;
-  const maxTextLength = 80;
 
   const body = data.microcmsBlog.body;
-  const truncatedBody = body.replace(/<[^>]+>/g, "");
-  const limitedBody =
-    truncatedBody.length > maxTextLength
-      ? truncatedBody.slice(0, maxTextLength) + "..."
-      : truncatedBody;
+  const arekore_txt = data.microcmsBlog.arekore_txt;
+
+  // bodyとarekore_txtのどちらかが存在する場合、それをdescriptionに設定
+  const description = body || arekore_txt || ""; // どちらもnullの場合は空文字列にする
+
+  // HTMLタグを取り除く
+  const plainText = description.replace(/<[^>]+>/g, "");
+
+  // 改行文字をスペースに置き換え、80文字までのテキストを設定
+  const maxTextLength = 80;
+  const limitedDescription =
+    plainText.replace(/\n/g, " ").length > maxTextLength
+      ? plainText.replace(/\n/g, " ").substring(0, maxTextLength) + "..."
+      : plainText.replace(/\n/g, " ");
 
   return (
     <>
       <body id="pagetop" className={`blogpage ${catName}`} />
       <Seo
         title2={`${pageName}｜外壁塗装なら広島の佐々木塗装`}
-        description={limitedBody}
+        description={limitedDescription}
       />
     </>
   );
@@ -227,4 +237,5 @@ export const query = graphql`
     }
   }
 `;
+
 export default PostPage;
