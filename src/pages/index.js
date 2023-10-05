@@ -562,7 +562,7 @@ export default function index({ data }) {
 
                   <div className="p3p">
                     <p className="center">
-                      <Link to="/cases/1/" className="bt01">
+                      <Link to="/cases/" className="bt01">
                         <FontAwesomeIcon icon={faAngleRight} />{" "}
                         施工事例はこちらから
                       </Link>

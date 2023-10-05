@@ -51,7 +51,7 @@ const Footer = () => {
                       <Link to="/category/omoide/">思い出のかべ</Link>
                     </li>
                     <li>
-                      <Link to="/tosou-arekore/">外壁塗装コラム</Link>
+                      <Link to="/category/tosou-arekore/">外壁塗装コラム</Link>
                     </li>
                   </ul>
                 </div>
@@ -96,7 +96,7 @@ const Footer = () => {
                       <Link to="/category/omoide/">思い出のかべ</Link>
                     </li>
                     <li>
-                      <Link to="/blog/now-working/">ただいま施工中</Link>
+                      <Link to="/category/now-working/">ただいま施工中</Link>
                     </li>
                   </ul>
                 </div>
