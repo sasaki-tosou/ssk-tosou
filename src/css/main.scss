@@ -1280,12 +1280,6 @@ input[type="checkbox"]:checked ~ #overlay-button span {
   }
 }
 
-@media screen and (max-width: 480px) {
-  #overlay-button {
-    top: 0.5rem !important;
-  }
-}
-
 footer {
   margin-top: 0 !important;
 }
@@ -1774,7 +1768,7 @@ address {
 
 @media screen and (max-width: 600px) {
   #mainimage-sub {
-    margin-top: 85px !important;
+    margin-top: 70px !important;
     background-size: auto 100% !important;
   }
   #mainimage-sub.staff {
@@ -3147,6 +3141,21 @@ _:future,
   border: solid 1px #ccc;
   margin: 0 !important;
   transition: all 0.3s ease;
+  @media screen and (max-width: 1024px) {
+    height: 284px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 238px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 116px;
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    height: 116px;
+  }
 }
 
 .tosou-arekore .kiji_list,
@@ -3161,6 +3170,9 @@ _:future,
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  @media not screen and (min-width: 768px) {
+    width: calc(100% / 2);
+  }
 }
 .tosou-arekore .kiji_thumb,
 .arekore-blog .kiji_thumb {
@@ -3174,7 +3186,23 @@ _:future,
   object-fit: cover;
   margin: 0 !important;
   transition: all 0.3s ease;
+  @media screen and (max-width: 1024px) {
+    height: 189px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 158px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 116px;
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    height: 233px;
+  }
 }
+
 .tosou-arekore .kiji_thumb img:hover,
 .arekore-blog .kiji_thumb img:hover {
   opacity: 0.6;
@@ -3189,48 +3217,6 @@ _:future,
   width: 100%;
   height: initial;
   flex: 1;
-}
-
-.pager {
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  a {
-    display: inline-block;
-    padding: 7px 13px;
-    border-radius: 10px;
-    color: #ff7415;
-    font-weight: 700;
-    &.current {
-      background-color: #ff7415;
-      color: #fff;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .kiji_thumb img {
-    height: 284px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .kiji_thumb img {
-    height: 238px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .kiji_thumb img {
-    height: 116px;
-  }
-}
-
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .kiji_thumb img {
-    height: 116px;
-  }
 }
 
 .kiji_thumb img:hover {
@@ -3277,6 +3263,24 @@ _:future,
 }
 .kiji_title:hover {
   color: #ff7415;
+}
+
+.pager {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 10px;
+    color: #ff7415;
+    font-weight: 700;
+    &.current {
+      background-color: #ff7415;
+      color: #fff;
+    }
+  }
 }
 
 .single_title {
