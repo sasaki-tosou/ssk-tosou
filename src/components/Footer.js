@@ -118,7 +118,7 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/contact/">お問い合わせ</Link>
+                      <Link to="/toiawase/">お問い合わせ</Link>
                     </li>
                     <li>
                       <a

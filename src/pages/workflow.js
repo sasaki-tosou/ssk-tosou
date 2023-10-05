@@ -1,201 +1,415 @@
-import React from 'react'
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Seo from '../components/Seo'
-import Layout from '../components/Layout';
+import Seo from "../components/Seo";
+import Layout from "../components/Layout";
 
 const workflow = () => {
   return (
     <>
       <Layout>
-         
-        <div id="mainimage-sub" className='workflow'>        
-            <div id="mainimage-inner">
-            </div>
+        <div id="mainimage-sub" className="workflow">
+          <div id="mainimage-inner"></div>
         </div>
         <div id="breadcrumb">
-            <ul className="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/" itemprop="item">
-                        <span itemprop="name">ホーム</span>
-                    </Link>
-                    <meta itemprop="position" content="1" />
-                </li>
-                <li className="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <Link to="/workflow/" itemprop="item">
-                        <span itemprop="name">施工の流れ</span>
-                    </Link>
-                    <meta itemprop="position" content="2" />
-                </li>
-            </ul>
+          <ul
+            className="breadcrumb__list"
+            itemscope
+            itemtype="https://schema.org/BreadcrumbList"
+          >
+            <li
+              className="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <Link to="/" itemprop="item">
+                <span itemprop="name">ホーム</span>
+              </Link>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li
+              className="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <Link to="/workflow/" itemprop="item">
+                <span itemprop="name">施工の流れ</span>
+              </Link>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ul>
         </div>
         <section id="sub-page">
           <div className="main-content">
-
-            <h3 className="flow_title01 mt0">お問い合わせから<br className="smp" />ご契約までの流れ</h3>
-            <p className="center">当社の施工事例などを元に、工事内容についてお客様の納得のゆくまで説明させていただきます。</p>
+            <h3 className="flow_title01 mt0">
+              お問い合わせから
+              <br className="smp" />
+              ご契約までの流れ
+            </h3>
+            <p className="center">
+              当社の施工事例などを元に、工事内容についてお客様の納得のゆくまで説明させていただきます。
+            </p>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP01</span></div>
-                <h4 className="flow_title">お問い合わせ・見積もりの<br className="smp" />依頼</h4>
-                <p>おうちの事が気になる方はお気軽にお問い合わせください。<br />
-                  無料で調査"お見積りいたします。問い合わせフォームまたはお電話でお問い合わせください。<br />
-                  ご希望の時期に工事を行いたい方はできるだけ早めにご準備ください。</p>
+                <div>
+                  <span className="step_title">STEP01</span>
+                </div>
+                <h4 className="flow_title">
+                  お問い合わせ・見積もりの
+                  <br className="smp" />
+                  依頼
+                </h4>
+                <p>
+                  おうちの事が気になる方はお気軽にお問い合わせください。
+                  <br />
+                  無料で調査"お見積りいたします。問い合わせフォームまたはお電話でお問い合わせください。
+                  <br />
+                  ご希望の時期に工事を行いたい方はできるだけ早めにご準備ください。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic01.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic01.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP02</span></div>
+                <div>
+                  <span className="step_title">STEP02</span>
+                </div>
                 <h4 className="flow_title">現場調査</h4>
-                <p>当社の外装劣化診断士が建物全体の調査を行います。ひび割れや膨れ、剥がれ等傷み具合を細かくチェック。<br />
-                ドローンを使用して普段見る事のできない屋根や雨樋等の劣化具合を診断します。</p>
+                <p>
+                  当社の外装劣化診断士が建物全体の調査を行います。ひび割れや膨れ、剥がれ等傷み具合を細かくチェック。
+                  <br />
+                  ドローンを使用して普段見る事のできない屋根や雨樋等の劣化具合を診断します。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic02.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic02.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP03</span></div>
+                <div>
+                  <span className="step_title">STEP03</span>
+                </div>
                 <h4 className="flow_title">調査報告書・見積書の作成</h4>
-                <p>建物の現状がわかりやすく明確にお伝えできるよう写真を多く取り入れた報告書を作成します。<br />
-                調査内容を元にご予算に応じたプランを提案し見積書を作成いたします。<br />
-                当社では正確な塗り面積を算出する為にCADで図面を起こし、リフォーム図面を作成します。</p>
+                <p>
+                  建物の現状がわかりやすく明確にお伝えできるよう写真を多く取り入れた報告書を作成します。
+                  <br />
+                  調査内容を元にご予算に応じたプランを提案し見積書を作成いたします。
+                  <br />
+                  当社では正確な塗り面積を算出する為にCADで図面を起こし、リフォーム図面を作成します。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic03.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic03.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box_last">
               <div className="flow_l">
-                <div><span className="step_title">STEP04</span></div>
+                <div>
+                  <span className="step_title">STEP04</span>
+                </div>
                 <h4 className="flow_title">見積りのご提示・ご契約</h4>
-                <p>調査報告を行い見積書のご提示を行います。<br />
-                工事内容についてお客様が納得いくまでご説明させていただきます。<br />
-                ご納得いただけましたら契約は文書で行います。トラブル防止の為に約款、クーリングオフにっいての説明も記載しております。<br />
-                リフォームローンのご利用もいただけます。</p>
+                <p>
+                  調査報告を行い見積書のご提示を行います。
+                  <br />
+                  工事内容についてお客様が納得いくまでご説明させていただきます。
+                  <br />
+                  ご納得いただけましたら契約は文書で行います。トラブル防止の為に約款、クーリングオフにっいての説明も記載しております。
+                  <br />
+                  リフォームローンのご利用もいただけます。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic04.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic04.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <h4 className="flow_title01">ご契約から着工前までの流れ</h4>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP01</span></div>
+                <div>
+                  <span className="step_title">STEP01</span>
+                </div>
                 <h4 className="flow_title">色打ち合わせ</h4>
-                <p>早目に色見本をお渡しします。ご家族で塗り替え後のイメージを膨らませておいてください。<br />
-                  打ち合わせの際にはパソコンやテレビ画面を使用してカラーシュミレーションを行います。<br />
-                  塗り替え後のイメージがつかめない方にはこれまで工事をされたOB客様のお宅にご案内します。</p>
+                <p>
+                  早目に色見本をお渡しします。ご家族で塗り替え後のイメージを膨らませておいてください。
+                  <br />
+                  打ち合わせの際にはパソコンやテレビ画面を使用してカラーシュミレーションを行います。
+                  <br />
+                  塗り替え後のイメージがつかめない方にはこれまで工事をされたOB客様のお宅にご案内します。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic05.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic05.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP02</span></div>
+                <div>
+                  <span className="step_title">STEP02</span>
+                </div>
                 <h4 className="flow_title">施工前準備</h4>
-                <p>工事に入る前に足場の部材が干渉するカーポートやテラスの屋根材を撤去したりおうちの周りにある物を動かしたりします。</p>
+                <p>
+                  工事に入る前に足場の部材が干渉するカーポートやテラスの屋根材を撤去したりおうちの周りにある物を動かしたりします。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic06.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic06.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box_last">
               <div className="flow_l">
-                <div><span className="step_title">STEP03</span></div>
+                <div>
+                  <span className="step_title">STEP03</span>
+                </div>
                 <h4 className="flow_title">近隣へのご挨拶</h4>
-                <p>挨拶状、粗品を持ってご近所の挨拶回りをさせていただきます。<br />
-                  高圧洗浄の前、足場解体の前、完工後にもご近所に案内を配布いたします。</p>
+                <p>
+                  挨拶状、粗品を持ってご近所の挨拶回りをさせていただきます。
+                  <br />
+                  高圧洗浄の前、足場解体の前、完工後にもご近所に案内を配布いたします。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic07.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic07.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <h4 className="flow_title01">着工から完了までの流れ</h4>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP01</span></div>
+                <div>
+                  <span className="step_title">STEP01</span>
+                </div>
                 <h4 className="flow_title">足場組立</h4>
-                <p>細心の注意をはらい足場を組み立て安全な現場を作ります。塗料が散っても大丈夫なように飛散防止ネットで養生します。<br />
-                  足場の組み立ては専門業者が行います。<br />
-                  組み立てが終わりましたら防犯対策の為に防犯センサーライトの取付けを行います。</p>
+                <p>
+                  細心の注意をはらい足場を組み立て安全な現場を作ります。塗料が散っても大丈夫なように飛散防止ネットで養生します。
+                  <br />
+                  足場の組み立ては専門業者が行います。
+                  <br />
+                  組み立てが終わりましたら防犯対策の為に防犯センサーライトの取付けを行います。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic08.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic08.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP02</span></div>
+                <div>
+                  <span className="step_title">STEP02</span>
+                </div>
                 <h4 className="flow_title">高圧洗浄</h4>
-                <p>長年の汚れを落とす為に建物の高圧洗浄を行います。<br />
-                  カビや苔等も除去します。<br />
-                  ベランダ内部やめったに洗浄できない外構部も洗浄します。<br />
-                  外壁のクラック(ひび割れ)が多くみられる場合は水の大量侵入を防ぐ為、洗浄の前にクラックの補修を行います。</p>
+                <p>
+                  長年の汚れを落とす為に建物の高圧洗浄を行います。
+                  <br />
+                  カビや苔等も除去します。
+                  <br />
+                  ベランダ内部やめったに洗浄できない外構部も洗浄します。
+                  <br />
+                  外壁のクラック(ひび割れ)が多くみられる場合は水の大量侵入を防ぐ為、洗浄の前にクラックの補修を行います。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic09.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic09.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP03</span></div>
+                <div>
+                  <span className="step_title">STEP03</span>
+                </div>
                 <h4 className="flow_title">外壁塗装</h4>
-                <p>下塗り、上塗り(2回)の順で塗装します。 (傷み具合で塗り回数は変わります)<br />
-                  外壁の素材によって使用するローラーや下塗り材が変わります。<br />
-                  また季節によって乾燥時問が変わります。</p>
+                <p>
+                  下塗り、上塗り(2回)の順で塗装します。
+                  (傷み具合で塗り回数は変わります)
+                  <br />
+                  外壁の素材によって使用するローラーや下塗り材が変わります。
+                  <br />
+                  また季節によって乾燥時問が変わります。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic10.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic10.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP04</span></div>
+                <div>
+                  <span className="step_title">STEP04</span>
+                </div>
                 <h4 className="flow_title">屋根塗装</h4>
-                <p>下塗り、上塗り(2回)の順で塗装します。 (傷み具合で塗り回数は変わります)<br />
-                  季節によって乾燥時問が変わります。</p>
+                <p>
+                  下塗り、上塗り(2回)の順で塗装します。
+                  (傷み具合で塗り回数は変わります)
+                  <br />
+                  季節によって乾燥時問が変わります。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic11.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic11.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP05</span></div>
-                <h4 className="flow_title">付帯塗装<br className='smp' />(鉄部、木部、ベランダ床面等)</h4>
-                <p>下地を整えた後下塗り(または錆止め)をします。その後仕上げ塗装を行います。</p>
+                <div>
+                  <span className="step_title">STEP05</span>
+                </div>
+                <h4 className="flow_title">
+                  付帯塗装
+                  <br className="smp" />
+                  (鉄部、木部、ベランダ床面等)
+                </h4>
+                <p>
+                  下地を整えた後下塗り(または錆止め)をします。その後仕上げ塗装を行います。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic12.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic12.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP06</span></div>
+                <div>
+                  <span className="step_title">STEP06</span>
+                </div>
                 <h4 className="flow_title">完了確認検査・足場解体</h4>
-                <p>最後に現場管理者と社長による完了検査を行います。<br />
-                  その後お客様にも立ち会いいただき完了確認検査を行います。<br />
-                  問題がなければ足場の解体を行います。<br />
-                  解体前には窓ガラスの拭き掃除も行います。</p>
+                <p>
+                  最後に現場管理者と社長による完了検査を行います。
+                  <br />
+                  その後お客様にも立ち会いいただき完了確認検査を行います。
+                  <br />
+                  問題がなければ足場の解体を行います。
+                  <br />
+                  解体前には窓ガラスの拭き掃除も行います。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic13.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic13.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP07</span></div>
+                <div>
+                  <span className="step_title">STEP07</span>
+                </div>
                 <h4 className="flow_title">完成・お引渡し</h4>
-                <p>カーポートやテラスの屋根材等の復旧、周囲の清掃を終えてお引渡しになります。<br />
-                  記念撮影やアンケートのご協力をお願いしています。</p>
+                <p>
+                  カーポートやテラスの屋根材等の復旧、周囲の清掃を終えてお引渡しになります。
+                  <br />
+                  記念撮影やアンケートのご協力をお願いしています。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic14.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic14.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box">
               <div className="flow_l">
-                <div><span className="step_title">STEP08</span></div>
+                <div>
+                  <span className="step_title">STEP08</span>
+                </div>
                 <h4 className="flow_title">工事報告書の提出</h4>
-                <p>工事中の工程写真、完工後のお写真、保証書等をひとまとめにした報告書をお渡しします。</p>
+                <p>
+                  工事中の工程写真、完工後のお写真、保証書等をひとまとめにした報告書をお渡しします。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic15.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic15.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="flow_box_last">
               <div className="flow_l">
-                <div><span className="step_title">STEP09</span></div>
+                <div>
+                  <span className="step_title">STEP09</span>
+                </div>
                 <h4 className="flow_title">アフターフォロー</h4>
-                <p>アフターサービスの一環として定期点検を行いお客様の大切なお住まいをフォローしていきます。<br />
-                  工事が終わった後も何でもご相談いただける関係を築きたいと思っています。</p>
+                <p>
+                  アフターサービスの一環として定期点検を行いお客様の大切なお住まいをフォローしていきます。
+                  <br />
+                  工事が終わった後も何でもご相談いただける関係を築きたいと思っています。
+                </p>
               </div>
-              <div className="flow_r"><img src="../images/flow/flow_pic16.jpg" loading="lazy" alt="" /></div>
+              <div className="flow_r">
+                <img
+                  src="../images/flow/flow_pic16.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
             </div>
-            <p className="center mt35"><a href="/contact/" className="bt02">お見積もり・お問い合わせはこちらから</a></p>
-
+            <p className="center mt35">
+              <a href="/toiawase/" className="bt02">
+                お見積もり・お問い合わせはこちらから
+              </a>
+            </p>
           </div>
         </section>
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const Head = () => (
   <>
@@ -205,6 +419,6 @@ export const Head = () => (
       description="外壁塗装・屋根塗装なら広島の佐々木塗装の施工の流れページです。"
     />
   </>
-)
+);
 
-export default workflow
+export default workflow;
