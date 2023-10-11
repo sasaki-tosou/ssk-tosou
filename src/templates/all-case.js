@@ -180,7 +180,12 @@ export const Head = ({ data }) => {
 
 export const query = graphql`
   query ($limit: Int, $skip: Int) {
-    allMicrocmsCase(limit: $limit, skip: $skip, sort: { date: DESC }) {
+    allMicrocmsCase(
+      limit: $limit
+      skip: $skip
+      sort: { date: DESC }
+      filter: { category: { id: { nin: "voice" } } }
+    ) {
       edges {
         node {
           caseId
