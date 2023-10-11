@@ -61,10 +61,16 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // カテゴリーページを生成
   queryResult.data.allMicrocmsCategory.edges.forEach(({ node }) => {
+    const excludedCategories = ["tosou-arekore", "omoide", "now-working"]; // 除外するカテゴリーの一覧
+
     // カテゴリーに対応する記事を取得してpostsフィールドにセットする
-    const posts = queryResult.data.allMicrocmsBlog.edges.filter(
-      (edge) => edge.node.category && edge.node.category.id === node.categoryId // カテゴリーが存在する場合にのみ追加
-    );
+    const posts = queryResult.data.allMicrocmsBlog.edges.filter((edge) => {
+      return (
+        edge.node.category &&
+        edge.node.category.id === node.categoryId &&
+        !excludedCategories.includes(edge.node.category.id)
+      );
+    });
 
     const numPages = Math.ceil(posts.length / postsPerPage);
 
@@ -117,10 +123,10 @@ exports.createPages = async ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: (currentPage - 1) * postsPerPage,
           numPages: numPages,
-          currentPage: currentPage, // カレントページを渡す
-          links: links, // ページャーに表示するリンクの情報を渡す
-          startPage: startPage, // グループ内の開始ページを渡す
-          endPage: endPage, // グループ内の終了ページを渡す
+          currentPage: currentPage,
+          links: links,
+          startPage: startPage,
+          endPage: endPage,
         },
       });
     });
@@ -140,19 +146,41 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // 記事ページのテンプレートを指定
   const casePostTemplate = path.resolve("./src/templates/case.js");
-  queryResult.data.allMicrocmsCase.edges.forEach(({ node }) => {
-    createPage({
-      path: `/case/${node.caseId}/`, // 記事ページのパスを設定
-      component: casePostTemplate, // ページコンポーネントのパスを指定
-      context: {
-        id: node.id,
-      },
+  queryResult.data.allMicrocmsCase.edges
+    .filter((edge) => edge.node.category && edge.node.category.id !== "voice")
+    .forEach(({ node }) => {
+      createPage({
+        path: `/case/${node.caseId}/`, // 記事ページのパスを設定
+        component: casePostTemplate, // ページコンポーネントのパスを指定
+        context: {
+          id: node.id,
+        },
+      });
     });
-  });
 
-  const numBlogPages = Math.ceil(
-    queryResult.data.allMicrocmsBlog.edges.length / postsPerPage
+  // 記事ページのテンプレートを指定
+  const voicePostTemplate = path.resolve("./src/templates/voice.js");
+  queryResult.data.allMicrocmsCase.edges
+    .filter((edge) => edge.node.category && edge.node.category.id === "voice")
+    .forEach(({ node }) => {
+      createPage({
+        path: `/voice_new/${node.caseId}/`,
+        component: voicePostTemplate,
+        context: {
+          id: node.id,
+        },
+      });
+    });
+
+  // 除外するカテゴリーの一覧
+  const excludedCategories = ["tosou-arekore", "omoide", "now-working"];
+
+  const filteredPosts = queryResult.data.allMicrocmsBlog.edges.filter(
+    (edge) =>
+      edge.node.category && !excludedCategories.includes(edge.node.category.id)
   );
+
+  const numBlogPages = Math.ceil(filteredPosts.length / postsPerPage);
 
   Array.from({ length: numBlogPages }).forEach((_, i) => {
     const currentPage = i + 1;
@@ -171,7 +199,7 @@ exports.createPages = async ({ graphql, actions }) => {
         postsPerPage: postsPerPage,
         startPage: startPage,
         endPage: endPage,
-        basePath: "/blog/", // 1ページ目に戻るための basePath を追加
+        basePath: "/blog/",
       },
     });
   });
@@ -199,6 +227,39 @@ exports.createPages = async ({ graphql, actions }) => {
         startPage: startPage,
         endPage: endPage,
         basePath: "/case/", // 1ページ目に戻るための casePath を追加
+      },
+    });
+  });
+
+  // voiceカテゴリーのページを生成
+  const voicePosts = queryResult.data.allMicrocmsCase.edges.filter(
+    (edge) => edge.node.category && edge.node.category.id === "voice"
+  );
+
+  const numVoicePages = Math.ceil(voicePosts.length / postsPerPage);
+
+  Array.from({ length: numVoicePages }).forEach((_, i) => {
+    const currentPage = i + 1;
+    const groupIndex = Math.floor(i / PAGES_PER_GROUP);
+    const startPage = groupIndex * PAGES_PER_GROUP + 1;
+    const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numVoicePages);
+
+    createPage({
+      path: currentPage === 1 ? `/voice_new/` : `/voice_new/${currentPage}/`,
+      component: path.resolve("./src/templates/all-voice.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages: numVoicePages,
+        currentPage: currentPage,
+        postsPerPage: postsPerPage,
+        startPage: startPage,
+        endPage: endPage,
+        basePath: "/voice_new/",
+        posts: voicePosts.slice(
+          (currentPage - 1) * postsPerPage,
+          currentPage * postsPerPage
+        ),
       },
     });
   });
