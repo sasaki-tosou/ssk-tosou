@@ -213,6 +213,7 @@ export const query = graphql`
           }
         }
       }
+      totalCount
     }
   }
 `;
