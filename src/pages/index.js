@@ -925,14 +925,17 @@ const jsonhowto = {
 
 export const query = graphql`
   query {
-    case: allMicrocmsCase(limit: 4, sort: { date: DESC }) {
+    case: allMicrocmsCase(
+      limit: 4
+      sort: { date: DESC }
+      filter: { category: { id: { ne: "voice" } } }
+    ) {
       edges {
         node {
           title
           caseId
           date(formatString: "YYYY年MM月DD日")
           category {
-            slug
             name
             id
           }
@@ -960,7 +963,6 @@ export const query = graphql`
           blogId
           date(formatString: "YYYY年MM月DD日")
           category {
-            slug
             name
             id
           }
@@ -976,7 +978,7 @@ export const query = graphql`
     }
 
     blog: allMicrocmsBlog(
-      filter: { category: { slug: { ne: "syachoblog" } } }
+      filter: { category: { id: { ne: "syachoblog" } } }
       limit: 10
       sort: { date: DESC }
     ) {
@@ -986,7 +988,6 @@ export const query = graphql`
           blogId
           date(formatString: "YYYY年MM月DD日")
           category {
-            slug
             name
             id
           }
