@@ -24,7 +24,7 @@ const AllVoice = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <div id="mainimage-sub" className="case">
+      <div id="mainimage-sub" className="voice">
         <div id="mainimage-inner"></div>
       </div>
       <div id="breadcrumb">

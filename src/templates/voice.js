@@ -18,14 +18,14 @@ const VoicePage = ({ data }) => {
   return (
     <>
       <Layout>
-        <div id="mainimage-sub" className="case">
+        <div id="mainimage-sub" className="voice">
           <div id="mainimage-inner"></div>
         </div>
 
         <section id="sub-page">
           <div className="main-content">
             <article className="main_b">
-              <h2 className="page_title01 mt0">施工事例</h2>
+              <h2 className="page_title01 mt0">お客様の声</h2>
 
               <div className="user_voice_box">
                 <h3 className="voice_title">{data.microcmsCase.title}</h3>
