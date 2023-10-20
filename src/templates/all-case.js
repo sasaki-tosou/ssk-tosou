@@ -29,32 +29,18 @@ const AllCase = ({ data, pageContext }) => {
         <div id="mainimage-inner"></div>
       </div>
       <div id="breadcrumb">
-        <ul
-          className="breadcrumb__list"
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-        >
-          <li
-            className="breadcrumb__item"
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <Link to="/" itemprop="item">
-              <span itemprop="name">ホーム</span>
+        <ul className="breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
+          <li className="breadcrumb__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/" itemProp="item">
+              <span itemProp="name">ホーム</span>
             </Link>
-            <meta itemprop="position" content="1" />
+            <meta itemProp="position" content="1" />
           </li>
-          <li
-            className="breadcrumb__item"
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <Link to="/case/" itemprop="item">
-              <span itemprop="name">施工事例</span>
+          <li className="breadcrumb__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/case/" itemProp="item">
+              <span itemProp="name">施工事例</span>
             </Link>
-            <meta itemprop="position" content="2" />
+            <meta itemProp="position" content="2" />
           </li>
         </ul>
       </div>
@@ -92,24 +78,12 @@ const AllCase = ({ data, pageContext }) => {
                     </div>
                   )}
                   <div className="kiji_txt">
-                    <time
-                      dateTime={dayjs
-                        .utc(node.date)
-                        .tz("Asia/Tokyo")
-                        .format("YYYY-MM-DDTHH:mm:ss")}
-                    >
-                      {dayjs
-                        .utc(node.date)
-                        .tz("Asia/Tokyo")
-                        .format("YYYY/MM/DD")}
+                    <time dateTime={dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY-MM-DDTHH:mm:ss")}>
+                      {dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
                     </time>
                     <a href={"/case/" + node.caseId + "/"}>{node.title}</a>
-                    {typeof window !== "undefined" &&
-                    stripHTML(node.content).length > MAX_CONTENT_LENGTH
-                      ? stripHTML(node.content).substring(
-                          0,
-                          MAX_CONTENT_LENGTH
-                        ) + "..."
+                    {typeof window !== "undefined" && stripHTML(node.content).length > MAX_CONTENT_LENGTH
+                      ? stripHTML(node.content).substring(0, MAX_CONTENT_LENGTH) + "..."
                       : stripHTML(node.content)}
                   </div>
                 </div>
@@ -119,13 +93,7 @@ const AllCase = ({ data, pageContext }) => {
             {numPages > 1 && (
               <div className="pager">
                 {currentPage > 1 && (
-                  <Link
-                    to={
-                      currentPage === 2 ? `/case` : `/case/${currentPage - 1}`
-                    }
-                  >
-                    &lt;&lt; 前へ
-                  </Link>
+                  <Link to={currentPage === 2 ? `/case` : `/case/${currentPage - 1}`}>&lt;&lt; 前へ</Link>
                 )}
                 {/* ページャーの数字を表示 */}
                 {Array.from({ length: numPages }, (_, i) => {
@@ -135,17 +103,14 @@ const AllCase = ({ data, pageContext }) => {
                       <Link
                         key={`pagination-link${pageNumber}`}
                         to={pageNumber === 1 ? `/case` : `/case/${pageNumber}`}
-                        className={pageNumber === currentPage ? "current" : ""}
-                      >
+                        className={pageNumber === currentPage ? "current" : ""}>
                         {pageNumber}
                       </Link>
                     );
                   }
                   return null;
                 })}
-                {currentPage < numPages && (
-                  <Link to={`/case/${currentPage + 1}`}>次へ &gt;&gt;</Link>
-                )}
+                {currentPage < numPages && <Link to={`/case/${currentPage + 1}`}>次へ &gt;&gt;</Link>}
               </div>
             )}
           </div>
@@ -166,13 +131,22 @@ function stripHTML(html) {
   return html.replace(/<[^>]*>/g, "");
 }
 
-export const Head = ({ data }) => {
+export const Head = ({ pageContext }) => {
+  const currentPage = pageContext.currentPage; // 現在のページ数を取得
   return (
     <>
       <body id="pagetop" className="blogpage" />
       <Seo
-        title2={`施工事例一覧｜外壁塗装なら広島の佐々木塗装`}
-        description={`外壁塗装なら広島の佐々木塗装｜施工事例一覧`}
+        title2={
+          currentPage === 1
+            ? "施工事例一覧｜外壁塗装なら広島の佐々木塗装"
+            : `施工事例一覧｜外壁塗装なら広島の佐々木塗装｜ページ${currentPage}`
+        }
+        description={
+          currentPage === 1
+            ? "外壁塗装なら広島の佐々木塗装｜施工事例一覧"
+            : `外壁塗装なら広島の佐々木塗装｜施工事例一覧｜ページ${currentPage}`
+        }
       />
     </>
   );
@@ -180,12 +154,7 @@ export const Head = ({ data }) => {
 
 export const query = graphql`
   query ($limit: Int, $skip: Int) {
-    allMicrocmsCase(
-      limit: $limit
-      skip: $skip
-      sort: { date: DESC }
-      filter: { category: { id: { nin: "voice" } } }
-    ) {
+    allMicrocmsCase(limit: $limit, skip: $skip, sort: { date: DESC }, filter: { category: { id: { nin: "voice" } } }) {
       edges {
         node {
           caseId

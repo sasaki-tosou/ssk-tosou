@@ -28,32 +28,18 @@ const AllVoice = ({ data, pageContext }) => {
         <div id="mainimage-inner"></div>
       </div>
       <div id="breadcrumb">
-        <ul
-          className="breadcrumb__list"
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-        >
-          <li
-            className="breadcrumb__item"
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <Link to="/" itemprop="item">
-              <span itemprop="name">ホーム</span>
+        <ul className="breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
+          <li className="breadcrumb__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/" itemProp="item">
+              <span itemProp="name">ホーム</span>
             </Link>
-            <meta itemprop="position" content="1" />
+            <meta itemProp="position" content="1" />
           </li>
-          <li
-            className="breadcrumb__item"
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <Link to="/voice_new/" itemprop="item">
-              <span itemprop="name">お客様の声</span>
+          <li className="breadcrumb__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/voice_new/" itemProp="item">
+              <span itemProp="name">お客様の声</span>
             </Link>
-            <meta itemprop="position" content="2" />
+            <meta itemProp="position" content="2" />
           </li>
         </ul>
       </div>
@@ -68,32 +54,19 @@ const AllVoice = ({ data, pageContext }) => {
                 <h3 className="voice_title">{node.title}</h3>
                 <p className="date">
                   更新日：
-                  <time
-                    dateTime={dayjs
-                      .utc(node.date)
-                      .tz("Asia/Tokyo")
-                      .format("YYYY-MM-DDTHH:mm:ss")}
-                  >
+                  <time dateTime={dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY-MM-DDTHH:mm:ss")}>
                     {dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
                   </time>
                 </p>
                 <div className="flex-wrap">
                   <div className="kansya_img">
                     {node.maeImg && (
-                      <img
-                        src={node.maeImg.url + "?fm=webp"}
-                        alt={node.title + "サムネイル画像"}
-                        loading="lazy"
-                      />
+                      <img src={node.maeImg.url + "?fm=webp"} alt={node.title + "サムネイル画像"} loading="lazy" />
                     )}
                   </div>
                   <div className="kansya_img">
                     {node.atoImg && (
-                      <img
-                        src={node.atoImg.url + "?fm=webp"}
-                        alt={node.title + "サムネイル画像"}
-                        loading="lazy"
-                      />
+                      <img src={node.atoImg.url + "?fm=webp"} alt={node.title + "サムネイル画像"} loading="lazy" />
                     )}
                   </div>
                 </div>
@@ -125,15 +98,7 @@ const AllVoice = ({ data, pageContext }) => {
             {numPages > 1 && posts.length > 1 && (
               <div className="pager">
                 {currentPage > 1 && (
-                  <Link
-                    to={
-                      currentPage === 2
-                        ? `/voice_new`
-                        : `/voice_new/${currentPage - 1}`
-                    }
-                  >
-                    &lt;&lt; 前へ
-                  </Link>
+                  <Link to={currentPage === 2 ? `/voice_new` : `/voice_new/${currentPage - 1}`}>&lt;&lt; 前へ</Link>
                 )}
                 {/* ページャーの数字を表示 */}
                 {Array.from({ length: numPages }, (_, i) => {
@@ -142,24 +107,15 @@ const AllVoice = ({ data, pageContext }) => {
                     return (
                       <Link
                         key={`pagination-link${pageNumber}`}
-                        to={
-                          pageNumber === 1
-                            ? `/voice_new`
-                            : `/voice_new/${pageNumber}`
-                        }
-                        className={pageNumber === currentPage ? "current" : ""}
-                      >
+                        to={pageNumber === 1 ? `/voice_new` : `/voice_new/${pageNumber}`}
+                        className={pageNumber === currentPage ? "current" : ""}>
                         {pageNumber}
                       </Link>
                     );
                   }
                   return null;
                 })}
-                {currentPage < numPages && (
-                  <Link to={`/voice_new/${currentPage + 1}`}>
-                    次へ &gt;&gt;
-                  </Link>
-                )}
+                {currentPage < numPages && <Link to={`/voice_new/${currentPage + 1}`}>次へ &gt;&gt;</Link>}
               </div>
             )}
           </div>
@@ -172,13 +128,22 @@ const AllVoice = ({ data, pageContext }) => {
   );
 };
 
-export const Head = ({ data }) => {
+export const Head = ({ pageContext }) => {
+  const currentPage = pageContext.currentPage; // 現在のページ数を取得
   return (
     <>
       <body id="pagetop" className="blogpage" />
       <Seo
-        title2={`お客様の声一覧｜外壁塗装なら広島の佐々木塗装`}
-        description={`外壁塗装なら広島の佐々木塗装｜お客様の声一覧`}
+        title2={
+          currentPage === 1
+            ? "お客様の声一覧｜外壁塗装なら広島の佐々木塗装"
+            : `お客様の声一覧｜外壁塗装なら広島の佐々木塗装｜ページ${currentPage}`
+        }
+        description={
+          currentPage === 1
+            ? "外壁塗装なら広島の佐々木塗装｜お客様の声一覧"
+            : `外壁塗装なら広島の佐々木塗装｜お客様の声一覧｜ページ${currentPage}`
+        }
       />
     </>
   );
@@ -186,12 +151,7 @@ export const Head = ({ data }) => {
 
 export const query = graphql`
   query ($limit: Int, $skip: Int) {
-    allMicrocmsCase(
-      limit: $limit
-      skip: $skip
-      sort: { date: DESC }
-      filter: { category: { id: { in: "voice" } } }
-    ) {
+    allMicrocmsCase(limit: $limit, skip: $skip, sort: { date: DESC }, filter: { category: { id: { in: "voice" } } }) {
       edges {
         node {
           caseId

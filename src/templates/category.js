@@ -43,9 +43,7 @@ const CategoryPage = ({ data, pageContext }) => {
       pageTitle = (
         <>
           <h2 className="page_title01 mt0">外壁塗装コラム</h2>
-          <h3 className="page_title03 center">
-            外壁塗装をする前に知っておきたい塗装アレコレ
-          </h3>
+          <h3 className="page_title03 center">外壁塗装をする前に知っておきたい塗装アレコレ</h3>
         </>
       ); // カテゴリが "tosou-arekore" の場合の見出し
     } else if (categoryId === "now-working") {
@@ -84,32 +82,26 @@ const CategoryPage = ({ data, pageContext }) => {
           <div id="mainimage-inner"></div>
         </div>
         <div id="breadcrumb">
-          <ul
-            className="breadcrumb__list"
-            itemscope
-            itemtype="https://schema.org/BreadcrumbList"
-          >
+          <ul className="breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
             <li
               className="breadcrumb__item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <Link to="/" itemprop="item">
-                <span itemprop="name">ホーム</span>
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem">
+              <Link to="/" itemProp="item">
+                <span itemProp="name">ホーム</span>
               </Link>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </li>
             <li
               className="breadcrumb__item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <Link to={`/category/${category.categoryId}/`} itemprop="item">
-                <span itemprop="name">{category.name}</span>
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem">
+              <Link to={`/category/${category.categoryId}/`} itemProp="item">
+                <span itemProp="name">{category.name}</span>
               </Link>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </li>
           </ul>
         </div>
@@ -147,31 +139,17 @@ const CategoryPage = ({ data, pageContext }) => {
                       </div>
                     )}
                     <div className="kiji_txt">
-                      <time
-                        dateTime={dayjs
-                          .utc(node.date)
-                          .tz("Asia/Tokyo")
-                          .format("YYYY-MM-DDTHH:mm:ss")}
-                      >
-                        {dayjs
-                          .utc(node.date)
-                          .tz("Asia/Tokyo")
-                          .format("YYYY/MM/DD")}
+                      <time dateTime={dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY-MM-DDTHH:mm:ss")}>
+                        {dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
                       </time>
                       <a href={"/posts/" + node.blogId + "/"}>{node.title}</a>
-                      {typeof window !== "undefined" &&
-                      stripHTML(node.body).length > MAX_CONTENT_LENGTH
-                        ? stripHTML(node.body).substring(
-                            0,
-                            MAX_CONTENT_LENGTH
-                          ) + "..."
+                      {typeof window !== "undefined" && stripHTML(node.body).length > MAX_CONTENT_LENGTH
+                        ? stripHTML(node.body).substring(0, MAX_CONTENT_LENGTH) + "..."
                         : stripHTML(node.body)}
 
                       <ul className="cat_list">
                         <li className={`${node.category.id}`}>
-                          <Link to={`/category/${node.category.id}`}>
-                            {node.category.name}
-                          </Link>
+                          <Link to={`/category/${node.category.id}`}>{node.category.name}</Link>
                         </li>
                       </ul>
                     </div>
@@ -185,11 +163,8 @@ const CategoryPage = ({ data, pageContext }) => {
                       to={
                         currentPage === 2
                           ? `/category/${category.categoryId}`
-                          : `/category/${category.categoryId}/${
-                              currentPage - 1
-                            }`
-                      }
-                    >
+                          : `/category/${category.categoryId}/${currentPage - 1}`
+                      }>
                       &lt;&lt; 前へ
                     </Link>
                   )}
@@ -205,10 +180,7 @@ const CategoryPage = ({ data, pageContext }) => {
                               ? `/category/${category.categoryId}`
                               : `/category/${category.categoryId}/${pageNumber}`
                           }
-                          className={
-                            pageNumber === currentPage ? "current" : ""
-                          }
-                        >
+                          className={pageNumber === currentPage ? "current" : ""}>
                           {pageNumber}
                         </Link>
                       );
@@ -216,11 +188,7 @@ const CategoryPage = ({ data, pageContext }) => {
                     return null;
                   })}
                   {currentPage < numPages && (
-                    <Link
-                      to={`/category/${category.categoryId}/${currentPage + 1}`}
-                    >
-                      次へ &gt;&gt;
-                    </Link>
+                    <Link to={`/category/${category.categoryId}/${currentPage + 1}`}>次へ &gt;&gt;</Link>
                   )}
                 </div>
               )}
@@ -263,15 +231,24 @@ export const query = graphql`
   }
 `;
 
-export const Head = ({ data }) => {
+export const Head = ({ data, pageContext }) => {
   const catName = data.allMicrocmsBlog.edges[0].node.category.id; // ページのタイトルを取得
   const catTitle = data.allMicrocmsBlog.edges[0].node.category.name;
+  const currentPage = pageContext.currentPage; // 現在のページ数を取得
   return (
     <>
       <body id="pagetop" className={`blogpage ${catName}`} />
       <Seo
-        title2={`${catTitle}の記事一覧｜外壁塗装なら広島の佐々木塗装`}
-        description={`外壁塗装なら広島の佐々木塗装｜${catTitle}の記事一覧`}
+        title2={
+          currentPage === 1
+            ? `${catTitle}の記事一覧｜外壁塗装なら広島の佐々木塗装`
+            : `${catTitle}の記事一覧｜外壁塗装なら広島の佐々木塗装｜ページ${currentPage}`
+        }
+        description={
+          currentPage === 1
+            ? `外壁塗装なら広島の佐々木塗装｜${catTitle}の記事一覧`
+            : `外壁塗装なら広島の佐々木塗装｜${catTitle}の記事一覧｜ページ${currentPage}`
+        }
       />
     </>
   );

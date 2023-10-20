@@ -37,32 +37,18 @@ const AllPosts = ({ data, pageContext }) => {
         <div id="mainimage-inner"></div>
       </div>
       <div id="breadcrumb">
-        <ul
-          className="breadcrumb__list"
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-        >
-          <li
-            className="breadcrumb__item"
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <Link to="/" itemprop="item">
-              <span itemprop="name">ホーム</span>
+        <ul className="breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
+          <li className="breadcrumb__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/" itemProp="item">
+              <span itemProp="name">ホーム</span>
             </Link>
-            <meta itemprop="position" content="1" />
+            <meta itemProp="position" content="1" />
           </li>
-          <li
-            className="breadcrumb__item"
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <Link to="/blog/" itemprop="item">
-              <span itemprop="name">ブログ</span>
+          <li className="breadcrumb__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/blog/" itemProp="item">
+              <span itemProp="name">ブログ</span>
             </Link>
-            <meta itemprop="position" content="2" />
+            <meta itemProp="position" content="2" />
           </li>
         </ul>
       </div>
@@ -100,30 +86,18 @@ const AllPosts = ({ data, pageContext }) => {
                     </div>
                   )}
                   <div className="kiji_txt">
-                    <time
-                      dateTime={dayjs
-                        .utc(node.date)
-                        .tz("Asia/Tokyo")
-                        .format("YYYY-MM-DDTHH:mm:ss")}
-                    >
-                      {dayjs
-                        .utc(node.date)
-                        .tz("Asia/Tokyo")
-                        .format("YYYY/MM/DD")}
+                    <time dateTime={dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY-MM-DDTHH:mm:ss")}>
+                      {dayjs.utc(node.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
                     </time>
                     <a href={"/posts/" + node.blogId + "/"}>{node.title}</a>
 
-                    {typeof window !== "undefined" &&
-                    stripHTML(node.body).length > MAX_CONTENT_LENGTH
-                      ? stripHTML(node.body).substring(0, MAX_CONTENT_LENGTH) +
-                        "..."
+                    {typeof window !== "undefined" && stripHTML(node.body).length > MAX_CONTENT_LENGTH
+                      ? stripHTML(node.body).substring(0, MAX_CONTENT_LENGTH) + "..."
                       : stripHTML(node.body)}
 
                     <ul className="cat_list">
                       <li className={`${node.category.id}`}>
-                        <Link to={`/category/${node.category.id}`}>
-                          {node.category.name}
-                        </Link>
+                        <Link to={`/category/${node.category.id}`}>{node.category.name}</Link>
                       </li>
                     </ul>
                   </div>
@@ -135,13 +109,7 @@ const AllPosts = ({ data, pageContext }) => {
             {numPages > 1 && (
               <div className="pager">
                 {currentPage > 1 && (
-                  <Link
-                    to={
-                      currentPage === 2 ? `/blog/` : `/blog/${currentPage - 1}`
-                    }
-                  >
-                    &lt;&lt; 前へ
-                  </Link>
+                  <Link to={currentPage === 2 ? `/blog/` : `/blog/${currentPage - 1}`}>&lt;&lt; 前へ</Link>
                 )}
 
                 {/* ページャーの数字を表示 */}
@@ -152,8 +120,7 @@ const AllPosts = ({ data, pageContext }) => {
                       <Link
                         key={`pagination-link${pageNumber}`}
                         to={pageNumber === 1 ? `/blog/` : `/blog/${pageNumber}`}
-                        className={pageNumber === currentPage ? "current" : ""}
-                      >
+                        className={pageNumber === currentPage ? "current" : ""}>
                         {pageNumber}
                       </Link>
                     );
@@ -161,9 +128,7 @@ const AllPosts = ({ data, pageContext }) => {
                   return null;
                 })}
 
-                {currentPage < numPages && (
-                  <Link to={`/blog/${currentPage + 1}`}>次へ &gt;&gt;</Link>
-                )}
+                {currentPage < numPages && <Link to={`/blog/${currentPage + 1}`}>次へ &gt;&gt;</Link>}
               </div>
             )}
           </div>
@@ -176,13 +141,23 @@ const AllPosts = ({ data, pageContext }) => {
   );
 };
 
-export const Head = () => {
+export const Head = ({ pageContext }) => {
+  const currentPage = pageContext.currentPage; // 現在のページ数を取得
+
   return (
     <>
       <body id="pagetop" className="blogpage" />
       <Seo
-        title2={`ブログ記事一覧｜外壁塗装なら広島の佐々木塗装`}
-        description={`外壁塗装なら広島の佐々木塗装｜ブログの記事一覧`}
+        title2={
+          currentPage === 1
+            ? "ブログ記事一覧｜外壁塗装なら広島の佐々木塗装"
+            : `ブログ記事一覧｜外壁塗装なら広島の佐々木塗装｜ページ${currentPage}`
+        }
+        description={
+          currentPage === 1
+            ? "外壁塗装なら広島の佐々木塗装｜ブログの記事一覧"
+            : `外壁塗装なら広島の佐々木塗装｜ブログの記事一覧｜ページ${currentPage}`
+        }
       />
     </>
   );
@@ -194,9 +169,7 @@ export const query = graphql`
       limit: $limit
       skip: $skip
       sort: { date: DESC }
-      filter: {
-        category: { id: { nin: ["tosou-arekore", "omoide", "now-working"] } }
-      }
+      filter: { category: { id: { nin: ["tosou-arekore", "omoide", "now-working"] } } }
     ) {
       edges {
         node {

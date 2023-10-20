@@ -23,9 +23,7 @@ const PostPage = ({ data }) => {
   if (data.microcmsBlog.category.id === "tosou-arekore") {
     pageTitle = (
       <>
-        <h2 className="page_title01 mt0">
-          外壁塗装をする前に知っておきたい塗装アレコレ
-        </h2>
+        <h2 className="page_title01 mt0">外壁塗装をする前に知っておきたい塗装アレコレ</h2>
         <h3 className="page_title03 center">{data.microcmsBlog.title}</h3>
       </>
     );
@@ -67,45 +65,35 @@ const PostPage = ({ data }) => {
           <div id="mainimage-inner"></div>
         </div>
         <div id="breadcrumb">
-          <ul
-            className="breadcrumb__list"
-            itemscope
-            itemtype="https://schema.org/BreadcrumbList"
-          >
+          <ul className="breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
             <li
               className="breadcrumb__item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <Link to="/" itemprop="item">
-                <span itemprop="name">ホーム</span>
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem">
+              <Link to="/" itemProp="item">
+                <span itemProp="name">ホーム</span>
               </Link>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </li>
             <li
               className="breadcrumb__item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <Link
-                to={`/category/${data.microcmsBlog.category.id}/`}
-                itemprop="item"
-              >
-                <span itemprop="name">{data.microcmsBlog.category.name}</span>
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem">
+              <Link to={`/category/${data.microcmsBlog.category.id}/`} itemProp="item">
+                <span itemProp="name">{data.microcmsBlog.category.name}</span>
               </Link>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </li>
             <li
               className="breadcrumb__item"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
-            >
-              <span itemprop="name">{data.microcmsBlog.title}</span>
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem">
+              <span itemProp="name">{data.microcmsBlog.title}</span>
 
-              <meta itemprop="position" content="3" />
+              <meta itemProp="position" content="3" />
             </li>
           </ul>
         </div>
@@ -117,24 +105,14 @@ const PostPage = ({ data }) => {
 
               <p className="date">
                 更新日：
-                <time
-                  dateTime={dayjs
-                    .utc(data.microcmsBlog.date)
-                    .tz("Asia/Tokyo")
-                    .format("YYYY-MM-DDTHH:mm:ss")}
-                >
-                  {dayjs
-                    .utc(data.microcmsBlog.date)
-                    .tz("Asia/Tokyo")
-                    .format("YYYY/MM/DD")}
+                <time dateTime={dayjs.utc(data.microcmsBlog.date).tz("Asia/Tokyo").format("YYYY-MM-DDTHH:mm:ss")}>
+                  {dayjs.utc(data.microcmsBlog.date).tz("Asia/Tokyo").format("YYYY/MM/DD")}
                 </time>
               </p>
 
               <ul className="cat_list">
                 <li className={`${data.microcmsBlog.category.id}`}>
-                  <Link to={`/category/${data.microcmsBlog.category.id}`}>
-                    {data.microcmsBlog.category.name}
-                  </Link>
+                  <Link to={`/category/${data.microcmsBlog.category.id}`}>{data.microcmsBlog.category.name}</Link>
                 </li>
               </ul>
 
@@ -149,30 +127,25 @@ const PostPage = ({ data }) => {
               )}
 
               <div className="post_main_box">
-                {data.microcmsBlog.body !== null &&
-                  data.microcmsBlog.body !== undefined && (
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: data.microcmsBlog.body,
-                      }}
-                    />
-                  )}
+                {data.microcmsBlog.body !== null && data.microcmsBlog.body !== undefined && (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: data.microcmsBlog.body,
+                    }}
+                  />
+                )}
 
-                {data.microcmsBlog.arekore_txt !== null &&
-                  data.microcmsBlog.arekore_txt !== undefined && (
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: data.microcmsBlog.arekore_txt,
-                      }}
-                    />
-                  )}
+                {data.microcmsBlog.arekore_txt !== null && data.microcmsBlog.arekore_txt !== undefined && (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: data.microcmsBlog.arekore_txt,
+                    }}
+                  />
+                )}
               </div>
 
               <p class="center">
-                <a
-                  href={`/category/${microcmsBlog.category.id}/`}
-                  className="bt01"
-                >
+                <a href={`/category/${microcmsBlog.category.id}/`} className="bt01">
                   一覧に戻る
                 </a>
               </p>
@@ -210,10 +183,7 @@ export const Head = ({ data }) => {
   return (
     <>
       <body id="pagetop" className={`blogpage ${catName}`} />
-      <Seo
-        title2={`${pageName}｜外壁塗装なら広島の佐々木塗装`}
-        description={limitedDescription}
-      />
+      <Seo title2={`${pageName}｜外壁塗装なら広島の佐々木塗装`} description={limitedDescription} />
     </>
   );
 };

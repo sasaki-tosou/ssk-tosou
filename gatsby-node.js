@@ -61,7 +61,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // カテゴリーページを生成
   queryResult.data.allMicrocmsCategory.edges.forEach(({ node }) => {
-    const excludedCategories = ["tosou-arekore", "omoide", "now-working"]; // 除外するカテゴリーの一覧
+    const excludedCategories = []; // 除外するカテゴリーの一覧
 
     // カテゴリーに対応する記事を取得してpostsフィールドにセットする
     const posts = queryResult.data.allMicrocmsBlog.edges.filter((edge) => {
@@ -85,19 +85,13 @@ exports.createPages = async ({ graphql, actions }) => {
       if (currentPage > 1) {
         links.push({
           page: "<< Prev",
-          url:
-            currentPage === 1
-              ? `/category/${node.categoryId}`
-              : `/category/${node.categoryId}/${currentPage - 1}`,
+          url: currentPage === 1 ? `/category/${node.categoryId}` : `/category/${node.categoryId}/${currentPage - 1}`,
         });
       }
       for (let j = startPage; j <= endPage; j++) {
         links.push({
           page: j,
-          url:
-            j === 1
-              ? `/category/${node.categoryId}`
-              : `/category/${node.categoryId}/${j}`,
+          url: j === 1 ? `/category/${node.categoryId}` : `/category/${node.categoryId}/${j}`,
         });
       }
       if (currentPage < numPages) {
@@ -108,18 +102,12 @@ exports.createPages = async ({ graphql, actions }) => {
       }
 
       createPage({
-        path:
-          i === 0
-            ? `/category/${node.categoryId}`
-            : `/category/${node.categoryId}/${currentPage}`,
+        path: i === 0 ? `/category/${node.categoryId}` : `/category/${node.categoryId}/${currentPage}`,
         component: categoryTemplate,
         context: {
           categoryId: node.categoryId,
           category: node,
-          posts: posts.slice(
-            (currentPage - 1) * postsPerPage,
-            currentPage * postsPerPage
-          ),
+          posts: posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage),
           limit: postsPerPage,
           skip: (currentPage - 1) * postsPerPage,
           numPages: numPages,
@@ -176,8 +164,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const excludedCategories = ["tosou-arekore", "omoide", "now-working"];
 
   const filteredPosts = queryResult.data.allMicrocmsBlog.edges.filter(
-    (edge) =>
-      edge.node.category && !excludedCategories.includes(edge.node.category.id)
+    (edge) => edge.node.category && !excludedCategories.includes(edge.node.category.id)
   );
 
   const numBlogPages = Math.ceil(filteredPosts.length / postsPerPage);
@@ -204,9 +191,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const numCasePages = Math.ceil(
-    queryResult.data.allMicrocmsCase.edges.length / postsPerPage
-  );
+  const numCasePages = Math.ceil(queryResult.data.allMicrocmsCase.edges.length / postsPerPage);
 
   // ブログ記事のページングを生成
   Array.from({ length: numCasePages }).forEach((_, i) => {
@@ -256,10 +241,7 @@ exports.createPages = async ({ graphql, actions }) => {
         startPage: startPage,
         endPage: endPage,
         basePath: "/voice_new/",
-        posts: voicePosts.slice(
-          (currentPage - 1) * postsPerPage,
-          currentPage * postsPerPage
-        ),
+        posts: voicePosts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage),
       },
     });
   });
