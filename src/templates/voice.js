@@ -82,8 +82,8 @@ export const Head = ({ data }) => {
   const maxTextLength = 80;
 
   const body = data.microcmsCase.casetxt;
-  const truncatedBody = body.replace(/<[^>]+>/g, '');
-  const limitedBody = truncatedBody.length > maxTextLength ? truncatedBody.slice(0, maxTextLength) + '...' : truncatedBody;
+  const truncatedBody = body ? body.replace(/<[^>]+>/g, '') : null;
+  const limitedBody = truncatedBody && truncatedBody.length > maxTextLength ? truncatedBody.slice(0, maxTextLength) + '...' : truncatedBody;
 
   return (
     <>
