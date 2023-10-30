@@ -38,7 +38,7 @@ const VoicePage = ({ data }) => {
                   <div className='kansya_img'>{data.microcmsCase.atoImg && <img src={data.microcmsCase.atoImg.url + '?fm=webp'} alt={data.microcmsCase.title + 'サムネイル画像'} loading='lazy' />}</div>
                 </div>
 
-                {data.microcmsCase.casetxt && (
+                {data.microcmsCase.casetxt !== null && (
                   <>
                     <h4 className='voice_subtitle'>お客様からのコメント</h4>
                     <div
@@ -49,7 +49,7 @@ const VoicePage = ({ data }) => {
                   </>
                 )}
 
-                {data.microcmsCase.caseDescription && (
+                {data.microcmsCase.caseDescription !== null && (
                   <>
                     <h4 className='voice_subtitle'>オススメポイント</h4>
                     <div
