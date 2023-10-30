@@ -1,13 +1,13 @@
-const path = require("path");
+const path = require('path');
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === "microcmsBlog") {
-    const slug = createFilePath({ node, getNode, basePath: "posts" });
+  if (node.internal.type === 'microcmsBlog') {
+    const slug = createFilePath({ node, getNode, basePath: 'posts' });
     createNodeField({
       node,
-      name: "slug",
+      name: 'slug',
       value: `/posts${slug}`, // スラッグを"/posts/記事ID"として設定
     });
   }
@@ -57,7 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   // カテゴリーページのテンプレートを指定
-  const categoryTemplate = path.resolve("./src/templates/category.js");
+  const categoryTemplate = path.resolve('./src/templates/category.js');
 
   // カテゴリーページを生成
   queryResult.data.allMicrocmsCategory.edges.forEach(({ node }) => {
@@ -65,11 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // カテゴリーに対応する記事を取得してpostsフィールドにセットする
     const posts = queryResult.data.allMicrocmsBlog.edges.filter((edge) => {
-      return (
-        edge.node.category &&
-        edge.node.category.id === node.categoryId &&
-        !excludedCategories.includes(edge.node.category.id)
-      );
+      return edge.node.category && edge.node.category.id === node.categoryId && !excludedCategories.includes(edge.node.category.id);
     });
 
     const numPages = Math.ceil(posts.length / postsPerPage);
@@ -84,7 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
       const links = [];
       if (currentPage > 1) {
         links.push({
-          page: "<< Prev",
+          page: '<< Prev',
           url: currentPage === 1 ? `/category/${node.categoryId}` : `/category/${node.categoryId}/${currentPage - 1}`,
         });
       }
@@ -96,7 +92,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
       if (currentPage < numPages) {
         links.push({
-          page: "Next >>",
+          page: 'Next >>',
           url: `/category/${node.categoryId}/${currentPage + 1}`,
         });
       }
@@ -121,7 +117,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   // 記事ページのテンプレートを指定
-  const postTemplate = path.resolve("./src/templates/posts.js");
+  const postTemplate = path.resolve('./src/templates/posts.js');
   queryResult.data.allMicrocmsBlog.edges.forEach(({ node }) => {
     createPage({
       path: `/posts/${node.blogId}/`, // 記事ページのパスを設定
@@ -133,9 +129,9 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   // 記事ページのテンプレートを指定
-  const casePostTemplate = path.resolve("./src/templates/case.js");
+  const casePostTemplate = path.resolve('./src/templates/case.js');
   queryResult.data.allMicrocmsCase.edges
-    .filter((edge) => edge.node.category && edge.node.category.id !== "voice")
+    .filter((edge) => edge.node.category && edge.node.category.id !== 'voice')
     .forEach(({ node }) => {
       createPage({
         path: `/case/${node.caseId}/`, // 記事ページのパスを設定
@@ -147,12 +143,12 @@ exports.createPages = async ({ graphql, actions }) => {
     });
 
   // 記事ページのテンプレートを指定
-  const voicePostTemplate = path.resolve("./src/templates/voice.js");
+  const voicePostTemplate = path.resolve('./src/templates/voice.js');
   queryResult.data.allMicrocmsCase.edges
-    .filter((edge) => edge.node.category && edge.node.category.id === "voice")
+    .filter((edge) => edge.node.category && edge.node.category.id === 'voice')
     .forEach(({ node }) => {
       createPage({
-        path: `/voice_new/${node.caseId}/`,
+        path: `/voice/${node.caseId}/`,
         component: voicePostTemplate,
         context: {
           id: node.id,
@@ -161,11 +157,9 @@ exports.createPages = async ({ graphql, actions }) => {
     });
 
   // 除外するカテゴリーの一覧
-  const excludedCategories = ["tosou-arekore", "omoide", "now-working"];
+  const excludedCategories = ['tosou-arekore', 'omoide', 'now-working'];
 
-  const filteredPosts = queryResult.data.allMicrocmsBlog.edges.filter(
-    (edge) => edge.node.category && !excludedCategories.includes(edge.node.category.id)
-  );
+  const filteredPosts = queryResult.data.allMicrocmsBlog.edges.filter((edge) => edge.node.category && !excludedCategories.includes(edge.node.category.id));
 
   const numBlogPages = Math.ceil(filteredPosts.length / postsPerPage);
 
@@ -177,7 +171,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: currentPage === 1 ? `/blog/` : `/blog/${currentPage}/`,
-      component: path.resolve("./src/templates/all-posts.js"),
+      component: path.resolve('./src/templates/all-posts.js'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -186,7 +180,7 @@ exports.createPages = async ({ graphql, actions }) => {
         postsPerPage: postsPerPage,
         startPage: startPage,
         endPage: endPage,
-        basePath: "/blog/",
+        basePath: '/blog/',
       },
     });
   });
@@ -202,7 +196,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: currentPage === 1 ? `/case/` : `/case/${currentPage}/`,
-      component: path.resolve("./src/templates/all-case.js"),
+      component: path.resolve('./src/templates/all-case.js'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -211,15 +205,13 @@ exports.createPages = async ({ graphql, actions }) => {
         postsPerPage: postsPerPage,
         startPage: startPage,
         endPage: endPage,
-        basePath: "/case/", // 1ページ目に戻るための casePath を追加
+        basePath: '/case/', // 1ページ目に戻るための casePath を追加
       },
     });
   });
 
   // voiceカテゴリーのページを生成
-  const voicePosts = queryResult.data.allMicrocmsCase.edges.filter(
-    (edge) => edge.node.category && edge.node.category.id === "voice"
-  );
+  const voicePosts = queryResult.data.allMicrocmsCase.edges.filter((edge) => edge.node.category && edge.node.category.id === 'voice');
 
   const numVoicePages = Math.ceil(voicePosts.length / postsPerPage);
 
@@ -230,8 +222,8 @@ exports.createPages = async ({ graphql, actions }) => {
     const endPage = Math.min(startPage + PAGES_PER_GROUP - 1, numVoicePages);
 
     createPage({
-      path: currentPage === 1 ? `/voice_new/` : `/voice_new/${currentPage}/`,
-      component: path.resolve("./src/templates/all-voice.js"),
+      path: currentPage === 1 ? `/voice/` : `/voice/${currentPage}/`,
+      component: path.resolve('./src/templates/all-voice.js'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -240,7 +232,7 @@ exports.createPages = async ({ graphql, actions }) => {
         postsPerPage: postsPerPage,
         startPage: startPage,
         endPage: endPage,
-        basePath: "/voice_new/",
+        basePath: '/voice/',
         posts: voicePosts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage),
       },
     });

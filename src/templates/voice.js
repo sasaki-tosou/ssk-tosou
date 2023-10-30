@@ -1,72 +1,46 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Seo from "../components/Seo";
-import Layout from "../components/Layout";
-import Sideb from "../components/Sideb";
-import dayjs from "dayjs";
-import "dayjs/locale/ja";
-import utc from "dayjs/plugin/utc";
-import timezone from "dayjs/plugin/timezone";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Seo from '../components/Seo';
+import Layout from '../components/Layout';
+import Sideb from '../components/Sideb';
+import dayjs from 'dayjs';
+import 'dayjs/locale/ja';
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
-dayjs.tz.setDefault("Asia/Tokyo");
+dayjs.tz.setDefault('Asia/Tokyo');
 
 const VoicePage = ({ data }) => {
-  dayjs.locale("ja");
+  dayjs.locale('ja');
 
   return (
     <>
       <Layout>
-        <div id="mainimage-sub" className="voice">
-          <div id="mainimage-inner"></div>
+        <div id='mainimage-sub' className='voice'>
+          <div id='mainimage-inner'></div>
         </div>
 
-        <section id="sub-page">
-          <div className="main-content">
-            <article className="main_b">
-              <h2 className="page_title01 mt0">お客様の声</h2>
+        <section id='sub-page'>
+          <div className='main-content'>
+            <article className='main_b'>
+              <h2 className='page_title01 mt0'>お客様の声</h2>
 
-              <div className="user_voice_box">
-                <h3 className="voice_title">{data.microcmsCase.title}</h3>
-                <p className="date">
+              <div className='user_voice_box'>
+                <h3 className='voice_title'>{data.microcmsCase.title}</h3>
+                <p className='date'>
                   更新日：
-                  <time
-                    dateTime={dayjs
-                      .utc(data.microcmsCase.date)
-                      .tz("Asia/Tokyo")
-                      .format("YYYY-MM-DDTHH:mm:ss")}
-                  >
-                    {dayjs
-                      .utc(data.microcmsCase.date)
-                      .tz("Asia/Tokyo")
-                      .format("YYYY/MM/DD")}
-                  </time>
+                  <time dateTime={dayjs.utc(data.microcmsCase.date).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss')}>{dayjs.utc(data.microcmsCase.date).tz('Asia/Tokyo').format('YYYY/MM/DD')}</time>
                 </p>
-                <div className="flex-wrap">
-                  <div className="kansya_img">
-                    {data.microcmsCase.maeImg && (
-                      <img
-                        src={data.microcmsCase.maeImg.url + "?fm=webp"}
-                        alt={data.microcmsCase.title + "サムネイル画像"}
-                        loading="lazy"
-                      />
-                    )}
-                  </div>
-                  <div className="kansya_img">
-                    {data.microcmsCase.atoImg && (
-                      <img
-                        src={data.microcmsCase.atoImg.url + "?fm=webp"}
-                        alt={data.microcmsCase.title + "サムネイル画像"}
-                        loading="lazy"
-                      />
-                    )}
-                  </div>
+                <div className='flex-wrap'>
+                  <div className='kansya_img'>{data.microcmsCase.maeImg && <img src={data.microcmsCase.maeImg.url + '?fm=webp'} alt={data.microcmsCase.title + 'サムネイル画像'} loading='lazy' />}</div>
+                  <div className='kansya_img'>{data.microcmsCase.atoImg && <img src={data.microcmsCase.atoImg.url + '?fm=webp'} alt={data.microcmsCase.title + 'サムネイル画像'} loading='lazy' />}</div>
                 </div>
 
                 {data.microcmsCase.casetxt && (
                   <>
-                    <h4 className="voice_subtitle">お客様からのコメント</h4>
+                    <h4 className='voice_subtitle'>お客様からのコメント</h4>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: `${data.microcmsCase.casetxt}`,
@@ -77,7 +51,7 @@ const VoicePage = ({ data }) => {
 
                 {data.microcmsCase.caseDescription && (
                   <>
-                    <h4 className="voice_subtitle">オススメポイント</h4>
+                    <h4 className='voice_subtitle'>オススメポイント</h4>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: `${data.microcmsCase.caseDescription}`,
@@ -87,13 +61,13 @@ const VoicePage = ({ data }) => {
                 )}
               </div>
 
-              <p class="center">
-                <a href={`/voice_new/`} className="bt02">
+              <p class='center'>
+                <a href={`/voice/`} className='bt02'>
                   一覧に戻る
                 </a>
               </p>
             </article>
-            <aside className="side_b">
+            <aside className='side_b'>
               <Sideb />
             </aside>
           </div>
@@ -108,19 +82,13 @@ export const Head = ({ data }) => {
   const maxTextLength = 80;
 
   const body = data.microcmsCase.casetxt;
-  const truncatedBody = body.replace(/<[^>]+>/g, "");
-  const limitedBody =
-    truncatedBody.length > maxTextLength
-      ? truncatedBody.slice(0, maxTextLength) + "..."
-      : truncatedBody;
+  const truncatedBody = body.replace(/<[^>]+>/g, '');
+  const limitedBody = truncatedBody.length > maxTextLength ? truncatedBody.slice(0, maxTextLength) + '...' : truncatedBody;
 
   return (
     <>
-      <body id="pagetop" className="blogpage" />
-      <Seo
-        title2={`${pageName}｜外壁塗装なら広島の佐々木塗装`}
-        description={limitedBody}
-      />
+      <body id='pagetop' className='blogpage' />
+      <Seo title2={`${pageName}｜外壁塗装なら広島の佐々木塗装`} description={limitedBody} />
     </>
   );
 };

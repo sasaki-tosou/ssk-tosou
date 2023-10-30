@@ -76,9 +76,7 @@ html,
 body {
   margin: 0 auto;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN",
-    メイリオ, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
   font-size: 100% !important;
   text-align: left;
   color: #000;
@@ -113,9 +111,9 @@ a:hover {
   text-decoration: underline;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
+input[type='text'],
+input[type='tel'],
+input[type='email'],
 textarea {
   border-radius: 3px;
   border: solid 1px #bfbfbf;
@@ -226,9 +224,9 @@ select {
     width: 50px !important;
     height: auto;
   }
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'],
   textarea {
     border-radius: 3px;
     padding: 10px;
@@ -407,7 +405,7 @@ header {
 
 #header_inner h1 {
   font-size: 12px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -417,7 +415,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
@@ -435,7 +433,7 @@ header {
 .h_txt_nav ul li a::after {
   border-bottom: solid 1px #000;
   bottom: -5px;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   transition: all 0.3s ease;
@@ -463,7 +461,7 @@ header {
 
 .h_tel_box {
   width: 20%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -477,7 +475,7 @@ header {
   line-height: 1;
 }
 .tel_no {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-style: normal;
   color: #ff7415;
@@ -544,7 +542,7 @@ header {
 }
 #header_sub_inner .logo_box h1 {
   font-size: 160%;
-  font-family: "Noto Serif JP", serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: 500;
 }
 
@@ -601,7 +599,7 @@ header {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   cursor: pointer;
@@ -610,7 +608,7 @@ header {
 .g_nav li:nth-child(2) span::before {
   border-bottom: solid 5px #ff7415;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   transition: all 0.3s ease;
@@ -636,7 +634,7 @@ header {
   margin: 0;
   height: 105px;
   box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -647,7 +645,7 @@ header {
 .g_nav ul li a::before {
   border-bottom: solid 5px #ff7415;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   transition: all 0.3s ease;
@@ -721,9 +719,7 @@ header {
   body {
     margin: 0 auto;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-      "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN",
-      メイリオ, Meiryo, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
     color: #333;
     min-width: 100%;
   }
@@ -771,7 +767,7 @@ header {
     position: relative;
   }
   #gnav li a:before {
-    content: " ";
+    content: ' ';
     position: absolute;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
@@ -822,7 +818,7 @@ header {
   }
   .logo_box h1 {
     font-size: 12px;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
   }
 
@@ -834,7 +830,6 @@ header {
     z-index: 9999;
     border: 0 !important;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
   }
   #header .h_main .h_logo {
     width: 80%;
@@ -865,11 +860,7 @@ header {
 	---------------------------------------------------------------------------------------------------- */
 
   .dis_flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
   }
   .flex_wrap {
     flex-wrap: wrap;
@@ -877,47 +868,18 @@ header {
     flex-wrap: wrap;
   }
   .flex_align_item_start {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
-    -ms-align-items: flex-start;
   }
   .flex_align_item_end {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    -ms-align-items: flex-end;
   }
   .flex_align_item_center {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   .flex_jus_between {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
   }
   .flex_jus_center {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
   .flex_jus_around {
@@ -925,16 +887,9 @@ header {
     justify-content: space-around;
   }
   .flex_jus_start {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
   }
   .flex_jus_end {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
   }
 }
@@ -1060,7 +1015,6 @@ header {
 /*smp nav new*/
 body {
   animation: bugfix infinite 1s;
-  -webkit-animation: bugfix infinite 1s;
 }
 
 @keyframes bugfix {
@@ -1086,16 +1040,16 @@ body {
   background: #000;
 }
 
-input[type="checkbox"]#overlay-input {
+input[type='checkbox']#overlay-input {
   display: none;
 }
-input[type="checkbox"]:checked ~ #overlay {
+input[type='checkbox']:checked ~ #overlay {
   visibility: visible;
   opacity: 1;
   overflow-x: auto;
 }
-input[type="checkbox"]:checked ~ #overlay-button:hover span,
-input[type="checkbox"]:checked ~ #overlay-button span {
+input[type='checkbox']:checked ~ #overlay-button:hover span,
+input[type='checkbox']:checked ~ #overlay-button span {
   background: transparent;
 }
 
@@ -1128,7 +1082,6 @@ input[type="checkbox"]:checked ~ #overlay-button span {
     top: 1rem;
     padding: 30px 20px;
     cursor: pointer;
-    user-select: none;
     z-index: 10000;
   }
   #overlay-button span {
@@ -1155,13 +1108,13 @@ input[type="checkbox"]:checked ~ #overlay-button span {
     border-radius: 2px;
     background-color: black;
     position: absolute;
-    content: "";
+    content: '';
     transition: all 0.2s ease-in-out;
   }
-  input[type="checkbox"]:checked ~ #overlay-button span:before {
+  input[type='checkbox']:checked ~ #overlay-button span:before {
     transform: rotate(45deg) translate(7px, 7px);
   }
-  input[type="checkbox"]:checked ~ #overlay-button span:after {
+  input[type='checkbox']:checked ~ #overlay-button span:after {
     transform: rotate(-45deg) translate(7px, -7px);
   }
 }
@@ -1194,7 +1147,6 @@ input[type="checkbox"]:checked ~ #overlay-button span {
     top: 1rem;
     padding: 20px 10px;
     cursor: pointer;
-    user-select: none;
     z-index: 10000;
   }
   #overlay-button span {
@@ -1220,14 +1172,14 @@ input[type="checkbox"]:checked ~ #overlay-button span {
     border-radius: 2px;
     background-color: black;
     position: absolute;
-    content: "";
+    content: '';
     transition: all 0.2s ease-in-out;
   }
 
-  input[type="checkbox"]:checked ~ #overlay-button span:before {
+  input[type='checkbox']:checked ~ #overlay-button span:before {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  input[type="checkbox"]:checked ~ #overlay-button span:after {
+  input[type='checkbox']:checked ~ #overlay-button span:after {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
@@ -1242,7 +1194,6 @@ input[type="checkbox"]:checked ~ #overlay-button span {
     top: 1.2rem !important;
     padding: 20px 10px;
     cursor: pointer;
-    user-select: none;
     z-index: 10000;
   }
   #overlay-button span {
@@ -1268,14 +1219,14 @@ input[type="checkbox"]:checked ~ #overlay-button span {
     border-radius: 2px;
     background-color: black;
     position: absolute;
-    content: "";
+    content: '';
     transition: all 0.2s ease-in-out;
   }
 
-  input[type="checkbox"]:checked ~ #overlay-button span:before {
+  input[type='checkbox']:checked ~ #overlay-button span:before {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  input[type="checkbox"]:checked ~ #overlay-button span:after {
+  input[type='checkbox']:checked ~ #overlay-button span:after {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
@@ -1287,7 +1238,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   color: #000 !important;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-size: 14px;
   padding: 35px 0;
@@ -1325,7 +1276,7 @@ footer {
   #footer ul a::after {
     border-bottom: solid 1px #000;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     transition: all 0.3s ease;
@@ -1375,7 +1326,7 @@ footer {
     border-bottom: solid 1px #000;
     padding-bottom: 5px;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     transition: all 0.3s ease;
@@ -1475,7 +1426,7 @@ address {
   background-color: #ff7415;
   color: #fff;
   font-size: 14px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   ul {
     width: 1200px;
     margin: 0 auto;
@@ -1490,7 +1441,7 @@ address {
 }
 
 #breadcrumb li:after {
-  content: " > ";
+  content: ' > ';
   margin-left: 10px;
 }
 #breadcrumb li:last-child:after {
@@ -1634,7 +1585,7 @@ address {
   width: 100%;
   height: 400px;
   margin-top: 143px;
-  background-image: url("/images/mainimage/mainimage_sub.jpg");
+  background-image: url('/images/mainimage/mainimage_sub.jpg');
   top: 0;
   z-index: 0;
   position: relative;
@@ -1647,7 +1598,7 @@ address {
 }
 #mainimage-sub h2 {
   font-size: 300%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
 }
 #mainimage-inner {
@@ -1665,85 +1616,84 @@ address {
 #mainimage-sub.thanks,
 #mainimage-sub.souba-thanks,
 #mainimage-sub.leak {
-  background-image: url("/images/mainimage/mainimage_contact.jpg");
+  background-image: url('/images/mainimage/mainimage_contact.jpg');
 }
 #mainimage-sub.omoide,
 .omoide #mainimage-sub {
-  background-image: url("/images/mainimage/mainimage_omoide.jpg") !important;
+  background-image: url('/images/mainimage/mainimage_omoide.jpg') !important;
 }
 #mainimage-sub.company {
-  background-image: url("/images/mainimage/mainimage_company.jpg");
+  background-image: url('/images/mainimage/mainimage_company.jpg');
 }
 #mainimage-sub.case {
-  background-image: url("/images/mainimage/mainimage_case.jpg");
+  background-image: url('/images/mainimage/mainimage_case.jpg');
 }
 #mainimage-sub.now_working,
 .now-working #mainimage-sub {
-  background-image: url("/images/mainimage/mainimage_working.jpg") !important;
+  background-image: url('/images/mainimage/mainimage_working.jpg') !important;
 }
 #mainimage-sub.faq {
-  background-image: url("/images/mainimage/mainimage_faq.jpg");
+  background-image: url('/images/mainimage/mainimage_faq.jpg');
 }
 #mainimage-sub.voice {
-  background-image: url("/images/mainimage/mainimage_voice.jpg");
+  background-image: url('/images/mainimage/mainimage_voice.jpg');
 }
 #mainimage-sub.aeon-credit {
-  background-image: url("/images/mainimage/mainimage_credit.jpg");
+  background-image: url('/images/mainimage/mainimage_credit.jpg');
 }
 #mainimage-sub.workflow {
-  background-image: url("/images/mainimage/mainimage_flow.jpg");
+  background-image: url('/images/mainimage/mainimage_flow.jpg');
 }
 #mainimage-sub.staff {
-  background-image: url("/images/mainimage/mainimage_staff.jpg"),
-    url("/images/mainimage/mainimage_staff_bg.jpg");
+  background-image: url('/images/mainimage/mainimage_staff.jpg'), url('/images/mainimage/mainimage_staff_bg.jpg');
   background-size: contain, contain !important;
   background-repeat: no-repeat, repeat-x;
 }
 #mainimage-sub.blog {
-  background-image: url("/images/mainimage/mainimage_blog.jpg");
+  background-image: url('/images/mainimage/mainimage_blog.jpg');
 }
 #mainimage-sub.drone {
-  background-image: url("/images/mainimage/mainimage_drone.jpg");
+  background-image: url('/images/mainimage/mainimage_drone.jpg');
 }
 #mainimage-sub.links {
-  background-image: url("/images/mainimage/mainimage_link.jpg");
+  background-image: url('/images/mainimage/mainimage_link.jpg');
 }
 #mainimage-sub.sdgs {
-  background-image: url("/images/mainimage/mainimage_sdgs.jpg");
+  background-image: url('/images/mainimage/mainimage_sdgs.jpg');
 }
 #mainimage-sub.color-simulation {
-  background-image: url("/images/mainimage/mainimage_color.jpg");
+  background-image: url('/images/mainimage/mainimage_color.jpg');
   background-position: bottom;
 }
 #mainimage-sub.gaiheki {
-  background-image: url("/images/mainimage/mainimage_gaiheki.jpg");
+  background-image: url('/images/mainimage/mainimage_gaiheki.jpg');
 }
 #mainimage-sub.yanefuki {
-  background-image: url("/images/mainimage/mainimage_yanefuki.jpg");
+  background-image: url('/images/mainimage/mainimage_yanefuki.jpg');
 }
 #mainimage-sub.karucera-works {
-  background-image: url("/images/mainimage/mainimage_karucera.jpg");
+  background-image: url('/images/mainimage/mainimage_karucera.jpg');
 }
 #mainimage-sub.yane-cover {
-  background-image: url("/images/mainimage/mainimage_yanecover.jpg");
+  background-image: url('/images/mainimage/mainimage_yanecover.jpg');
 }
 #mainimage-sub.drainspout {
-  background-image: url("/images/mainimage/mainimage_drainspout.jpg");
+  background-image: url('/images/mainimage/mainimage_drainspout.jpg');
 }
 #mainimage-sub.arekore,
 .tosou-arekore #mainimage-sub,
 .arekore-blog #mainimage-sub {
-  background-image: url("../images/mainimage/mainimage_gaiheki.jpg") !important;
+  background-image: url('../images/mainimage/mainimage_gaiheki.jpg') !important;
 }
 #mainimage-sub.exterior {
-  background-image: url("../images/mainimage/mainimage_exterior.jpg");
+  background-image: url('../images/mainimage/mainimage_exterior.jpg');
 }
 
 @media screen and (max-width: 1024px) {
   #mainimage-sub {
     width: 100%;
     height: 170px;
-    background-image: url("/images/mainimage/mainimage_sub.png");
+    background-image: url('/images/mainimage/mainimage_sub.png');
     top: 0;
     z-index: 0;
     position: relative;
@@ -1772,7 +1722,7 @@ address {
     background-size: auto 100% !important;
   }
   #mainimage-sub.staff {
-    background-image: url("/images/mainimage/mainimage_staff_smp.jpg");
+    background-image: url('/images/mainimage/mainimage_staff_smp.jpg');
     background-size: contain !important;
     background-repeat: no-repeat;
   }
@@ -1876,7 +1826,7 @@ section {
 
 #kuchikomi .main-content {
   padding: 2% 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
 }
 
@@ -1912,7 +1862,7 @@ section {
     padding-right: 60px;
   }
   .catch_title {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     position: relative;
@@ -1944,7 +1894,7 @@ section {
 
 #news .main-content {
   padding: 2% 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -1992,7 +1942,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -2024,8 +1974,8 @@ section {
 #news_r dd:nth-of-type(1):after,
 #news_r dd:nth-of-type(2):after,
 #news_r dd:nth-of-type(3):after {
-  content: "";
-  background-image: url("../images/new_icon.png");
+  content: '';
+  background-image: url('../images/new_icon.png');
   width: 35px;
   height: 35px;
   background-size: cover;
@@ -2206,11 +2156,10 @@ section {
     border-bottom: solid 1px #000;
     padding-bottom: 5px;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
     width: 0;
   }
 
@@ -2255,7 +2204,7 @@ section {
   padding: 3% 0;
 }
 #about .main-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2263,7 +2212,7 @@ section {
   margin: 0;
 }
 #about .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -2273,7 +2222,7 @@ section {
 
 @media screen and (max-width: 600px) {
   #about .main-content h3 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 200%;
@@ -2320,7 +2269,7 @@ section {
   padding: 3% 0;
 }
 #point .main-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2330,7 +2279,7 @@ section {
 
 @media screen and (max-width: 1024px) {
   #point .main-content h3 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 180%;
@@ -2340,7 +2289,7 @@ section {
 }
 
 #point .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -2436,7 +2385,7 @@ section {
   color: #fff;
   background-color: #ff7415;
   font-size: 14px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   transition: all 0.3s ease;
@@ -2457,7 +2406,7 @@ section {
 }
 
 #movie .main-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2467,7 +2416,7 @@ section {
 
 @media screen and (max-width: 1024px) {
   #movie .main-content h3 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 180%;
@@ -2477,7 +2426,7 @@ section {
 }
 
 #movie .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -2485,7 +2434,7 @@ section {
 }
 
 #study .main-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2493,7 +2442,7 @@ section {
   margin: 0;
 }
 #study .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -2577,7 +2526,7 @@ section {
   padding: 4px 10px;
   border-radius: 10px;
   color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -2591,7 +2540,7 @@ section {
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   transition: 0.5s;
 }
@@ -2610,7 +2559,7 @@ section {
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   transition: 0.5s;
 }
@@ -2622,7 +2571,7 @@ section {
   background-color: #feefd9;
 }
 #paint .main-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2630,7 +2579,7 @@ section {
   margin: 0;
 }
 #paint .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -2671,7 +2620,7 @@ section {
   padding: 3% 0;
 }
 #sdgs .main-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2679,7 +2628,7 @@ section {
   margin: 3% 0;
 }
 #sdgs .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -2697,8 +2646,7 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  background-image: url("/images/souba_bg_oneesan.png"),
-    url("/images/souba_bg_bot.png");
+  background-image: url('/images/souba_bg_oneesan.png'), url('/images/souba_bg_bot.png');
   background-position: bottom right, bottom;
   background-repeat: no-repeat, repeat-x;
 }
@@ -2721,9 +2669,9 @@ section {
 .souba_l p:nth-of-type(4) {
   margin: 20px 0;
 }
-.souba_l input[type="text"],
-.souba_l input[type="email"],
-.souba_l input[type="tel"] {
+.souba_l input[type='text'],
+.souba_l input[type='email'],
+.souba_l input[type='tel'] {
   background-color: #feefd9;
   padding: 20px;
   border-radius: 10px;
@@ -2731,9 +2679,9 @@ section {
   box-sizing: border-box;
   border: solid 2px #feefd9;
 }
-.souba_l input[type="text"]:focus,
-.souba_l input[type="email"]:focus,
-.souba_l input[type="tel"]:focus,
+.souba_l input[type='text']:focus,
+.souba_l input[type='email']:focus,
+.souba_l input[type='tel']:focus,
 .souba_l select:focus {
   border: solid 2px #ff7415;
   outline: none;
@@ -2767,7 +2715,7 @@ _:future,
   margin: 20px 0;
   font-size: 160%;
   color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   cursor: pointer;
@@ -2786,7 +2734,7 @@ _:future,
 .souba_r {
   width: 70%;
   padding-left: 3%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -2868,8 +2816,7 @@ _:future,
     width: 100%;
     margin: 0 auto;
     padding: 0 !important;
-    background-image: url(/images/souba_bg_oneesan.png),
-      url(/images/souba_bg_bot.png);
+    background-image: url(/images/souba_bg_oneesan.png), url(/images/souba_bg_bot.png);
     background-position: bottom right, bottom;
     background-repeat: no-repeat, repeat-x;
     background-size: 80%, 100%;
@@ -2889,7 +2836,7 @@ _:future,
     font-size: 180% !important;
   }
   #works .title04 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 180% !important;
@@ -2911,7 +2858,7 @@ _:future,
 }
 
 #company .main-content h3 {
-  font-family: "Shippori Mincho", serif;
+  font-family: 'Shippori Mincho', serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250%;
@@ -2929,7 +2876,7 @@ _:future,
 }
 
 .company_bn a {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #0e264f;
@@ -2944,8 +2891,6 @@ _:future,
 .company_bn a:hover img {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -2955,11 +2900,10 @@ _:future,
   padding: 3% 0;
   text-align: center;
   color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-image: url("/images/contact_bg02.jpg"),
-    url("/images/contact_bg01.jpg");
+  background-image: url('/images/contact_bg02.jpg'), url('/images/contact_bg01.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: left, right;
   background-size: 50%, 50%;
@@ -2973,14 +2917,14 @@ _:future,
   font-size: 300%;
 }
 #contact .main-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 100%;
 }
 
 .tel_no2 {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-style: normal;
   color: #fff;
@@ -3008,7 +2952,7 @@ _:future,
 .links_list {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .links_box {
   width: calc(100% / 3);
@@ -3030,11 +2974,10 @@ _:future,
     padding: 3% 0;
     text-align: center;
     color: #fff;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
-    background-image: url("/images/contact_bg01.jpg"),
-      url("/images/contact_bg02.jpg");
+    background-image: url('/images/contact_bg01.jpg'), url('/images/contact_bg02.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: left, right;
     background-size: contain, contain;
@@ -3094,11 +3037,11 @@ _:future,
 }
 
 .product_bg {
-  background-image: url("/images/product_bg.jpg");
+  background-image: url('/images/product_bg.jpg');
   background-size: cover;
   padding: 3%;
   color: #fff;
-  font-family: "Shippori Mincho", serif;
+  font-family: 'Shippori Mincho', serif;
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -3225,7 +3168,7 @@ _:future,
 .kiji_txt {
   width: 60%;
   padding: 3%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-size: 12px;
   word-wrap: break-word;
@@ -3288,7 +3231,7 @@ _:future,
   font-size: 140% !important;
   color: #000 !important;
   text-align: left !important;
-  font-family: "Noto Sans JP", sans-serif !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
   font-weight: 500 !important;
   font-style: normal;
   border-bottom: solid 1px #ccc;
@@ -3298,14 +3241,14 @@ _:future,
 
 .date {
   font-size: 14px !important;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400 !important;
   margin: 0 !important;
 }
 
 .single_txt {
   margin: 20px 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3341,7 +3284,7 @@ _:future,
 }
 
 .flow_title01 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
@@ -3374,7 +3317,7 @@ _:future,
 }
 .flow_box:after {
   position: absolute;
-  content: url("/images/arrow02.png");
+  content: url('/images/arrow02.png');
   top: 100%;
   left: 45.5%;
   width: 0;
@@ -3439,7 +3382,7 @@ _:future,
   color: #fff;
   padding: 5px 15px;
   font-size: 140%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
@@ -3447,12 +3390,12 @@ _:future,
   border-bottom: 3px solid #ff7415;
   margin: 2% 0;
   padding-bottom: 10px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 140%;
 }
 
 .paint_title01 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
@@ -3467,7 +3410,7 @@ _:future,
   padding: 1%;
 }
 .kansya_title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
@@ -3477,7 +3420,7 @@ _:future,
   border-bottom: solid 5px #ff7415;
 }
 .kansya_subtitle {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 160%;
@@ -3488,7 +3431,7 @@ _:future,
 }
 
 .voice_title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
@@ -3498,7 +3441,7 @@ _:future,
   border-bottom: solid 5px #ff7415;
 }
 .voice_subtitle {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 120%;
@@ -3513,7 +3456,7 @@ _:future,
 }
 
 .case_title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
@@ -3523,7 +3466,7 @@ _:future,
   border-bottom: solid 5px #ff7415;
 }
 .case_title2 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 120%;
@@ -3553,7 +3496,7 @@ _:future,
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   transition: 0.5s;
   background-color: #ff7415;
@@ -3561,19 +3504,14 @@ _:future,
 }
 
 .pika_study_bt::after {
-  content: "";
+  content: '';
   position: absolute;
   top: -10%;
   left: -20%;
   width: 40px;
   height: 100%;
   transform: scale(2) rotate(20deg);
-  background-image: linear-gradient(
-    100deg,
-    rgba(255, 255, 255, 0) 10%,
-    rgba(255, 255, 255, 0.5) 100%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0) 0%);
 
   /* アニメーション */
   animation-name: pika;
@@ -3590,7 +3528,7 @@ _:future,
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   transition: 0.5s;
   background-color: #ccc;
@@ -3619,21 +3557,9 @@ _:future,
   left: 0;
   width: 100%;
   height: 10px;
-  content: "";
-  background-image: -webkit-repeating-linear-gradient(
-    135deg,
-    #000,
-    #000 1px,
-    transparent 2px,
-    transparent 5px
-  );
-  background-image: repeating-linear-gradient(
-    -45deg,
-    #000,
-    #000 1px,
-    transparent 2px,
-    transparent 5px
-  );
+  content: '';
+  background-image: -webkit-repeating-linear-gradient(135deg, #000, #000 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 2px, transparent 5px);
   background-size: 7px 7px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -3676,7 +3602,7 @@ _:future,
 }
 .link_bn_box dl dt:after {
   display: inline-block;
-  content: "";
+  content: '';
   background-image: url(../images/arrow_r.svg);
   fill: #fff;
   background-size: cover;
@@ -3692,7 +3618,7 @@ _:future,
 .link_bn_box dt {
   background-color: #ff7415;
   padding: 3%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   color: #fff;
   font-size: 140%;
@@ -3701,7 +3627,7 @@ _:future,
 .link_bn_box dd {
   padding: 3%;
   background-color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   color: #000;
   height: 100%;
@@ -3800,7 +3726,7 @@ _:future,
     display: inline-block;
     color: #fff;
     font-size: 14px;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     transition: all 0.3s ease;
@@ -3822,14 +3748,14 @@ _:future,
     width: 100%;
   }
   #study .main-content h3 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 250%;
     margin: 0;
   }
   #study .main-content h4 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 140%;
@@ -3892,7 +3818,7 @@ _:future,
     text-align: center;
     font-size: 90%;
     text-decoration: none;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     transition: 0.5s;
   }
@@ -3909,7 +3835,7 @@ _:future,
     text-align: center;
     font-size: 90%;
     text-decoration: none;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     transition: 0.5s;
   }
@@ -3925,7 +3851,7 @@ _:future,
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    background-image: none, url("/images/souba_bg_bot.png");
+    background-image: none, url('/images/souba_bg_bot.png');
     background-position: bottom right, bottom;
     background-repeat: no-repeat, repeat-x;
   }
@@ -3939,7 +3865,7 @@ _:future,
     width: 100%;
     padding: 15px 0;
   }
-  .souba_l input[type="text"] {
+  .souba_l input[type='text'] {
     background-color: #fff0b6;
     padding: 20px;
     border: 0;
@@ -3954,7 +3880,7 @@ _:future,
     border-radius: 10px;
     font-size: 160%;
     color: #fff;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     cursor: pointer;
@@ -3967,7 +3893,7 @@ _:future,
   .souba_r {
     width: 100%;
     padding-left: 0;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
   }
@@ -3984,10 +3910,10 @@ _:future,
     padding: 3%;
     text-align: center;
     color: #fff;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
-    background-image: none, url("/images/contact_bg02.jpg");
+    background-image: none, url('/images/contact_bg02.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: top, center;
     background-size: 100%, cover;
@@ -4002,14 +3928,14 @@ _:future,
     line-height: 1.2;
   }
   #contact .main-content h4 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 80%;
   }
 
   .tel_no2 {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-style: normal;
     color: #fff;
@@ -4027,7 +3953,7 @@ _:future,
   .bn_list {
     display: flex;
     flex-wrap: wrap;
-    font-family: "Shippori Mincho", serif;
+    font-family: 'Shippori Mincho', serif;
     font-weight: 700;
     font-style: normal;
     color: #fff;
@@ -4110,7 +4036,7 @@ _:future,
   }
 
   .jigyo_bg {
-    background-image: url("/images/jigyo_bg.jpg");
+    background-image: url('/images/jigyo_bg.jpg');
     background-position: center;
     background-size: cover;
     height: 250px;
@@ -4159,7 +4085,7 @@ _:future,
   }
 
   #about {
-    background-image: url("/images/about_bg.jpg");
+    background-image: url('/images/about_bg.jpg');
     background-size: cover;
     background-position: 40%;
   }
@@ -4277,9 +4203,9 @@ _:future,
   margin-bottom: 15px;
 }
 .check_list li:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f00c";
+  content: '\f00c';
   position: absolute;
   left: 0;
   color: #5ec618;
@@ -4320,9 +4246,9 @@ _:future,
   list-style-type: none !important;
 }
 .arrow_list li:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f105";
+  content: '\f105';
   display: inline-block;
   margin-right: 10px;
   color: #ff7415;
@@ -4340,12 +4266,11 @@ _:future,
 .arrow_list li a::after {
   border-bottom: solid 1px #ff7415;
   bottom: -3px;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   right: 0;
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   width: 0;
 }
 .arrow_list li a:hover::after {
@@ -4412,7 +4337,7 @@ ol li {
   background-image: url(/images/faq_q.png);
   background-repeat: no-repeat;
   background-position: 10px 50%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   background-color: #ff7415;
@@ -4426,7 +4351,7 @@ ol li {
 }
 
 .faq-q:before {
-  content: "Q";
+  content: 'Q';
   font-size: 200%;
   color: #fff;
   margin-right: 15px;
@@ -4446,7 +4371,7 @@ ol li {
   position: relative;
 }
 .faq-a p:first-child:before {
-  content: "A";
+  content: 'A';
   font-size: 1.3rem;
   font-family: vdl-v7gothic, sans-serif;
   font-weight: 700;
@@ -4519,9 +4444,9 @@ ol li {
   padding: 3px;
 }
 .side_study button:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f00d";
+  content: '\f00d';
   display: inline-block;
   margin-right: 10px;
   color: #000;
@@ -4625,7 +4550,7 @@ ol li {
 }
 
 .title01 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 180%;
@@ -4633,7 +4558,7 @@ ol li {
 }
 .title02 {
   border-bottom: 8px solid #5ec618;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   padding: 5px 0px;
@@ -4644,14 +4569,14 @@ ol li {
 }
 .title03 {
   border-left: 5px solid #000;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   padding: 10px 20px;
   font-size: 140%;
   margin-top: 60px;
 }
 .title04 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 250%;
@@ -4665,7 +4590,7 @@ ol li {
   z-index: 20;
 }
 .title04::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -4676,7 +4601,7 @@ ol li {
   z-index: 90;
 }
 .title05 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 220%;
@@ -4688,7 +4613,7 @@ ol li {
   position: relative;
 }
 .title06 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 220%;
@@ -4702,7 +4627,7 @@ ol li {
 
 @media screen and (max-width: 1024px) {
   .title04::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 100%;
     left: 50%;
@@ -4717,7 +4642,7 @@ ol li {
   font-size: 200%;
 }
 .sub_title02 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-size: 140%;
   border-bottom: solid 5px #ff7415;
@@ -4726,7 +4651,7 @@ ol li {
 }
 .sub_title03 {
   position: relative;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 180%;
   font-weight: 900;
   padding-bottom: 10px;
@@ -4736,16 +4661,10 @@ ol li {
   }
   &:after {
     backface-visibility: hidden;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      #00652c,
-      #00652c 1px,
-      transparent 2px,
-      transparent 5px
-    );
+    background-image: repeating-linear-gradient(-45deg, #00652c, #00652c 1px, transparent 2px, transparent 5px);
     background-size: 7px 7px;
     bottom: 0;
-    content: "";
+    content: '';
     height: 10px;
     left: 0;
     position: absolute;
@@ -4755,7 +4674,7 @@ ol li {
 
 .page_title01 {
   margin: 40px 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 2.4rem;
@@ -4766,7 +4685,7 @@ ol li {
   }
 }
 .page_title01::before {
-  content: "";
+  content: '';
   width: 56px;
   height: 1px;
   position: absolute;
@@ -4778,7 +4697,7 @@ ol li {
   z-index: 10;
 }
 .page_title02 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   border-left: solid 5px #ff7415;
   padding: 10px;
@@ -4786,7 +4705,7 @@ ol li {
   margin-bottom: 3%;
 }
 .page_title03 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-size: 200%;
   position: relative;
@@ -4799,21 +4718,15 @@ ol li {
   left: 0;
   width: 100%;
   height: 10px;
-  content: "";
-  background-image: repeating-linear-gradient(
-    -45deg,
-    #ff7415,
-    #ff7415 1px,
-    transparent 2px,
-    transparent 5px
-  );
+  content: '';
+  background-image: repeating-linear-gradient(-45deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
   background-size: 7px 7px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .cat_title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 220%;
@@ -4825,7 +4738,7 @@ ol li {
 .aeon_title01 {
   font-size: 300%;
   color: #b3007f;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   margin: 3% 0;
@@ -4833,7 +4746,7 @@ ol li {
 .aeon_title02 {
   font-size: 250%;
   color: #b3007f;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   font-style: normal;
   margin: 3% 0;
@@ -4847,14 +4760,14 @@ ol li {
 
 @media screen and (max-width: 768px) {
   .title01 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 140%;
     margin-top: 3%;
   }
   .title04 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 160%;
@@ -4867,7 +4780,7 @@ ol li {
     position: relative;
   }
   .title04::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 100%;
     left: 50%;
@@ -4877,7 +4790,7 @@ ol li {
     border-left: 25px solid transparent;
   }
   .title05 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 140%;
@@ -4889,7 +4802,7 @@ ol li {
     position: relative;
   }
   .title06 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 140%;
@@ -4906,7 +4819,7 @@ ol li {
   .aeon_title01 {
     font-size: 200%;
     color: #b3007f;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 900;
     font-style: normal;
     margin: 3% 0;
@@ -4914,7 +4827,7 @@ ol li {
   .aeon_title02 {
     font-size: 160%;
     color: #b3007f;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 900;
     font-style: normal;
     margin: 3% 0;
@@ -5008,7 +4921,7 @@ ol li {
   padding: 0;
   border-top: 1px solid #000;
   border-left: 0px solid #000;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .form th {
@@ -5031,8 +4944,8 @@ ol li {
   border-bottom: 1px solid #000;
 }
 
-.form td input[type="radio"],
-.form td input[type="checkbox"] {
+.form td input[type='radio'],
+.form td input[type='checkbox'] {
   margin: initial !important;
   margin-top: initial !important;
   line-height: normal;
@@ -5083,7 +4996,7 @@ ol li {
   padding: 0;
   border-top: 1px solid #000;
   border-left: 0px solid #000;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   th {
     text-align: left;
     background-color: #fff;
@@ -5278,7 +5191,7 @@ ol li {
   background: #ff7415;
   color: #fff;
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 140%;
@@ -5315,7 +5228,7 @@ ol li {
   text-align: center;
   font-size: 160%;
   text-decoration: none;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   transition: 0.5s;
@@ -5340,7 +5253,7 @@ ol li {
   height: 56px;
   margin: 10px 0;
   text-align: center;
-  font-family: "Amiri", serif;
+  font-family: 'Amiri', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 180%;
@@ -5351,8 +5264,8 @@ ol li {
   transition: 0.5s;
 }
 .bt_tel:before {
-  content: "";
-  background-image: url("/images/tel_icon.png");
+  content: '';
+  background-image: url('/images/tel_icon.png');
   width: 27px;
   height: 27px;
   background-size: cover;
@@ -5366,8 +5279,8 @@ ol li {
   color: #0e264f;
 }
 .bt_tel:hover:before {
-  content: "";
-  background-image: url("/images/tel_icon2.png");
+  content: '';
+  background-image: url('/images/tel_icon2.png');
   width: 27px;
   height: 27px;
   background-size: cover;
@@ -5381,7 +5294,7 @@ ol li {
   color: #0e264f;
   text-align: center;
   font-size: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   text-decoration: none;
   padding: 5px 10px;
@@ -5389,8 +5302,8 @@ ol li {
   transition: 0.5s;
 }
 .bt_news:after {
-  content: "\f0dd";
-  font-family: "Font Awesome 5 Free";
+  content: '\f0dd';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   position: absolute;
   bottom: -20px;
@@ -5413,7 +5326,7 @@ ol li {
   background-color: #06c755;
   text-decoration: none;
   color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -5430,7 +5343,6 @@ ol li {
 .line_bt:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
   text-decoration: none;
 }
 
@@ -5439,7 +5351,7 @@ ol li {
   background-color: #fd7416;
   text-decoration: none;
   color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -5456,7 +5368,6 @@ ol li {
 .mail_bt:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
   text-decoration: none;
 }
 
@@ -5470,7 +5381,7 @@ ol li {
   cursor: pointer;
   outline: none;
   min-width: 200px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   transition: 0.5s;
 }
@@ -5480,7 +5391,6 @@ ol li {
 .form_bt:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
 }
 
 .tw_bt {
@@ -5496,7 +5406,6 @@ ol li {
 .tw_bt:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
 }
 .fb_bt {
   background-color: #3c85d0;
@@ -5511,7 +5420,6 @@ ol li {
 .fb_bt:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
 }
 
 .insta_btn {
@@ -5528,7 +5436,6 @@ ol li {
 .insta_btn:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  -ms-filter: "alpha(opacity=60)";
 }
 
 .insta_bt {
@@ -5561,22 +5468,14 @@ ol li {
 }
 
 .insta_bt .insta:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 23px;
   left: -18px;
   width: 45px;
   height: 45px;
-  background: -webkit-radial-gradient(
-    #ffdb2c 10%,
-    rgba(255, 105, 34, 0.65) 55%,
-    rgba(255, 88, 96, 0) 70%
-  );
-  background: radial-gradient(
-    #ffdb2c 10%,
-    rgba(255, 105, 34, 0.65) 55%,
-    rgba(255, 88, 96, 0) 70%
-  ); /*グラデーション②*/
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%); /*グラデーション②*/
 }
 .insta_bt .insta img {
   position: relative;
@@ -5643,7 +5542,6 @@ ol li {
   .line_bt:hover {
     opacity: 0.6;
     filter: alpha(opacity=60);
-    -ms-filter: "alpha(opacity=60)";
   }
 
   .mail_bt {
@@ -5668,7 +5566,6 @@ ol li {
   .mail_bt:hover {
     opacity: 0.6;
     filter: alpha(opacity=60);
-    -ms-filter: "alpha(opacity=60)";
   }
 }
 
@@ -5851,11 +5748,10 @@ ol li {
   border-bottom: solid 1px #000;
   padding-bottom: 5px;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   width: 0;
 }
 .sitemap_box a::before {
@@ -6118,13 +6014,13 @@ ol li {
 .post_title {
   color: #ff7415;
   margin: 10px 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
 }
 
 .arekore h1 {
   font-size: 200%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   margin: 2rem 0;
   position: relative;
@@ -6140,21 +6036,9 @@ ol li {
   left: 0;
   width: 100%;
   height: 10px;
-  content: "";
-  background-image: -webkit-repeating-linear-gradient(
-    135deg,
-    #ff7415,
-    #ff7415 1px,
-    transparent 2px,
-    transparent 5px
-  );
-  background-image: repeating-linear-gradient(
-    -45deg,
-    #ff7415,
-    #ff7415 1px,
-    transparent 2px,
-    transparent 5px
-  );
+  content: '';
+  background-image: -webkit-repeating-linear-gradient(135deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
   background-size: 7px 7px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -6162,7 +6046,7 @@ ol li {
 
 .arekore h2 {
   font-size: 200%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
   padding: 1rem;
   background: #ff7415;
@@ -6172,7 +6056,7 @@ ol li {
 
 .arekore h3 {
   font-size: 160%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   border-top: 8px double #ff7415;
   border-bottom: 8px double #ff7415;
@@ -6338,7 +6222,7 @@ ol li {
 }
 #ez-toc-container p.ez-toc-title {
   display: block !important;
-  font-family: "Noto Sans JP", sans-serif !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
   font-weight: 700 !important;
   text-align: center !important;
   font-size: 140% !important;
@@ -6370,7 +6254,7 @@ ol li {
   counter-reset: item 0;
 }
 .ez-toc-counter nav ul li a::before {
-  content: counter(item, numeric) ". ";
+  content: counter(item, numeric) '. ';
   margin-right: 0.2em;
   counter-increment: item 1;
   flex-grow: 0;
@@ -6490,7 +6374,7 @@ form label {
     font-size: 14px;
     margin: 0 !important;
     padding: 8px;
-    white-space: break-spaces;
+    word-wrap: break-word;
   }
 }
 
@@ -6515,13 +6399,13 @@ form label {
   align-items: center;
   transition: all 0.3s ease 0s;
 }
-.page-nav li a[aria-current="page"] {
+.page-nav li a[aria-current='page'] {
   background-color: #fd7416;
   border: solid 2px #fd7416;
   color: #fff;
   font-weight: 900;
 }
-.page-nav li a[aria-current="page"]:hover {
+.page-nav li a[aria-current='page']:hover {
   background-color: #fff;
   color: #fd7416;
 }
@@ -6551,7 +6435,7 @@ form label {
   margin-bottom: 10px;
 }
 .are_img:after {
-  content: "アレコレブログ";
+  content: 'アレコレブログ';
   display: inline-block;
   font-size: 9px;
   position: absolute;
