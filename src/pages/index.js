@@ -28,7 +28,7 @@ import 'swiper/css/scrollbar';
 export const Head = () => (
   <>
     <body id='pagetop' />
-    <Seo description='広島で外壁塗装・屋根塗装なら安佐北区の施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 ' />
+    <Seo description='広島の外壁塗装・屋根塗装なら安佐北区の施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 ' />
     <script type='application/ld+json'>{JSON.stringify(jsonLd)}</script>
     <script type='application/ld+json'>{JSON.stringify(jsonhowto)}</script>
   </>
@@ -128,11 +128,11 @@ export default function index({ data }) {
 
               <img src='../images/works_bg02.jpg' width={1920} height={1100} className='works_bg' loading='lazy' alt='施工事例イメージ' />
 
-              <StaticImage src='../images/works_bg02_smp.jpg' alt='広島市安佐北区で施工事例998棟以上!' className='smp2' loading='lazy' />
+              <StaticImage src='../images/works_bg02_smp.jpg' alt='広島市安佐北区で施工事例1,058棟以上!' className='smp2' loading='lazy' />
 
               <div className='works_inner'>
                 <h4 className='center tub2 mtb3p'>
-                  <img src='../images/works_txt01.png' width={680} height={180} alt='広島市安佐北区で施工事例998棟以上!' loading='lazy' />
+                  <img src='../images/works_txt01.png' width={680} height={180} alt='広島市安佐北区で施工事例1,058棟以上!' loading='lazy' />
                 </h4>
 
                 <div>
@@ -463,16 +463,7 @@ export default function index({ data }) {
       <section id='access'>
         <div className='main-content'>
           <div className='gmap'>
-            <iframe
-              title='GoogleMap'
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6573.319908924152!2d132.54162462602378!3d34.536842271907204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a8281c2fd5363%3A0x2984c2ecc13d2926!2z5L2Q44CF5pyo5aGX6KOF!5e0!3m2!1sja!2sjp!4v1654040493911!5m2!1sja!2sjp'
-              width='100%'
-              height={400}
-              style={{ border: 0 }}
-              allowFullScreen
-              loading='lazy'
-              referrerPolicy='no-referrer-when-downgrade'
-            />
+            <iframe title='GoogleMap' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6573.319908924152!2d132.54162462602378!3d34.536842271907204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a8281c2fd5363%3A0x2984c2ecc13d2926!2z5L2Q44CF5pyo5aGX6KOF!5e0!3m2!1sja!2sjp!4v1654040493911!5m2!1sja!2sjp' width='100%' height={400} style={{ border: 0 }} allowFullScreen loading='lazy' referrerPolicy='no-referrer-when-downgrade' />
           </div>
         </div>
       </section>
@@ -542,8 +533,7 @@ const jsonhowto = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: '最短10秒無料相場チェックの流れ',
-  description:
-    '広島外壁塗装｜広島市安佐北区で施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 ［無料診断・無料見積を実施中］',
+  description: '広島外壁塗装｜広島市安佐北区で施工実績No.1。広島発のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。大切な住まいの塗り替えは一級塗装技能士在籍、塗装のプロフェッショナル集団。屋根・外壁塗装の専門店の佐々木塗装にお任せください。 ［無料診断・無料見積を実施中］',
   image: {
     '@type': 'ImageObject',
     url: 'https://sasaki-tosou.co.jp/images/souba_oneesan_smp.jpg',
