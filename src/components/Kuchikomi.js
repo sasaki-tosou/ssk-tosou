@@ -18,12 +18,17 @@ const kuchikomi = () => {
                 佐々木塗装の口コミ
                 <br />
                 総合評価:4.7<span className='g_kuchi_star'>★★★★★</span> <br className='smp' />
-                口コミ数:43
+                口コミ数:44
               </h3>
             </div>
           </div>
 
           <ul className='kuchikomi_box'>
+            <li>
+              <span className='star'>★★★★★</span> <span className='bold'>2023/11/3 hanako sakura様</span>
+              <br />
+              幸い天候に恵まれ予定通りに完了しました。挨拶、塗料の色決めなど、奥様、女性スタッフさんとの会話も楽しく親しみがあり、とても安心してできました。工事に入ってからも職人さんと顔馴染みになり、何でも相談でき納得いく工事をしていただきました。社長さん、奥さん、スタッフさん、職人さん、みなさん本当にお世話になりました。ありがとうございました。
+            </li>
             <li>
               <span className='star'>★★★★★</span> <span className='bold'>2023/10/29 真理子様</span>
               <br />
