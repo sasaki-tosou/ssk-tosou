@@ -628,7 +628,6 @@ export const query = graphql`
             id
           }
           body
-          excerpt
           mainimage {
             url
             height
@@ -649,7 +648,6 @@ export const query = graphql`
             id
           }
           body
-          excerpt
           mainimage {
             url
           }
