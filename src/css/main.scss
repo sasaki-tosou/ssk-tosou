@@ -76,7 +76,7 @@ html,
 body {
   margin: 0 auto;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
   font-size: 100% !important;
   text-align: left;
   color: #000;
@@ -405,7 +405,6 @@ header {
 
 #header_inner h1 {
   font-size: 12px;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -415,7 +414,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
@@ -461,7 +459,6 @@ header {
 
 .h_tel_box {
   width: 20%;
-  font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -542,7 +539,6 @@ header {
 }
 #header_sub_inner .logo_box h1 {
   font-size: 160%;
-  font-family: 'Noto Serif JP', serif;
   font-weight: 500;
 }
 
@@ -599,7 +595,6 @@ header {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
   cursor: pointer;
@@ -634,7 +629,6 @@ header {
   margin: 0;
   height: 105px;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -818,7 +812,6 @@ header {
   }
   .logo_box h1 {
     font-size: 12px;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
   }
 
@@ -1012,6 +1005,15 @@ header {
   }
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  #header .h_main .h_logo {
+    padding: 0;
+  }
+  .gnav__menu {
+    padding: 80px;
+  }
+}
+
 /*smp nav new*/
 body {
   animation: bugfix infinite 1s;
@@ -1086,7 +1088,7 @@ input[type='checkbox']:checked ~ #overlay-button span {
   }
   #overlay-button span {
     height: 2px;
-    width: 35px;
+    width: 30px;
     border-radius: 2px;
     background-color: black;
     position: relative;
@@ -1104,7 +1106,7 @@ input[type='checkbox']:checked ~ #overlay-button span {
   #overlay-button span:before,
   #overlay-button span:after {
     height: 2px;
-    width: 35px;
+    width: 30px;
     border-radius: 2px;
     background-color: black;
     position: absolute;
@@ -1123,6 +1125,21 @@ input[type='checkbox']:checked ~ #overlay-button span {
   #overlay-button {
     right: 5px;
     top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  #overlay-button {
+    right: 5px;
+    top: initial;
+    padding: 20px 10px;
+  }
+  #overlay-button span {
+    width: 30px;
+  }
+  #overlay-button span:before,
+  #overlay-button span:after {
+    width: 30px;
   }
 }
 
@@ -1238,7 +1255,6 @@ footer {
   width: 100%;
   margin: 0 auto;
   color: #000 !important;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-size: 14px;
   padding: 35px 0;
@@ -1426,7 +1442,6 @@ address {
   background-color: #ff7415;
   color: #fff;
   font-size: 14px;
-  font-family: 'Noto Sans JP', sans-serif;
   ul {
     width: 1200px;
     margin: 0 auto;
@@ -1598,7 +1613,6 @@ address {
 }
 #mainimage-sub h2 {
   font-size: 300%;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
 }
 #mainimage-inner {
@@ -1691,17 +1705,8 @@ address {
 
 @media screen and (max-width: 1024px) {
   #mainimage-sub {
-    width: 100%;
     height: 170px;
-    background-image: url('/images/mainimage/mainimage_sub.png');
-    top: 0;
-    z-index: 0;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 102px;
   }
   #mainimage-sub h2 {
     text-align: center;
@@ -1826,8 +1831,6 @@ section {
 
 #kuchikomi .main-content {
   padding: 2% 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-style: normal;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
@@ -1862,9 +1865,7 @@ section {
     padding-right: 60px;
   }
   .catch_title {
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
-    font-style: normal;
     position: relative;
     z-index: 100;
     display: flex;
@@ -1894,9 +1895,7 @@ section {
 
 #news .main-content {
   padding: 2% 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
 }
 #news .main-content h3 {
   font-size: 250%;
@@ -1942,8 +1941,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   @media screen and (max-width: 768px) {
     width: 100%;
     display: block;
@@ -2204,31 +2202,19 @@ section {
   padding: 3% 0;
 }
 #about .main-content h3 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   color: #ff7415;
   margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: 200%;
+  }
 }
 #about .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 140%;
   color: #ff7415;
   margin: 0;
-}
-
-@media screen and (max-width: 600px) {
-  #about .main-content h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 200%;
-    color: #ff7415;
-    margin: 0;
-  }
 }
 
 .about_box {
@@ -2269,29 +2255,17 @@ section {
   padding: 3% 0;
 }
 #point .main-content h3 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   color: #ff7415;
   margin: 0;
-}
-
-@media screen and (max-width: 1024px) {
-  #point .main-content h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  @media screen and (max-width: 1024px) {
     font-size: 180%;
-    color: #ff7415;
-    margin: 0;
   }
 }
 
 #point .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 140%;
   color: #ff7415;
   margin: 0;
@@ -2385,9 +2359,7 @@ section {
   color: #fff;
   background-color: #ff7415;
   font-size: 14px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 .cat_list li a:hover {
@@ -2406,45 +2378,29 @@ section {
 }
 
 #movie .main-content h3 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   color: #ff7415;
   margin: 2% 0;
-}
-
-@media screen and (max-width: 1024px) {
-  #movie .main-content h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  @media screen and (max-width: 1024px) {
     font-size: 180%;
-    color: #ff7415;
-    margin: 3%;
   }
 }
 
 #movie .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 140%;
   margin: 0;
 }
 
 #study .main-content h3 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   color: #ff7415;
   margin: 0;
 }
 #study .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 140%;
   color: #ff7415;
   margin: 0;
@@ -2526,9 +2482,7 @@ section {
   padding: 4px 10px;
   border-radius: 10px;
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
 }
 
 .study_bt {
@@ -2540,8 +2494,7 @@ section {
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   transition: 0.5s;
 }
 .study_bt:hover {
@@ -2559,8 +2512,7 @@ section {
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   transition: 0.5s;
 }
 .study_bt_off:hover {
@@ -2571,17 +2523,13 @@ section {
   background-color: #feefd9;
 }
 #paint .main-content h3 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   color: #ff7415;
   margin: 0;
 }
 #paint .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 140%;
   color: #ff7415;
   margin: 0;
@@ -2620,16 +2568,13 @@ section {
   padding: 3% 0;
 }
 #sdgs .main-content h3 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   color: #ff7415;
   margin: 3% 0;
 }
 #sdgs .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-size: 140%;
   color: #ff7415;
@@ -2715,8 +2660,7 @@ _:future,
   margin: 20px 0;
   font-size: 160%;
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -2734,9 +2678,7 @@ _:future,
 .souba_r {
   width: 70%;
   padding-left: 3%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
 }
 
 .step-3list {
@@ -2821,7 +2763,6 @@ _:future,
     background-repeat: no-repeat, repeat-x;
     background-size: 80%, 100%;
   }
-  /*.souba_r div.step_title3 { position:absolute; left:0; bottom:0; width:50%; }*/
   .souba_r div.step_box {
     position: absolute;
     left: 10%;
@@ -2836,9 +2777,7 @@ _:future,
     font-size: 180% !important;
   }
   #works .title04 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     font-size: 180% !important;
     background-color: #ff7415;
     color: #fff;
@@ -2876,9 +2815,7 @@ _:future,
 }
 
 .company_bn a {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   color: #0e264f;
 }
 .company_bn a img {
@@ -2900,9 +2837,7 @@ _:future,
   padding: 3% 0;
   text-align: center;
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   background-image: url('/images/contact_bg02.jpg'), url('/images/contact_bg01.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: left, right;
@@ -2917,9 +2852,7 @@ _:future,
   font-size: 300%;
 }
 #contact .main-content h4 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 100%;
 }
 
@@ -2952,7 +2885,6 @@ _:future,
 .links_list {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 .links_box {
   width: calc(100% / 3);
@@ -2974,9 +2906,7 @@ _:future,
     padding: 3% 0;
     text-align: center;
     color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     background-image: url('/images/contact_bg01.jpg'), url('/images/contact_bg02.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: left, right;
@@ -3087,15 +3017,12 @@ _:future,
   @media screen and (max-width: 1024px) {
     height: 284px;
   }
-
   @media screen and (max-width: 768px) {
     height: 238px;
   }
-
   @media screen and (max-width: 480px) {
     height: 116px;
   }
-
   @media screen and (max-width: 900px) and (orientation: landscape) {
     height: 116px;
   }
@@ -3113,6 +3040,9 @@ _:future,
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    width: calc(100% / 2);
+  }
   @media not screen and (min-width: 768px) {
     width: calc(100% / 2);
   }
@@ -3122,8 +3052,7 @@ _:future,
   width: 100%;
   padding: 0;
 }
-.tosou-arekore .kiji_thumb img,
-.arekore-blog .kiji_thumb img {
+.tosou-arekore .kiji_thumb img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -3146,6 +3075,28 @@ _:future,
   }
 }
 
+.arekore-blog .kiji_thumb img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  margin: 0 !important;
+  transition: all 0.3s ease;
+  @media screen and (max-width: 1024px) {
+    height: 140px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 120px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 90px;
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    height: 165px;
+  }
+}
 .tosou-arekore .kiji_thumb img:hover,
 .arekore-blog .kiji_thumb img:hover {
   opacity: 0.6;
@@ -3168,8 +3119,6 @@ _:future,
 .kiji_txt {
   width: 60%;
   padding: 3%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-style: normal;
   font-size: 12px;
   word-wrap: break-word;
   time {
@@ -3231,9 +3180,7 @@ _:future,
   font-size: 140% !important;
   color: #000 !important;
   text-align: left !important;
-  font-family: 'Noto Sans JP', sans-serif !important;
-  font-weight: 500 !important;
-  font-style: normal;
+  font-weight: bold;
   border-bottom: solid 1px #ccc;
   padding-bottom: 10px;
   margin-bottom: 15px !important;
@@ -3241,16 +3188,11 @@ _:future,
 
 .date {
   font-size: 14px !important;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400 !important;
   margin: 0 !important;
 }
 
 .single_txt {
   margin: 20px 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .staff_box {
@@ -3284,9 +3226,7 @@ _:future,
 }
 
 .flow_title01 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   margin: 2% 0;
   font-size: 250%;
@@ -3382,22 +3322,18 @@ _:future,
   color: #fff;
   padding: 5px 15px;
   font-size: 140%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-style: italic;
 }
 .flow_title {
   border-bottom: 3px solid #ff7415;
   margin: 2% 0;
   padding-bottom: 10px;
-  font-family: 'Noto Sans JP', sans-serif;
   font-size: 140%;
 }
 
 .paint_title01 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   font-size: 2rem;
   margin: 2% 0;
@@ -3410,9 +3346,7 @@ _:future,
   padding: 1%;
 }
 .kansya_title {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   font-size: 2rem;
   margin: 2% 0;
@@ -3420,9 +3354,7 @@ _:future,
   border-bottom: solid 5px #ff7415;
 }
 .kansya_subtitle {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   font-size: 160%;
   border-left: solid 5px #ff7415;
   line-height: 1;
@@ -3431,9 +3363,7 @@ _:future,
 }
 
 .voice_title {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   font-size: 2rem;
   margin: 2% 0;
@@ -3441,9 +3371,7 @@ _:future,
   border-bottom: solid 5px #ff7415;
 }
 .voice_subtitle {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   font-size: 120%;
   border-left: solid 5px #ff7415;
   line-height: 1;
@@ -3456,9 +3384,7 @@ _:future,
 }
 
 .case_title {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   font-size: 2rem;
   margin: 2% 0;
@@ -3466,9 +3392,7 @@ _:future,
   border-bottom: solid 5px #ff7415;
 }
 .case_title2 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   font-size: 120%;
   border-left: solid 5px #ff7415;
   line-height: 1;
@@ -3496,8 +3420,7 @@ _:future,
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   transition: 0.5s;
   background-color: #ff7415;
   overflow: hidden;
@@ -3528,8 +3451,7 @@ _:future,
   text-align: center;
   font-size: 90%;
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   transition: 0.5s;
   background-color: #ccc;
   overflow: hidden;
@@ -3618,8 +3540,7 @@ _:future,
 .link_bn_box dt {
   background-color: #ff7415;
   padding: 3%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   color: #fff;
   font-size: 140%;
   position: relative;
@@ -3627,8 +3548,7 @@ _:future,
 .link_bn_box dd {
   padding: 3%;
   background-color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   color: #000;
   height: 100%;
 }
@@ -3726,9 +3646,7 @@ _:future,
     display: inline-block;
     color: #fff;
     font-size: 14px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     transition: all 0.3s ease;
   }
   .cat_list li a:hover {
@@ -3748,16 +3666,12 @@ _:future,
     width: 100%;
   }
   #study .main-content h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     font-size: 250%;
     margin: 0;
   }
   #study .main-content h4 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     font-size: 140%;
     color: #ff7415;
     margin: 0;
@@ -3818,8 +3732,7 @@ _:future,
     text-align: center;
     font-size: 90%;
     text-decoration: none;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     transition: 0.5s;
   }
   .study_bt:hover {
@@ -3835,8 +3748,7 @@ _:future,
     text-align: center;
     font-size: 90%;
     text-decoration: none;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     transition: 0.5s;
   }
   .study_bt_off:hover {
@@ -3880,9 +3792,7 @@ _:future,
     border-radius: 10px;
     font-size: 160%;
     color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -3893,9 +3803,7 @@ _:future,
   .souba_r {
     width: 100%;
     padding-left: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
   }
   .tasya_ok_box {
     background-color: #f5f5f5;
@@ -3910,9 +3818,7 @@ _:future,
     padding: 3%;
     text-align: center;
     color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     background-image: none, url('/images/contact_bg02.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: top, center;
@@ -3928,9 +3834,7 @@ _:future,
     line-height: 1.2;
   }
   #contact .main-content h4 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     font-size: 80%;
   }
 
@@ -4337,9 +4241,7 @@ ol li {
   background-image: url(/images/faq_q.png);
   background-repeat: no-repeat;
   background-position: 10px 50%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   background-color: #ff7415;
   padding: 1% 1% 1% 80px;
   font-size: 130%;
@@ -4491,7 +4393,7 @@ ol li {
   }
   .mail_bt span,
   .line_bt span {
-    padding: 0 !important;
+    display: none;
   }
   #page-top {
     position: fixed;
@@ -4550,17 +4452,17 @@ ol li {
 }
 
 .title01 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   font-size: 180%;
   margin-top: 35px;
+  @media screen and (max-width: 768px) {
+    font-size: 140%;
+    margin-top: 3%;
+  }
 }
 .title02 {
   border-bottom: 8px solid #5ec618;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   padding: 5px 0px;
   font-size: 140%;
   display: inline-block;
@@ -4569,16 +4471,13 @@ ol li {
 }
 .title03 {
   border-left: 5px solid #000;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-style: normal;
+  font-weight: bold;
   padding: 10px 20px;
   font-size: 140%;
   margin-top: 60px;
 }
 .title04 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   font-size: 250%;
   background-color: #ff7415;
   color: #fff;
@@ -4588,22 +4487,33 @@ ol li {
   letter-spacing: 2px;
   position: relative;
   z-index: 20;
-}
-.title04::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-top: 50px solid #ff7415;
-  border-right: 50px solid transparent;
-  border-left: 50px solid transparent;
-  z-index: 90;
+  @media not screen and (min-width: 1025px) {
+    font-size: 200%;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 160%;
+    padding: 2%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 50px solid #ff7415;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    z-index: 90;
+    @media screen and (max-width: 1024px) {
+      border-top: 25px solid #ff7415;
+      border-right: 25px solid transparent;
+      border-left: 25px solid transparent;
+    }
+  }
 }
 .title05 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 220%;
   background-color: #ff7415;
   color: #fff;
@@ -4611,11 +4521,13 @@ ol li {
   margin: 0;
   text-align: center;
   position: relative;
+  @media screen and (max-width: 768px) {
+    font-size: 140%;
+    margin: 0 !important;
+  }
 }
 .title06 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 220%;
   background-color: #5ec618;
   color: #fff;
@@ -4623,27 +4535,19 @@ ol li {
   margin: 0;
   text-align: center;
   position: relative;
-}
-
-@media screen and (max-width: 1024px) {
-  .title04::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: 25px solid #ff7415;
-    border-right: 25px solid transparent;
-    border-left: 25px solid transparent;
+  @media screen and (max-width: 768px) {
+    font-size: 140%;
   }
 }
 
 .sub_title01 {
   font-size: 200%;
+  @media screen and (max-width: 768px) {
+    font-size: 160% !important;
+  }
 }
 .sub_title02 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 140%;
   border-bottom: solid 5px #ff7415;
   padding: 10px;
@@ -4651,9 +4555,8 @@ ol li {
 }
 .sub_title03 {
   position: relative;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
   font-size: 180%;
-  font-weight: 900;
   padding-bottom: 10px;
   margin-bottom: 30px;
   @media screen and (max-width: 768px) {
@@ -4674,9 +4577,7 @@ ol li {
 
 .page_title01 {
   margin: 40px 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   font-size: 2.4rem;
   position: relative;
   text-align: center;
@@ -4697,16 +4598,14 @@ ol li {
   z-index: 10;
 }
 .page_title02 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   border-left: solid 5px #ff7415;
   padding: 10px;
   font-size: 1.4rem;
   margin-bottom: 3%;
 }
 .page_title03 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 200%;
   position: relative;
   padding: 1rem 0;
@@ -4726,9 +4625,7 @@ ol li {
 }
 
 .cat_title {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 220%;
   border-bottom: solid 5px #ff7415;
   padding: 10px;
@@ -4738,102 +4635,24 @@ ol li {
 .aeon_title01 {
   font-size: 300%;
   color: #b3007f;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   margin: 3% 0;
+  @media screen and (max-width: 768px) {
+    font-size: 200%;
+  }
 }
 .aeon_title02 {
   font-size: 250%;
   color: #b3007f;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bold;
   margin: 3% 0;
-}
-
-@media not screen and (min-width: 1025px) {
-  .title04 {
-    font-size: 200%;
+  @media screen and (max-width: 768px) {
+    font-size: 160%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .title01 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 140%;
-    margin-top: 3%;
-  }
-  .title04 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 160%;
-    background-color: #ff7415;
-    color: #fff;
-    padding: 2%;
-    margin: 0;
-    text-align: center;
-    letter-spacing: 2px;
-    position: relative;
-  }
-  .title04::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: 25px solid #ff7415;
-    border-right: 25px solid transparent;
-    border-left: 25px solid transparent;
-  }
-  .title05 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 140%;
-    background-color: #ff7415;
-    color: #fff;
-    padding: 2%;
-    margin: 0 !important;
-    text-align: center;
-    position: relative;
-  }
-  .title06 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 140%;
-    background-color: #5ec618;
-    color: #fff;
-    padding: 2%;
-    margin: 0;
-    text-align: center;
-    position: relative;
-  }
-  .sub_title01 {
-    font-size: 160% !important;
-  }
-  .aeon_title01 {
-    font-size: 200%;
-    color: #b3007f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    margin: 3% 0;
-  }
-  .aeon_title02 {
-    font-size: 160%;
-    color: #b3007f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    margin: 3% 0;
-  }
-
-  .arekore_box .page_title03 {
+.arekore_box .page_title03 {
+  @media screen and (max-width: 768px) {
     font-size: 140%;
     padding: 1rem 0;
     margin-bottom: 1rem;
@@ -4921,7 +4740,6 @@ ol li {
   padding: 0;
   border-top: 1px solid #000;
   border-left: 0px solid #000;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .form th {
@@ -4996,7 +4814,6 @@ ol li {
   padding: 0;
   border-top: 1px solid #000;
   border-left: 0px solid #000;
-  font-family: 'Noto Sans JP', sans-serif;
   th {
     text-align: left;
     background-color: #fff;
@@ -5191,9 +5008,7 @@ ol li {
   background: #ff7415;
   color: #fff;
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   font-size: 140%;
   min-width: 300px;
   text-decoration: none;
@@ -5228,9 +5043,7 @@ ol li {
   text-align: center;
   font-size: 160%;
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   transition: 0.5s;
 }
 .bt02:hover {
@@ -5294,9 +5107,7 @@ ol li {
   color: #0e264f;
   text-align: center;
   font-size: 100%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
+  font-weight: bold;
   padding: 5px 10px;
   border-bottom: solid 1px #0e264f;
   transition: 0.5s;
@@ -5326,9 +5137,7 @@ ol li {
   background-color: #06c755;
   text-decoration: none;
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   font-size: 140%;
   display: flex;
@@ -5351,9 +5160,7 @@ ol li {
   background-color: #fd7416;
   text-decoration: none;
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
   font-size: 140%;
   display: flex;
@@ -5381,8 +5188,7 @@ ol li {
   cursor: pointer;
   outline: none;
   min-width: 200px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   transition: 0.5s;
 }
 .form_bt span {
@@ -5990,7 +5796,7 @@ ol li {
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   #mainimage-sub {
-    margin-top: 67px;
+    margin-top: 56px;
   }
   .syachou_box {
     width: calc(100% / 2);
@@ -6014,61 +5820,55 @@ ol li {
 .post_title {
   color: #ff7415;
   margin: 10px 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.arekore h1 {
+.arekore-blog .post_main_box a {
+  color: #ff7415;
+  font-weight: bold;
+}
+
+.arekore-blog .post_main_box img {
+  margin: 20px 0;
+}
+
+.arekore-blog .post_main_box h1 {
   font-size: 200%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  margin: 2rem 0;
+  font-weight: bold;
+  margin: 20px 0;
   position: relative;
-  padding: 1rem 0;
+  padding: 0;
   @media screen and (max-width: 768px) {
     font-size: 160%;
   }
 }
 
-.arekore h1:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  content: '';
-  background-image: -webkit-repeating-linear-gradient(135deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
-  background-image: repeating-linear-gradient(-45deg, #ff7415, #ff7415 1px, transparent 2px, transparent 5px);
-  background-size: 7px 7px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.arekore h2 {
-  font-size: 200%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
-  padding: 1rem;
+.arekore-blog .post_main_box h2 {
+  font-size: 140%;
+  font-weight: bold;
+  padding: 10px;
   background: #ff7415;
-  color: #fff;
-  margin: 2rem 0;
+  color: #fff !important;
+  margin: 40px 0 20px 0;
+  span {
+    color: #fff !important;
+  }
 }
 
-.arekore h3 {
-  font-size: 160%;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 700;
+.arekore-blog .post_main_box h3 {
+  font-size: 120%;
+  font-weight: bold;
   border-top: 8px double #ff7415;
   border-bottom: 8px double #ff7415;
   background-color: #fff;
-  margin: 2rem 0;
-  padding: 1rem;
+  margin: 40px 0 20px 0;
+  padding: 10px;
 }
 
-.arekore ul {
+.arekore-blog .post_main_box ul {
   margin: 20px 0 20px 30px;
 }
-.arekore li {
+.arekore-blog .post_main_box li {
   list-style-type: disc;
   margin-left: 20px;
 }
@@ -6222,8 +6022,7 @@ ol li {
 }
 #ez-toc-container p.ez-toc-title {
   display: block !important;
-  font-family: 'Noto Sans JP', sans-serif !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
   text-align: center !important;
   font-size: 140% !important;
   border-bottom: 2px solid #000 !important;
