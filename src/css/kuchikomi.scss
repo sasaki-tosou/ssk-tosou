@@ -79,6 +79,12 @@
   white-space: nowrap;
 }
 
+.star_icon {
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 1024px) {
   #kuchikomi .main-content {
     padding: 2%;
