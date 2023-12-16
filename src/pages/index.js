@@ -107,8 +107,8 @@ export default function index({ data }) {
                       <React.Fragment key={node.blogId}>
                         <dt>{node.date}</dt>
                         <dd>
-                          <div className={node.category.slug}>
-                            <a href={'/category/' + node.category.slug}>{node.category.name}</a>
+                          <div className={node.category.id}>
+                            <a href={'/category/' + node.category.id + '/'}>{node.category.name}</a>
                           </div>
                           <br />
                           <a href={'/posts/' + node.blogId + '/'}>{node.title}</a>
