@@ -19,12 +19,21 @@ const kuchikomi = () => {
                 <br />
                 総合評価:4.7
                 <StaticImage src='../images/star5.png' width={160} height={25} alt='口コミ評価' className='star_icon' /> <br className='smp' />
-                口コミ数:45
+                口コミ数:46
               </h3>
             </div>
           </div>
 
           <ul className='kuchikomi_box'>
+            <li>
+              <StaticImage src='../images/star5.png' width={100} height={16} alt='口コミ評価' className='star_icon' /> <span className='bold'>2023/12/17 みつこ様</span>
+              <br />
+              外壁と、屋根の塗装をやっていただきました。
+              <br />
+              職人さんも丁寧な作業をしていただき満足する仕上がりになりました。
+              <br />
+              社長さん、奥様、女性社員の方、細かいお気遣いありがとうございました。
+            </li>
             <li>
               <StaticImage src='../images/star4.png' width={100} height={16} alt='口コミ評価' className='star_icon' /> <span className='bold'>2023/11/12 恵美様</span>
               <br />
