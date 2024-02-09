@@ -6301,3 +6301,9 @@ form label {
     opacity: 0.5;
   }
 }
+
+#chatbase-bubble-button {
+  @media screen and (max-width: 768px) {
+    bottom: 4rem!important;
+  }
+}
