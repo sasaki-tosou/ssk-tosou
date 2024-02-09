@@ -17,19 +17,16 @@ exports.onRenderBody = ({ setPostBodyComponents, setHtmlAttributes }) => {
 
   // DocsBotのスクリプトをbodyタグの終了直前に追加
   setPostBodyComponents([
-    <script key="embeddedChatbotConfig" dangerouslySetInnerHTML={{
-      __html: `
-        window.embeddedChatbotConfig = {
-          chatbotId: "${docsBotId}",
-          domain: "www.chatbase.co"
-        }`
-    }} />,
     <script
-      key="chatbaseEmbedScript"
-      src="https://www.chatbase.co/embed.min.js"
-      chatbotId={docsBotId}
-      domain="www.chatbase.co"
-      defer
-    />
+      key="docsbot"
+      type="text/javascript"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.DocsBotAI=window.DocsBotAI||{},DocsBotAI.init=function(c){return new Promise(function(e,o){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://widget.docsbot.ai/chat.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n),t.addEventListener("load",function(){window.DocsBotAI.mount({id:c.id,supportCallback:c.supportCallback,identify:c.identify,options:c.options,signature:c.signature});var t;t=function(n){return new Promise(function(e){if(document.querySelector(n))return e(document.querySelector(n));var o=new MutationObserver(function(t){document.querySelector(n)&&(e(document.querySelector(n)),o.disconnect())});o.observe(document.body,{childList:!0,subtree:!0})})},t&&t("#docsbotai-root").then(e).catch(o)}),t.addEventListener("error",function(t){o(t.message)})})};
+          DocsBotAI.init({id: "${docsBotId}"});
+        `,
+      }}
+    />,
   ]);
 };
+
