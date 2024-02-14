@@ -14,7 +14,6 @@ exports.onRenderBody = ({ setPostBodyComponents, setHtmlAttributes }) => {
 
   // 環境変数からChatbotのIDを取得
   const chatbotid = process.env.CHATBOT_ID;
-  const chatbotid2 = process.env.CHATBOT_ID_2;
 
   setPostBodyComponents([
     <script
@@ -36,25 +35,5 @@ exports.onRenderBody = ({ setPostBodyComponents, setHtmlAttributes }) => {
       domain="www.chatbase.co"
       defer
     />,
-    <script
-      key="new-chatbase-config"
-      type="text/javascript"
-      dangerouslySetInnerHTML={{
-        __html: `
-          window.embeddedChatbotConfig = {
-            chatbotId: "${chatbotid2}",
-            domain: "www.chatbase.co"
-          }
-        `,
-      }}
-    />,
-    <script
-      key="new-chatbase-script"
-      src="https://www.chatbase.co/embed.min.js"
-      chatbotid={chatbotid2}
-      domain="www.chatbase.co"
-      defer
-    />,
   ]);
 };
-
