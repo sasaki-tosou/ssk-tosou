@@ -1,0 +1,4 @@
+{
+    "prettier.printWidth": 1024,
+    "prettier.htmlWhitespaceSensitivity": "ignore"
+}

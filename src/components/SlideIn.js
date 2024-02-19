@@ -24,6 +24,7 @@ const SlideInElement = () => {
 
   return (
     <div className={`slide-in-element ${isVisible ? "visible" : ""}`}>
+      
       <ul>
         <li>
           <Link to="/toiawase/" className="mail_bt">
