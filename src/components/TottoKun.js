@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const TottoKun = () => {
   const [isBottom, setIsBottom] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleScroll = () => {
     const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight;
@@ -14,6 +14,7 @@ const TottoKun = () => {
   };
 
   useEffect(() => {
+    setIsMobile(window.innerWidth <= 768);
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
     return () => {
