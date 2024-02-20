@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import TottoKun from './TottoKun';
 
 const Header = () => {
   return (
@@ -154,11 +155,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className='totto_kun'>
-        <a href='https://www.chatbase.co/chatbot-iframe/l8HAJ5b0D-EA21iPuJ_v0' target='_blank' rel='noopenner noreferrer'>
-          <img src='/images/totto_s0203.gif' height={160} loading='lazy' alt='とっとくんの画像' />
-        </a>
-      </div>
+      <TottoKun />
     </>
   );
 };
