@@ -27,7 +27,7 @@ const TottoKun = () => {
     <>
       <div className={`totto_kun ${isMobile ? (isBottom ? 'fade-out' : 'fade-in') : ''}`}>
         <a href='https://www.chatbase.co/chatbot-iframe/l8HAJ5b0D-EA21iPuJ_v0' target='_blank' rel='noopenner noreferrer'>
-          <img src='/images/totto_s0203.gif' height={260} loading='lazy' alt='AIとっとくんの画像' />
+          <img src='/images/totto_kun.gif' height={260} loading='lazy' alt='AIとっとくんの画像' />
         </a>
       </div>
     </>
