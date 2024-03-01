@@ -19,13 +19,16 @@ const kuchikomi = () => {
                 <br />
                 総合評価:4.7
                 <StaticImage src='../images/star5.png' width={160} height={25} alt='口コミ評価' className='star_icon' /> <br className='smp' />
-                口コミ数:47
+                口コミ数:48
               </h3>
             </div>
           </div>
 
           <ul className='kuchikomi_box'>
-          <li>
+            <li>
+              <StaticImage src='../images/star5.png' width={100} height={16} alt='口コミ評価' className='star_icon' /> <span className='bold'>2024/3/1 m ma様</span><br />
+              対応がとても丁寧で、お願いして本当に良かったです。職人さんもありがとうございました。</li>
+            <li>
               <StaticImage src='../images/star5.png' width={100} height={16} alt='口コミ評価' className='star_icon' /> <span className='bold'>2024/1/31 キラクヤショウスケ様</span>
               <br />
               屋根の塗装でお世話になりました。１５年くらい前にも外壁と屋根の塗装をお願いし、丁寧な塗装をしてもらいました。その際は付帯工事（壁面の補修など）もあり工期がかかりましたが仕上がりはとても綺麗な仕上がりでした。<br />
