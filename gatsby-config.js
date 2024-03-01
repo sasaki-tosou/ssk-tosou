@@ -22,7 +22,7 @@ module.exports = {
       "安佐北区の施工実績No.1。広島で外壁塗装・屋根塗装なら、広島初のドローンを使用した外装劣化診断士による診断。安心施工、保証付きのアフターサービス。",
     image: "/images/mobile_img.jpg",
     url: "https://sasaki-tosou.co.jp",
-    siteUrl: "https://sasaki-tosou.co.jp/",
+    siteUrl: "https://sasaki-tosou.co.jp",
     twitterUsername: "sasakipaint1116",
   },
   plugins: [
@@ -102,18 +102,38 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://sasaki-tosou.co.jp/`,
+        siteUrl: `https://sasaki-tosou.co.jp`,
       },
     },
 
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        entryLimit: 50000,
+        resolveSiteUrl: () => 'https://sasaki-tosou.co.jp',
+      },
+    },
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: `https://sasaki-tosou.co.jp`,
-        sitemap: `https://sasaki-tosou.co.jp/sitemap-0.xml`,
+        sitemap: `https://sasaki-tosou.co.jp/sitemap-index.xml`,
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+    {
+      resolve: "gatsby-plugin-htaccess",
+      options: {
+        RewriteBase: "/",
+        https: true,
+        www: false,
+        SymLinksIfOwnerMatch: true,
+        host: "sasaki-tosou.co.jp", // if 'www' is set to 'false', be sure to also remove it here!
+        ErrorDocument: `          
+          ErrorDocument 404 /error_pages/404.html
+        `,
+      },
+    },
+    'gatsby-plugin-netlify',
   ],
 };
