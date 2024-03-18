@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import TottoKun from './TottoKun';
 
-const Header = () => {
+const Header = ({h1txt = "広島外壁塗装なら広島市安佐北区の佐々木塗装 安心施工、保証付きのアフターサービス。" }) => {
   return (
     <>
       <header>
         <div id='header'>
           <div id='header_inner'>
-            <h1 className='pc'>広島外壁塗装なら広島市安佐北区の佐々木塗装 安心施工、保証付きのアフターサービス。</h1>
+            <h1 className='pc'>{h1txt}</h1>
             <div className='h_box'>
               <div className='h_logo_box'>
                 <Link to='/'>
