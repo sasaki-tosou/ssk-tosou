@@ -28,7 +28,7 @@ import 'swiper/css/scrollbar';
 export const Head = () => (
   <>
     <body id='pagetop' />
-    <Seo title2='広島の外壁塗装・屋根塗装｜AIサポートで疑問解決 - 佐々木塗装' description='広島市で外壁塗装や屋根塗装をお考えの方へ。AIロボットがご質問に即答する佐々木塗装で、塗装の疑問を解決。一級塗装技能士が施工する、信頼できるサービスをご提供します。' keyword='広島市, 外壁塗装, 屋根塗装, AIカスタマーサポート, 佐々木塗装, 一級塗装技能士, 塗装相談, AIロボット, 塗装専門家' />
+    <Seo title2='広島の外壁・屋根塗装は2級建築士監修の佐々木塗装 - AIとっとくんが24時間対応' description='広島で外壁塗装や屋根塗装をお考えなら、2級建築士が監修する佐々木塗装へ。AIロボットのとっとくんが24時間対応し、あなたの質問に答えます。信頼と実績のプロフェッショナル集団が、あなたの大切な家を守ります。' keyword='広島市 外壁塗装, 屋根塗装, 2級建築士, 佐々木塗装, AIサポート, 塗装プロフェッショナル, 塗装専門店' />
     <script type='application/ld+json'>{JSON.stringify(jsonLd)}</script>
     <script type='application/ld+json'>{JSON.stringify(jsonhowto)}</script>
   </>
@@ -37,7 +37,7 @@ export const Head = () => (
 export default function index({ data }) {
   return (
     <>
-      <Header h1txt='広島市でAIサポートの外壁塗装・屋根塗装サービス - 佐々木塗装' />
+      <Header h1txt='広島市で選ばれる外壁塗装・屋根塗装 | 2級建築士とAIサポートの佐々木塗装' />
 
       <div id='mainimage'>
         <div className='catch_title'>
